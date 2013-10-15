@@ -22,8 +22,9 @@
 @synthesize videoCamera = _videoCamera;
 @synthesize thumbNail = _thumbNail;
 @synthesize sample = _sample;
-@synthesize GreenStatus = _GreenStatus;
 
+@synthesize buttonIsPressed = _buttonIsPressed;
+@synthesize wasItGreen = _wasItGreen;
 
 
 
@@ -55,7 +56,10 @@
 
 -(IBAction)actionStart:(id)sender
 {
-  [self.videoCamera stop];
+    
+    _buttonIsPressed = true;
+/*
+    [self.videoCamera stop];
     cv::Mat * frame = new cv::Mat;
     
    // cv::VideoCapture  cap = cv::VideoCapture(0);
@@ -64,6 +68,7 @@
 
     cap.release();
   [self.videoCamera start];
+ */
 }
 
 -(void)processImage:(cv::Mat &)image{
@@ -83,11 +88,23 @@
 */
  //  NSLog(@"%@ %f %f", @"stats for newThumb are: ", newThumb.size.height, newThumb.size.width);
 
-    [self isThisGreen:image];
-    [[self GreenStatus] setNeedsDisplay];
-image = [self drawBoxAroundTarget:image];
+    if(_buttonIsPressed){
+        cv::Mat tempMat(image);
+        _buttonIsPressed = false;
+    [self isThisGreen:tempMat];
+        
+    }
+
+
     
-  
+    
+image = [self drawBoxAroundTarget:image];
+    if (_wasItGreen) {
+        CvFont font;
+        cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 1.0, 1.0, 0,1, 8);
+        cv::putText(image, "Yes that was green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+    }else
+        cv::putText(image, "Previous Sample Not Green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
     
 }
 
@@ -97,7 +114,7 @@ image = [self drawBoxAroundTarget:image];
     return source;
 }
 
-
+///TODO: Fix the color scalar issue
 -(cv::Mat)drawBoxAroundTarget:(cv::Mat)source{
 
    
@@ -114,7 +131,7 @@ image = [self drawBoxAroundTarget:image];
     top = cvPoint(center.x - 10, center.y - 10);
     bottom = cvPoint(center.x +10, center.y +10);
     
-    cv::rectangle(source, top, bottom, cv::Scalar(255,0,0));
+    cv::rectangle(source, top, bottom, CV_RGB(50, 60, 100));
     
     return source;
 }
@@ -147,13 +164,89 @@ image = [self drawBoxAroundTarget:image];
 /**
  Is this green
  */
--(void)isThisGreen:(cv::Mat)testMat{
-     _GreenStatus.text = @"Not Green";
-     
+-(void)isThisGreen:(cv::Mat)source{
+    
+    NSInteger iRows = source.rows;
+    NSInteger iCols = source.cols;
+    
+    CvPoint center = cvPoint(iCols/2,iRows/2); 
+    
+    ///We take the center 20X20 of the image.
+    CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
+    
+    cv::Mat img(source, sampleRect);
+    int count =0;
+    long b = 0;
+    long g = 0;
+    long r = 0;
+    for(int row = 0; row < img.rows; ++row){
+      uchar* p = img.ptr(row);
+        
+        for(int col = 0; col < img.cols*3; ++col) {
+            //*p++;  //points to each pixel B,G,R value in turn assuming a CV_8UC3 color image
+             int B = [[NSNumber numberWithUnsignedChar:p[0]] integerValue] ;
+            int G = [[NSNumber numberWithUnsignedChar:p[1]] integerValue] ;
+            int R = [[NSNumber numberWithUnsignedChar:p[2]] integerValue] ;
+          count++;
+            b += B;
+            g += G;
+            r += R;
+//            NSLog(@"B:%i G:%x R:%x Number: %i", b,p[1],p[2],tempInt );
+        }
+        
+    }
+[self greenTestHelper:b :g :r :count];
+    
 }
 
+///TODO: Implement a color difference algorithim to get the harder to guess colors.
+////Doing something quick and dirty here.
     
+-(void)greenTestHelper:(long)b :(long)g :(long)r :(int)count{
+    NSLog(@"Firing Test Helper");
+////Get the average RGB values of each
+    _wasItGreen = false;
+    long B,G,R;
     
+    B = b/count;
+    G = g/count;
+    R = r/count;
+    ///The color "Green" is a bit tough to calculate for. 
+    
+if(G > (B/2)){
+    NSLog(@"Greater than half blue");
+    if(G>(R/2)){
+    NSLog(@"Greater than half red");
+        if(((G-B) > 20) and ((G-R)>20)){
+    NSLog(@"I think It's green");
+            [self GreenStatus].text = @"I think it's green";
+            _wasItGreen = true;
+        }
+        else
+            [self GreenStatus].text = @"I don't think it's green";
+        
+    }
+
+    if(G>(R/2)){
+        NSLog(@"Greater than half blue");
+        if(G > (B/2)){
+            NSLog(@"Greater than half red");
+            if(((G-B) > 20) and ((G-R)>20)){
+                NSLog(@"I think It's green");
+                [self GreenStatus].text = @"I think it's green";
+                _wasItGreen = true;
+            }
+            else
+                [self GreenStatus].text = @"I don't think it's green";
+            
+            }
+        }
+
+
+    }
+    
+
+}
     
 
 

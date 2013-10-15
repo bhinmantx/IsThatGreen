@@ -23,8 +23,9 @@
     UIButton *_StartButton;
     UIImageView *_thumbNail;
     cv::Mat *_sample;
-    UILabel *_GreenStatus;
-
+    
+    BOOL _buttonIsPressed;
+    BOOL _wasItGreen;
 }
 
 -(IBAction)actionStart:(id)sender;
@@ -39,6 +40,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *StartButton;
 @property (strong, atomic) IBOutlet UIImageView *thumbNail;
 @property (atomic) cv::Mat *sample;
+
+@property BOOL buttonIsPressed;
+@property BOOL wasItGreen;
 
 @property (strong, nonatomic) IBOutlet UILabel *GreenStatus;
 
