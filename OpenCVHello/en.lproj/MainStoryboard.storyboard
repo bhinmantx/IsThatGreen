@@ -50,11 +50,22 @@
                                     <segue destination="4QR-JZ-6eB" kind="modal" id="1KV-LR-l7Q"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmK-7I-IT8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="abm-6J-ntV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="08W-hL-zNO" firstAttribute="bottom" secondItem="e4f-XC-bIl" secondAttribute="bottom" type="default" id="2Xx-D2-DdD"/>
+                            <constraint firstItem="SmK-7I-IT8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="148" id="4Aw-0y-9Nu"/>
                             <constraint firstItem="08W-hL-zNO" firstAttribute="baseline" secondItem="aAp-Se-Ueh" secondAttribute="baseline" type="default" id="9v4-Jt-GkY"/>
-                            <constraint firstItem="e4f-XC-bIl" firstAttribute="bottom" secondItem="aAp-Se-Ueh" secondAttribute="bottom" type="default" id="FO0-uE-I2a"/>
+                            <constraint firstAttribute="bottom" secondItem="aAp-Se-Ueh" secondAttribute="bottom" constant="86" id="MDm-Vv-Tib"/>
+                            <constraint firstItem="aAp-Se-Ueh" firstAttribute="top" secondItem="SmK-7I-IT8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UDX-sJ-SqW"/>
                             <constraint firstItem="8FY-8D-HfY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="27" id="V21-6l-cfa"/>
                             <constraint firstItem="8FY-8D-HfY" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="X5u-2s-6vI"/>
                             <constraint firstItem="e4f-XC-bIl" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="23" id="g7B-2R-lXn"/>
@@ -65,6 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="CameraView" destination="8FY-8D-HfY" id="Hvf-id-Nf2"/>
+                        <outlet property="GreenStatus" destination="SmK-7I-IT8" id="4ag-wi-5V5"/>
                         <outlet property="StartButton" destination="aAp-Se-Ueh" id="FaS-l7-nKn"/>
                         <outlet property="thumbNail" destination="e4f-XC-bIl" id="fOy-T7-uZ3"/>
                     </connections>
@@ -108,20 +120,6 @@
             <point key="canvasLocation" x="478" y="12"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="OpenCVViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OpenCVViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actionStart:"/>
-                <relationship kind="outlet" name="CameraView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="StartButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="thumbNail" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

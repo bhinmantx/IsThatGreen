@@ -22,14 +22,14 @@
 @synthesize videoCamera = _videoCamera;
 @synthesize thumbNail = _thumbNail;
 @synthesize sample = _sample;
-
+@synthesize GreenStatus = _GreenStatus;
 
 
 
 
 - (void)viewDidLoad
 {
-    
+    _thumbNail = [_thumbNail init]; 
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:_CameraView];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -55,36 +55,39 @@
 
 -(IBAction)actionStart:(id)sender
 {
+  [self.videoCamera stop];
+    cv::Mat * frame = new cv::Mat;
     
-    //NSLog(@"%@ %x", @"This fired and samples: ", [self sample]->cols);
-    NSLog(@"%@ %f", @"This fired and samples: ", [self thumbNail].image.size.height);
+   // cv::VideoCapture  cap = cv::VideoCapture(0);
+    cv::VideoCapture cap;
+    cap.open(0);
 
-  
+    cap.release();
+  [self.videoCamera start];
 }
 
 -(void)processImage:(cv::Mat &)image{
-
-
-    //Create temporary variables
-    //_sample = new cv::Mat(image);
-    
-    
-   __strong UIImage *newThumb = [[UIImage alloc] init];
   
-  
-    newThumb = [self createThumbnail:&image :newThumb];
+ 
+    
+    ///Following lines were attempts at seeing what the process thumbnail was seeing.
+    
+ /*
+   UIImage *newThumb = [[UIImage alloc] init];
+ 
+    cv::Mat tempMat(image);
 
+    newThumb = [self createThumbnail:tempMat :newThumb];
     
     [self thumbNail].image = newThumb;
+*/
+ //  NSLog(@"%@ %f %f", @"stats for newThumb are: ", newThumb.size.height, newThumb.size.width);
 
-   NSLog(@"%@ %f %f", @"stats for newThumb are: ", newThumb.size.height, newThumb.size.width);
-    
-
-
-
-  //  delete(_sample);
+    [self isThisGreen:image];
+    [[self GreenStatus] setNeedsDisplay];
 image = [self drawBoxAroundTarget:image];
-    [[self thumbNail] setNeedsDisplay];
+    
+  
     
 }
 
@@ -117,28 +120,41 @@ image = [self drawBoxAroundTarget:image];
 }
 
 
--(UIImage*)createThumbnail:(cv::Mat*)source :(UIImage *)tImage{
+-(UIImage*)createThumbnail:(cv::Mat)source :(UIImage *)tImage{
     
-    NSInteger iRows = source->rows;
-    NSInteger iCols = source->cols;
+    NSInteger iRows = source.rows;
+    NSInteger iCols = source.cols;
     
     ///We get the center of the image by dividing rows
     ////and cols by 2. Then we can subtract ten from the x and y then add 10 to x, y and get us the rectangle coords
     CvPoint center = cvPoint(iCols/2,iRows/2);  
   
     CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 100, 100);
-    NSLog(@"%@ %f %f", @"tImage stats before crop etc are: ", tImage.size.height, tImage.size.width);
+   // NSLog(@"%@ %f %f", @"tImage stats before crop etc are: ", tImage.size.height, tImage.size.width);
   
     
     
-    cv::Mat  crop(*source, sampleRect);
+    cv::Mat  crop(source, sampleRect);
 
-    tImage = [self imageWithCVMat:(cv::Mat(*source,sampleRect))];
+    tImage = [self imageWithCVMat:(cv::Mat(source,sampleRect))];
 
-    NSLog(@"%@ %f %f", @"tImage stats are NOW: ", tImage.size.height, tImage.size.width);
+   // NSLog(@"%@ %f %f", @"tImage stats are NOW: ", tImage.size.height, tImage.size.width);
 //    return [self imageWithCVMat:(cv::Mat(*source,sampleRect))];
     return tImage;
 }
+
+
+/**
+ Is this green
+ */
+-(void)isThisGreen:(cv::Mat)testMat{
+     _GreenStatus.text = @"Not Green";
+     
+}
+
+    
+    
+    
 
 
 
@@ -180,7 +196,9 @@ image = [self drawBoxAroundTarget:image];
 }
 
 
-
+/**
+ Trying to get a look at what the system is seeing in the copied Mat
+ */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
     UIViewController *temp = segue.destinationViewController;

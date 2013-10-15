@@ -17,19 +17,21 @@
 
 @interface OpenCVViewController : UIViewController<CvVideoCameraDelegate>{
 
+    
     CvVideoCamera *_videoCamera;
     UIImageView *_CameraView;
     UIButton *_StartButton;
     UIImageView *_thumbNail;
     cv::Mat *_sample;
-
+    UILabel *_GreenStatus;
 
 }
 
 -(IBAction)actionStart:(id)sender;
 -(cv::Mat)drawBoxAroundTarget:(cv::Mat)source;
 -(UIImage *)imageWithCVMat:(const cv::Mat&)cvMat;
--(UIImage*)createThumbnail:(cv::Mat*)source :(UIImage *)image;
+-(UIImage*)createThumbnail:(cv::Mat)source :(UIImage *)image;
+-(void)isThisGreen:(cv::Mat)testMat;
 
 
 @property (strong, nonatomic) CvVideoCamera *videoCamera;
@@ -38,6 +40,7 @@
 @property (strong, atomic) IBOutlet UIImageView *thumbNail;
 @property (atomic) cv::Mat *sample;
 
+@property (strong, nonatomic) IBOutlet UILabel *GreenStatus;
 
 
 @end
