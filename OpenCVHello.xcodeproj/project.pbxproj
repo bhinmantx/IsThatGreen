@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C60CA5FC1811CD3D000146AE /* YesGreenYes.png in Resources */ = {isa = PBXBuildFile; fileRef = C60CA5FB1811CD3D000146AE /* YesGreenYes.png */; };
 		C69EB33318088873007D4BF7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB33218088873007D4BF7 /* opencv2.framework */; };
 		C69EB335180888C1007D4BF7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB334180888C1007D4BF7 /* Accelerate.framework */; };
 		C69EB337180888CB007D4BF7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C60CA5FB1811CD3D000146AE /* YesGreenYes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YesGreenYes.png; sourceTree = "<group>"; };
 		C69EB33218088873007D4BF7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../Downloads/opencv2.framework; sourceTree = "<group>"; };
 		C69EB334180888C1007D4BF7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -144,6 +146,7 @@
 		C6A6743518078CC900115A18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C60CA5FB1811CD3D000146AE /* YesGreenYes.png */,
 				C6A6743618078CC900115A18 /* OpenCVHello-Info.plist */,
 				C6A6743718078CC900115A18 /* InfoPlist.strings */,
 				C6A6743A18078CC900115A18 /* main.m */,
@@ -221,6 +224,7 @@
 				C6A6744518078CC900115A18 /* Default-568h@2x.png in Resources */,
 				C6A6744818078CC900115A18 /* MainStoryboard.storyboard in Resources */,
 				C6A1A0A5180C6DB800A15F09 /* iuhSdfp.png in Resources */,
+				C60CA5FC1811CD3D000146AE /* YesGreenYes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

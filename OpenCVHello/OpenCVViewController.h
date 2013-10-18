@@ -23,7 +23,9 @@
     UIButton *_StartButton;
     UIImageView *_thumbNail;
     cv::Mat *_sample;
-    
+    UIImage *_wasGreenFlagImage;
+    cv::Mat *_wasGreenFlagMat;
+    BOOL _wasItFirstSample;
     BOOL _buttonIsPressed;
     BOOL _wasItGreen;
 }
@@ -33,16 +35,19 @@
 -(UIImage *)imageWithCVMat:(const cv::Mat&)cvMat;
 -(UIImage*)createThumbnail:(cv::Mat)source :(UIImage *)image;
 -(void)isThisGreen:(cv::Mat)testMat;
+- (cv::Mat)cvMatFromUIImage:(UIImage *)image;
 
-
+@property (strong, nonatomic) UIImage * wasGreenFlagImage;
 @property (strong, nonatomic) CvVideoCamera *videoCamera;
 @property (strong, nonatomic) IBOutlet UIImageView *CameraView;
 @property (strong, nonatomic) IBOutlet UIButton *StartButton;
 @property (strong, atomic) IBOutlet UIImageView *thumbNail;
 @property (atomic) cv::Mat *sample;
+@property (nonatomic) cv::Mat * wasGreenFlagMat;
 
 @property BOOL buttonIsPressed;
 @property BOOL wasItGreen;
+@property BOOL wasItFirstSample;
 
 @property (strong, nonatomic) IBOutlet UILabel *GreenStatus;
 

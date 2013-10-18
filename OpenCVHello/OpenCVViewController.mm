@@ -23,10 +23,22 @@
 @synthesize thumbNail = _thumbNail;
 @synthesize sample = _sample;
 
+
+///Because we don't have control over the main processing loop, we're having to use bools as flags
+///so that methods will run.
+///Also we can't update the UIView elements reliably.
 @synthesize buttonIsPressed = _buttonIsPressed;
 @synthesize wasItGreen = _wasItGreen;
+@synthesize wasItFirstSample = _wasItFirstSample;
+@synthesize wasGreenFlagImage = _wasGreenFlagImage;
+@synthesize wasGreenFlagMat = _wasGreenFlagMat;
 
 
+///TODO make a "setup" method so we're not loading the flag and doing the matrix conversion
+///more than once.
+
+
+////TODO Break image processing into its own class for code readability
 
 - (void)viewDidLoad
 {
@@ -37,6 +49,15 @@
     self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = 30;
+    _wasItFirstSample = true;
+    
+    ///Load the flag image
+//    _wasGreenFlagImage = [UIImage imageWithContentsOfFile:@"flagtest.png"];
+    _wasGreenFlagImage = [UIImage imageNamed:@"YesGreenYes.png"];
+ 
+    
+    ///Convert the flag image to a Mat
+    
     
     
     ///We need to change the camera being used
@@ -72,10 +93,7 @@
 }
 
 -(void)processImage:(cv::Mat &)image{
-  
- 
-    
-    ///Following lines were attempts at seeing what the process thumbnail was seeing.
+  ///Following lines were attempts at seeing what the process thumbnail was seeing.
     
  /*
    UIImage *newThumb = [[UIImage alloc] init];
@@ -91,6 +109,7 @@
     if(_buttonIsPressed){
         cv::Mat tempMat(image);
         _buttonIsPressed = false;
+        _wasItFirstSample = false;
     [self isThisGreen:tempMat];
         
     }
@@ -100,11 +119,26 @@
     
 image = [self drawBoxAroundTarget:image];
     if (_wasItGreen) {
-        CvFont font;
-        cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 1.0, 1.0, 0,1, 8);
-        cv::putText(image, "Yes that was green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
-    }else
+        
+        
+        ///Previously we were writing stuff, now we're displaying images.
+        //CvFont font;
+       // cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 1.0, 1.0, 0,1, 8);
+       // cv::putText(image, "Yes that was green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+        cv::Rect roi(cv::Point(0,0), cv::Size(200,40));
+//        cv::Mat destinationROI = image(roi);
+        
+        ///We're trying to load the image created previously
+      
+        cv::Mat temp = [self cvMatFromUIImage:_wasGreenFlagImage];
+      
+        temp.copyTo(image(roi));
+//        _wasGreenFlagMat->copyTo(image(roi));
+        
+    }else if (!_wasItFirstSample){
         cv::putText(image, "Previous Sample Not Green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+    }
+    
     
 }
 
@@ -248,7 +282,29 @@ if(G > (B/2)){
 
 }
     
-
+- (cv::Mat)cvMatFromUIImage:(UIImage *)image
+{
+    CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
+    CGFloat cols = image.size.width;
+    CGFloat rows = image.size.height;
+    
+    cv::Mat cvMat(rows, cols, CV_8UC4); // 8 bits per component, 4 channels
+    
+    CGContextRef contextRef = CGBitmapContextCreate(cvMat.data,                 // Pointer to  data
+                                                    cols,                       // Width of bitmap
+                                                    rows,                       // Height of bitmap
+                                                    8,                          // Bits per component
+                                                    cvMat.step[0],              // Bytes per row
+                                                    colorSpace,                 // Colorspace
+                                                    kCGImageAlphaNoneSkipLast |
+                                                    kCGBitmapByteOrderDefault); // Bitmap info flags
+    
+    CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), image.CGImage);
+    CGContextRelease(contextRef);
+    CGColorSpaceRelease(colorSpace);
+    
+    return cvMat;
+}
 
 
 /**
