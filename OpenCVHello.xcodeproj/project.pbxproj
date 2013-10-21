@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C60CA5FC1811CD3D000146AE /* YesGreenYes.png in Resources */ = {isa = PBXBuildFile; fileRef = C60CA5FB1811CD3D000146AE /* YesGreenYes.png */; };
-		C69EB33318088873007D4BF7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB33218088873007D4BF7 /* opencv2.framework */; };
+		C626F1501815A330003D3F00 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C626F14F1815A330003D3F00 /* opencv2.framework */; };
+		C6648A7B1815A25200CEDF57 /* ColorMatcher.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6648A781815A25200CEDF57 /* ColorMatcher.mm */; };
+		C6648A7C1815A25200CEDF57 /* colordataF-R.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6648A7A1815A25200CEDF57 /* colordataF-R.plist */; };
 		C69EB335180888C1007D4BF7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB334180888C1007D4BF7 /* Accelerate.framework */; };
 		C69EB337180888CB007D4BF7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */; };
 		C69EB339180888D3007D4BF7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB338180888D3007D4BF7 /* AVFoundation.framework */; };
@@ -19,7 +21,6 @@
 		C69EB34318088A08007D4BF7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB34218088A07007D4BF7 /* ImageIO.framework */; };
 		C69EB34518088A13007D4BF7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB34418088A13007D4BF7 /* libz.dylib */; };
 		C69EB34718088AD7007D4BF7 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB34618088AD7007D4BF7 /* libc++.1.dylib */; };
-		C6A1A0A5180C6DB800A15F09 /* iuhSdfp.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A1A0A4180C6DB800A15F09 /* iuhSdfp.png */; };
 		C6A6742F18078CC900115A18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A6742E18078CC900115A18 /* UIKit.framework */; };
 		C6A6743118078CC900115A18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A6743018078CC900115A18 /* Foundation.framework */; };
 		C6A6743318078CC900115A18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A6743218078CC900115A18 /* CoreGraphics.framework */; };
@@ -35,7 +36,10 @@
 
 /* Begin PBXFileReference section */
 		C60CA5FB1811CD3D000146AE /* YesGreenYes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YesGreenYes.png; sourceTree = "<group>"; };
-		C69EB33218088873007D4BF7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		C626F14F1815A330003D3F00 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		C6648A781815A25200CEDF57 /* ColorMatcher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorMatcher.mm; sourceTree = "<group>"; };
+		C6648A791815A25200CEDF57 /* ColorMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatcher.h; sourceTree = "<group>"; };
+		C6648A7A1815A25200CEDF57 /* colordataF-R.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "colordataF-R.plist"; sourceTree = "<group>"; };
 		C69EB334180888C1007D4BF7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C69EB338180888D3007D4BF7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -46,7 +50,6 @@
 		C69EB34218088A07007D4BF7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		C69EB34418088A13007D4BF7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C69EB34618088AD7007D4BF7 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "usr/lib/libc++.1.dylib"; sourceTree = SDKROOT; };
-		C6A1A0A4180C6DB800A15F09 /* iuhSdfp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iuhSdfp.png; path = ../../../Desktop/iuhSdfp.png; sourceTree = "<group>"; };
 		C6A6742B18078CC900115A18 /* OpenCVHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A6742E18078CC900115A18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6A6743018078CC900115A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,12 +81,12 @@
 				C69EB33D180888EF007D4BF7 /* CoreMedia.framework in Frameworks */,
 				C69EB33B180888E8007D4BF7 /* CoreImage.framework in Frameworks */,
 				C6A6743318078CC900115A18 /* CoreGraphics.framework in Frameworks */,
+				C626F1501815A330003D3F00 /* opencv2.framework in Frameworks */,
 				C69EB339180888D3007D4BF7 /* AVFoundation.framework in Frameworks */,
 				C69EB337180888CB007D4BF7 /* AssetsLibrary.framework in Frameworks */,
 				C69EB335180888C1007D4BF7 /* Accelerate.framework in Frameworks */,
 				C6A6742F18078CC900115A18 /* UIKit.framework in Frameworks */,
 				C6A6743118078CC900115A18 /* Foundation.framework in Frameworks */,
-				C69EB33318088873007D4BF7 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +124,7 @@
 		C6A6742D18078CC900115A18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C69EB33218088873007D4BF7 /* opencv2.framework */,
+				C626F14F1815A330003D3F00 /* opencv2.framework */,
 				C6A6742E18078CC900115A18 /* UIKit.framework */,
 				C6A6743018078CC900115A18 /* Foundation.framework */,
 				C6A6743218078CC900115A18 /* CoreGraphics.framework */,
@@ -132,7 +135,9 @@
 		C6A6743418078CC900115A18 /* OpenCVHello */ = {
 			isa = PBXGroup;
 			children = (
-				C6A1A0A4180C6DB800A15F09 /* iuhSdfp.png */,
+				C6648A781815A25200CEDF57 /* ColorMatcher.mm */,
+				C6648A791815A25200CEDF57 /* ColorMatcher.h */,
+				C6648A7A1815A25200CEDF57 /* colordataF-R.plist */,
 				C6A6743D18078CC900115A18 /* OpenCVAppDelegate.h */,
 				C6A6743E18078CC900115A18 /* OpenCVAppDelegate.mm */,
 				C6A6744618078CC900115A18 /* MainStoryboard.storyboard */,
@@ -202,6 +207,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C6A6742218078CC900115A18;
 			productRefGroup = C6A6742C18078CC900115A18 /* Products */;
@@ -223,8 +229,8 @@
 				C6A6744318078CC900115A18 /* Default@2x.png in Resources */,
 				C6A6744518078CC900115A18 /* Default-568h@2x.png in Resources */,
 				C6A6744818078CC900115A18 /* MainStoryboard.storyboard in Resources */,
-				C6A1A0A5180C6DB800A15F09 /* iuhSdfp.png in Resources */,
 				C60CA5FC1811CD3D000146AE /* YesGreenYes.png in Resources */,
+				C6648A7C1815A25200CEDF57 /* colordataF-R.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +243,7 @@
 			files = (
 				C6A6743B18078CC900115A18 /* main.m in Sources */,
 				C6A6743F18078CC900115A18 /* OpenCVAppDelegate.mm in Sources */,
+				C6648A7B1815A25200CEDF57 /* ColorMatcher.mm in Sources */,
 				C6A6744B18078CC900115A18 /* OpenCVViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,8 +331,9 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../Downloads\"",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/Brendan/Documents/OpenCVHello/OpenCVHello/IsItGreen2,
+					/Users/Brendan/Documents/OpenCVHello,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVHello/OpenCVHello-Prefix.pch";
@@ -340,8 +348,9 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../Downloads\"",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/Brendan/Documents/OpenCVHello/OpenCVHello/IsItGreen2,
+					/Users/Brendan/Documents/OpenCVHello,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVHello/OpenCVHello-Prefix.pch";

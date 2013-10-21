@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 //#import <opencv2/highgui/highgui_c.h>
 #import <opencv2/highgui/cap_ios.h>
-
+#import "ColorMatcher.h"
 
 
 
@@ -21,13 +21,14 @@
     CvVideoCamera *_videoCamera;
     UIImageView *_CameraView;
     UIButton *_StartButton;
-    UIImageView *_thumbNail;
-    cv::Mat *_sample;
+    //UIImageView *_thumbNail;
+    //cv::Mat *_sample;
     UIImage *_wasGreenFlagImage;
     cv::Mat *_wasGreenFlagMat;
     BOOL _wasItFirstSample;
     BOOL _buttonIsPressed;
     BOOL _wasItGreen;
+    ColorMatcher *_matcher;
 }
 
 -(IBAction)actionStart:(id)sender;
@@ -37,12 +38,14 @@
 -(void)isThisGreen:(cv::Mat)testMat;
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image;
 
+
+@property (strong, nonatomic) ColorMatcher * matcher;
 @property (strong, nonatomic) UIImage * wasGreenFlagImage;
 @property (strong, nonatomic) CvVideoCamera *videoCamera;
 @property (strong, nonatomic) IBOutlet UIImageView *CameraView;
 @property (strong, nonatomic) IBOutlet UIButton *StartButton;
-@property (strong, atomic) IBOutlet UIImageView *thumbNail;
-@property (atomic) cv::Mat *sample;
+//@property (strong, atomic) IBOutlet UIImageView *thumbNail;
+//@property (atomic) cv::Mat *sample;
 @property (nonatomic) cv::Mat * wasGreenFlagMat;
 
 @property BOOL buttonIsPressed;

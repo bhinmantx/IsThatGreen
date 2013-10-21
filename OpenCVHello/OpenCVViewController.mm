@@ -7,7 +7,7 @@
 //
 
 #import "OpenCVViewController.h"
-
+#import "ColorMatcher.h"
 
 @interface OpenCVViewController ()
 
@@ -20,8 +20,8 @@
 @synthesize StartButton = _StartButton;
 @synthesize CameraView = _CameraView;
 @synthesize videoCamera = _videoCamera;
-@synthesize thumbNail = _thumbNail;
-@synthesize sample = _sample;
+//@synthesize thumbNail = _thumbNail;
+//@synthesize sample = _sample;
 
 
 ///Because we don't have control over the main processing loop, we're having to use bools as flags
@@ -32,7 +32,7 @@
 @synthesize wasItFirstSample = _wasItFirstSample;
 @synthesize wasGreenFlagImage = _wasGreenFlagImage;
 @synthesize wasGreenFlagMat = _wasGreenFlagMat;
-
+@synthesize matcher = _matcher;
 
 ///TODO make a "setup" method so we're not loading the flag and doing the matrix conversion
 ///more than once.
@@ -42,7 +42,7 @@
 
 - (void)viewDidLoad
 {
-    _thumbNail = [_thumbNail init]; 
+//    _thumbNail = [_thumbNail init];
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:_CameraView];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -66,6 +66,8 @@
     
     //self.videoCamera.grayscale = NO;
 
+    _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
+    
     [self.videoCamera start];
 }
 
@@ -93,18 +95,7 @@
 }
 
 -(void)processImage:(cv::Mat &)image{
-  ///Following lines were attempts at seeing what the process thumbnail was seeing.
-    
- /*
-   UIImage *newThumb = [[UIImage alloc] init];
- 
-    cv::Mat tempMat(image);
 
-    newThumb = [self createThumbnail:tempMat :newThumb];
-    
-    [self thumbNail].image = newThumb;
-*/
- //  NSLog(@"%@ %f %f", @"stats for newThumb are: ", newThumb.size.height, newThumb.size.width);
 
     if(_buttonIsPressed){
         cv::Mat tempMat(image);
@@ -240,13 +231,27 @@ image = [self drawBoxAroundTarget:image];
     NSLog(@"Firing Test Helper");
 ////Get the average RGB values of each
     _wasItGreen = false;
-    long B,G,R;
-    
-    B = b/count;
-    G = g/count;
-    R = r/count;
+   NSNumber *B,*G,*R;
+ 
+    R = [NSNumber numberWithInt:(r/count)];
+    G = [NSNumber numberWithInt:(g/count)];
+    B = [NSNumber numberWithInt:(b/count)];
+   // B = b/count;
+   // G = g/count;
+    //R = r/count;
     ///The color "Green" is a bit tough to calculate for. 
     
+    NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
+    
+    if ([[_matcher findDistance:testArray]  isEqual: @"g"]){
+        [self GreenStatus].text = @"I think it's green";
+         NSLog(@"tested Green");
+        _wasItGreen = true;
+    }
+    else [self GreenStatus].text = @"I don't think it's green";
+    
+    
+    /*
 if(G > (B/2)){
     NSLog(@"Greater than half blue");
     if(G>(R/2)){
@@ -278,7 +283,7 @@ if(G > (B/2)){
 
 
     }
-    
+    */
 
 }
     
@@ -345,17 +350,7 @@ if(G > (B/2)){
 }
 
 
-/**
- Trying to get a look at what the system is seeing in the copied Mat
- */
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
-    UIViewController *temp = segue.destinationViewController;
-    NSLog(@"%@ %f", @"Fire", [self thumbNail].image.size.height);
-    ((UIImageView *)[temp.view viewWithTag:100]).image = [self thumbNail].image;
-//    tempview.image = _thumbNail.image;
-
-}
 
 
 
