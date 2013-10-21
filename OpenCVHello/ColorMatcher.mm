@@ -14,28 +14,6 @@
 @synthesize colorCoords = _colorCoords;
 
 
-//+(ColorMatcher*):(NSString*)colorCoordsFileName{
-/*
-+(id)ColorMatcherWithcolorCoordsFileName:(NSString*)colorCoordsFileName{
-    
-    
-   ColorMatcher * newMatcher = [[ColorMatcher alloc] init];
-    
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:colorCoordsFileName ofType:@"plist"];
-    
-     _colors =  [[NSMutableArray alloc] initWithContentsOfFile:path];
-    
-    //_colors] = [[NSMutableArray alloc] initWithContentsOfFile:path];
-  
-    return newMatcher;
-}
- int vIn = 0;
- unsigned char vOut = (unsigned char)vIn;
-
- 
-*/
-
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName{
     if (self = [super init]){
         
@@ -51,40 +29,17 @@
 
         for(int i=0; i<_colors.count; i++){
             
-           
-            
-//            NSInteger r = (NSInteger)[[_colors objectAtIndex:i] objectForKey:@"red"];
-//            NSInteger g = (NSInteger)[[_colors objectAtIndex:i] objectForKey:@"green"];
-//            int b = (int)[[_colors objectAtIndex:i] objectForKey:@"blue"];
-            
+            //We have to bring the vals in from the dictionary as ints that NSinteger will accept
             NSInteger r = [[[_colors objectAtIndex:i] objectForKey:@"red"] intValue];
             NSInteger g = [[[_colors objectAtIndex:i] objectForKey:@"green"] intValue];
             NSInteger b = [[[_colors objectAtIndex:i] objectForKey:@"blue"] intValue];
        
-        //    NSLog(@"%@ r %@ g %@ b %@", [[_colors objectAtIndex:i] objectForKey:@"name"], [[_colors objectAtIndex:i] objectForKey:@"red"],[[_colors objectAtIndex:i] objectForKey:@"green"],[[_colors objectAtIndex:i] objectForKey:@"blue"]);
-
-            
- //      Converting ints to uchars
-            
-       // unsigned char RU = (unsigned char)r;
-       // unsigned char GU = (unsigned char)g;
-       // unsigned char BU = (unsigned char)b;
-         
-            //NSString * RU = (NSString*)[[_colors objectAtIndex:i] objectForKey:@"xred"];
-            //NSString * GU = (NSString*)[[_colors objectAtIndex:i] objectForKey:@"xgreen"];
-            //NSString * BU = (NSString*)[[_colors objectAtIndex:i] objectForKey:@"xblue"];
-           
-            
-            
+      
             colorCoords.at<int>(i,0) = r;
             colorCoords.at<int>(i,1) = g;
             colorCoords.at<int>(i,2) = b;
             
-         //   sampleMat.at<uchar>(i,0) = RU;
-          //  sampleMat.at<uchar>(i,1) = GU;
-          //  sampleMat.at<uchar>(i,2) = BU;
-       //   NSLog(@"%@ r %x g %x b %x RU %x GU %x BU %x", [[_colors objectAtIndex:i] objectForKey:@"name"], r,g,b,RU,GU,BU);
-          //     NSLog(@"%@ r %i g %i b %i", [[_colors objectAtIndex:i] objectForKey:@"name"], r,g,b);
+
             
             
         }
@@ -93,14 +48,6 @@
         
         _colorCoords = colorCoords.clone();
     }
-    /*
-    for(int row = 0 ; row < _colorCoords.rows ; row++){
-		for(int col = 0 ; col < _colorCoords.cols ; col++){
-            NSLog(@"%c",_colorCoords.at<uchar>(row,col));
-		}
-        NSLog(@"");
-	}
-    */
     
     NSLog(@"Colors Count %i", _colors.count);
     return self;
@@ -144,9 +91,7 @@
     ///According to this: http://code.opencv.org/issues/1947
     ///I should directly use the flann index
    // cvflann::Index kdtree(_colorCoords,indexParams);
-    
-
-    
+  
   cv::flann::Index kdtree(_colorCoords,indexParams);
     
     ///Creation of a single query. I guess it's a vector?
@@ -160,17 +105,7 @@
     singleQuery.push_back(sampleMat.at<int>(0,2));
     singleQuery.push_back(sampleMat.at<int>(0,1));
     singleQuery.push_back(sampleMat.at<int>(0,0));
-
-    
-    /*
-    singleQuery.push_back(sampleMat.at<uchar>(0,2));
-    singleQuery.push_back(sampleMat.at<uchar>(0,1));
-    singleQuery.push_back(sampleMat.at<uchar>(0,0));
-    */
-    
-
-    
-    
+  
     kdtree.knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(64));
     
     NSLog(@"Index, dist %x , %f", index[0], dist[0]);
@@ -191,15 +126,11 @@
     NSInteger r = [[sample objectAtIndex:0] intValue];
     NSInteger g = [[sample objectAtIndex:1] intValue];
     NSInteger b = [[sample objectAtIndex:2] intValue];
-    //int g = (int)[sample objectAtIndex:1];
-    //int b = (int)[sample objectAtIndex:2];
+
     
     for(int i = 0; i<_colors.count; i++){
         
-       ///This was the old way.
-//    int R = (int)[[_colors objectAtIndex:i]objectForKey:@"red"];
- //   int G = (int)[[_colors objectAtIndex:i]objectForKey:@"green"];
- //   int B = (int)[[_colors objectAtIndex:i]objectForKey:@"blue"];
+
         NSInteger R = [[[_colors objectAtIndex:i] objectForKey:@"red"] intValue];
         NSInteger G = [[[_colors objectAtIndex:i] objectForKey:@"green"] intValue];
         NSInteger B = [[[_colors objectAtIndex:i] objectForKey:@"blue"] intValue];

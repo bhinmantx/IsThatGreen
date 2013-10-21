@@ -20,8 +20,7 @@
 @synthesize StartButton = _StartButton;
 @synthesize CameraView = _CameraView;
 @synthesize videoCamera = _videoCamera;
-//@synthesize thumbNail = _thumbNail;
-//@synthesize sample = _sample;
+@synthesize timer = _timer;
 
 
 ///Because we don't have control over the main processing loop, we're having to use bools as flags
@@ -29,7 +28,7 @@
 ///Also we can't update the UIView elements reliably.
 @synthesize buttonIsPressed = _buttonIsPressed;
 @synthesize wasItGreen = _wasItGreen;
-@synthesize wasItFirstSample = _wasItFirstSample;
+
 @synthesize wasGreenFlagImage = _wasGreenFlagImage;
 @synthesize wasGreenFlagMat = _wasGreenFlagMat;
 @synthesize matcher = _matcher;
@@ -49,7 +48,7 @@
     self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = 30;
-    _wasItFirstSample = true;
+    _shouldDisplayFeedback = false;
     
     ///Load the flag image
 //    _wasGreenFlagImage = [UIImage imageWithContentsOfFile:@"flagtest.png"];
@@ -59,6 +58,8 @@
     ///Convert the flag image to a Mat
     
     
+    ///
+    
     
     ///We need to change the camera being used
     
@@ -67,7 +68,11 @@
     //self.videoCamera.grayscale = NO;
 
     _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
-    
+    _timerCount = 0;
+     
+    [self timerFire];
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
+
     [self.videoCamera start];
 }
 
@@ -100,7 +105,7 @@
     if(_buttonIsPressed){
         cv::Mat tempMat(image);
         _buttonIsPressed = false;
-        _wasItFirstSample = false;
+        _shouldDisplayFeedback = true;
     [self isThisGreen:tempMat];
         
     }
@@ -109,25 +114,22 @@
     
     
 image = [self drawBoxAroundTarget:image];
-    if (_wasItGreen) {
+    if (_wasItGreen && _shouldDisplayFeedback) {
         
         
         ///Previously we were writing stuff, now we're displaying images.
-        //CvFont font;
-       // cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 1.0, 1.0, 0,1, 8);
-       // cv::putText(image, "Yes that was green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+
         cv::Rect roi(cv::Point(0,0), cv::Size(200,40));
-//        cv::Mat destinationROI = image(roi);
-        
-        ///We're trying to load the image created previously
       
         cv::Mat temp = [self cvMatFromUIImage:_wasGreenFlagImage];
       
         temp.copyTo(image(roi));
 //        _wasGreenFlagMat->copyTo(image(roi));
+      
         
-    }else if (!_wasItFirstSample){
+    }else if(_shouldDisplayFeedback) {
         cv::putText(image, "Previous Sample Not Green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+      
     }
     
     
@@ -172,7 +174,7 @@ image = [self drawBoxAroundTarget:image];
     CvPoint center = cvPoint(iCols/2,iRows/2);  
   
     CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 100, 100);
-   // NSLog(@"%@ %f %f", @"tImage stats before crop etc are: ", tImage.size.height, tImage.size.width);
+
   
     
     
@@ -180,8 +182,7 @@ image = [self drawBoxAroundTarget:image];
 
     tImage = [self imageWithCVMat:(cv::Mat(source,sampleRect))];
 
-   // NSLog(@"%@ %f %f", @"tImage stats are NOW: ", tImage.size.height, tImage.size.width);
-//    return [self imageWithCVMat:(cv::Mat(*source,sampleRect))];
+    
     return tImage;
 }
 
@@ -220,6 +221,17 @@ image = [self drawBoxAroundTarget:image];
         }
         
     }
+/////We're going to try using a timer so that when 5 seconds have passed, the image vanishes.
+
+
+    _timerCount = 0;
+
+    
+    
+    if([self respondsToSelector:@selector(timerCallback)]){
+        NSLog(@"I claim to respond to the correct selector");
+    }
+    
 [self greenTestHelper:b :g :r :count];
     
 }
@@ -349,8 +361,31 @@ if(G > (B/2)){
     return image;
 }
 
+/**
+ Once 5 seconds has elapsed and no additional samples taken, remove feedback
+ */
 
 
+
+
+
+-(void)timerCallback{
+    NSLog(@"TimerCallback");
+    _timerCount += 1;
+    
+    if(_timerCount > 4){
+        _timerCount = 0;
+    _shouldDisplayFeedback = false;
+    }
+}
+
+-(void)timerFire{
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
+    NSLog(@"Timer Fired");
+    if([self respondsToSelector:@selector(timerCallback)]){
+        NSLog(@"TimerFire has been Fired");
+    }
+}
 
 
 

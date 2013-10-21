@@ -21,14 +21,17 @@
     CvVideoCamera *_videoCamera;
     UIImageView *_CameraView;
     UIButton *_StartButton;
-    //UIImageView *_thumbNail;
-    //cv::Mat *_sample;
+
     UIImage *_wasGreenFlagImage;
     cv::Mat *_wasGreenFlagMat;
-    BOOL _wasItFirstSample;
+  
+    BOOL _shouldDisplayFeedback;
     BOOL _buttonIsPressed;
     BOOL _wasItGreen;
+ 
     ColorMatcher *_matcher;
+    int _timerCount;
+    NSTimer *_timer;
 }
 
 -(IBAction)actionStart:(id)sender;
@@ -37,6 +40,9 @@
 -(UIImage*)createThumbnail:(cv::Mat)source :(UIImage *)image;
 -(void)isThisGreen:(cv::Mat)testMat;
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image;
+
+-(void)timerCallback;
+-(void)timerFire;
 
 
 @property (strong, nonatomic) ColorMatcher * matcher;
@@ -47,6 +53,9 @@
 //@property (strong, atomic) IBOutlet UIImageView *thumbNail;
 //@property (atomic) cv::Mat *sample;
 @property (nonatomic) cv::Mat * wasGreenFlagMat;
+@property (strong,nonatomic) NSTimer * timer;
+
+
 
 @property BOOL buttonIsPressed;
 @property BOOL wasItGreen;
