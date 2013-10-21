@@ -20,7 +20,7 @@
 @synthesize StartButton = _StartButton;
 @synthesize CameraView = _CameraView;
 @synthesize videoCamera = _videoCamera;
-@synthesize timer = _timer;
+
 
 
 ///Because we don't have control over the main processing loop, we're having to use bools as flags
@@ -51,15 +51,8 @@
     _shouldDisplayFeedback = false;
     
     ///Load the flag image
-//    _wasGreenFlagImage = [UIImage imageWithContentsOfFile:@"flagtest.png"];
+
     _wasGreenFlagImage = [UIImage imageNamed:@"YesGreenYes.png"];
- 
-    
-    ///Convert the flag image to a Mat
-    
-    
-    ///
-    
     
     ///We need to change the camera being used
     
@@ -68,10 +61,11 @@
     //self.videoCamera.grayscale = NO;
 
     _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
+   
+    ///We're resetting the feedback timer
     _timerCount = 0;
      
     [self timerFire];
-//    _timer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
 
     [self.videoCamera start];
 }
@@ -86,17 +80,7 @@
 {
     
     _buttonIsPressed = true;
-/*
-    [self.videoCamera stop];
-    cv::Mat * frame = new cv::Mat;
-    
-   // cv::VideoCapture  cap = cv::VideoCapture(0);
-    cv::VideoCapture cap;
-    cap.open(0);
 
-    cap.release();
-  [self.videoCamera start];
- */
 }
 
 -(void)processImage:(cv::Mat &)image{
@@ -173,7 +157,7 @@ image = [self drawBoxAroundTarget:image];
     ////and cols by 2. Then we can subtract ten from the x and y then add 10 to x, y and get us the rectangle coords
     CvPoint center = cvPoint(iCols/2,iRows/2);  
   
-    CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 100, 100);
+    CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
 
   
     
@@ -261,41 +245,6 @@ image = [self drawBoxAroundTarget:image];
         _wasItGreen = true;
     }
     else [self GreenStatus].text = @"I don't think it's green";
-    
-    
-    /*
-if(G > (B/2)){
-    NSLog(@"Greater than half blue");
-    if(G>(R/2)){
-    NSLog(@"Greater than half red");
-        if(((G-B) > 20) and ((G-R)>20)){
-    NSLog(@"I think It's green");
-            [self GreenStatus].text = @"I think it's green";
-            _wasItGreen = true;
-        }
-        else
-            [self GreenStatus].text = @"I don't think it's green";
-        
-    }
-
-    if(G>(R/2)){
-        NSLog(@"Greater than half blue");
-        if(G > (B/2)){
-            NSLog(@"Greater than half red");
-            if(((G-B) > 20) and ((G-R)>20)){
-                NSLog(@"I think It's green");
-                [self GreenStatus].text = @"I think it's green";
-                _wasItGreen = true;
-            }
-            else
-                [self GreenStatus].text = @"I don't think it's green";
-            
-            }
-        }
-
-
-    }
-    */
 
 }
     
@@ -370,10 +319,10 @@ if(G > (B/2)){
 
 
 -(void)timerCallback{
-    NSLog(@"TimerCallback");
+  //  NSLog(@"TimerCallback");
     _timerCount += 1;
     
-    if(_timerCount > 4){
+    if(_timerCount > 3){
         _timerCount = 0;
     _shouldDisplayFeedback = false;
     }
