@@ -27,7 +27,9 @@
 ///so that methods will run.
 ///Also we can't update the UIView elements reliably.
 @synthesize buttonIsPressed = _buttonIsPressed;
+@synthesize redButtonIsPressed = _redButtonIsPressed;
 @synthesize wasItGreen = _wasItGreen;
+@synthesize wasItRed = _wasItRed;
 
 @synthesize wasGreenFlagImage = _wasGreenFlagImage;
 @synthesize wasGreenFlagMat = _wasGreenFlagMat;
@@ -42,7 +44,7 @@
 
 - (void)viewDidLoad
 {
-//    _thumbNail = [_thumbNail init];
+
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:_CameraView];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -84,6 +86,13 @@
 
 }
 
+-(IBAction)redButtonPressed:(id)sender
+{
+    
+    _redButtonIsPressed = true;
+    
+}
+
 -(void)processImage:(cv::Mat &)image{
 
 
@@ -91,30 +100,45 @@
         cv::Mat tempMat(image);
         _buttonIsPressed = false;
         _shouldDisplayFeedback = true;
-    [self isThisGreen:tempMat];
+        [self isThisGreen:tempMat:@"g"];
+        
+    }
+    
+    if(_redButtonIsPressed){
+        cv::Mat tempMat(image);
+        _redButtonIsPressed = false;
+        _shouldDisplayFeedback = true;
+        [self isThisGreen:tempMat:@"r"];
         
     }
 
-
+/////TODO: Change this into a switch statement.
     
     
     image = [self drawBoxAroundTarget:image];
-    if (_wasItGreen && _shouldDisplayFeedback) {
+   
+    if(_shouldDisplayFeedback){
+    
+        if (_wasItGreen) {
+            
+            ///Previously we were writing stuff, now we're displaying images.
+            cv::Rect roi(cv::Point(0,0), cv::Size(200,40));
+            cv::Mat temp = [self cvMatFromUIImage:_wasGreenFlagImage];
+            temp.copyTo(image(roi));
+        }
+        else if (_wasItRed){
+       
+            cv::putText(image, "It Was Red", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+            
+        }
+    
+    
+    
+    else if(_shouldDisplayFeedback) {
+        cv::putText(image, "Previous Sample Not Green Nor Red", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+      
+        }
         
-        
-        ///Previously we were writing stuff, now we're displaying images.
-
-        cv::Rect roi(cv::Point(0,0), cv::Size(200,40));
-      
-        cv::Mat temp = [self cvMatFromUIImage:_wasGreenFlagImage];
-      
-        temp.copyTo(image(roi));
-//        _wasGreenFlagMat->copyTo(image(roi));
-      
-        
-    }else if(_shouldDisplayFeedback) {
-        cv::putText(image, "Previous Sample Not Green", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
-      
     }
     
     
@@ -139,11 +163,7 @@
 ///We get the center of the image by dividing rows
     ////and cols by 2. Then we can subtract ten from the x and y then add 10 to x, y and get us the rectangle coords
     CvPoint center = cvPoint(iCols/2,iRows/2);
-    
-    ///Old
-    //top = cvPoint(center.x - 10, center.y - 10);
-    //bottom = cvPoint(center.x +10, center.y +10);
-    
+   
     NSInteger  targ = (int)[self TargetSizeSlider].value;
     
     top = cvPoint(center.x - targ, center.y - targ);
@@ -181,7 +201,7 @@
 /**
  Is this green
  */
--(void)isThisGreen:(cv::Mat)source{
+-(void)isThisGreen:(cv::Mat)source :(NSString*)color{
     
     NSInteger iRows = source.rows;
     NSInteger iCols = source.cols;
@@ -206,7 +226,7 @@
         
         for(int col = 0; col < img.cols*3; ++col) {
             //*p++;  //points to each pixel B,G,R value in turn assuming a CV_8UC3 color image
-             int B = [[NSNumber numberWithUnsignedChar:p[0]] integerValue] ;
+            int B = [[NSNumber numberWithUnsignedChar:p[0]] integerValue] ;
             int G = [[NSNumber numberWithUnsignedChar:p[1]] integerValue] ;
             int R = [[NSNumber numberWithUnsignedChar:p[2]] integerValue] ;
           count++;
@@ -217,27 +237,25 @@
         }
         
     }
-/////We're going to try using a timer so that when 5 seconds have passed, the image vanishes.
-
+/////We're going to try using a timer so that when 3 seconds have passed, the image vanishes.
 
     _timerCount = 0;
-
-    
-    
-    if([self respondsToSelector:@selector(timerCallback)]){
-        NSLog(@"I claim to respond to the correct selector");
-    }
-    
+  
 [self greenTestHelper:b :g :r :count];
     
 }
 
+
+
+///TODO: Set this up to return a BOOL based on a string passed with the rest of the info.
+///Change all the flag setting to the calling function
 
     
 -(void)greenTestHelper:(long)b :(long)g :(long)r :(int)count{
     NSLog(@"Firing Test Helper");
 ////Get the average RGB values of each
     _wasItGreen = false;
+    _wasItRed = false;
    NSNumber *B,*G,*R;
  
     R = [NSNumber numberWithInt:(r/count)];
@@ -252,7 +270,12 @@
          NSLog(@"tested Green");
         _wasItGreen = true;
     }
-    else [self GreenStatus].text = @"I don't think it's green";
+    else if ([[_matcher findDistance:testArray]  isEqual: @"r"]){
+        [self GreenStatus].text = @"I think it's red";
+        NSLog(@"tested Red");
+        _wasItRed = true;
+    }
+    
 
 }
 

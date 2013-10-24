@@ -19,9 +19,6 @@ NSMutableArray *_colors;
 @property (nonatomic) cv::Mat  colorCoords;
 
 
-//+(ColorMatcher*):(NSString*)colorCoordsFileName;
-
-//+(id)ColorMatcherWithcolorCoordsFileName:(NSString*);
 
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName;
 -(NSString*)matchFromMat:(cv::Mat)sampleMat;

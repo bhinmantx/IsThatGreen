@@ -38,14 +38,7 @@
             colorCoords.at<int>(i,0) = r;
             colorCoords.at<int>(i,1) = g;
             colorCoords.at<int>(i,2) = b;
-            
-
-            
-            
         }
-        
-        
-        
         _colorCoords = colorCoords.clone();
     }
     
@@ -117,43 +110,32 @@
 
 
 -(NSString*)findDistance:(NSArray*)sample{
-    
    
-    
     float curShortest = FLT_MAX;
     int indexOfClosest = 0;
     
     NSInteger r = [[sample objectAtIndex:0] intValue];
     NSInteger g = [[sample objectAtIndex:1] intValue];
     NSInteger b = [[sample objectAtIndex:2] intValue];
-
-    
+  
     for(int i = 0; i<_colors.count; i++){
-        
-
         NSInteger R = [[[_colors objectAtIndex:i] objectForKey:@"red"] intValue];
         NSInteger G = [[[_colors objectAtIndex:i] objectForKey:@"green"] intValue];
         NSInteger B = [[[_colors objectAtIndex:i] objectForKey:@"blue"] intValue];
-        
         
       ////Find Euclidean
         double dx = abs(R-r);
         double dy = abs(G-g);
         double dz = abs(B-b);
         double dist = sqrt(dx*dx + dy*dy + dz*dz);
-        
-     
- 
+        ///Update closest
         if(dist < curShortest){
             curShortest = dist;
             indexOfClosest = i;
         }
         
     }
-    
-    
-    ////We're going to calculate the Euclidian distance between the color
-    
+   
     NSLog(@"%@, r %@, g %@ b %@",[[_colors objectAtIndex:indexOfClosest] objectForKey:@"friendlyname"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"red"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"green"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"blue"]);
     
     return [[_colors objectAtIndex:indexOfClosest] objectForKey:@"friendlyname"];
