@@ -32,6 +32,7 @@
 @synthesize wasGreenFlagImage = _wasGreenFlagImage;
 @synthesize wasGreenFlagMat = _wasGreenFlagMat;
 @synthesize matcher = _matcher;
+@synthesize TargetSizeSlider;
 
 ///TODO make a "setup" method so we're not loading the flag and doing the matrix conversion
 ///more than once.
@@ -97,7 +98,7 @@
 
     
     
-image = [self drawBoxAroundTarget:image];
+    image = [self drawBoxAroundTarget:image];
     if (_wasItGreen && _shouldDisplayFeedback) {
         
         
@@ -139,8 +140,14 @@ image = [self drawBoxAroundTarget:image];
     ////and cols by 2. Then we can subtract ten from the x and y then add 10 to x, y and get us the rectangle coords
     CvPoint center = cvPoint(iCols/2,iRows/2);
     
-    top = cvPoint(center.x - 10, center.y - 10);
-    bottom = cvPoint(center.x +10, center.y +10);
+    ///Old
+    //top = cvPoint(center.x - 10, center.y - 10);
+    //bottom = cvPoint(center.x +10, center.y +10);
+    
+    NSInteger  targ = (int)[self TargetSizeSlider].value;
+    
+    top = cvPoint(center.x - targ, center.y - targ);
+    bottom = cvPoint(center.x +targ, center.y +targ);
     
     cv::rectangle(source, top, bottom, CV_RGB(50, 60, 100));
     
@@ -181,8 +188,13 @@ image = [self drawBoxAroundTarget:image];
     
     CvPoint center = cvPoint(iCols/2,iRows/2); 
     
+    NSInteger  targ = (int)[self TargetSizeSlider].value;
     ///We take the center 20X20 of the image.
-    CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
+
+    ///We're expanding the target area, or making it smaller based on the slider.
+    CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+    //old way
+    //CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
     
     cv::Mat img(source, sampleRect);
     int count =0;
@@ -220,8 +232,7 @@ image = [self drawBoxAroundTarget:image];
     
 }
 
-///TODO: Implement a color difference algorithim to get the harder to guess colors.
-////Doing something quick and dirty here.
+
     
 -(void)greenTestHelper:(long)b :(long)g :(long)r :(int)count{
     NSLog(@"Firing Test Helper");
@@ -232,10 +243,7 @@ image = [self drawBoxAroundTarget:image];
     R = [NSNumber numberWithInt:(r/count)];
     G = [NSNumber numberWithInt:(g/count)];
     B = [NSNumber numberWithInt:(b/count)];
-   // B = b/count;
-   // G = g/count;
-    //R = r/count;
-    ///The color "Green" is a bit tough to calculate for. 
+
     
     NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
     
@@ -247,7 +255,11 @@ image = [self drawBoxAroundTarget:image];
     else [self GreenStatus].text = @"I don't think it's green";
 
 }
-    
+
+/**
+ For conversion of foundation images to OpenCV mats
+ */
+
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image
 {
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
@@ -311,15 +323,11 @@ image = [self drawBoxAroundTarget:image];
 }
 
 /**
- Once 5 seconds has elapsed and no additional samples taken, remove feedback
+ Once 3 seconds has elapsed and no additional samples taken, remove feedback
  */
 
-
-
-
-
 -(void)timerCallback{
-  //  NSLog(@"TimerCallback");
+
     _timerCount += 1;
     
     if(_timerCount > 3){
@@ -330,9 +338,9 @@ image = [self drawBoxAroundTarget:image];
 
 -(void)timerFire{
     _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
-    NSLog(@"Timer Fired");
+
     if([self respondsToSelector:@selector(timerCallback)]){
-        NSLog(@"TimerFire has been Fired");
+
     }
 }
 

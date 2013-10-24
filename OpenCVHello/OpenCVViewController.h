@@ -32,6 +32,9 @@
     ColorMatcher *_matcher;
     int _timerCount;
     NSTimer *_timer;
+    
+
+    
 }
 
 -(IBAction)actionStart:(id)sender;
@@ -45,6 +48,7 @@
 -(void)timerFire;
 
 
+@property (strong, nonatomic) IBOutlet UISlider *TargetSizeSlider;
 @property (strong, nonatomic) ColorMatcher * matcher;
 @property (strong, nonatomic) UIImage * wasGreenFlagImage;
 @property (strong, nonatomic) CvVideoCamera *videoCamera;
