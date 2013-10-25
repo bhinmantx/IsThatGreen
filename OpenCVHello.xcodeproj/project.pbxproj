@@ -37,6 +37,7 @@
 		C6A6744B18078CC900115A18 /* OpenCVViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6A6744A18078CC900115A18 /* OpenCVViewController.mm */; };
 		C6F85B3218197A88005422F2 /* frameTargetIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = C6F85B3018197A88005422F2 /* frameTargetIconLarge.png */; };
 		C6F85B3418197C0E005422F2 /* frameTargetIconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = C6F85B3318197C0E005422F2 /* frameTargetIconsmall.png */; };
+		C6F85B421819F383005422F2 /* colordata.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F85B401819F377005422F2 /* colordata.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		C6A6744A18078CC900115A18 /* OpenCVViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVViewController.mm; sourceTree = "<group>"; };
 		C6F85B3018197A88005422F2 /* frameTargetIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frameTargetIconLarge.png; sourceTree = "<group>"; };
 		C6F85B3318197C0E005422F2 /* frameTargetIconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frameTargetIconsmall.png; sourceTree = "<group>"; };
+		C6F85B401819F377005422F2 /* colordata.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = colordata.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		C6A6743518078CC900115A18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6F85B401819F377005422F2 /* colordata.js */,
 				C6F85B3318197C0E005422F2 /* frameTargetIconsmall.png */,
 				C6F85B3018197A88005422F2 /* frameTargetIconLarge.png */,
 				C626F1511815CF2F003D3F00 /* isitgreenicon57x57.png */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F85B421819F383005422F2 /* colordata.js in Resources */,
 				C626F1561815CF2F003D3F00 /* isitgreenicon120x120.png in Resources */,
 				C6A6743918078CC900115A18 /* InfoPlist.strings in Resources */,
 				C6A6744118078CC900115A18 /* Default.png in Resources */,

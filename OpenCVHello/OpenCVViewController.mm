@@ -69,7 +69,7 @@
     _timerCount = 0;
      
     [self timerFire];
-
+    [self processJSON];
     [self.videoCamera start];
 }
 
@@ -367,6 +367,23 @@
     }
 }
 
+-(void)processJSON{
+    
+    ///First we pull the data from the file
+    
+    NSError* noError;
+    
+    NSData *jsFile = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"colordatasmall" ofType:@"js"]];
+  
+    NSArray* json = [NSJSONSerialization JSONObjectWithData:jsFile options:0 error:&noError];
 
+    NSLog(@"JSON count: %i", json.count);
+    
+    ///We're going to see if the data loaded correctly.
+    for(int i = 0; i< json.count; i++){
+        NSLog(@"%@", [[json objectAtIndex:i] objectForKey:@"name"]);
+    }
+    
+}
 
 @end

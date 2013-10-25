@@ -50,6 +50,8 @@
 -(void)timerCallback;
 -(void)timerFire;
 
+-(void)processJSON;
+
 
 @property (strong, nonatomic) IBOutlet UISlider *TargetSizeSlider;
 @property (strong, nonatomic) ColorMatcher * matcher;
