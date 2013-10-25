@@ -63,13 +63,17 @@
     
     //self.videoCamera.grayscale = NO;
 
-    _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
+   // _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
    
+    [self processJSON];
+    
+    _matcher = [[ColorMatcher alloc]initWithJSON:_json];
+    
     ///We're resetting the feedback timer
     _timerCount = 0;
      
     [self timerFire];
-    [self processJSON];
+    
     [self.videoCamera start];
 }
 
@@ -373,15 +377,15 @@
     
     NSError* noError;
     
-    NSData *jsFile = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"colordatasmall" ofType:@"js"]];
+    NSData *jsFile = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"colordata" ofType:@"js"]];
   
-    NSArray* json = [NSJSONSerialization JSONObjectWithData:jsFile options:0 error:&noError];
+    _json = [NSJSONSerialization JSONObjectWithData:jsFile options:0 error:&noError];
 
-    NSLog(@"JSON count: %i", json.count);
+    NSLog(@"JSON count: %i", _json.count);
     
     ///We're going to see if the data loaded correctly.
-    for(int i = 0; i< json.count; i++){
-        NSLog(@"%@", [[json objectAtIndex:i] objectForKey:@"name"]);
+   for(int i = 0; i< _json.count; i++){
+        NSLog(@"%@", [[_json objectAtIndex:i] objectForKey:@"name"]);
     }
     
 }

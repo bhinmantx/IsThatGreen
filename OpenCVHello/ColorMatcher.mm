@@ -19,7 +19,7 @@
         
         NSString *path = [[NSBundle mainBundle] pathForResource:colorCoordsFileName ofType:@"plist"];
         
-        _colors =  [[NSMutableArray alloc] initWithContentsOfFile:path];
+        _colors =  [[NSArray alloc] initWithContentsOfFile:path];
         
         
          cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
@@ -45,6 +45,42 @@
     NSLog(@"Colors Count %i", _colors.count);
     return self;
 }
+
+
+
+-(id)initWithJSON:(NSArray*)colorJson{
+    if (self = [super init]){
+        
+      //  NSString *path = [[NSBundle mainBundle] pathForResource:colorCoordsFileName ofType:@"plist"];
+        
+        _colors = colorJson;
+        
+        
+        cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
+        // cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_8UC3);
+        
+        //  cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_32F);
+        
+        for(int i=0; i<_colors.count; i++){
+            
+            //We have to bring the vals in from the dictionary as ints that NSinteger will accept
+            NSInteger r = [[[_colors objectAtIndex:i] objectForKey:@"r"] intValue];
+            NSInteger g = [[[_colors objectAtIndex:i] objectForKey:@"g"] intValue];
+            NSInteger b = [[[_colors objectAtIndex:i] objectForKey:@"b"] intValue];
+            
+            
+            colorCoords.at<int>(i,0) = r;
+            colorCoords.at<int>(i,1) = g;
+            colorCoords.at<int>(i,2) = b;
+        }
+        _colorCoords = colorCoords.clone();
+    }
+    
+    NSLog(@"Colors Count %i", _colors.count);
+    return self;
+}
+
+
 
 
 -(NSString*)matchFromMat:(cv::Mat)sampleMat{

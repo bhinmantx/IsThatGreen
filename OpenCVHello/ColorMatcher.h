@@ -11,11 +11,11 @@
 
 @interface ColorMatcher : NSObject{
 
-NSMutableArray *_colors;
+NSArray *_colors;
     cv::Mat _colorCoords;
 }
 
-@property (strong,nonatomic) NSMutableArray * colors;
+@property (strong,nonatomic) NSArray * colors;
 @property (nonatomic) cv::Mat  colorCoords;
 
 
@@ -23,5 +23,6 @@ NSMutableArray *_colors;
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName;
 -(NSString*)matchFromMat:(cv::Mat)sampleMat;
 -(NSString*)findDistance:(NSArray*)sample;
+-(id)initWithJSON:(NSArray*)colorJson;
 
 @end

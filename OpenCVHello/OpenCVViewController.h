@@ -37,7 +37,7 @@
     ColorMatcher *_matcher;
     int _timerCount;
     NSTimer *_timer;
-    
+    NSArray *_json;
 }
 
 -(IBAction)actionStart:(id)sender;
@@ -60,7 +60,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *CameraView;
 @property (strong, nonatomic) IBOutlet UIButton *StartButton;
 @property (strong, nonatomic) IBOutlet UIButton *IsThisRedButton;
-
+@property (strong, nonatomic) NSArray *json;
 
 
 //@property (strong, atomic) IBOutlet UIImageView *thumbNail;
