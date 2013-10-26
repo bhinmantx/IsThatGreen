@@ -20,11 +20,10 @@
     
     CvVideoCamera *_videoCamera;
     UIImageView *_CameraView;
-    UIButton *_StartButton;
+    UIButton *_GreenButton;
     UIButton *_IsThisRedButton;
     
-    UIImage *_wasGreenFlagImage;
-    cv::Mat *_wasGreenFlagMat;
+
   
     BOOL _shouldDisplayFeedback;
     
@@ -57,17 +56,14 @@
 
 @property (strong, nonatomic) IBOutlet UISlider *TargetSizeSlider;
 @property (strong, nonatomic) ColorMatcher * matcher;
-@property (strong, nonatomic) UIImage * wasGreenFlagImage;
+
 @property (strong, nonatomic) CvVideoCamera *videoCamera;
 @property (strong, nonatomic) IBOutlet UIImageView *CameraView;
-@property (strong, nonatomic) IBOutlet UIButton *StartButton;
+@property (strong, nonatomic) IBOutlet UIButton *GreenButton;
+
 @property (strong, nonatomic) IBOutlet UIButton *IsThisRedButton;
 @property (strong, nonatomic) NSArray *json;
 
-
-//@property (strong, atomic) IBOutlet UIImageView *thumbNail;
-//@property (atomic) cv::Mat *sample;
-@property (nonatomic) cv::Mat * wasGreenFlagMat;
 @property (strong,nonatomic) NSTimer * timer;
 
 
@@ -75,9 +71,9 @@
 @property BOOL buttonIsPressed;
 @property BOOL wasItGreen;
 @property BOOL wasItRed;
-@property BOOL wasItFirstSample;
 
-@property (strong, nonatomic) IBOutlet UILabel *GreenStatus;
+
+
 
 
 @end

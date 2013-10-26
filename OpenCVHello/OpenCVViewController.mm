@@ -17,7 +17,7 @@
 
 
 
-@synthesize StartButton = _StartButton;
+@synthesize GreenButton = _GreenButton;
 @synthesize CameraView = _CameraView;
 @synthesize videoCamera = _videoCamera;
 
@@ -31,8 +31,8 @@
 @synthesize wasItGreen = _wasItGreen;
 @synthesize wasItRed = _wasItRed;
 
-@synthesize wasGreenFlagImage = _wasGreenFlagImage;
-@synthesize wasGreenFlagMat = _wasGreenFlagMat;
+
+
 @synthesize matcher = _matcher;
 @synthesize TargetSizeSlider;
 
@@ -55,7 +55,7 @@
     
     ///Load the flag image
 
-    _wasGreenFlagImage = [UIImage imageNamed:@"YesGreenYes.png"];
+   // _wasGreenFlagImage = [UIImage imageNamed:@"YesGreenYes.png"];
     
     ///We need to change the camera being used
     
@@ -249,7 +249,7 @@
 
     _timerCount = 0;
  NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
-[self greenTestHelper:b :g :r :count];
+    [self greenTestHelper:b :g :r :count :color];
     
 }
 
@@ -258,8 +258,9 @@
 ///TODO: Set this up to return a BOOL based on a string passed with the rest of the info.
 ///Change all the flag setting to the calling function
 
+/////Still doesn't use the NSString color for anything
     
--(void)greenTestHelper:(long)b :(long)g :(long)r :(int)count{
+-(void)greenTestHelper:(long)b :(long)g :(long)r :(int)count :(NSString*)color{
     NSLog(@"Firing Test Helper");
 ////Get the average RGB values of each
     _wasItGreen = false;
@@ -275,13 +276,13 @@
     NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
     
     if ([[_matcher findDistance:testArray]  isEqual: @"g"]){
-        [self GreenStatus].text = @"I think it's green";
+
          NSLog(@"tested Green");
         _wasItGreen = true;
        
     }
     else if ([[_matcher findDistance:testArray]  isEqual: @"r"]){
-        [self GreenStatus].text = @"I think it's red";
+
         NSLog(@"tested Red");
        
         _wasItRed = true;

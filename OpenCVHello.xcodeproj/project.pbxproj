@@ -13,7 +13,6 @@
 		C626F1551815CF2F003D3F00 /* isitgreenicon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = C626F1521815CF2F003D3F00 /* isitgreenicon114x114.png */; };
 		C626F1561815CF2F003D3F00 /* isitgreenicon120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = C626F1531815CF2F003D3F00 /* isitgreenicon120x120.png */; };
 		C6648A7B1815A25200CEDF57 /* ColorMatcher.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6648A781815A25200CEDF57 /* ColorMatcher.mm */; };
-		C6648A7C1815A25200CEDF57 /* colordataF-R.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6648A7A1815A25200CEDF57 /* colordataF-R.plist */; };
 		C69EB335180888C1007D4BF7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB334180888C1007D4BF7 /* Accelerate.framework */; };
 		C69EB337180888CB007D4BF7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */; };
 		C69EB339180888D3007D4BF7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB338180888D3007D4BF7 /* AVFoundation.framework */; };
@@ -48,7 +47,6 @@
 		C626F1531815CF2F003D3F00 /* isitgreenicon120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isitgreenicon120x120.png; sourceTree = "<group>"; };
 		C6648A781815A25200CEDF57 /* ColorMatcher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorMatcher.mm; sourceTree = "<group>"; };
 		C6648A791815A25200CEDF57 /* ColorMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatcher.h; sourceTree = "<group>"; };
-		C6648A7A1815A25200CEDF57 /* colordataF-R.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "colordataF-R.plist"; sourceTree = "<group>"; };
 		C69EB334180888C1007D4BF7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C69EB338180888D3007D4BF7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -149,7 +147,6 @@
 			children = (
 				C6648A781815A25200CEDF57 /* ColorMatcher.mm */,
 				C6648A791815A25200CEDF57 /* ColorMatcher.h */,
-				C6648A7A1815A25200CEDF57 /* colordataF-R.plist */,
 				C6A6743D18078CC900115A18 /* OpenCVAppDelegate.h */,
 				C6A6743E18078CC900115A18 /* OpenCVAppDelegate.mm */,
 				C6A6744618078CC900115A18 /* MainStoryboard.storyboard */,
@@ -254,7 +251,6 @@
 				C6A6744818078CC900115A18 /* MainStoryboard.storyboard in Resources */,
 				C6F85B3218197A88005422F2 /* frameTargetIconLarge.png in Resources */,
 				C60CA5FC1811CD3D000146AE /* YesGreenYes.png in Resources */,
-				C6648A7C1815A25200CEDF57 /* colordataF-R.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

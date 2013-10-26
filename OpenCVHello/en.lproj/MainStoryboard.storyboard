@@ -101,8 +101,8 @@
                     <connections>
                         <outlet property="AcrossLabel" destination="FTF-zf-qCd" id="rZb-FY-Vxq"/>
                         <outlet property="CameraView" destination="8FY-8D-HfY" id="Hvf-id-Nf2"/>
+                        <outlet property="GreenButton" destination="aAp-Se-Ueh" id="YX7-8P-bTy"/>
                         <outlet property="IsThisRedButton" destination="56d-iu-ofn" id="6Db-Xw-fHq"/>
-                        <outlet property="StartButton" destination="aAp-Se-Ueh" id="FaS-l7-nKn"/>
                         <outlet property="TargetSizeSlider" destination="m5d-sD-YY4" id="Yb2-Vl-ROo"/>
                         <outlet property="testLabel" destination="R0U-Sy-aaD" id="AhT-s9-GrR"/>
                     </connections>
