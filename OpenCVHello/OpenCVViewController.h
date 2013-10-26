@@ -52,6 +52,8 @@
 
 -(void)processJSON;
 
+@property (strong, nonatomic) IBOutlet UILabel *testLabel;
+@property (strong, nonatomic) IBOutlet UILabel *AcrossLabel;
 
 @property (strong, nonatomic) IBOutlet UISlider *TargetSizeSlider;
 @property (strong, nonatomic) ColorMatcher * matcher;

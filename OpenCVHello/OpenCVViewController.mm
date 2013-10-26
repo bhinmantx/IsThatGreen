@@ -65,6 +65,8 @@
 
    // _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
    
+    
+    ///Load up our color data
     [self processJSON];
     
     _matcher = [[ColorMatcher alloc]initWithJSON:_json];
@@ -121,6 +123,8 @@
     
     image = [self drawBoxAroundTarget:image];
    
+
+    /* We're using the timer based feedback now.
     if(_shouldDisplayFeedback){
     
         if (_wasItGreen) {
@@ -139,12 +143,12 @@
     
     
     else if(_shouldDisplayFeedback) {
-        cv::putText(image, "Previous Sample Not Green Nor Red", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
+        cv::putText(image, "Not that color", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
       
         }
         
     }
-    
+    */
     
 }
 
@@ -237,14 +241,14 @@
             b += B;
             g += G;
             r += R;
-//            NSLog(@"B:%i G:%x R:%x Number: %i", b,p[1],p[2],tempInt );
+          // NSLog(@"B:%li G:%x R:%x Number: %i", b,p[1],p[2],count);
         }
         
     }
 /////We're going to try using a timer so that when 3 seconds have passed, the image vanishes.
 
     _timerCount = 0;
-  
+ NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
 [self greenTestHelper:b :g :r :count];
     
 }
@@ -265,7 +269,8 @@
     R = [NSNumber numberWithInt:(r/count)];
     G = [NSNumber numberWithInt:(g/count)];
     B = [NSNumber numberWithInt:(b/count)];
-
+    
+ NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
     
     NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
     
@@ -273,10 +278,12 @@
         [self GreenStatus].text = @"I think it's green";
          NSLog(@"tested Green");
         _wasItGreen = true;
+       
     }
     else if ([[_matcher findDistance:testArray]  isEqual: @"r"]){
         [self GreenStatus].text = @"I think it's red";
         NSLog(@"tested Red");
+       
         _wasItRed = true;
     }
     
@@ -357,14 +364,34 @@
 
     _timerCount += 1;
     
-    if(_timerCount > 3){
+    if(_timerCount > 30){
         _timerCount = 0;
     _shouldDisplayFeedback = false;
+    [self AcrossLabel].text = @"";
+    [self AcrossLabel].hidden = true;
     }
+    
+    if (_shouldDisplayFeedback) {
+       
+        if(_wasItRed)
+        [self AcrossLabel].text = @"RED!";
+        else if(_wasItGreen)
+        [self AcrossLabel].text = @"GREEN!";
+        else
+        [self AcrossLabel].text = @"It wasn't that color!";
+        
+        [self AcrossLabel].hidden = false;
+        
+    }
+    
+    
+    [self testLabel].text = [NSString stringWithFormat:@"%d",_timerCount];
+    [[self view] setNeedsDisplay];
+    
 }
 
 -(void)timerFire{
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
 
     if([self respondsToSelector:@selector(timerCallback)]){
 
@@ -384,9 +411,9 @@
     NSLog(@"JSON count: %i", _json.count);
     
     ///We're going to see if the data loaded correctly.
-   for(int i = 0; i< _json.count; i++){
-        NSLog(@"%@", [[_json objectAtIndex:i] objectForKey:@"name"]);
-    }
+ //   for(int i = 0; i< _json.count; i++){
+//       NSLog(@"%@ %@ %@ %@", [[_json objectAtIndex:i] objectForKey:@"name"],[[_json objectAtIndex:i] objectForKey:@"r"],[[_json objectAtIndex:i] objectForKey:@"g"],[[_json objectAtIndex:i] objectForKey:@"b"]);
+//    }
     
 }
 

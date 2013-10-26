@@ -1,6969 +1,774 @@
-[{
-		"name":"Canary yellow",
-		"r":255,
-		"g":29,
-		"b":0,
-		"XR":"FF",
-		"XG":"1D",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Electric yellow",
-		"r":255,
-		"g":32,
-		"b":0,
-		"XR":"FF",
-		"XG":"20",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Antique white",
-		"r":255,
-		"g":51,
-		"b":215,
-		"XR":"FF",
-		"XG":"33",
-		"XB":"D7",
-		"FriendlyName":"y"
-},{
-		"name":"Aureolin",
-		"r":254,
-		"g":40,
-		"b":0,
-		"XR":"FE",
-		"XG":"28",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Cream",
-		"r":230,
-		"g":32,
-		"b":208,
-		"XR":"E6",
-		"XG":"20",
-		"XB":"D0",
-		"FriendlyName":"y"
-},{
-		"name":"Yellow (RYB)",
-		"r":227,
-		"g":37,
-		"b":51,
-		"XR":"E3",
-		"XG":"25",
-		"XB":"33",
-		"FriendlyName":"y"
-},{
-		"name":"Laser Lemon",
-		"r":227,
-		"g":38,
-		"b":34,
-		"XR":"E3",
-		"XG":"26",
-		"XB":"22",
-		"FriendlyName":"y"
-},{
-		"name":"Fluorescent yellow",
-		"r":223,
-		"g":115,
-		"b":0,
-		"XR":"DF",
-		"XG":"73",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Yellow (process)",
-		"r":218,
-		"g":29,
-		"b":0,
-		"XR":"DA",
-		"XG":"1D",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Yellow",
-		"r":206,
-		"g":32,
-		"b":0,
-		"XR":"CE",
-		"XG":"20",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Blond",
-		"r":204,
-		"g":51,
-		"b":190,
-		"XR":"CC",
-		"XG":"33",
-		"XB":"BE",
-		"FriendlyName":"y"
-},{
-		"name":"Lemon",
-		"r":202,
-		"g":31,
-		"b":0,
-		"XR":"CA",
-		"XG":"1F",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Cadmium yellow",
-		"r":196,
-		"g":30,
-		"b":0,
-		"XR":"C4",
-		"XG":"1E",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Beige",
-		"r":194,
-		"g":59,
-		"b":220,
-		"XR":"C2",
-		"XG":"3B",
-		"XB":"DC",
-		"FriendlyName":"y"
-},{
-		"name":"Light goldenrod yellow",
-		"r":187,
-		"g":51,
-		"b":210,
-		"XR":"BB",
-		"XG":"33",
-		"XB":"D2",
-		"FriendlyName":"y"
-},{
-		"name":"Electric lime",
-		"r":184,
-		"g":115,
-		"b":0,
-		"XR":"B8",
-		"XG":"73",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Cornsilk",
-		"r":174,
-		"g":32,
-		"b":220,
-		"XR":"AE",
-		"XG":"20",
-		"XB":"DC",
-		"FriendlyName":"y"
-},{
-		"name":"Unmellow Yellow",
-		"r":169,
-		"g":32,
-		"b":102,
-		"XR":"A9",
-		"XG":"20",
-		"XB":"66",
-		"FriendlyName":"y"
-},{
-		"name":"Icterine",
-		"r":165,
-		"g":42,
-		"b":94,
-		"XR":"A5",
-		"XG":"2A",
-		"XB":"5E",
-		"FriendlyName":"y"
-},{
-		"name":"Lemon chiffon",
-		"r":160,
-		"g":32,
-		"b":205,
-		"XR":"A0",
-		"XG":"20",
-		"XB":"CD",
-		"FriendlyName":"y"
-},{
-		"name":"Cosmic latte",
-		"r":160,
-		"g":32,
-		"b":231,
-		"XR":"A0",
-		"XG":"20",
-		"XB":"E7",
-		"FriendlyName":"y"
-},{
-		"name":"Papaya whip",
-		"r":159,
-		"g":29,
-		"b":213,
-		"XR":"9F",
-		"XG":"1D",
-		"XB":"D5",
-		"FriendlyName":"y"
-},{
-		"name":"Chartreuse (traditional)",
-		"r":145,
-		"g":95,
-		"b":0,
-		"XR":"91",
-		"XG":"5F",
-		"XB":"00",
-		"FriendlyName":"y"
-},{
-		"name":"Maize",
-		"r":114,
-		"g":47,
-		"b":93,
-		"XR":"72",
-		"XG":"2F",
-		"XB":"5D",
-		"FriendlyName":"y"
-},{
-		"name":"Pastel yellow",
-		"r":104,
-		"g":40,
-		"b":150,
-		"XR":"68",
-		"XG":"28",
-		"XB":"96",
-		"FriendlyName":"y"
-},{
-		"name":"Daffodil",
-		"r":0,
-		"g":33,
-		"b":49,
-		"XR":"00",
-		"XG":"21",
-		"XB":"31",
-		"FriendlyName":"y"
-},{
-		"name":"Corn",
-		"r":0,
-		"g":47,
-		"b":93,
-		"XR":"00",
-		"XG":"2F",
-		"XB":"5D",
-		"FriendlyName":"y"
-},{
-		"name":"Snow",
-		"r":237,
-		"g":28,
-		"b":250,
-		"XR":"ED",
-		"XG":"1C",
-		"XB":"FA",
-		"FriendlyName":"w"
-},{
-		"name":"Bubbles",
-		"r":235,
-		"g":76,
-		"b":255,
-		"XR":"EB",
-		"XG":"4C",
-		"XB":"FF",
-		"FriendlyName":"w"
-},{
-		"name":"White",
-		"r":112,
-		"g":28,
-		"b":255,
-		"XR":"70",
-		"XG":"1C",
-		"XB":"FF",
-		"FriendlyName":"w"
-},{
-		"name":"Floral white",
-		"r":112,
-		"g":28,
-		"b":240,
-		"XR":"70",
-		"XG":"1C",
-		"XB":"F0",
-		"FriendlyName":"w"
-},{
-		"name":"Alice blue",
-		"r":112,
-		"g":66,
-		"b":255,
-		"XR":"70",
-		"XG":"42",
-		"XB":"FF",
-		"FriendlyName":"w"
-},{
-		"name":"Splashed white",
-		"r":26,
-		"g":36,
-		"b":255,
-		"XR":"1A",
-		"XG":"24",
-		"XB":"FF",
-		"FriendlyName":"w"
-},{
-		"name":"Rosewood",
-		"r":247,
-		"g":233,
-		"b":11,
-		"XR":"F7",
-		"XG":"E9",
-		"XB":"0B",
-		"FriendlyName":"r"
-},{
-		"name":"Vivid burgundy",
-		"r":201,
-		"g":160,
-		"b":53,
-		"XR":"C9",
-		"XG":"A0",
-		"XB":"35",
-		"FriendlyName":"r"
-},{
-		"name":"Folly",
-		"r":153,
-		"g":0,
-		"b":79,
-		"XR":"99",
-		"XG":"00",
-		"XB":"4F",
-		"FriendlyName":"r"
-},{
-		"name":"USC Cardinal",
-		"r":15,
-		"g":192,
-		"b":0,
-		"XR":"0F",
-		"XG":"C0",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Red (pigment)",
-		"r":8,
-		"g":69,
-		"b":36,
-		"XR":"08",
-		"XG":"45",
-		"XB":"24",
-		"FriendlyName":"r"
-},{
-		"name":"Coral red",
-		"r":255,
-		"g":0,
-		"b":64,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"40",
-		"FriendlyName":"r"
-},{
-		"name":"Electric crimson",
-		"r":255,
-		"g":0,
-		"b":63,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"3F",
-		"FriendlyName":"r"
-},{
-		"name":"CG Red",
-		"r":255,
-		"g":90,
-		"b":49,
-		"XR":"FF",
-		"XG":"5A",
-		"XB":"31",
-		"FriendlyName":"r"
-},{
-		"name":"Rosso corsa",
-		"r":255,
-		"g":105,
-		"b":0,
-		"XR":"FF",
-		"XG":"69",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Pale carmine",
-		"r":255,
-		"g":143,
-		"b":53,
-		"XR":"FF",
-		"XG":"8F",
-		"XB":"35",
-		"FriendlyName":"r"
-},{
-		"name":"Brown (web)",
-		"r":255,
-		"g":153,
-		"b":42,
-		"XR":"FF",
-		"XG":"99",
-		"XB":"2A",
-		"FriendlyName":"r"
-},{
-		"name":"OU Crimson Red",
-		"r":255,
-		"g":192,
-		"b":0,
-		"XR":"FF",
-		"XG":"C0",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Cordovan",
-		"r":255,
-		"g":211,
-		"b":69,
-		"XR":"FF",
-		"XG":"D3",
-		"XB":"45",
-		"FriendlyName":"r"
-},{
-		"name":"Falu red",
-		"r":255,
-		"g":218,
-		"b":24,
-		"XR":"FF",
-		"XG":"DA",
-		"XB":"18",
-		"FriendlyName":"r"
-},{
-		"name":"Prune",
-		"r":255,
-		"g":225,
-		"b":28,
-		"XR":"FF",
-		"XG":"E1",
-		"XB":"1C",
-		"FriendlyName":"r"
-},{
-		"name":"Boysenberry",
-		"r":253,
-		"g":213,
-		"b":96,
-		"XR":"FD",
-		"XG":"D5",
-		"XB":"60",
-		"FriendlyName":"r"
-},{
-		"name":"Burgundy",
-		"r":250,
-		"g":218,
-		"b":32,
-		"XR":"FA",
-		"XG":"DA",
-		"XB":"20",
-		"FriendlyName":"r"
-},{
-		"name":"Dark scarlet",
-		"r":248,
-		"g":244,
-		"b":25,
-		"XR":"F8",
-		"XG":"F4",
-		"XB":"19",
-		"FriendlyName":"r"
-},{
-		"name":"Auburn",
-		"r":244,
-		"g":154,
-		"b":42,
-		"XR":"F4",
-		"XG":"9A",
-		"XB":"2A",
-		"FriendlyName":"r"
-},{
-		"name":"Dark red",
-		"r":244,
-		"g":164,
-		"b":0,
-		"XR":"F4",
-		"XG":"A4",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Candy apple red",
-		"r":242,
-		"g":0,
-		"b":0,
-		"XR":"F2",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Rufous",
-		"r":239,
-		"g":152,
-		"b":7,
-		"XR":"EF",
-		"XG":"98",
-		"XB":"07",
-		"FriendlyName":"r"
-},{
-		"name":"Utah Crimson",
-		"r":233,
-		"g":105,
-		"b":63,
-		"XR":"E9",
-		"XG":"69",
-		"XB":"3F",
-		"FriendlyName":"r"
-},{
-		"name":"Persian plum",
-		"r":230,
-		"g":226,
-		"b":28,
-		"XR":"E6",
-		"XG":"E2",
-		"XB":"1C",
-		"FriendlyName":"r"
-},{
-		"name":"UP Maroon",
-		"r":229,
-		"g":170,
-		"b":19,
-		"XR":"E5",
-		"XG":"AA",
-		"XB":"13",
-		"FriendlyName":"r"
-},{
-		"name":"Maroon (HTML/CSS)",
-		"r":228,
-		"g":217,
-		"b":0,
-		"XR":"E4",
-		"XG":"D9",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Deep carmine pink",
-		"r":227,
-		"g":66,
-		"b":56,
-		"XR":"E3",
-		"XG":"42",
-		"XB":"38",
-		"FriendlyName":"r"
-},{
-		"name":"Scarlet (Crayola)",
-		"r":223,
-		"g":0,
-		"b":0,
-		"XR":"DF",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Awesome",
-		"r":223,
-		"g":0,
-		"b":82,
-		"XR":"DF",
-		"XG":"00",
-		"XB":"52",
-		"FriendlyName":"r"
-},{
-		"name":"Mordant red 19",
-		"r":217,
-		"g":144,
-		"b":0,
-		"XR":"D9",
-		"XG":"90",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"American rose",
-		"r":215,
-		"g":0,
-		"b":62,
-		"XR":"D7",
-		"XG":"00",
-		"XB":"3E",
-		"FriendlyName":"r"
-},{
-		"name":"Carmine red",
-		"r":212,
-		"g":0,
-		"b":56,
-		"XR":"D4",
-		"XG":"00",
-		"XB":"38",
-		"FriendlyName":"r"
-},{
-		"name":"Cornell Red",
-		"r":204,
-		"g":136,
-		"b":27,
-		"XR":"CC",
-		"XG":"88",
-		"XB":"1B",
-		"FriendlyName":"r"
-},{
-		"name":"Red (RYB)",
-		"r":195,
-		"g":33,
-		"b":18,
-		"XR":"C3",
-		"XG":"21",
-		"XB":"12",
-		"FriendlyName":"r"
-},{
-		"name":"Alizarin crimson",
-		"r":193,
-		"g":84,
-		"b":54,
-		"XR":"C1",
-		"XG":"54",
-		"XB":"36",
-		"FriendlyName":"r"
-},{
-		"name":"Stizza",
-		"r":192,
-		"g":192,
-		"b":0,
-		"XR":"C0",
-		"XG":"C0",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Cinnabar",
-		"r":186,
-		"g":85,
-		"b":52,
-		"XR":"BA",
-		"XG":"55",
-		"XB":"34",
-		"FriendlyName":"r"
-},{
-		"name":"Lava",
-		"r":183,
-		"g":110,
-		"b":32,
-		"XR":"B7",
-		"XG":"6E",
-		"XB":"20",
-		"FriendlyName":"r"
-},{
-		"name":"Firebrick",
-		"r":179,
-		"g":139,
-		"b":34,
-		"XR":"B3",
-		"XG":"8B",
-		"XB":"22",
-		"FriendlyName":"r"
-},{
-		"name":"Crimson",
-		"r":176,
-		"g":101,
-		"b":60,
-		"XR":"B0",
-		"XG":"65",
-		"XB":"3C",
-		"FriendlyName":"r"
-},{
-		"name":"Red (Munsell)",
-		"r":175,
-		"g":64,
-		"b":60,
-		"XR":"AF",
-		"XG":"40",
-		"XB":"3C",
-		"FriendlyName":"r"
-},{
-		"name":"Seashell",
-		"r":168,
-		"g":28,
-		"b":238,
-		"XR":"A8",
-		"XG":"1C",
-		"XB":"EE",
-		"FriendlyName":"r"
-},{
-		"name":"Bright maroon",
-		"r":166,
-		"g":123,
-		"b":72,
-		"XR":"A6",
-		"XG":"7B",
-		"XB":"48",
-		"FriendlyName":"r"
-},{
-		"name":"Cardinal",
-		"r":166,
-		"g":123,
-		"b":58,
-		"XR":"A6",
-		"XG":"7B",
-		"XB":"3A",
-		"FriendlyName":"r"
-},{
-		"name":"Ruddy",
-		"r":159,
-		"g":0,
-		"b":40,
-		"XR":"9F",
-		"XG":"00",
-		"XB":"28",
-		"FriendlyName":"r"
-},{
-		"name":"Ferrari Red",
-		"r":153,
-		"g":0,
-		"b":0,
-		"XR":"99",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Dark candy apple red",
-		"r":151,
-		"g":154,
-		"b":0,
-		"XR":"97",
-		"XG":"9A",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Boston University Red",
-		"r":150,
-		"g":113,
-		"b":0,
-		"XR":"96",
-		"XG":"71",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Venetian red",
-		"r":150,
-		"g":120,
-		"b":21,
-		"XR":"96",
-		"XG":"78",
-		"XB":"15",
-		"FriendlyName":"r"
-},{
-		"name":"Red (NCS)",
-		"r":150,
-		"g":123,
-		"b":51,
-		"XR":"96",
-		"XG":"7B",
-		"XB":"33",
-		"FriendlyName":"r"
-},{
-		"name":"Red",
-		"r":143,
-		"g":0,
-		"b":0,
-		"XR":"8F",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Tractor red",
-		"r":135,
-		"g":38,
-		"b":53,
-		"XR":"87",
-		"XG":"26",
-		"XB":"35",
-		"FriendlyName":"r"
-},{
-		"name":"Jasper",
-		"r":131,
-		"g":105,
-		"b":62,
-		"XR":"83",
-		"XG":"69",
-		"XB":"3E",
-		"FriendlyName":"r"
-},{
-		"name":"Scarlet",
-		"r":128,
-		"g":0,
-		"b":0,
-		"XR":"80",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Crimson glory",
-		"r":128,
-		"g":128,
-		"b":50,
-		"XR":"80",
-		"XG":"80",
-		"XB":"32",
-		"FriendlyName":"r"
-},{
-		"name":"UA red",
-		"r":121,
-		"g":104,
-		"b":76,
-		"XR":"79",
-		"XG":"68",
-		"XB":"4C",
-		"FriendlyName":"r"
-},{
-		"name":"Rose madder",
-		"r":108,
-		"g":84,
-		"b":54,
-		"XR":"6C",
-		"XG":"54",
-		"XB":"36",
-		"FriendlyName":"r"
-},{
-		"name":"Carmine",
-		"r":101,
-		"g":0,
-		"b":64,
-		"XR":"65",
-		"XG":"00",
-		"XB":"40",
-		"FriendlyName":"r"
-},{
-		"name":"Old lace",
-		"r":89,
-		"g":39,
-		"b":230,
-		"XR":"59",
-		"XG":"27",
-		"XB":"E6",
-		"FriendlyName":"r"
-},{
-		"name":"Medium candy apple red",
-		"r":85,
-		"g":85,
-		"b":44,
-		"XR":"55",
-		"XG":"55",
-		"XB":"2C",
-		"FriendlyName":"r"
-},{
-		"name":"Rich carmine",
-		"r":83,
-		"g":104,
-		"b":64,
-		"XR":"53",
-		"XG":"68",
-		"XB":"40",
-		"FriendlyName":"r"
-},{
-		"name":"Isabelline",
-		"r":80,
-		"g":64,
-		"b":236,
-		"XR":"50",
-		"XG":"40",
-		"XB":"EC",
-		"FriendlyName":"r"
-},{
-		"name":"Debian red",
-		"r":65,
-		"g":105,
-		"b":83,
-		"XR":"41",
-		"XG":"69",
-		"XB":"53",
-		"FriendlyName":"r"
-},{
-		"name":"Cadmium red",
-		"r":42,
-		"g":82,
-		"b":34,
-		"XR":"2A",
-		"XG":"52",
-		"XB":"22",
-		"FriendlyName":"r"
-},{
-		"name":"Upsdell red",
-		"r":30,
-		"g":144,
-		"b":41,
-		"XR":"1E",
-		"XG":"90",
-		"XB":"29",
-		"FriendlyName":"r"
-},{
-		"name":"Lust",
-		"r":15,
-		"g":77,
-		"b":32,
-		"XR":"0F",
-		"XG":"4D",
-		"XB":"20",
-		"FriendlyName":"r"
-},{
-		"name":"Linen",
-		"r":0,
-		"g":51,
-		"b":230,
-		"XR":"00",
-		"XG":"33",
-		"XB":"E6",
-		"FriendlyName":"r"
-},{
-		"name":"KU Crimson",
-		"r":0,
-		"g":75,
-		"b":13,
-		"XR":"00",
-		"XG":"4B",
-		"XB":"0D",
-		"FriendlyName":"r"
-},{
-		"name":"Harvard crimson",
-		"r":0,
-		"g":119,
-		"b":22,
-		"XR":"00",
-		"XG":"77",
-		"XB":"16",
-		"FriendlyName":"r"
-},{
-		"name":"Lavender blush",
-		"r":179,
-		"g":27,
-		"b":245,
-		"XR":"B3",
-		"XG":"1B",
-		"XB":"F5",
-		"FriendlyName":"p"
-},{
-		"name":"Atomic tangerine",
-		"r":255,
-		"g":0,
-		"b":102,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"66",
-		"FriendlyName":"n"
-},{
-		"name":"Pink-orange",
-		"r":255,
-		"g":0,
-		"b":102,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"66",
-		"FriendlyName":"n"
-},{
-		"name":"Salmon pink",
-		"r":255,
-		"g":0,
-		"b":164,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"A4",
-		"FriendlyName":"n"
-},{
-		"name":"Pumpkin",
-		"r":255,
-		"g":0,
-		"b":24,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"18",
-		"FriendlyName":"n"
-},{
-		"name":"Rose pink",
-		"r":255,
-		"g":0,
-		"b":204,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Tomato",
-		"r":255,
-		"g":0,
-		"b":71,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"47",
-		"FriendlyName":"n"
-},{
-		"name":"Wild Strawberry",
-		"r":255,
-		"g":0,
-		"b":164,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"A4",
-		"FriendlyName":"n"
-},{
-		"name":"Fluorescent pink",
-		"r":255,
-		"g":0,
-		"b":147,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"93",
-		"FriendlyName":"n"
-},{
-		"name":"Bright pink",
-		"r":255,
-		"g":0,
-		"b":127,
-		"XR":"FF",
-		"XG":"00",
-		"XB":"7F",
-		"FriendlyName":"n"
-},{
-		"name":"Dark tangerine",
-		"r":255,
-		"g":3,
-		"b":18,
-		"XR":"FF",
-		"XG":"03",
-		"XB":"12",
-		"FriendlyName":"n"
-},{
-		"name":"Light pink",
-		"r":255,
-		"g":8,
-		"b":193,
-		"XR":"FF",
-		"XG":"08",
-		"XB":"C1",
-		"FriendlyName":"n"
-},{
-		"name":"School bus yellow",
-		"r":255,
-		"g":20,
-		"b":0,
-		"XR":"FF",
-		"XG":"14",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Gold (web) (Golden)",
-		"r":255,
-		"g":20,
-		"b":0,
-		"XR":"FF",
-		"XG":"14",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Bittersweet",
-		"r":255,
-		"g":36,
-		"b":94,
-		"XR":"FF",
-		"XG":"24",
-		"XB":"5E",
-		"FriendlyName":"n"
-},{
-		"name":"Neon fuchsia",
-		"r":255,
-		"g":36,
-		"b":194,
-		"XR":"FF",
-		"XG":"24",
-		"XB":"C2",
-		"FriendlyName":"n"
-},{
-		"name":"Shocking pink",
-		"r":255,
-		"g":40,
-		"b":192,
-		"XR":"FF",
-		"XG":"28",
-		"XB":"C0",
-		"FriendlyName":"n"
-},{
-		"name":"Nadeshiko pink",
-		"r":255,
-		"g":56,
-		"b":198,
-		"XR":"FF",
-		"XG":"38",
-		"XB":"C6",
-		"FriendlyName":"n"
-},{
-		"name":"Mauvelous",
-		"r":255,
-		"g":67,
-		"b":170,
-		"XR":"FF",
-		"XG":"43",
-		"XB":"AA",
-		"FriendlyName":"n"
-},{
-		"name":"Pale goldenrod",
-		"r":255,
-		"g":69,
-		"b":170,
-		"XR":"FF",
-		"XG":"45",
-		"XB":"AA",
-		"FriendlyName":"n"
-},{
-		"name":"Fawn",
-		"r":255,
-		"g":79,
-		"b":112,
-		"XR":"FF",
-		"XG":"4F",
-		"XB":"70",
-		"FriendlyName":"n"
-},{
-		"name":"Flame",
-		"r":255,
-		"g":85,
-		"b":34,
-		"XR":"FF",
-		"XG":"55",
-		"XB":"22",
-		"FriendlyName":"n"
-},{
-		"name":"Plum (web)",
-		"r":255,
-		"g":99,
-		"b":221,
-		"XR":"FF",
-		"XG":"63",
-		"XB":"DD",
-		"FriendlyName":"n"
-},{
-		"name":"Gainsboro",
-		"r":255,
-		"g":102,
-		"b":220,
-		"XR":"FF",
-		"XG":"66",
-		"XB":"DC",
-		"FriendlyName":"n"
-},{
-		"name":"Orchid",
-		"r":255,
-		"g":103,
-		"b":214,
-		"XR":"FF",
-		"XG":"67",
-		"XB":"D6",
-		"FriendlyName":"n"
-},{
-		"name":"Dogwood rose",
-		"r":255,
-		"g":105,
-		"b":104,
-		"XR":"FF",
-		"XG":"69",
-		"XB":"68",
-		"FriendlyName":"n"
-},{
-		"name":"Sky magenta",
-		"r":255,
-		"g":110,
-		"b":175,
-		"XR":"FF",
-		"XG":"6E",
-		"XB":"AF",
-		"FriendlyName":"n"
-},{
-		"name":"Old gold",
-		"r":255,
-		"g":111,
-		"b":59,
-		"XR":"FF",
-		"XG":"6F",
-		"XB":"3B",
-		"FriendlyName":"n"
-},{
-		"name":"Satin sheen gold",
-		"r":255,
-		"g":117,
-		"b":53,
-		"XR":"FF",
-		"XG":"75",
-		"XB":"35",
-		"FriendlyName":"n"
-},{
-		"name":"Wisteria",
-		"r":255,
-		"g":119,
-		"b":220,
-		"XR":"FF",
-		"XG":"77",
-		"XB":"DC",
-		"FriendlyName":"n"
-},{
-		"name":"Sand",
-		"r":255,
-		"g":126,
-		"b":128,
-		"XR":"FF",
-		"XG":"7E",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Fallow",
-		"r":255,
-		"g":127,
-		"b":107,
-		"XR":"FF",
-		"XG":"7F",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Deep fuchsia",
-		"r":255,
-		"g":127,
-		"b":193,
-		"XR":"FF",
-		"XG":"7F",
-		"XB":"C1",
-		"FriendlyName":"n"
-},{
-		"name":"Pale aqua",
-		"r":255,
-		"g":130,
-		"b":230,
-		"XR":"FF",
-		"XG":"82",
-		"XB":"E6",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel blue",
-		"r":255,
-		"g":145,
-		"b":207,
-		"XR":"FF",
-		"XG":"91",
-		"XB":"CF",
-		"FriendlyName":"n"
-},{
-		"name":"Jazzberry jam",
-		"r":255,
-		"g":153,
-		"b":94,
-		"XR":"FF",
-		"XG":"99",
-		"XB":"5E",
-		"FriendlyName":"n"
-},{
-		"name":"Café au lait",
-		"r":255,
-		"g":153,
-		"b":91,
-		"XR":"FF",
-		"XG":"99",
-		"XB":"5B",
-		"FriendlyName":"n"
-},{
-		"name":"Rich lavender",
-		"r":255,
-		"g":153,
-		"b":207,
-		"XR":"FF",
-		"XG":"99",
-		"XB":"CF",
-		"FriendlyName":"n"
-},{
-		"name":"Vivid violet",
-		"r":255,
-		"g":159,
-		"b":255,
-		"XR":"FF",
-		"XG":"9F",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Beaver",
-		"r":255,
-		"g":160,
-		"b":112,
-		"XR":"FF",
-		"XG":"A0",
-		"XB":"70",
-		"FriendlyName":"n"
-},{
-		"name":"Dark magenta",
-		"r":255,
-		"g":165,
-		"b":139,
-		"XR":"FF",
-		"XG":"A5",
-		"XB":"8B",
-		"FriendlyName":"n"
-},{
-		"name":"Blue-violet",
-		"r":255,
-		"g":166,
-		"b":226,
-		"XR":"FF",
-		"XG":"A6",
-		"XB":"E2",
-		"FriendlyName":"n"
-},{
-		"name":"Shadow",
-		"r":255,
-		"g":167,
-		"b":93,
-		"XR":"FF",
-		"XG":"A7",
-		"XB":"5D",
-		"FriendlyName":"n"
-},{
-		"name":"Gray (HTML/CSS gray)",
-		"r":255,
-		"g":168,
-		"b":127,
-		"XR":"FF",
-		"XG":"A8",
-		"XB":"7F",
-		"FriendlyName":"n"
-},{
-		"name":"Cadet blue",
-		"r":255,
-		"g":174,
-		"b":160,
-		"XR":"FF",
-		"XG":"AE",
-		"XB":"A0",
-		"FriendlyName":"n"
-},{
-		"name":"Electric ultramarine",
-		"r":255,
-		"g":179,
-		"b":255,
-		"XR":"FF",
-		"XG":"B3",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Olive Drab #7",
-		"r":255,
-		"g":182,
-		"b":31,
-		"XR":"FF",
-		"XG":"B6",
-		"XB":"1F",
-		"FriendlyName":"n"
-},{
-		"name":"Tiffany Blue",
-		"r":255,
-		"g":191,
-		"b":181,
-		"XR":"FF",
-		"XG":"BF",
-		"XB":"B5",
-		"FriendlyName":"n"
-},{
-		"name":"Spiro Disco Ball",
-		"r":255,
-		"g":191,
-		"b":252,
-		"XR":"FF",
-		"XG":"BF",
-		"XB":"FC",
-		"FriendlyName":"n"
-},{
-		"name":"Golden brown",
-		"r":255,
-		"g":193,
-		"b":21,
-		"XR":"FF",
-		"XG":"C1",
-		"XB":"15",
-		"FriendlyName":"n"
-},{
-		"name":"Cinereous",
-		"r":255,
-		"g":196,
-		"b":123,
-		"XR":"FF",
-		"XG":"C4",
-		"XB":"7B",
-		"FriendlyName":"n"
-},{
-		"name":"Sandy taupe",
-		"r":255,
-		"g":203,
-		"b":23,
-		"XR":"FF",
-		"XG":"CB",
-		"XB":"17",
-		"FriendlyName":"n"
-},{
-		"name":"Purple mountain majesty",
-		"r":255,
-		"g":204,
-		"b":182,
-		"XR":"FF",
-		"XG":"CC",
-		"XB":"B6",
-		"FriendlyName":"n"
-},{
-		"name":"Drab",
-		"r":255,
-		"g":204,
-		"b":23,
-		"XR":"FF",
-		"XG":"CC",
-		"XB":"17",
-		"FriendlyName":"n"
-},{
-		"name":"Mode beige",
-		"r":255,
-		"g":204,
-		"b":23,
-		"XR":"FF",
-		"XG":"CC",
-		"XB":"17",
-		"FriendlyName":"n"
-},{
-		"name":"Rose taupe",
-		"r":255,
-		"g":209,
-		"b":93,
-		"XR":"FF",
-		"XG":"D1",
-		"XB":"5D",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel brown",
-		"r":255,
-		"g":215,
-		"b":83,
-		"XR":"FF",
-		"XG":"D7",
-		"XB":"53",
-		"FriendlyName":"n"
-},{
-		"name":"Raw umber",
-		"r":255,
-		"g":216,
-		"b":68,
-		"XR":"FF",
-		"XG":"D8",
-		"XB":"44",
-		"FriendlyName":"n"
-},{
-		"name":"Xanadu",
-		"r":255,
-		"g":223,
-		"b":120,
-		"XR":"FF",
-		"XG":"DF",
-		"XB":"78",
-		"FriendlyName":"n"
-},{
-		"name":"Slate gray",
-		"r":255,
-		"g":228,
-		"b":144,
-		"XR":"FF",
-		"XG":"E4",
-		"XB":"90",
-		"FriendlyName":"n"
-},{
-		"name":"Deep coffee",
-		"r":255,
-		"g":228,
-		"b":65,
-		"XR":"FF",
-		"XG":"E4",
-		"XB":"41",
-		"FriendlyName":"n"
-},{
-		"name":"Dim gray",
-		"r":255,
-		"g":229,
-		"b":105,
-		"XR":"FF",
-		"XG":"E5",
-		"XB":"69",
-		"FriendlyName":"n"
-},{
-		"name":"Cornflower blue",
-		"r":255,
-		"g":235,
-		"b":237,
-		"XR":"FF",
-		"XG":"EB",
-		"XB":"ED",
-		"FriendlyName":"n"
-},{
-		"name":"Blue (Munsell)",
-		"r":255,
-		"g":240,
-		"b":175,
-		"XR":"FF",
-		"XG":"F0",
-		"XB":"AF",
-		"FriendlyName":"n"
-},{
-		"name":"Dark turquoise",
-		"r":255,
-		"g":250,
-		"b":209,
-		"XR":"FF",
-		"XG":"FA",
-		"XB":"D1",
-		"FriendlyName":"n"
-},{
-		"name":"Robin egg blue",
-		"r":255,
-		"g":250,
-		"b":204,
-		"XR":"FF",
-		"XG":"FA",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"French blue",
-		"r":255,
-		"g":255,
-		"b":187,
-		"XR":"FF",
-		"XG":"FF",
-		"XB":"BB",
-		"FriendlyName":"n"
-},{
-		"name":"Cadet",
-		"r":255,
-		"g":255,
-		"b":114,
-		"XR":"FF",
-		"XG":"FF",
-		"XB":"72",
-		"FriendlyName":"n"
-},{
-		"name":"Piggy pink",
-		"r":254,
-		"g":39,
-		"b":230,
-		"XR":"FE",
-		"XG":"27",
-		"XB":"E6",
-		"FriendlyName":"n"
-},{
-		"name":"Peridot",
-		"r":254,
-		"g":78,
-		"b":0,
-		"XR":"FE",
-		"XG":"4E",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Urobilin",
-		"r":254,
-		"g":89,
-		"b":33,
-		"XR":"FE",
-		"XG":"59",
-		"XB":"21",
-		"FriendlyName":"n"
-},{
-		"name":"Tenné (Tawny)",
-		"r":254,
-		"g":111,
-		"b":0,
-		"XR":"FE",
-		"XG":"6F",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Bubble gum",
-		"r":253,
-		"g":14,
-		"b":204,
-		"XR":"FD",
-		"XG":"0E",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Persian blue",
-		"r":253,
-		"g":188,
-		"b":187,
-		"XR":"FD",
-		"XG":"BC",
-		"XB":"BB",
-		"FriendlyName":"n"
-},{
-		"name":"Royal purple",
-		"r":253,
-		"g":221,
-		"b":169,
-		"XR":"FD",
-		"XG":"DD",
-		"XB":"A9",
-		"FriendlyName":"n"
-},{
-		"name":"Deep sky blue",
-		"r":253,
-		"g":245,
-		"b":255,
-		"XR":"FD",
-		"XG":"F5",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Mikado yellow",
-		"r":252,
-		"g":15,
-		"b":12,
-		"XR":"FC",
-		"XG":"0F",
-		"XB":"0C",
-		"FriendlyName":"n"
-},{
-		"name":"Bright ube",
-		"r":252,
-		"g":108,
-		"b":232,
-		"XR":"FC",
-		"XG":"6C",
-		"XB":"E8",
-		"FriendlyName":"n"
-},{
-		"name":"Raspberry rose",
-		"r":252,
-		"g":137,
-		"b":108,
-		"XR":"FC",
-		"XG":"89",
-		"XB":"6C",
-		"FriendlyName":"n"
-},{
-		"name":"Ginger",
-		"r":252,
-		"g":142,
-		"b":0,
-		"XR":"FC",
-		"XG":"8E",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Mountbatten pink",
-		"r":252,
-		"g":194,
-		"b":141,
-		"XR":"FC",
-		"XG":"C2",
-		"XB":"8D",
-		"FriendlyName":"n"
-},{
-		"name":"Tumbleweed",
-		"r":251,
-		"g":96,
-		"b":136,
-		"XR":"FB",
-		"XG":"60",
-		"XB":"88",
-		"FriendlyName":"n"
-},{
-		"name":"French beige",
-		"r":251,
-		"g":153,
-		"b":91,
-		"XR":"FB",
-		"XG":"99",
-		"XB":"5B",
-		"FriendlyName":"n"
-},{
-		"name":"Violet",
-		"r":251,
-		"g":160,
-		"b":255,
-		"XR":"FB",
-		"XG":"A0",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Dark byzantium",
-		"r":251,
-		"g":174,
-		"b":84,
-		"XR":"FB",
-		"XG":"AE",
-		"XB":"54",
-		"FriendlyName":"n"
-},{
-		"name":"Smokey topaz",
-		"r":251,
-		"g":204,
-		"b":65,
-		"XR":"FB",
-		"XG":"CC",
-		"XB":"41",
-		"FriendlyName":"n"
-},{
-		"name":"Antique fuchsia",
-		"r":251,
-		"g":206,
-		"b":131,
-		"XR":"FB",
-		"XG":"CE",
-		"XB":"83",
-		"FriendlyName":"n"
-},{
-		"name":"French lilac",
-		"r":250,
-		"g":214,
-		"b":142,
-		"XR":"FA",
-		"XG":"D6",
-		"XB":"8E",
-		"FriendlyName":"n"
-},{
-		"name":"Violet (RYB)",
-		"r":250,
-		"g":214,
-		"b":175,
-		"XR":"FA",
-		"XG":"D6",
-		"XB":"AF",
-		"FriendlyName":"n"
-},{
-		"name":"Light sky blue",
-		"r":250,
-		"g":214,
-		"b":250,
-		"XR":"FA",
-		"XG":"D6",
-		"XB":"FA",
-		"FriendlyName":"n"
-},{
-		"name":"Gray",
-		"r":250,
-		"g":218,
-		"b":128,
-		"XR":"FA",
-		"XG":"DA",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Trolley Grey",
-		"r":250,
-		"g":218,
-		"b":128,
-		"XR":"FA",
-		"XG":"DA",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Russet",
-		"r":250,
-		"g":218,
-		"b":27,
-		"XR":"FA",
-		"XG":"DA",
-		"XB":"1B",
-		"FriendlyName":"n"
-},{
-		"name":"Dark lavender",
-		"r":250,
-		"g":223,
-		"b":150,
-		"XR":"FA",
-		"XG":"DF",
-		"XB":"96",
-		"FriendlyName":"n"
-},{
-		"name":"Blue Gray",
-		"r":250,
-		"g":231,
-		"b":204,
-		"XR":"FA",
-		"XG":"E7",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Wenge",
-		"r":250,
-		"g":235,
-		"b":82,
-		"XR":"FA",
-		"XG":"EB",
-		"XB":"52",
-		"FriendlyName":"n"
-},{
-		"name":"Dark cyan",
-		"r":250,
-		"g":240,
-		"b":139,
-		"XR":"FA",
-		"XG":"F0",
-		"XB":"8B",
-		"FriendlyName":"n"
-},{
-		"name":"Light carmine pink",
-		"r":249,
-		"g":77,
-		"b":113,
-		"XR":"F9",
-		"XG":"4D",
-		"XB":"71",
-		"FriendlyName":"n"
-},{
-		"name":"Dark goldenrod",
-		"r":249,
-		"g":132,
-		"b":11,
-		"XR":"F9",
-		"XG":"84",
-		"XB":"0B",
-		"FriendlyName":"n"
-},{
-		"name":"Deep chestnut",
-		"r":249,
-		"g":132,
-		"b":72,
-		"XR":"F9",
-		"XG":"84",
-		"XB":"48",
-		"FriendlyName":"n"
-},{
-		"name":"Medium orchid",
-		"r":248,
-		"g":131,
-		"b":211,
-		"XR":"F8",
-		"XG":"83",
-		"XB":"D3",
-		"FriendlyName":"n"
-},{
-		"name":"Ruddy brown",
-		"r":248,
-		"g":131,
-		"b":40,
-		"XR":"F8",
-		"XG":"83",
-		"XB":"28",
-		"FriendlyName":"n"
-},{
-		"name":"Toolbox",
-		"r":248,
-		"g":222,
-		"b":192,
-		"XR":"F8",
-		"XG":"DE",
-		"XB":"C0",
-		"FriendlyName":"n"
-},{
-		"name":"Ecru",
-		"r":247,
-		"g":127,
-		"b":128,
-		"XR":"F7",
-		"XG":"7F",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Medium carmine",
-		"r":247,
-		"g":143,
-		"b":53,
-		"XR":"F7",
-		"XG":"8F",
-		"XB":"35",
-		"FriendlyName":"n"
-},{
-		"name":"Dark salmon",
-		"r":246,
-		"g":74,
-		"b":122,
-		"XR":"F6",
-		"XG":"4A",
-		"XB":"7A",
-		"FriendlyName":"n"
-},{
-		"name":"Slate blue",
-		"r":246,
-		"g":173,
-		"b":205,
-		"XR":"F6",
-		"XG":"AD",
-		"XB":"CD",
-		"FriendlyName":"n"
-},{
-		"name":"Languid lavender",
-		"r":245,
-		"g":105,
-		"b":221,
-		"XR":"F5",
-		"XG":"69",
-		"XB":"DD",
-		"FriendlyName":"n"
-},{
-		"name":"Dark pastel blue",
-		"r":245,
-		"g":222,
-		"b":203,
-		"XR":"F5",
-		"XG":"DE",
-		"XB":"CB",
-		"FriendlyName":"n"
-},{
-		"name":"Davy's grey",
-		"r":245,
-		"g":245,
-		"b":85,
-		"XR":"F5",
-		"XG":"F5",
-		"XB":"55",
-		"FriendlyName":"n"
-},{
-		"name":"Medium teal blue",
-		"r":245,
-		"g":255,
-		"b":180,
-		"XR":"F5",
-		"XG":"FF",
-		"XB":"B4",
-		"FriendlyName":"n"
-},{
-		"name":"Safety orange (blaze orange)",
-		"r":244,
-		"g":0,
-		"b":0,
-		"XR":"F4",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Brilliant rose",
-		"r":244,
-		"g":0,
-		"b":163,
-		"XR":"F4",
-		"XG":"00",
-		"XB":"A3",
-		"FriendlyName":"n"
-},{
-		"name":"Bright cerulean",
-		"r":244,
-		"g":187,
-		"b":214,
-		"XR":"F4",
-		"XG":"BB",
-		"XB":"D6",
-		"FriendlyName":"n"
-},{
-		"name":"Copper rose",
-		"r":244,
-		"g":194,
-		"b":102,
-		"XR":"F4",
-		"XG":"C2",
-		"XB":"66",
-		"FriendlyName":"n"
-},{
-		"name":"Pale brown",
-		"r":244,
-		"g":196,
-		"b":84,
-		"XR":"F4",
-		"XG":"C4",
-		"XB":"54",
-		"FriendlyName":"n"
-},{
-		"name":"Bondi blue",
-		"r":244,
-		"g":240,
-		"b":182,
-		"XR":"F4",
-		"XG":"F0",
-		"XB":"B6",
-		"FriendlyName":"n"
-},{
-		"name":"Palatinate purple",
-		"r":243,
-		"g":229,
-		"b":96,
-		"XR":"F3",
-		"XG":"E5",
-		"XB":"60",
-		"FriendlyName":"n"
-},{
-		"name":"Purple Heart",
-		"r":243,
-		"g":229,
-		"b":156,
-		"XR":"F3",
-		"XG":"E5",
-		"XB":"9C",
-		"FriendlyName":"n"
-},{
-		"name":"University of California Gold",
-		"r":242,
-		"g":133,
-		"b":39,
-		"XR":"F2",
-		"XG":"85",
-		"XB":"27",
-		"FriendlyName":"n"
-},{
-		"name":"Caput mortuum",
-		"r":242,
-		"g":243,
-		"b":32,
-		"XR":"F2",
-		"XG":"F3",
-		"XB":"20",
-		"FriendlyName":"n"
-},{
-		"name":"Glaucous",
-		"r":242,
-		"g":243,
-		"b":182,
-		"XR":"F2",
-		"XG":"F3",
-		"XB":"B6",
-		"FriendlyName":"n"
-},{
-		"name":"Twilight lavender",
-		"r":241,
-		"g":167,
-		"b":107,
-		"XR":"F1",
-		"XG":"A7",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Pansy purple",
-		"r":240,
-		"g":220,
-		"b":74,
-		"XR":"F0",
-		"XG":"DC",
-		"XB":"4A",
-		"FriendlyName":"n"
-},{
-		"name":"Wine",
-		"r":240,
-		"g":225,
-		"b":55,
-		"XR":"F0",
-		"XG":"E1",
-		"XB":"37",
-		"FriendlyName":"n"
-},{
-		"name":"Tuscan red",
-		"r":240,
-		"g":230,
-		"b":77,
-		"XR":"F0",
-		"XG":"E6",
-		"XB":"4D",
-		"FriendlyName":"r"
-},{
-		"name":"Medium taupe",
-		"r":240,
-		"g":230,
-		"b":71,
-		"XR":"F0",
-		"XG":"E6",
-		"XB":"47",
-		"FriendlyName":"n"
-},{
-		"name":"Otter brown",
-		"r":240,
-		"g":234,
-		"b":33,
-		"XR":"F0",
-		"XG":"EA",
-		"XB":"21",
-		"FriendlyName":"n"
-},{
-		"name":"Capri",
-		"r":240,
-		"g":248,
-		"b":255,
-		"XR":"F0",
-		"XG":"F8",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Han purple",
-		"r":240,
-		"g":255,
-		"b":250,
-		"XR":"F0",
-		"XG":"FF",
-		"XB":"FA",
-		"FriendlyName":"n"
-},{
-		"name":"Champagne",
-		"r":239,
-		"g":48,
-		"b":165,
-		"XR":"EF",
-		"XG":"30",
-		"XB":"A5",
-		"FriendlyName":"n"
-},{
-		"name":"Sand dune",
-		"r":239,
-		"g":204,
-		"b":23,
-		"XR":"EF",
-		"XG":"CC",
-		"XB":"17",
-		"FriendlyName":"n"
-},{
-		"name":"Beau blue",
-		"r":238,
-		"g":130,
-		"b":230,
-		"XR":"EE",
-		"XG":"82",
-		"XB":"E6",
-		"FriendlyName":"n"
-},{
-		"name":"Rosy brown",
-		"r":238,
-		"g":130,
-		"b":143,
-		"XR":"EE",
-		"XG":"82",
-		"XB":"8F",
-		"FriendlyName":"n"
-},{
-		"name":"Old lavender",
-		"r":238,
-		"g":220,
-		"b":120,
-		"XR":"EE",
-		"XG":"DC",
-		"XB":"78",
-		"FriendlyName":"n"
-},{
-		"name":"Rose ebony",
-		"r":238,
-		"g":230,
-		"b":70,
-		"XR":"EE",
-		"XG":"E6",
-		"XB":"46",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender (floral)",
-		"r":237,
-		"g":135,
-		"b":220,
-		"XR":"ED",
-		"XG":"87",
-		"XB":"DC",
-		"FriendlyName":"n"
-},{
-		"name":"Manatee",
-		"r":237,
-		"g":201,
-		"b":170,
-		"XR":"ED",
-		"XG":"C9",
-		"XB":"AA",
-		"FriendlyName":"n"
-},{
-		"name":"Hollywood cerise",
-		"r":236,
-		"g":59,
-		"b":161,
-		"XR":"EC",
-		"XG":"3B",
-		"XB":"A1",
-		"FriendlyName":"n"
-},{
-		"name":"Dark raspberry",
-		"r":236,
-		"g":213,
-		"b":87,
-		"XR":"EC",
-		"XG":"D5",
-		"XB":"57",
-		"FriendlyName":"n"
-},{
-		"name":"Dark brown",
-		"r":236,
-		"g":235,
-		"b":33,
-		"XR":"EC",
-		"XG":"EB",
-		"XB":"21",
-		"FriendlyName":"n"
-},{
-		"name":"Maya blue",
-		"r":234,
-		"g":224,
-		"b":251,
-		"XR":"EA",
-		"XG":"E0",
-		"XB":"FB",
-		"FriendlyName":"n"
-},{
-		"name":"Brick red",
-		"r":233,
-		"g":116,
-		"b":84,
-		"XR":"E9",
-		"XG":"74",
-		"XB":"54",
-		"FriendlyName":"r"
-},{
-		"name":"Deep carmine",
-		"r":233,
-		"g":150,
-		"b":62,
-		"XR":"E9",
-		"XG":"96",
-		"XB":"3E",
-		"FriendlyName":"n"
-},{
-		"name":"Orange-red",
-		"r":232,
-		"g":0,
-		"b":0,
-		"XR":"E8",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"r"
-},{
-		"name":"Vermilion",
-		"r":231,
-		"g":84,
-		"b":52,
-		"XR":"E7",
-		"XG":"54",
-		"XB":"34",
-		"FriendlyName":"n"
-},{
-		"name":"Electric indigo",
-		"r":231,
-		"g":172,
-		"b":255,
-		"XR":"E7",
-		"XG":"AC",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Harvest Gold",
-		"r":230,
-		"g":103,
-		"b":0,
-		"XR":"E6",
-		"XG":"67",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Halaya ube",
-		"r":230,
-		"g":230,
-		"b":84,
-		"XR":"E6",
-		"XG":"E6",
-		"XB":"54",
-		"FriendlyName":"n"
-},{
-		"name":"Tyrian purple",
-		"r":230,
-		"g":230,
-		"b":60,
-		"XR":"E6",
-		"XG":"E6",
-		"XB":"3C",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender rose",
-		"r":229,
-		"g":43,
-		"b":227,
-		"XR":"E5",
-		"XG":"2B",
-		"XB":"E3",
-		"FriendlyName":"n"
-},{
-		"name":"Sepia",
-		"r":229,
-		"g":228,
-		"b":20,
-		"XR":"E5",
-		"XG":"E4",
-		"XB":"14",
-		"FriendlyName":"n"
-},{
-		"name":"Fuzzy Wuzzy",
-		"r":228,
-		"g":113,
-		"b":102,
-		"XR":"E4",
-		"XG":"71",
-		"XB":"66",
-		"FriendlyName":"n"
-},{
-		"name":"Rust",
-		"r":228,
-		"g":132,
-		"b":14,
-		"XR":"E4",
-		"XG":"84",
-		"XB":"0E",
-		"FriendlyName":"n"
-},{
-		"name":"Baby blue eyes",
-		"r":228,
-		"g":155,
-		"b":241,
-		"XR":"E4",
-		"XG":"9B",
-		"XB":"F1",
-		"FriendlyName":"n"
-},{
-		"name":"Cadet grey",
-		"r":228,
-		"g":208,
-		"b":176,
-		"XR":"E4",
-		"XG":"D0",
-		"XB":"B0",
-		"FriendlyName":"n"
-},{
-		"name":"Light salmon pink",
-		"r":227,
-		"g":0,
-		"b":153,
-		"XR":"E3",
-		"XG":"00",
-		"XB":"99",
-		"FriendlyName":"n"
-},{
-		"name":"Cotton candy",
-		"r":227,
-		"g":11,
-		"b":217,
-		"XR":"E3",
-		"XG":"0B",
-		"XB":"D9",
-		"FriendlyName":"n"
-},{
-		"name":"Melon",
-		"r":227,
-		"g":38,
-		"b":180,
-		"XR":"E3",
-		"XG":"26",
-		"XB":"B4",
-		"FriendlyName":"n"
-},{
-		"name":"Khaki (X11) (Light khaki)",
-		"r":227,
-		"g":66,
-		"b":140,
-		"XR":"E3",
-		"XG":"42",
-		"XB":"8C",
-		"FriendlyName":"n"
-},{
-		"name":"Violet (color wheel)",
-		"r":227,
-		"g":168,
-		"b":255,
-		"XR":"E3",
-		"XG":"A8",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Yellow Orange",
-		"r":226,
-		"g":6,
-		"b":66,
-		"XR":"E2",
-		"XG":"06",
-		"XB":"42",
-		"FriendlyName":"n"
-},{
-		"name":"Platinum",
-		"r":226,
-		"g":80,
-		"b":226,
-		"XR":"E2",
-		"XG":"50",
-		"XB":"E2",
-		"FriendlyName":"n"
-},{
-		"name":"Earth yellow",
-		"r":226,
-		"g":88,
-		"b":95,
-		"XR":"E2",
-		"XG":"58",
-		"XB":"5F",
-		"FriendlyName":"n"
-},{
-		"name":"Puce",
-		"r":226,
-		"g":114,
-		"b":153,
-		"XR":"E2",
-		"XG":"72",
-		"XB":"99",
-		"FriendlyName":"n"
-},{
-		"name":"Maroon (X11)",
-		"r":225,
-		"g":142,
-		"b":96,
-		"XR":"E1",
-		"XG":"8E",
-		"XB":"60",
-		"FriendlyName":"n"
-},{
-		"name":"Field drab",
-		"r":225,
-		"g":173,
-		"b":30,
-		"XR":"E1",
-		"XG":"AD",
-		"XB":"1E",
-		"FriendlyName":"n"
-},{
-		"name":"Sunglow",
-		"r":224,
-		"g":17,
-		"b":51,
-		"XR":"E0",
-		"XG":"11",
-		"XB":"33",
-		"FriendlyName":"n"
-},{
-		"name":"Electric lavender",
-		"r":224,
-		"g":60,
-		"b":255,
-		"XR":"E0",
-		"XG":"3C",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Rich maroon",
-		"r":224,
-		"g":141,
-		"b":96,
-		"XR":"E0",
-		"XG":"8D",
-		"XB":"60",
-		"FriendlyName":"n"
-},{
-		"name":"United Nations blue",
-		"r":224,
-		"g":176,
-		"b":229,
-		"XR":"E0",
-		"XG":"B0",
-		"XB":"E5",
-		"FriendlyName":"n"
-},{
-		"name":"Dark electric blue",
-		"r":224,
-		"g":255,
-		"b":120,
-		"XR":"E0",
-		"XG":"FF",
-		"XB":"78",
-		"FriendlyName":"n"
-},{
-		"name":"Naples yellow",
-		"r":222,
-		"g":49,
-		"b":94,
-		"XR":"DE",
-		"XG":"31",
-		"XB":"5E",
-		"FriendlyName":"n"
-},{
-		"name":"Heliotrope",
-		"r":222,
-		"g":93,
-		"b":255,
-		"XR":"DE",
-		"XG":"5D",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel gray",
-		"r":222,
-		"g":111,
-		"b":196,
-		"XR":"DE",
-		"XG":"6F",
-		"XB":"C4",
-		"FriendlyName":"n"
-},{
-		"name":"Olivine",
-		"r":221,
-		"g":160,
-		"b":115,
-		"XR":"DD",
-		"XG":"A0",
-		"XB":"73",
-		"FriendlyName":"n"
-},{
-		"name":"Columbia blue",
-		"r":221,
-		"g":160,
-		"b":255,
-		"XR":"DD",
-		"XG":"A0",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Pale cerulean",
-		"r":221,
-		"g":160,
-		"b":226,
-		"XR":"DD",
-		"XG":"A0",
-		"XB":"E2",
-		"FriendlyName":"n"
-},{
-		"name":"Mustard",
-		"r":220,
-		"g":20,
-		"b":88,
-		"XR":"DC",
-		"XG":"14",
-		"XB":"58",
-		"FriendlyName":"n"
-},{
-		"name":"Dark tan",
-		"r":220,
-		"g":208,
-		"b":81,
-		"XR":"DC",
-		"XG":"D0",
-		"XB":"51",
-		"FriendlyName":"n"
-},{
-		"name":"Bole",
-		"r":220,
-		"g":220,
-		"b":59,
-		"XR":"DC",
-		"XG":"DC",
-		"XB":"3B",
-		"FriendlyName":"n"
-},{
-		"name":"Indian red",
-		"r":219,
-		"g":112,
-		"b":92,
-		"XR":"DB",
-		"XG":"70",
-		"XB":"5C",
-		"FriendlyName":"r"
-},{
-		"name":"Dark coral",
-		"r":219,
-		"g":112,
-		"b":69,
-		"XR":"DB",
-		"XG":"70",
-		"XB":"45",
-		"FriendlyName":"n"
-},{
-		"name":"Battleship grey",
-		"r":219,
-		"g":215,
-		"b":130,
-		"XR":"DB",
-		"XG":"D7",
-		"XB":"82",
-		"FriendlyName":"n"
-},{
-		"name":"Jonquil",
-		"r":218,
-		"g":50,
-		"b":94,
-		"XR":"DA",
-		"XG":"32",
-		"XB":"5E",
-		"FriendlyName":"n"
-},{
-		"name":"Chestnut",
-		"r":218,
-		"g":112,
-		"b":92,
-		"XR":"DA",
-		"XG":"70",
-		"XB":"5C",
-		"FriendlyName":"n"
-},{
-		"name":"Light taupe",
-		"r":218,
-		"g":138,
-		"b":109,
-		"XR":"DA",
-		"XG":"8A",
-		"XB":"6D",
-		"FriendlyName":"n"
-},{
-		"name":"Light blue",
-		"r":218,
-		"g":145,
-		"b":230,
-		"XR":"DA",
-		"XG":"91",
-		"XB":"E6",
-		"FriendlyName":"n"
-},{
-		"name":"Saddle brown",
-		"r":218,
-		"g":165,
-		"b":19,
-		"XR":"DA",
-		"XG":"A5",
-		"XB":"13",
-		"FriendlyName":"n"
-},{
-		"name":"Fuchsia",
-		"r":217,
-		"g":0,
-		"b":255,
-		"XR":"D9",
-		"XG":"00",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Sapphire",
-		"r":216,
-		"g":191,
-		"b":186,
-		"XR":"D8",
-		"XG":"BF",
-		"XB":"BA",
-		"FriendlyName":"n"
-},{
-		"name":"Selective yellow",
-		"r":215,
-		"g":10,
-		"b":0,
-		"XR":"D7",
-		"XG":"0A",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Blanched Almond",
-		"r":215,
-		"g":24,
-		"b":205,
-		"XR":"D7",
-		"XG":"18",
-		"XB":"CD",
-		"FriendlyName":"n"
-},{
-		"name":"Brown (traditional)",
-		"r":214,
-		"g":202,
-		"b":0,
-		"XR":"D6",
-		"XG":"CA",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Air Force blue",
-		"r":212,
-		"g":175,
-		"b":168,
-		"XR":"D4",
-		"XG":"AF",
-		"XB":"A8",
-		"FriendlyName":"n"
-},{
-		"name":"Magenta (process)",
-		"r":211,
-		"g":0,
-		"b":144,
-		"XR":"D3",
-		"XG":"00",
-		"XB":"90",
-		"FriendlyName":"n"
-},{
-		"name":"Baby blue",
-		"r":211,
-		"g":211,
-		"b":240,
-		"XR":"D3",
-		"XG":"D3",
-		"XB":"F0",
-		"FriendlyName":"n"
-},{
-		"name":"Chocolate (web)",
-		"r":210,
-		"g":105,
-		"b":30,
-		"XR":"D2",
-		"XG":"69",
-		"XB":"1E",
-		"FriendlyName":"n"
-},{
-		"name":"Cinnamon",
-		"r":210,
-		"g":105,
-		"b":30,
-		"XR":"D2",
-		"XG":"69",
-		"XB":"1E",
-		"FriendlyName":"n"
-},{
-		"name":"Cocoa brown",
-		"r":210,
-		"g":105,
-		"b":30,
-		"XR":"D2",
-		"XG":"69",
-		"XB":"1E",
-		"FriendlyName":"n"
-},{
-		"name":"Mint",
-		"r":210,
-		"g":180,
-		"b":137,
-		"XR":"D2",
-		"XG":"B4",
-		"XB":"89",
-		"FriendlyName":"n"
-},{
-		"name":"Purple (Munsell)",
-		"r":209,
-		"g":159,
-		"b":197,
-		"XR":"D1",
-		"XG":"9F",
-		"XB":"C5",
-		"FriendlyName":"n"
-},{
-		"name":"Byzantium",
-		"r":209,
-		"g":226,
-		"b":99,
-		"XR":"D1",
-		"XG":"E2",
-		"XB":"63",
-		"FriendlyName":"n"
-},{
-		"name":"UA blue",
-		"r":208,
-		"g":240,
-		"b":170,
-		"XR":"D0",
-		"XG":"F0",
-		"XB":"AA",
-		"FriendlyName":"n"
-},{
-		"name":"USC Gold",
-		"r":207,
-		"g":16,
-		"b":0,
-		"XR":"CF",
-		"XG":"10",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Deep magenta",
-		"r":207,
-		"g":113,
-		"b":204,
-		"XR":"CF",
-		"XG":"71",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Dark sienna",
-		"r":207,
-		"g":181,
-		"b":20,
-		"XR":"CF",
-		"XG":"B5",
-		"XB":"14",
-		"FriendlyName":"n"
-},{
-		"name":"Raspberry glace",
-		"r":207,
-		"g":207,
-		"b":109,
-		"XR":"CF",
-		"XG":"CF",
-		"XB":"6D",
-		"FriendlyName":"n"
-},{
-		"name":"Terra cotta",
-		"r":205,
-		"g":87,
-		"b":91,
-		"XR":"CD",
-		"XG":"57",
-		"XB":"5B",
-		"FriendlyName":"n"
-},{
-		"name":"Tiger's eye",
-		"r":205,
-		"g":91,
-		"b":60,
-		"XR":"CD",
-		"XG":"5B",
-		"XB":"3C",
-		"FriendlyName":"n"
-},{
-		"name":"Mauve",
-		"r":205,
-		"g":92,
-		"b":255,
-		"XR":"CD",
-		"XG":"5C",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Desert",
-		"r":205,
-		"g":127,
-		"b":107,
-		"XR":"CD",
-		"XG":"7F",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Orange peel",
-		"r":204,
-		"g":0,
-		"b":0,
-		"XR":"CC",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Amber (SAE/ECE)",
-		"r":204,
-		"g":0,
-		"b":0,
-		"XR":"CC",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender (web)",
-		"r":204,
-		"g":78,
-		"b":250,
-		"XR":"CC",
-		"XG":"4E",
-		"XB":"FA",
-		"FriendlyName":"n"
-},{
-		"name":"Raspberry pink",
-		"r":204,
-		"g":85,
-		"b":152,
-		"XR":"CC",
-		"XG":"55",
-		"XB":"98",
-		"FriendlyName":"n"
-},{
-		"name":"Timberwolf",
-		"r":204,
-		"g":102,
-		"b":210,
-		"XR":"CC",
-		"XG":"66",
-		"XB":"D2",
-		"FriendlyName":"n"
-},{
-		"name":"Royal fuchsia",
-		"r":204,
-		"g":119,
-		"b":146,
-		"XR":"CC",
-		"XG":"77",
-		"XB":"92",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender indigo",
-		"r":204,
-		"g":204,
-		"b":235,
-		"XR":"CC",
-		"XG":"CC",
-		"XB":"EB",
-		"FriendlyName":"n"
-},{
-		"name":"Pale robin egg blue",
-		"r":204,
-		"g":204,
-		"b":209,
-		"XR":"CC",
-		"XG":"CC",
-		"XB":"D1",
-		"FriendlyName":"n"
-},{
-		"name":"Dandelion",
-		"r":203,
-		"g":65,
-		"b":48,
-		"XR":"CB",
-		"XG":"41",
-		"XB":"30",
-		"FriendlyName":"n"
-},{
-		"name":"Rich brilliant lavender",
-		"r":203,
-		"g":65,
-		"b":254,
-		"XR":"CB",
-		"XG":"41",
-		"XB":"FE",
-		"FriendlyName":"n"
-},{
-		"name":"Electric violet",
-		"r":203,
-		"g":161,
-		"b":255,
-		"XR":"CB",
-		"XG":"A1",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender pink",
-		"r":202,
-		"g":44,
-		"b":210,
-		"XR":"CA",
-		"XG":"2C",
-		"XB":"D2",
-		"FriendlyName":"n"
-},{
-		"name":"Portland Orange",
-		"r":201,
-		"g":0,
-		"b":54,
-		"XR":"C9",
-		"XG":"00",
-		"XB":"36",
-		"FriendlyName":"n"
-},{
-		"name":"Dark orchid",
-		"r":201,
-		"g":192,
-		"b":204,
-		"XR":"C9",
-		"XG":"C0",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel orange",
-		"r":200,
-		"g":8,
-		"b":71,
-		"XR":"C8",
-		"XG":"08",
-		"XB":"47",
-		"FriendlyName":"n"
-},{
-		"name":"Golden yellow",
-		"r":199,
-		"g":21,
-		"b":0,
-		"XR":"C7",
-		"XG":"15",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Navajo white",
-		"r":199,
-		"g":21,
-		"b":173,
-		"XR":"C7",
-		"XG":"15",
-		"XB":"AD",
-		"FriendlyName":"n"
-},{
-		"name":"Hansa yellow",
-		"r":197,
-		"g":75,
-		"b":107,
-		"XR":"C5",
-		"XG":"4B",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Café noir",
-		"r":197,
-		"g":179,
-		"b":33,
-		"XR":"C5",
-		"XG":"B3",
-		"XB":"21",
-		"FriendlyName":"n"
-},{
-		"name":"Carnation pink",
-		"r":196,
-		"g":2,
-		"b":201,
-		"XR":"C4",
-		"XG":"02",
-		"XB":"C9",
-		"FriendlyName":"n"
-},{
-		"name":"Dark chestnut",
-		"r":196,
-		"g":195,
-		"b":96,
-		"XR":"C4",
-		"XG":"C3",
-		"XB":"60",
-		"FriendlyName":"n"
-},{
-		"name":"Iris",
-		"r":195,
-		"g":176,
-		"b":207,
-		"XR":"C3",
-		"XG":"B0",
-		"XB":"CF",
-		"FriendlyName":"n"
-},{
-		"name":"Wild blue yonder",
-		"r":193,
-		"g":154,
-		"b":208,
-		"XR":"C1",
-		"XG":"9A",
-		"XB":"D0",
-		"FriendlyName":"n"
-},{
-		"name":"Blue Bell",
-		"r":193,
-		"g":154,
-		"b":208,
-		"XR":"C1",
-		"XG":"9A",
-		"XB":"D0",
-		"FriendlyName":"n"
-},{
-		"name":"Cambridge Blue",
-		"r":193,
-		"g":154,
-		"b":173,
-		"XR":"C1",
-		"XG":"9A",
-		"XB":"AD",
-		"FriendlyName":"n"
-},{
-		"name":"Non-photo blue",
-		"r":193,
-		"g":154,
-		"b":237,
-		"XR":"C1",
-		"XG":"9A",
-		"XB":"ED",
-		"FriendlyName":"n"
-},{
-		"name":"Tangerine",
-		"r":192,
-		"g":64,
-		"b":0,
-		"XR":"C0",
-		"XG":"40",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Bright lavender",
-		"r":192,
-		"g":128,
-		"b":228,
-		"XR":"C0",
-		"XG":"80",
-		"XB":"E4",
-		"FriendlyName":"n"
-},{
-		"name":"Outrageous Orange",
-		"r":191,
-		"g":0,
-		"b":74,
-		"XR":"BF",
-		"XG":"00",
-		"XB":"4A",
-		"FriendlyName":"n"
-},{
-		"name":"Redwood",
-		"r":191,
-		"g":148,
-		"b":82,
-		"XR":"BF",
-		"XG":"94",
-		"XB":"52",
-		"FriendlyName":"r"
-},{
-		"name":"Brandeis blue",
-		"r":191,
-		"g":255,
-		"b":255,
-		"XR":"BF",
-		"XG":"FF",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Princeton orange",
-		"r":190,
-		"g":0,
-		"b":0,
-		"XR":"BE",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Onyx",
-		"r":190,
-		"g":190,
-		"b":15,
-		"XR":"BE",
-		"XG":"BE",
-		"XB":"0F",
-		"FriendlyName":"n"
-},{
-		"name":"Light fuchsia pink",
-		"r":189,
-		"g":51,
-		"b":239,
-		"XR":"BD",
-		"XG":"33",
-		"XB":"EF",
-		"FriendlyName":"n"
-},{
-		"name":"Black",
-		"r":189,
-		"g":218,
-		"b":0,
-		"XR":"BD",
-		"XG":"DA",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Powder blue (web)",
-		"r":188,
-		"g":143,
-		"b":230,
-		"XR":"BC",
-		"XG":"8F",
-		"XB":"E6",
-		"FriendlyName":"n"
-},{
-		"name":"Ube",
-		"r":188,
-		"g":212,
-		"b":195,
-		"XR":"BC",
-		"XG":"D4",
-		"XB":"C3",
-		"FriendlyName":"n"
-},{
-		"name":"Sienna",
-		"r":188,
-		"g":212,
-		"b":23,
-		"XR":"BC",
-		"XG":"D4",
-		"XB":"17",
-		"FriendlyName":"n"
-},{
-		"name":"Pale plum",
-		"r":187,
-		"g":101,
-		"b":221,
-		"XR":"BB",
-		"XG":"65",
-		"XB":"DD",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender mist",
-		"r":185,
-		"g":78,
-		"b":250,
-		"XR":"B9",
-		"XG":"4E",
-		"XB":"FA",
-		"FriendlyName":"n"
-},{
-		"name":"Fandango",
-		"r":184,
-		"g":134,
-		"b":137,
-		"XR":"B8",
-		"XG":"86",
-		"XB":"89",
-		"FriendlyName":"n"
-},{
-		"name":"Light coral",
-		"r":183,
-		"g":65,
-		"b":128,
-		"XR":"B7",
-		"XG":"41",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Copper",
-		"r":183,
-		"g":132,
-		"b":51,
-		"XR":"B7",
-		"XG":"84",
-		"XB":"33",
-		"FriendlyName":"n"
-},{
-		"name":"Turkish rose",
-		"r":183,
-		"g":135,
-		"b":129,
-		"XR":"B7",
-		"XG":"87",
-		"XB":"81",
-		"FriendlyName":"n"
-},{
-		"name":"Pale violet-red",
-		"r":182,
-		"g":102,
-		"b":147,
-		"XR":"B6",
-		"XG":"66",
-		"XB":"93",
-		"FriendlyName":"r"
-},{
-		"name":"Rose bonbon",
-		"r":181,
-		"g":51,
-		"b":158,
-		"XR":"B5",
-		"XG":"33",
-		"XB":"9E",
-		"FriendlyName":"n"
-},{
-		"name":"Medium lavender magenta",
-		"r":181,
-		"g":101,
-		"b":221,
-		"XR":"B5",
-		"XG":"65",
-		"XB":"DD",
-		"FriendlyName":"n"
-},{
-		"name":"Ochre",
-		"r":181,
-		"g":114,
-		"b":34,
-		"XR":"B5",
-		"XG":"72",
-		"XB":"22",
-		"FriendlyName":"n"
-},{
-		"name":"Dark pastel red",
-		"r":181,
-		"g":126,
-		"b":34,
-		"XR":"B5",
-		"XG":"7E",
-		"XB":"22",
-		"FriendlyName":"r"
-},{
-		"name":"Burnt umber",
-		"r":181,
-		"g":166,
-		"b":36,
-		"XR":"B5",
-		"XG":"A6",
-		"XB":"24",
-		"FriendlyName":"n"
-},{
-		"name":"Violet (web)",
-		"r":179,
-		"g":68,
-		"b":238,
-		"XR":"B3",
-		"XG":"44",
-		"XB":"EE",
-		"FriendlyName":"n"
-},{
-		"name":"Purple (X11)",
-		"r":179,
-		"g":158,
-		"b":240,
-		"XR":"B3",
-		"XG":"9E",
-		"XB":"F0",
-		"FriendlyName":"n"
-},{
-		"name":"Persian rose",
-		"r":178,
-		"g":34,
-		"b":162,
-		"XR":"B2",
-		"XG":"22",
-		"XB":"A2",
-		"FriendlyName":"n"
-},{
-		"name":"Yale Blue",
-		"r":178,
-		"g":190,
-		"b":146,
-		"XR":"B2",
-		"XG":"BE",
-		"XB":"92",
-		"FriendlyName":"n"
-},{
-		"name":"International Klein Blue",
-		"r":178,
-		"g":236,
-		"b":167,
-		"XR":"B2",
-		"XG":"EC",
-		"XB":"A7",
-		"FriendlyName":"n"
-},{
-		"name":"Veronica",
-		"r":177,
-		"g":156,
-		"b":240,
-		"XR":"B1",
-		"XG":"9C",
-		"XB":"F0",
-		"FriendlyName":"n"
-},{
-		"name":"Deep champagne",
-		"r":176,
-		"g":48,
-		"b":165,
-		"XR":"B0",
-		"XG":"30",
-		"XB":"A5",
-		"FriendlyName":"n"
-},{
-		"name":"Sunset",
-		"r":176,
-		"g":48,
-		"b":165,
-		"XR":"B0",
-		"XG":"30",
-		"XB":"A5",
-		"FriendlyName":"n"
-},{
-		"name":"Moonstone blue",
-		"r":176,
-		"g":224,
-		"b":194,
-		"XR":"B0",
-		"XG":"E0",
-		"XB":"C2",
-		"FriendlyName":"n"
-},{
-		"name":"Medium champagne",
-		"r":175,
-		"g":64,
-		"b":171,
-		"XR":"AF",
-		"XG":"40",
-		"XB":"AB",
-		"FriendlyName":"n"
-},{
-		"name":"Majorelle Blue",
-		"r":175,
-		"g":238,
-		"b":220,
-		"XR":"AF",
-		"XG":"EE",
-		"XB":"DC",
-		"FriendlyName":"n"
-},{
-		"name":"Pink",
-		"r":174,
-		"g":12,
-		"b":203,
-		"XR":"AE",
-		"XG":"0C",
-		"XB":"CB",
-		"FriendlyName":"n"
-},{
-		"name":"Patriarch",
-		"r":173,
-		"g":216,
-		"b":128,
-		"XR":"AD",
-		"XG":"D8",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Oxford Blue",
-		"r":173,
-		"g":223,
-		"b":71,
-		"XR":"AD",
-		"XG":"DF",
-		"XB":"47",
-		"FriendlyName":"n"
-},{
-		"name":"Ocean Boat Blue",
-		"r":173,
-		"g":255,
-		"b":190,
-		"XR":"AD",
-		"XG":"FF",
-		"XB":"BE",
-		"FriendlyName":"n"
-},{
-		"name":"Royal blue (traditional)",
-		"r":172,
-		"g":225,
-		"b":102,
-		"XR":"AC",
-		"XG":"E1",
-		"XB":"66",
-		"FriendlyName":"n"
-},{
-		"name":"Old mauve",
-		"r":172,
-		"g":229,
-		"b":71,
-		"XR":"AC",
-		"XG":"E5",
-		"XB":"47",
-		"FriendlyName":"n"
-},{
-		"name":"Pale gold",
-		"r":171,
-		"g":78,
-		"b":138,
-		"XR":"AB",
-		"XG":"4E",
-		"XB":"8A",
-		"FriendlyName":"n"
-},{
-		"name":"Light Thulian pink",
-		"r":171,
-		"g":78,
-		"b":172,
-		"XR":"AB",
-		"XG":"4E",
-		"XB":"AC",
-		"FriendlyName":"n"
-},{
-		"name":"Medium purple",
-		"r":171,
-		"g":205,
-		"b":219,
-		"XR":"AB",
-		"XG":"CD",
-		"XB":"DB",
-		"FriendlyName":"n"
-},{
-		"name":"Dark gray",
-		"r":170,
-		"g":152,
-		"b":169,
-		"XR":"AA",
-		"XG":"98",
-		"XB":"A9",
-		"FriendlyName":"n"
-},{
-		"name":"Smalt (Dark powder blue)",
-		"r":170,
-		"g":240,
-		"b":153,
-		"XR":"AA",
-		"XG":"F0",
-		"XB":"99",
-		"FriendlyName":"n"
-},{
-		"name":"Dodger blue",
-		"r":169,
-		"g":186,
-		"b":255,
-		"XR":"A9",
-		"XG":"BA",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Cool black",
-		"r":168,
-		"g":228,
-		"b":99,
-		"XR":"A8",
-		"XG":"E4",
-		"XB":"63",
-		"FriendlyName":"n"
-},{
-		"name":"Tan",
-		"r":167,
-		"g":107,
-		"b":140,
-		"XR":"A7",
-		"XG":"6B",
-		"XB":"8C",
-		"FriendlyName":"n"
-},{
-		"name":"Royal azure",
-		"r":167,
-		"g":252,
-		"b":168,
-		"XR":"A7",
-		"XG":"FC",
-		"XB":"A8",
-		"FriendlyName":"n"
-},{
-		"name":"Fluorescent orange",
-		"r":165,
-		"g":11,
-		"b":0,
-		"XR":"A5",
-		"XG":"0B",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Golden poppy",
-		"r":165,
-		"g":42,
-		"b":0,
-		"XR":"A5",
-		"XG":"2A",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Flamingo pink",
-		"r":165,
-		"g":42,
-		"b":172,
-		"XR":"A5",
-		"XG":"2A",
-		"XB":"AC",
-		"FriendlyName":"n"
-},{
-		"name":"Salmon",
-		"r":164,
-		"g":0,
-		"b":105,
-		"XR":"A4",
-		"XG":"00",
-		"XB":"69",
-		"FriendlyName":"n"
-},{
-		"name":"Deep lilac",
-		"r":163,
-		"g":193,
-		"b":187,
-		"XR":"A3",
-		"XG":"C1",
-		"XB":"BB",
-		"FriendlyName":"n"
-},{
-		"name":"Plum (traditional)",
-		"r":162,
-		"g":162,
-		"b":133,
-		"XR":"A2",
-		"XG":"A2",
-		"XB":"85",
-		"FriendlyName":"n"
-},{
-		"name":"AuroMetalSaurus",
-		"r":162,
-		"g":173,
-		"b":128,
-		"XR":"A2",
-		"XG":"AD",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Dark pastel purple",
-		"r":161,
-		"g":202,
-		"b":214,
-		"XR":"A1",
-		"XG":"CA",
-		"XB":"D6",
-		"FriendlyName":"n"
-},{
-		"name":"Lilac",
-		"r":160,
-		"g":120,
-		"b":200,
-		"XR":"A0",
-		"XG":"78",
-		"XB":"C8",
-		"FriendlyName":"n"
-},{
-		"name":"Sky blue",
-		"r":160,
-		"g":214,
-		"b":235,
-		"XR":"A0",
-		"XG":"D6",
-		"XB":"EB",
-		"FriendlyName":"n"
-},{
-		"name":"Deep pink",
-		"r":159,
-		"g":0,
-		"b":147,
-		"XR":"9F",
-		"XG":"00",
-		"XB":"93",
-		"FriendlyName":"n"
-},{
-		"name":"Dark khaki",
-		"r":159,
-		"g":129,
-		"b":107,
-		"XR":"9F",
-		"XG":"81",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Bazaar",
-		"r":155,
-		"g":196,
-		"b":123,
-		"XR":"9B",
-		"XG":"C4",
-		"XB":"7B",
-		"FriendlyName":"n"
-},{
-		"name":"Light slate gray",
-		"r":155,
-		"g":221,
-		"b":153,
-		"XR":"9B",
-		"XG":"DD",
-		"XB":"99",
-		"FriendlyName":"n"
-},{
-		"name":"Zinnwaldite brown",
-		"r":154,
-		"g":185,
-		"b":8,
-		"XR":"9A",
-		"XG":"B9",
-		"XB":"08",
-		"FriendlyName":"n"
-},{
-		"name":"Medium blue",
-		"r":154,
-		"g":205,
-		"b":205,
-		"XR":"9A",
-		"XG":"CD",
-		"XB":"CD",
-		"FriendlyName":"n"
-},{
-		"name":"Magenta",
-		"r":153,
-		"g":0,
-		"b":255,
-		"XR":"99",
-		"XG":"00",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Peach-yellow",
-		"r":153,
-		"g":50,
-		"b":173,
-		"XR":"99",
-		"XG":"32",
-		"XB":"AD",
-		"FriendlyName":"n"
-},{
-		"name":"Indian yellow",
-		"r":153,
-		"g":85,
-		"b":87,
-		"XR":"99",
-		"XG":"55",
-		"XB":"57",
-		"FriendlyName":"n"
-},{
-		"name":"Pale chestnut",
-		"r":153,
-		"g":101,
-		"b":175,
-		"XR":"99",
-		"XG":"65",
-		"XB":"AF",
-		"FriendlyName":"n"
-},{
-		"name":"Deep cerise",
-		"r":153,
-		"g":102,
-		"b":135,
-		"XR":"99",
-		"XG":"66",
-		"XB":"87",
-		"FriendlyName":"n"
-},{
-		"name":"Vivid cerise",
-		"r":153,
-		"g":102,
-		"b":129,
-		"XR":"99",
-		"XG":"66",
-		"XB":"81",
-		"FriendlyName":"n"
-},{
-		"name":"Mulberry",
-		"r":153,
-		"g":122,
-		"b":140,
-		"XR":"99",
-		"XG":"7A",
-		"XB":"8C",
-		"FriendlyName":"n"
-},{
-		"name":"Eggplant",
-		"r":153,
-		"g":186,
-		"b":81,
-		"XR":"99",
-		"XG":"BA",
-		"XB":"51",
-		"FriendlyName":"n"
-},{
-		"name":"Light gray",
-		"r":152,
-		"g":105,
-		"b":211,
-		"XR":"98",
-		"XG":"69",
-		"XB":"D3",
-		"FriendlyName":"n"
-},{
-		"name":"Magenta (dye)",
-		"r":152,
-		"g":118,
-		"b":123,
-		"XR":"98",
-		"XG":"76",
-		"XB":"7B",
-		"FriendlyName":"n"
-},{
-		"name":"Pale silver",
-		"r":152,
-		"g":119,
-		"b":187,
-		"XR":"98",
-		"XG":"77",
-		"XB":"BB",
-		"FriendlyName":"n"
-},{
-		"name":"Byzantine",
-		"r":152,
-		"g":129,
-		"b":164,
-		"XR":"98",
-		"XG":"81",
-		"XB":"A4",
-		"FriendlyName":"n"
-},{
-		"name":"Dark midnight blue",
-		"r":152,
-		"g":251,
-		"b":102,
-		"XR":"98",
-		"XG":"FB",
-		"XB":"66",
-		"FriendlyName":"n"
-},{
-		"name":"Dark pink",
-		"r":150,
-		"g":75,
-		"b":128,
-		"XR":"96",
-		"XG":"4B",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Fire engine red",
-		"r":150,
-		"g":111,
-		"b":41,
-		"XR":"96",
-		"XG":"6F",
-		"XB":"29",
-		"FriendlyName":"r"
-},{
-		"name":"Burnt orange",
-		"r":150,
-		"g":113,
-		"b":0,
-		"XR":"96",
-		"XG":"71",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Dark terra cotta",
-		"r":150,
-		"g":113,
-		"b":92,
-		"XR":"96",
-		"XG":"71",
-		"XB":"5C",
-		"FriendlyName":"n"
-},{
-		"name":"Persian red",
-		"r":150,
-		"g":113,
-		"b":51,
-		"XR":"96",
-		"XG":"71",
-		"XB":"33",
-		"FriendlyName":"r"
-},{
-		"name":"Orange (color wheel)",
-		"r":148,
-		"g":0,
-		"b":0,
-		"XR":"94",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Ruddy pink",
-		"r":148,
-		"g":87,
-		"b":150,
-		"XR":"94",
-		"XG":"57",
-		"XB":"96",
-		"FriendlyName":"n"
-},{
-		"name":"Brilliant lavender",
-		"r":147,
-		"g":61,
-		"b":255,
-		"XR":"93",
-		"XG":"3D",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Bronze",
-		"r":147,
-		"g":112,
-		"b":50,
-		"XR":"93",
-		"XG":"70",
-		"XB":"32",
-		"FriendlyName":"n"
-},{
-		"name":"Blue (RYB)",
-		"r":147,
-		"g":197,
-		"b":254,
-		"XR":"93",
-		"XG":"C5",
-		"XB":"FE",
-		"FriendlyName":"n"
-},{
-		"name":"Dark violet",
-		"r":147,
-		"g":204,
-		"b":211,
-		"XR":"93",
-		"XG":"CC",
-		"XB":"D3",
-		"FriendlyName":"n"
-},{
-		"name":"Light apricot",
-		"r":146,
-		"g":39,
-		"b":177,
-		"XR":"92",
-		"XG":"27",
-		"XB":"B1",
-		"FriendlyName":"n"
-},{
-		"name":"Psychedelic purple",
-		"r":145,
-		"g":92,
-		"b":255,
-		"XR":"91",
-		"XG":"5C",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Cerise",
-		"r":145,
-		"g":95,
-		"b":99,
-		"XR":"91",
-		"XG":"5F",
-		"XB":"63",
-		"FriendlyName":"n"
-},{
-		"name":"Gray (X11 gray)",
-		"r":145,
-		"g":129,
-		"b":190,
-		"XR":"91",
-		"XG":"81",
-		"XB":"BE",
-		"FriendlyName":"n"
-},{
-		"name":"Cool grey",
-		"r":145,
-		"g":163,
-		"b":172,
-		"XR":"91",
-		"XG":"A3",
-		"XB":"AC",
-		"FriendlyName":"n"
-},{
-		"name":"Phlox",
-		"r":144,
-		"g":93,
-		"b":255,
-		"XR":"90",
-		"XG":"5D",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Prussian blue",
-		"r":144,
-		"g":238,
-		"b":83,
-		"XR":"90",
-		"XG":"EE",
-		"XB":"53",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel red",
-		"r":143,
-		"g":0,
-		"b":97,
-		"XR":"8F",
-		"XG":"00",
-		"XB":"61",
-		"FriendlyName":"r"
-},{
-		"name":"Titanium yellow",
-		"r":142,
-		"g":69,
-		"b":0,
-		"XR":"8E",
-		"XG":"45",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Dark cerulean",
-		"r":141,
-		"g":182,
-		"b":126,
-		"XR":"8D",
-		"XG":"B6",
-		"XB":"7E",
-		"FriendlyName":"n"
-},{
-		"name":"Mango Tango",
-		"r":139,
-		"g":0,
-		"b":67,
-		"XR":"8B",
-		"XG":"00",
-		"XB":"43",
-		"FriendlyName":"n"
-},{
-		"name":"Coral",
-		"r":139,
-		"g":0,
-		"b":80,
-		"XR":"8B",
-		"XG":"00",
-		"XB":"50",
-		"FriendlyName":"n"
-},{
-		"name":"Flax",
-		"r":139,
-		"g":69,
-		"b":130,
-		"XR":"8B",
-		"XG":"45",
-		"XB":"82",
-		"FriendlyName":"n"
-},{
-		"name":"Opera mauve",
-		"r":139,
-		"g":133,
-		"b":167,
-		"XR":"8B",
-		"XG":"85",
-		"XB":"A7",
-		"FriendlyName":"n"
-},{
-		"name":"Brink pink",
-		"r":138,
-		"g":43,
-		"b":127,
-		"XR":"8A",
-		"XG":"2B",
-		"XB":"7F",
-		"FriendlyName":"n"
-},{
-		"name":"Tea rose (orange)",
-		"r":138,
-		"g":51,
-		"b":121,
-		"XR":"8A",
-		"XG":"33",
-		"XB":"79",
-		"FriendlyName":"n"
-},{
-		"name":"Pearl",
-		"r":138,
-		"g":73,
-		"b":200,
-		"XR":"8A",
-		"XG":"49",
-		"XB":"C8",
-		"FriendlyName":"n"
-},{
-		"name":"Red-violet",
-		"r":138,
-		"g":121,
-		"b":133,
-		"XR":"8A",
-		"XG":"79",
-		"XB":"85",
-		"FriendlyName":"r"
-},{
-		"name":"Baby pink",
-		"r":137,
-		"g":63,
-		"b":194,
-		"XR":"89",
-		"XG":"3F",
-		"XB":"C2",
-		"FriendlyName":"n"
-},{
-		"name":"Mauve taupe",
-		"r":137,
-		"g":207,
-		"b":109,
-		"XR":"89",
-		"XG":"CF",
-		"XB":"6D",
-		"FriendlyName":"n"
-},{
-		"name":"Classic rose",
-		"r":136,
-		"g":45,
-		"b":231,
-		"XR":"88",
-		"XG":"2D",
-		"XB":"E7",
-		"FriendlyName":"n"
-},{
-		"name":"Medium spring bud",
-		"r":136,
-		"g":120,
-		"b":135,
-		"XR":"88",
-		"XG":"78",
-		"XB":"87",
-		"FriendlyName":"n"
-},{
-		"name":"Purple (HTML/CSS)",
-		"r":136,
-		"g":216,
-		"b":128,
-		"XR":"88",
-		"XG":"D8",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Banana Mania",
-		"r":135,
-		"g":50,
-		"b":181,
-		"XR":"87",
-		"XG":"32",
-		"XB":"B5",
-		"FriendlyName":"n"
-},{
-		"name":"Smoky black",
-		"r":135,
-		"g":169,
-		"b":8,
-		"XR":"87",
-		"XG":"A9",
-		"XB":"08",
-		"FriendlyName":"n"
-},{
-		"name":"Light cornflower blue",
-		"r":135,
-		"g":206,
-		"b":234,
-		"XR":"87",
-		"XG":"CE",
-		"XB":"EA",
-		"FriendlyName":"n"
-},{
-		"name":"Neon Carrot",
-		"r":134,
-		"g":1,
-		"b":67,
-		"XR":"86",
-		"XG":"01",
-		"XB":"43",
-		"FriendlyName":"n"
-},{
-		"name":"Blush",
-		"r":134,
-		"g":96,
-		"b":131,
-		"XR":"86",
-		"XG":"60",
-		"XB":"83",
-		"FriendlyName":"n"
-},{
-		"name":"Rose gold",
-		"r":132,
-		"g":132,
-		"b":121,
-		"XR":"84",
-		"XG":"84",
-		"XB":"79",
-		"FriendlyName":"n"
-},{
-		"name":"Pale red-violet",
-		"r":130,
-		"g":102,
-		"b":147,
-		"XR":"82",
-		"XG":"66",
-		"XB":"93",
-		"FriendlyName":"r"
-},{
-		"name":"Deep saffron",
-		"r":128,
-		"g":0,
-		"b":51,
-		"XR":"80",
-		"XG":"00",
-		"XB":"33",
-		"FriendlyName":"n"
-},{
-		"name":"Coquelicot",
-		"r":128,
-		"g":0,
-		"b":0,
-		"XR":"80",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Hot magenta",
-		"r":128,
-		"g":0,
-		"b":206,
-		"XR":"80",
-		"XG":"00",
-		"XB":"CE",
-		"FriendlyName":"n"
-},{
-		"name":"Peach",
-		"r":128,
-		"g":24,
-		"b":180,
-		"XR":"80",
-		"XG":"18",
-		"XB":"B4",
-		"FriendlyName":"n"
-},{
-		"name":"Carrot orange",
-		"r":128,
-		"g":70,
-		"b":33,
-		"XR":"80",
-		"XG":"46",
-		"XB":"21",
-		"FriendlyName":"n"
-},{
-		"name":"Dark slate blue",
-		"r":128,
-		"g":128,
-		"b":139,
-		"XR":"80",
-		"XG":"80",
-		"XB":"8B",
-		"FriendlyName":"n"
-},{
-		"name":"Dark lava",
-		"r":128,
-		"g":128,
-		"b":50,
-		"XR":"80",
-		"XG":"80",
-		"XB":"32",
-		"FriendlyName":"n"
-},{
-		"name":"Old rose",
-		"r":128,
-		"g":128,
-		"b":129,
-		"XR":"80",
-		"XG":"80",
-		"XB":"81",
-		"FriendlyName":"n"
-},{
-		"name":"Rose",
-		"r":127,
-		"g":0,
-		"b":127,
-		"XR":"7F",
-		"XG":"00",
-		"XB":"7F",
-		"FriendlyName":"n"
-},{
-		"name":"Lion",
-		"r":127,
-		"g":127,
-		"b":107,
-		"XR":"7F",
-		"XG":"7F",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Blue (NCS)",
-		"r":127,
-		"g":255,
-		"b":189,
-		"XR":"7F",
-		"XG":"FF",
-		"XB":"BD",
-		"FriendlyName":"n"
-},{
-		"name":"Azure",
-		"r":127,
-		"g":255,
-		"b":255,
-		"XR":"7F",
-		"XG":"FF",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Liver",
-		"r":125,
-		"g":249,
-		"b":79,
-		"XR":"7D",
-		"XG":"F9",
-		"XB":"4F",
-		"FriendlyName":"n"
-},{
-		"name":"Indigo (dye)",
-		"r":124,
-		"g":252,
-		"b":106,
-		"XR":"7C",
-		"XG":"FC",
-		"XB":"6A",
-		"FriendlyName":"n"
-},{
-		"name":"Tangerine yellow",
-		"r":123,
-		"g":17,
-		"b":0,
-		"XR":"7B",
-		"XG":"11",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Saffron",
-		"r":123,
-		"g":63,
-		"b":48,
-		"XR":"7B",
-		"XG":"3F",
-		"XB":"30",
-		"FriendlyName":"n"
-},{
-		"name":"Persian orange",
-		"r":123,
-		"g":104,
-		"b":88,
-		"XR":"7B",
-		"XG":"68",
-		"XB":"58",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender magenta",
-		"r":121,
-		"g":68,
-		"b":238,
-		"XR":"79",
-		"XG":"44",
-		"XB":"EE",
-		"FriendlyName":"n"
-},{
-		"name":"Misty rose",
-		"r":120,
-		"g":24,
-		"b":225,
-		"XR":"78",
-		"XG":"18",
-		"XB":"E1",
-		"FriendlyName":"n"
-},{
-		"name":"Citrine",
-		"r":120,
-		"g":81,
-		"b":10,
-		"XR":"78",
-		"XG":"51",
-		"XB":"0A",
-		"FriendlyName":"n"
-},{
-		"name":"Light brown",
-		"r":120,
-		"g":134,
-		"b":29,
-		"XR":"78",
-		"XG":"86",
-		"XB":"1D",
-		"FriendlyName":"n"
-},{
-		"name":"Carnelian",
-		"r":119,
-		"g":136,
-		"b":27,
-		"XR":"77",
-		"XG":"88",
-		"XB":"1B",
-		"FriendlyName":"n"
-},{
-		"name":"Chamoisee",
-		"r":119,
-		"g":158,
-		"b":90,
-		"XR":"77",
-		"XG":"9E",
-		"XB":"5A",
-		"FriendlyName":"n"
-},{
-		"name":"Phthalo blue",
-		"r":119,
-		"g":221,
-		"b":137,
-		"XR":"77",
-		"XG":"DD",
-		"XB":"89",
-		"FriendlyName":"n"
-},{
-		"name":"Cobalt",
-		"r":118,
-		"g":255,
-		"b":171,
-		"XR":"76",
-		"XG":"FF",
-		"XB":"AB",
-		"FriendlyName":"n"
-},{
-		"name":"Pear",
-		"r":116,
-		"g":108,
-		"b":49,
-		"XR":"74",
-		"XG":"6C",
-		"XB":"31",
-		"FriendlyName":"n"
-},{
-		"name":"Meat brown",
-		"r":115,
-		"g":79,
-		"b":59,
-		"XR":"73",
-		"XG":"4F",
-		"XB":"3B",
-		"FriendlyName":"n"
-},{
-		"name":"Rich lilac",
-		"r":115,
-		"g":134,
-		"b":210,
-		"XR":"73",
-		"XG":"86",
-		"XB":"D2",
-		"FriendlyName":"n"
-},{
-		"name":"Amethyst",
-		"r":115,
-		"g":194,
-		"b":204,
-		"XR":"73",
-		"XG":"C2",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Tickle Me Pink",
-		"r":112,
-		"g":41,
-		"b":172,
-		"XR":"70",
-		"XG":"29",
-		"XB":"AC",
-		"FriendlyName":"n"
-},{
-		"name":"Electric purple",
-		"r":112,
-		"g":128,
-		"b":255,
-		"XR":"70",
-		"XG":"80",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Ultra pink",
-		"r":111,
-		"g":0,
-		"b":255,
-		"XR":"6F",
-		"XG":"00",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Glitter",
-		"r":111,
-		"g":78,
-		"b":250,
-		"XR":"6F",
-		"XG":"4E",
-		"XB":"FA",
-		"FriendlyName":"n"
-},{
-		"name":"Mahogany",
-		"r":110,
-		"g":127,
-		"b":0,
-		"XR":"6E",
-		"XG":"7F",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Midnight blue",
-		"r":107,
-		"g":142,
-		"b":112,
-		"XR":"6B",
-		"XG":"8E",
-		"XB":"70",
-		"FriendlyName":"n"
-},{
-		"name":"Ruby",
-		"r":106,
-		"g":90,
-		"b":95,
-		"XR":"6A",
-		"XG":"5A",
-		"XB":"5F",
-		"FriendlyName":"n"
-},{
-		"name":"Persian pink",
-		"r":105,
-		"g":53,
-		"b":190,
-		"XR":"69",
-		"XG":"35",
-		"XB":"BE",
-		"FriendlyName":"n"
-},{
-		"name":"Gold (metallic)",
-		"r":105,
-		"g":105,
-		"b":55,
-		"XR":"69",
-		"XG":"69",
-		"XB":"37",
-		"FriendlyName":"n"
-},{
-		"name":"Pale pink",
-		"r":103,
-		"g":49,
-		"b":221,
-		"XR":"67",
-		"XG":"31",
-		"XB":"DD",
-		"FriendlyName":"n"
-},{
-		"name":"Sandstorm",
-		"r":103,
-		"g":72,
-		"b":64,
-		"XR":"67",
-		"XG":"48",
-		"XB":"40",
-		"FriendlyName":"n"
-},{
-		"name":"Pink pearl",
-		"r":103,
-		"g":76,
-		"b":207,
-		"XR":"67",
-		"XG":"4C",
-		"XB":"CF",
-		"FriendlyName":"n"
-},{
-		"name":"Orange (web color)",
-		"r":102,
-		"g":2,
-		"b":0,
-		"XR":"66",
-		"XG":"02",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"French rose",
-		"r":102,
-		"g":56,
-		"b":138,
-		"XR":"66",
-		"XG":"38",
-		"XB":"8A",
-		"FriendlyName":"n"
-},{
-		"name":"Eggshell",
-		"r":102,
-		"g":66,
-		"b":214,
-		"XR":"66",
-		"XG":"42",
-		"XB":"D6",
-		"FriendlyName":"n"
-},{
-		"name":"Red-brown",
-		"r":102,
-		"g":153,
-		"b":42,
-		"XR":"66",
-		"XG":"99",
-		"XB":"2A",
-		"FriendlyName":"r"
-},{
-		"name":"Egyptian blue",
-		"r":102,
-		"g":176,
-		"b":166,
-		"XR":"66",
-		"XG":"B0",
-		"XB":"A6",
-		"FriendlyName":"n"
-},{
-		"name":"Zaffre",
-		"r":102,
-		"g":221,
-		"b":168,
-		"XR":"66",
-		"XG":"DD",
-		"XB":"A8",
-		"FriendlyName":"n"
-},{
-		"name":"Teal",
-		"r":102,
-		"g":255,
-		"b":128,
-		"XR":"66",
-		"XG":"FF",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Almond",
-		"r":101,
-		"g":67,
-		"b":205,
-		"XR":"65",
-		"XG":"43",
-		"XB":"CD",
-		"FriendlyName":"n"
-},{
-		"name":"Yellow (Munsell)",
-		"r":101,
-		"g":67,
-		"b":0,
-		"XR":"65",
-		"XG":"43",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Raspberry",
-		"r":100,
-		"g":84,
-		"b":93,
-		"XR":"64",
-		"XG":"54",
-		"XB":"5D",
-		"FriendlyName":"n"
-},{
-		"name":"Pale cornflower blue",
-		"r":100,
-		"g":149,
-		"b":239,
-		"XR":"64",
-		"XG":"95",
-		"XB":"EF",
-		"FriendlyName":"n"
-},{
-		"name":"Gamboge",
-		"r":99,
-		"g":81,
-		"b":15,
-		"XR":"63",
-		"XG":"51",
-		"XB":"0F",
-		"FriendlyName":"n"
-},{
-		"name":"Fulvous",
-		"r":96,
-		"g":80,
-		"b":0,
-		"XR":"60",
-		"XG":"50",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Medium red-violet",
-		"r":96,
-		"g":130,
-		"b":133,
-		"XR":"60",
-		"XG":"82",
-		"XB":"85",
-		"FriendlyName":"r"
-},{
-		"name":"Wheat",
-		"r":93,
-		"g":57,
-		"b":179,
-		"XR":"5D",
-		"XG":"39",
-		"XB":"B3",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel purple",
-		"r":93,
-		"g":138,
-		"b":181,
-		"XR":"5D",
-		"XG":"8A",
-		"XB":"B5",
-		"FriendlyName":"n"
-},{
-		"name":"Amaranth",
-		"r":90,
-		"g":79,
-		"b":80,
-		"XR":"5A",
-		"XG":"4F",
-		"XB":"50",
-		"FriendlyName":"n"
-},{
-		"name":"Chrome yellow",
-		"r":86,
-		"g":3,
-		"b":0,
-		"XR":"56",
-		"XG":"03",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Blue (pigment)",
-		"r":85,
-		"g":107,
-		"b":153,
-		"XR":"55",
-		"XG":"6B",
-		"XB":"99",
-		"FriendlyName":"n"
-},{
-		"name":"Arylide yellow",
-		"r":83,
-		"g":75,
-		"b":107,
-		"XR":"53",
-		"XG":"4B",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Thistle",
-		"r":83,
-		"g":104,
-		"b":216,
-		"XR":"53",
-		"XG":"68",
-		"XB":"D8",
-		"FriendlyName":"n"
-},{
-		"name":"Goldenrod",
-		"r":83,
-		"g":104,
-		"b":32,
-		"XR":"53",
-		"XG":"68",
-		"XB":"20",
-		"FriendlyName":"n"
-},{
-		"name":"Bisque",
-		"r":82,
-		"g":24,
-		"b":196,
-		"XR":"52",
-		"XG":"18",
-		"XB":"C4",
-		"FriendlyName":"n"
-},{
-		"name":"Carmine pink",
-		"r":81,
-		"g":72,
-		"b":66,
-		"XR":"51",
-		"XG":"48",
-		"XB":"42",
-		"FriendlyName":"n"
-},{
-		"name":"Taupe",
-		"r":77,
-		"g":93,
-		"b":50,
-		"XR":"4D",
-		"XG":"5D",
-		"XB":"32",
-		"FriendlyName":"n"
-},{
-		"name":"Bright turquoise",
-		"r":76,
-		"g":187,
-		"b":222,
-		"XR":"4C",
-		"XG":"BB",
-		"XB":"DE",
-		"FriendlyName":"n"
-},{
-		"name":"International orange",
-		"r":75,
-		"g":0,
-		"b":0,
-		"XR":"4B",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Pink Sherbet",
-		"r":75,
-		"g":54,
-		"b":167,
-		"XR":"4B",
-		"XG":"36",
-		"XB":"A7",
-		"FriendlyName":"n"
-},{
-		"name":"Payne's grey",
-		"r":75,
-		"g":83,
-		"b":79,
-		"XR":"4B",
-		"XG":"53",
-		"XB":"4F",
-		"FriendlyName":"n"
-},{
-		"name":"Grullo",
-		"r":73,
-		"g":151,
-		"b":134,
-		"XR":"49",
-		"XG":"97",
-		"XB":"86",
-		"FriendlyName":"n"
-},{
-		"name":"UCLA Gold",
-		"r":72,
-		"g":6,
-		"b":0,
-		"XR":"48",
-		"XG":"06",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Sandy brown",
-		"r":72,
-		"g":60,
-		"b":96,
-		"XR":"48",
-		"XG":"3C",
-		"XB":"60",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel magenta",
-		"r":72,
-		"g":60,
-		"b":194,
-		"XR":"48",
-		"XG":"3C",
-		"XB":"C2",
-		"FriendlyName":"n"
-},{
-		"name":"Fashion fuchsia",
-		"r":72,
-		"g":60,
-		"b":161,
-		"XR":"48",
-		"XG":"3C",
-		"XB":"A1",
-		"FriendlyName":"n"
-},{
-		"name":"Tea rose (rose)",
-		"r":72,
-		"g":61,
-		"b":194,
-		"XR":"48",
-		"XG":"3D",
-		"XB":"C2",
-		"FriendlyName":"n"
-},{
-		"name":"Bulgarian rose",
-		"r":70,
-		"g":89,
-		"b":7,
-		"XR":"46",
-		"XG":"59",
-		"XB":"07",
-		"FriendlyName":"n"
-},{
-		"name":"Pale taupe",
-		"r":70,
-		"g":130,
-		"b":126,
-		"XR":"46",
-		"XG":"82",
-		"XB":"7E",
-		"FriendlyName":"n"
-},{
-		"name":"Indigo (web)",
-		"r":67,
-		"g":179,
-		"b":130,
-		"XR":"43",
-		"XG":"B3",
-		"XB":"82",
-		"FriendlyName":"n"
-},{
-		"name":"Pale spring bud",
-		"r":65,
-		"g":72,
-		"b":189,
-		"XR":"41",
-		"XG":"48",
-		"XB":"BD",
-		"FriendlyName":"n"
-},{
-		"name":"Burnt sienna",
-		"r":65,
-		"g":74,
-		"b":81,
-		"XR":"41",
-		"XG":"4A",
-		"XB":"51",
-		"FriendlyName":"n"
-},{
-		"name":"Pale lavender",
-		"r":65,
-		"g":102,
-		"b":255,
-		"XR":"41",
-		"XG":"66",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Khaki (HTML/CSS) (Khaki)",
-		"r":65,
-		"g":125,
-		"b":145,
-		"XR":"41",
-		"XG":"7D",
-		"XB":"91",
-		"FriendlyName":"n"
-},{
-		"name":"Vanilla",
-		"r":64,
-		"g":64,
-		"b":171,
-		"XR":"40",
-		"XG":"40",
-		"XB":"AB",
-		"FriendlyName":"n"
-},{
-		"name":"Hot pink",
-		"r":63,
-		"g":0,
-		"b":180,
-		"XR":"3F",
-		"XG":"00",
-		"XB":"B4",
-		"FriendlyName":"n"
-},{
-		"name":"True Blue",
-		"r":63,
-		"g":255,
-		"b":207,
-		"XR":"3F",
-		"XG":"FF",
-		"XB":"CF",
-		"FriendlyName":"n"
-},{
-		"name":"Bistre",
-		"r":62,
-		"g":180,
-		"b":31,
-		"XR":"3E",
-		"XG":"B4",
-		"XB":"1F",
-		"FriendlyName":"n"
-},{
-		"name":"Orange (RYB)",
-		"r":61,
-		"g":43,
-		"b":2,
-		"XR":"3D",
-		"XG":"2B",
-		"XB":"02",
-		"FriendlyName":"n"
-},{
-		"name":"Peach puff",
-		"r":60,
-		"g":20,
-		"b":185,
-		"XR":"3C",
-		"XG":"14",
-		"XB":"B9",
-		"FriendlyName":"n"
-},{
-		"name":"Jasmine",
-		"r":60,
-		"g":52,
-		"b":126,
-		"XR":"3C",
-		"XG":"34",
-		"XB":"7E",
-		"FriendlyName":"n"
-},{
-		"name":"Dark blue",
-		"r":60,
-		"g":208,
-		"b":139,
-		"XR":"3C",
-		"XG":"D0",
-		"XB":"8B",
-		"FriendlyName":"n"
-},{
-		"name":"Cadmium orange",
-		"r":54,
-		"g":69,
-		"b":45,
-		"XR":"36",
-		"XG":"45",
-		"XB":"2D",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel violet",
-		"r":54,
-		"g":117,
-		"b":201,
-		"XR":"36",
-		"XG":"75",
-		"XB":"C9",
-		"FriendlyName":"n"
-},{
-		"name":"Charcoal",
-		"r":53,
-		"g":94,
-		"b":79,
-		"XR":"35",
-		"XG":"5E",
-		"XB":"4F",
-		"FriendlyName":"n"
-},{
-		"name":"Coral pink",
-		"r":51,
-		"g":51,
-		"b":121,
-		"XR":"33",
-		"XG":"33",
-		"XB":"79",
-		"FriendlyName":"n"
-},{
-		"name":"Peach-orange",
-		"r":50,
-		"g":18,
-		"b":153,
-		"XR":"32",
-		"XG":"12",
-		"XB":"99",
-		"FriendlyName":"n"
-},{
-		"name":"Yellow (NCS)",
-		"r":50,
-		"g":20,
-		"b":0,
-		"XR":"32",
-		"XG":"14",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Duke blue",
-		"r":50,
-		"g":205,
-		"b":156,
-		"XR":"32",
-		"XG":"CD",
-		"XB":"9C",
-		"FriendlyName":"n"
-},{
-		"name":"Light pastel purple",
-		"r":49,
-		"g":140,
-		"b":217,
-		"XR":"31",
-		"XG":"8C",
-		"XB":"D9",
-		"FriendlyName":"n"
-},{
-		"name":"Rich electric blue",
-		"r":48,
-		"g":186,
-		"b":208,
-		"XR":"30",
-		"XG":"BA",
-		"XB":"D0",
-		"FriendlyName":"n"
-},{
-		"name":"Pearl Aqua",
-		"r":48,
-		"g":213,
-		"b":192,
-		"XR":"30",
-		"XG":"D5",
-		"XB":"C0",
-		"FriendlyName":"n"
-},{
-		"name":"Celestial blue",
-		"r":47,
-		"g":79,
-		"b":208,
-		"XR":"2F",
-		"XG":"4F",
-		"XB":"D0",
-		"FriendlyName":"n"
-},{
-		"name":"Banana yellow",
-		"r":44,
-		"g":22,
-		"b":53,
-		"XR":"2C",
-		"XG":"16",
-		"XB":"35",
-		"FriendlyName":"n"
-},{
-		"name":"Lapis lazuli",
-		"r":42,
-		"g":128,
-		"b":156,
-		"XR":"2A",
-		"XG":"80",
-		"XB":"9C",
-		"FriendlyName":"n"
-},{
-		"name":"Chocolate (traditional)",
-		"r":41,
-		"g":171,
-		"b":0,
-		"XR":"29",
-		"XG":"AB",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Burlywood",
-		"r":38,
-		"g":97,
-		"b":135,
-		"XR":"26",
-		"XG":"61",
-		"XB":"87",
-		"FriendlyName":"n"
-},{
-		"name":"Wild Watermelon",
-		"r":35,
-		"g":41,
-		"b":133,
-		"XR":"23",
-		"XG":"29",
-		"XB":"85",
-		"FriendlyName":"n"
-},{
-		"name":"Verdigris",
-		"r":33,
-		"g":66,
-		"b":174,
-		"XR":"21",
-		"XG":"42",
-		"XB":"AE",
-		"FriendlyName":"n"
-},{
-		"name":"Medium slate blue",
-		"r":33,
-		"g":171,
-		"b":238,
-		"XR":"21",
-		"XG":"AB",
-		"XB":"EE",
-		"FriendlyName":"n"
-},{
-		"name":"Tufts Blue",
-		"r":30,
-		"g":77,
-		"b":193,
-		"XR":"1E",
-		"XG":"4D",
-		"XB":"C1",
-		"FriendlyName":"n"
-},{
-		"name":"Coffee",
-		"r":29,
-		"g":172,
-		"b":55,
-		"XR":"1D",
-		"XG":"AC",
-		"XB":"37",
-		"FriendlyName":"n"
-},{
-		"name":"Light Crimson",
-		"r":28,
-		"g":57,
-		"b":145,
-		"XR":"1C",
-		"XG":"39",
-		"XB":"91",
-		"FriendlyName":"n"
-},{
-		"name":"Royal blue (web)",
-		"r":24,
-		"g":69,
-		"b":225,
-		"XR":"18",
-		"XG":"45",
-		"XB":"E1",
-		"FriendlyName":"n"
-},{
-		"name":"Bleu de France",
-		"r":23,
-		"g":114,
-		"b":231,
-		"XR":"17",
-		"XG":"72",
-		"XB":"E7",
-		"FriendlyName":"n"
-},{
-		"name":"Thulian pink",
-		"r":21,
-		"g":96,
-		"b":161,
-		"XR":"15",
-		"XG":"60",
-		"XB":"A1",
-		"FriendlyName":"n"
-},{
-		"name":"Ball Blue",
-		"r":19,
-		"g":136,
-		"b":205,
-		"XR":"13",
-		"XG":"88",
-		"XB":"CD",
-		"FriendlyName":"n"
-},{
-		"name":"Cherry blossom pink",
-		"r":18,
-		"g":10,
-		"b":197,
-		"XR":"12",
-		"XG":"0A",
-		"XB":"C5",
-		"FriendlyName":"n"
-},{
-		"name":"Steel blue",
-		"r":18,
-		"g":53,
-		"b":180,
-		"XR":"12",
-		"XG":"35",
-		"XB":"B4",
-		"FriendlyName":"n"
-},{
-		"name":"Amber",
-		"r":16,
-		"g":12,
-		"b":0,
-		"XR":"10",
-		"XG":"0C",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Deep peach",
-		"r":15,
-		"g":15,
-		"b":164,
-		"XR":"0F",
-		"XG":"0F",
-		"XB":"A4",
-		"FriendlyName":"n"
-},{
-		"name":"Straw",
-		"r":15,
-		"g":82,
-		"b":111,
-		"XR":"0F",
-		"XG":"52",
-		"XB":"6F",
-		"FriendlyName":"n"
-},{
-		"name":"Blue",
-		"r":11,
-		"g":218,
-		"b":255,
-		"XR":"0B",
-		"XG":"DA",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Cerulean blue",
-		"r":10,
-		"g":186,
-		"b":190,
-		"XR":"0A",
-		"XG":"BA",
-		"XB":"BE",
-		"FriendlyName":"n"
-},{
-		"name":"Turquoise",
-		"r":8,
-		"g":120,
-		"b":200,
-		"XR":"08",
-		"XG":"78",
-		"XB":"C8",
-		"FriendlyName":"n"
-},{
-		"name":"Blizzard Blue",
-		"r":8,
-		"g":146,
-		"b":238,
-		"XR":"08",
-		"XG":"92",
-		"XB":"EE",
-		"FriendlyName":"n"
-},{
-		"name":"Candy pink",
-		"r":3,
-		"g":80,
-		"b":122,
-		"XR":"03",
-		"XG":"50",
-		"XB":"7A",
-		"FriendlyName":"n"
-},{
-		"name":"Medium electric blue",
-		"r":3,
-		"g":192,
-		"b":150,
-		"XR":"03",
-		"XG":"C0",
-		"XB":"96",
-		"FriendlyName":"n"
-},{
-		"name":"Cerise pink",
-		"r":2,
-		"g":71,
-		"b":131,
-		"XR":"02",
-		"XG":"47",
-		"XB":"83",
-		"FriendlyName":"n"
-},{
-		"name":"Medium turquoise",
-		"r":1,
-		"g":50,
-		"b":204,
-		"XR":"01",
-		"XG":"32",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Ultramarine blue",
-		"r":1,
-		"g":68,
-		"b":245,
-		"XR":"01",
-		"XG":"44",
-		"XB":"F5",
-		"FriendlyName":"n"
-},{
-		"name":"Outer Space",
-		"r":1,
-		"g":68,
-		"b":76,
-		"XR":"01",
-		"XG":"44",
-		"XB":"4C",
-		"FriendlyName":"n"
-},{
-		"name":"Medium violet-red",
-		"r":1,
-		"g":121,
-		"b":133,
-		"XR":"01",
-		"XG":"79",
-		"XB":"85",
-		"FriendlyName":"r"
-},{
-		"name":"Light salmon",
-		"r":0,
-		"g":0,
-		"b":122,
-		"XR":"00",
-		"XG":"00",
-		"XB":"7A",
-		"FriendlyName":"n"
-},{
-		"name":"Vivid tangerine",
-		"r":0,
-		"g":0,
-		"b":137,
-		"XR":"00",
-		"XG":"00",
-		"XB":"89",
-		"FriendlyName":"n"
-},{
-		"name":"Dark orange",
-		"r":0,
-		"g":0,
-		"b":0,
-		"XR":"00",
-		"XG":"00",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Fuchsia pink",
-		"r":0,
-		"g":0,
-		"b":255,
-		"XR":"00",
-		"XG":"00",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Radical Red",
-		"r":0,
-		"g":0,
-		"b":94,
-		"XR":"00",
-		"XG":"00",
-		"XB":"5E",
-		"FriendlyName":"r"
-},{
-		"name":"Razzle dazzle rose",
-		"r":0,
-		"g":0,
-		"b":204,
-		"XR":"00",
-		"XG":"00",
-		"XB":"CC",
-		"FriendlyName":"n"
-},{
-		"name":"Topaz",
-		"r":0,
-		"g":15,
-		"b":124,
-		"XR":"00",
-		"XG":"0F",
-		"XB":"7C",
-		"FriendlyName":"n"
-},{
-		"name":"Pastel pink",
-		"r":0,
-		"g":20,
-		"b":220,
-		"XR":"00",
-		"XG":"14",
-		"XB":"DC",
-		"FriendlyName":"n"
-},{
-		"name":"Purple pizzazz",
-		"r":0,
-		"g":35,
-		"b":218,
-		"XR":"00",
-		"XG":"23",
-		"XB":"DA",
-		"FriendlyName":"n"
-},{
-		"name":"Apricot",
-		"r":0,
-		"g":46,
-		"b":177,
-		"XR":"00",
-		"XG":"2E",
-		"XB":"B1",
-		"FriendlyName":"n"
-},{
-		"name":"Stil de grain yellow",
-		"r":0,
-		"g":49,
-		"b":94,
-		"XR":"00",
-		"XG":"31",
-		"XB":"5E",
-		"FriendlyName":"n"
-},{
-		"name":"Pale magenta",
-		"r":0,
-		"g":51,
-		"b":229,
-		"XR":"00",
-		"XG":"33",
-		"XB":"E5",
-		"FriendlyName":"n"
-},{
-		"name":"Tangelo",
-		"r":0,
-		"g":51,
-		"b":0,
-		"XR":"00",
-		"XG":"33",
-		"XB":"00",
-		"FriendlyName":"n"
-},{
-		"name":"Moccasin",
-		"r":0,
-		"g":51,
-		"b":215,
-		"XR":"00",
-		"XG":"33",
-		"XB":"D7",
-		"FriendlyName":"n"
-},{
-		"name":"Flavescent",
-		"r":0,
-		"g":56,
-		"b":142,
-		"XR":"00",
-		"XG":"38",
-		"XB":"8E",
-		"FriendlyName":"n"
-},{
-		"name":"Han blue",
-		"r":0,
-		"g":64,
-		"b":207,
-		"XR":"00",
-		"XG":"40",
-		"XB":"CF",
-		"FriendlyName":"n"
-},{
-		"name":"Buff",
-		"r":0,
-		"g":65,
-		"b":130,
-		"XR":"00",
-		"XG":"41",
-		"XB":"82",
-		"FriendlyName":"n"
-},{
-		"name":"Light khaki",
-		"r":0,
-		"g":66,
-		"b":140,
-		"XR":"00",
-		"XG":"42",
-		"XB":"8C",
-		"FriendlyName":"n"
-},{
-		"name":"Desert sand",
-		"r":0,
-		"g":71,
-		"b":175,
-		"XR":"00",
-		"XG":"47",
-		"XB":"AF",
-		"FriendlyName":"n"
-},{
-		"name":"Deep carrot orange",
-		"r":0,
-		"g":73,
-		"b":44,
-		"XR":"00",
-		"XG":"49",
-		"XB":"2C",
-		"FriendlyName":"n"
-},{
-		"name":"Razzmatazz",
-		"r":0,
-		"g":84,
-		"b":107,
-		"XR":"00",
-		"XG":"54",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"Viridian",
-		"r":0,
-		"g":86,
-		"b":109,
-		"XR":"00",
-		"XG":"56",
-		"XB":"6D",
-		"FriendlyName":"n"
-},{
-		"name":"Teal blue",
-		"r":0,
-		"g":102,
-		"b":136,
-		"XR":"00",
-		"XG":"66",
-		"XB":"88",
-		"FriendlyName":"n"
-},{
-		"name":"Pale copper",
-		"r":0,
-		"g":103,
-		"b":103,
-		"XR":"00",
-		"XG":"67",
-		"XB":"67",
-		"FriendlyName":"n"
-},{
-		"name":"Persian indigo",
-		"r":0,
-		"g":107,
-		"b":122,
-		"XR":"00",
-		"XG":"6B",
-		"XB":"7A",
-		"FriendlyName":"n"
-},{
-		"name":"Seal brown",
-		"r":0,
-		"g":109,
-		"b":20,
-		"XR":"00",
-		"XG":"6D",
-		"XB":"14",
-		"FriendlyName":"n"
-},{
-		"name":"Antique brass",
-		"r":0,
-		"g":112,
-		"b":117,
-		"XR":"00",
-		"XG":"70",
-		"XB":"75",
-		"FriendlyName":"n"
-},{
-		"name":"Periwinkle",
-		"r":0,
-		"g":114,
-		"b":255,
-		"XR":"00",
-		"XG":"72",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender blue",
-		"r":0,
-		"g":115,
-		"b":255,
-		"XR":"00",
-		"XG":"73",
-		"XB":"FF",
-		"FriendlyName":"n"
-},{
-		"name":"Sinopia",
-		"r":0,
-		"g":116,
-		"b":11,
-		"XR":"00",
-		"XG":"74",
-		"XB":"0B",
-		"FriendlyName":"n"
-},{
-		"name":"Dark taupe",
-		"r":0,
-		"g":117,
-		"b":50,
-		"XR":"00",
-		"XG":"75",
-		"XB":"32",
-		"FriendlyName":"n"
-},{
-		"name":"Vegas gold",
-		"r":0,
-		"g":122,
-		"b":88,
-		"XR":"00",
-		"XG":"7A",
-		"XB":"58",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender gray",
-		"r":0,
-		"g":123,
-		"b":208,
-		"XR":"00",
-		"XG":"7B",
-		"XB":"D0",
-		"FriendlyName":"n"
-},{
-		"name":"Camel",
-		"r":0,
-		"g":127,
-		"b":107,
-		"XR":"00",
-		"XG":"7F",
-		"XB":"6B",
-		"FriendlyName":"n"
-},{
-		"name":"St. Patrick's blue",
-		"r":0,
-		"g":128,
-		"b":122,
-		"XR":"00",
-		"XG":"80",
-		"XB":"7A",
-		"FriendlyName":"n"
-},{
-		"name":"Palatinate blue",
-		"r":0,
-		"g":128,
-		"b":226,
-		"XR":"00",
-		"XG":"80",
-		"XB":"E2",
-		"FriendlyName":"n"
-},{
-		"name":"Silver",
-		"r":0,
-		"g":128,
-		"b":192,
-		"XR":"00",
-		"XG":"80",
-		"XB":"C0",
-		"FriendlyName":"n"
-},{
-		"name":"Brass",
-		"r":0,
-		"g":135,
-		"b":66,
-		"XR":"00",
-		"XG":"87",
-		"XB":"42",
-		"FriendlyName":"n"
-},{
-		"name":"Ash grey",
-		"r":0,
-		"g":139,
-		"b":181,
-		"XR":"00",
-		"XG":"8B",
-		"XB":"B5",
-		"FriendlyName":"n"
-},{
-		"name":"Rose vale",
-		"r":0,
-		"g":147,
-		"b":82,
-		"XR":"00",
-		"XG":"93",
-		"XB":"52",
-		"FriendlyName":"n"
-},{
-		"name":"Rose quartz",
-		"r":0,
-		"g":149,
-		"b":169,
-		"XR":"00",
-		"XG":"95",
-		"XB":"A9",
-		"FriendlyName":"n"
-},{
-		"name":"Denim",
-		"r":0,
-		"g":159,
-		"b":189,
-		"XR":"00",
-		"XG":"9F",
-		"XB":"BD",
-		"FriendlyName":"n"
-},{
-		"name":"Taupe gray",
-		"r":0,
-		"g":166,
-		"b":137,
-		"XR":"00",
-		"XG":"A6",
-		"XB":"89",
-		"FriendlyName":"n"
-},{
-		"name":"Ultramarine",
-		"r":0,
-		"g":168,
-		"b":143,
-		"XR":"00",
-		"XG":"A8",
-		"XB":"8F",
-		"FriendlyName":"n"
-},{
-		"name":"Umber",
-		"r":0,
-		"g":183,
-		"b":71,
-		"XR":"00",
-		"XG":"B7",
-		"XB":"47",
-		"FriendlyName":"n"
-},{
-		"name":"Blue-green",
-		"r":0,
-		"g":191,
-		"b":186,
-		"XR":"00",
-		"XG":"BF",
-		"XB":"BA",
-		"FriendlyName":"n"
-},{
-		"name":"Navy blue",
-		"r":0,
-		"g":204,
-		"b":128,
-		"XR":"00",
-		"XG":"CC",
-		"XB":"80",
-		"FriendlyName":"n"
-},{
-		"name":"Lavender purple",
-		"r":0,
-		"g":204,
-		"b":182,
-		"XR":"00",
-		"XG":"CC",
-		"XB":"B6",
-		"FriendlyName":"n"
-},{
-		"name":"Vivid auburn",
-		"r":0,
-		"g":206,
-		"b":36,
-		"XR":"00",
-		"XG":"CE",
-		"XB":"24",
-		"FriendlyName":"n"
-},{
-		"name":"Dark powder blue",
-		"r":0,
-		"g":250,
-		"b":153,
-		"XR":"00",
-		"XG":"FA",
-		"XB":"99",
-		"FriendlyName":"n"
-},{
-		"name":"Cerulean",
-		"r":0,
-		"g":255,
-		"b":167,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"A7",
-		"FriendlyName":"n"
-},{
-		"name":"CG Blue",
-		"r":0,
-		"g":255,
-		"b":165,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"A5",
-		"FriendlyName":"n"
-},{
-		"name":"Skobeloff",
-		"r":0,
-		"g":255,
-		"b":116,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"74",
-		"FriendlyName":"n"
-},{
-		"name":"Medium Persian blue",
-		"r":0,
-		"g":255,
-		"b":165,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"A5",
-		"FriendlyName":"n"
-},{
-		"name":"Warm black",
-		"r":0,
-		"g":255,
-		"b":66,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"42",
-		"FriendlyName":"n"
-},{
-		"name":"Purple taupe",
-		"r":0,
-		"g":255,
-		"b":77,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"4D",
-		"FriendlyName":"n"
-},{
-		"name":"Quartz",
-		"r":0,
-		"g":255,
-		"b":79,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"4F",
-		"FriendlyName":"n"
-},{
-		"name":"UCLA Blue",
-		"r":0,
-		"g":255,
-		"b":149,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"95",
-		"FriendlyName":"n"
-},{
-		"name":"Inchworm",
-		"r":255,
-		"g":140,
-		"b":93,
-		"XR":"FF",
-		"XG":"8C",
-		"XB":"5D",
-		"FriendlyName":"g"
-},{
-		"name":"Yellow-green",
-		"r":255,
-		"g":160,
-		"b":50,
-		"XR":"FF",
-		"XG":"A0",
-		"XB":"32",
-		"FriendlyName":"g"
-},{
-		"name":"Apple green",
-		"r":255,
-		"g":163,
-		"b":0,
-		"XR":"FF",
-		"XG":"A3",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Army green",
-		"r":255,
-		"g":179,
-		"b":32,
-		"XR":"FF",
-		"XG":"B3",
-		"XB":"20",
-		"FriendlyName":"g"
-},{
-		"name":"Dark slate gray",
-		"r":255,
-		"g":183,
-		"b":79,
-		"XR":"FF",
-		"XG":"B7",
-		"XB":"4F",
-		"FriendlyName":"g"
-},{
-		"name":"Napier green",
-		"r":255,
-		"g":186,
-		"b":0,
-		"XR":"FF",
-		"XG":"BA",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Medium jungle green",
-		"r":255,
-		"g":188,
-		"b":45,
-		"XR":"FF",
-		"XG":"BC",
-		"XB":"2D",
-		"FriendlyName":"g"
-},{
-		"name":"Mint green",
-		"r":255,
-		"g":200,
-		"b":152,
-		"XR":"FF",
-		"XG":"C8",
-		"XB":"98",
-		"FriendlyName":"g"
-},{
-		"name":"Eton blue",
-		"r":255,
-		"g":204,
-		"b":162,
-		"XR":"FF",
-		"XG":"CC",
-		"XB":"A2",
-		"FriendlyName":"g"
-},{
-		"name":"Olive",
-		"r":255,
-		"g":219,
-		"b":0,
-		"XR":"FF",
-		"XG":"DB",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Screamin' Green",
-		"r":255,
-		"g":222,
-		"b":122,
-		"XR":"FF",
-		"XG":"DE",
-		"XB":"7A",
-		"FriendlyName":"g"
-},{
-		"name":"Pakistan green",
-		"r":255,
-		"g":239,
-		"b":0,
-		"XR":"FF",
-		"XG":"EF",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Sacramento State green",
-		"r":255,
-		"g":239,
-		"b":63,
-		"XR":"FF",
-		"XG":"EF",
-		"XB":"3F",
-		"FriendlyName":"g"
-},{
-		"name":"British racing green",
-		"r":255,
-		"g":239,
-		"b":37,
-		"XR":"FF",
-		"XG":"EF",
-		"XB":"25",
-		"FriendlyName":"g"
-},{
-		"name":"Persian green",
-		"r":255,
-		"g":245,
-		"b":147,
-		"XR":"FF",
-		"XG":"F5",
-		"XB":"93",
-		"FriendlyName":"g"
-},{
-		"name":"Teal green",
-		"r":255,
-		"g":246,
-		"b":91,
-		"XR":"FF",
-		"XG":"F6",
-		"XB":"5B",
-		"FriendlyName":"g"
-},{
-		"name":"Hooker's green",
-		"r":255,
-		"g":247,
-		"b":0,
-		"XR":"FF",
-		"XG":"F7",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Ao (English)",
-		"r":255,
-		"g":248,
-		"b":0,
-		"XR":"FF",
-		"XG":"F8",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Green (HTML/CSS green)",
-		"r":255,
-		"g":248,
-		"b":0,
-		"XR":"FF",
-		"XG":"F8",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Shamrock green",
-		"r":255,
-		"g":250,
-		"b":96,
-		"XR":"FF",
-		"XG":"FA",
-		"XB":"60",
-		"FriendlyName":"g"
-},{
-		"name":"Green (pigment)",
-		"r":255,
-		"g":253,
-		"b":80,
-		"XR":"FF",
-		"XG":"FD",
-		"XB":"50",
-		"FriendlyName":"g"
-},{
-		"name":"Green (color wheel) (X11 green)",
-		"r":255,
-		"g":255,
-		"b":0,
-		"XR":"FF",
-		"XG":"FF",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Lime (web) (X11 green)",
-		"r":255,
-		"g":255,
-		"b":0,
-		"XR":"FF",
-		"XG":"FF",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Medium spring green",
-		"r":255,
-		"g":255,
-		"b":154,
-		"XR":"FF",
-		"XG":"FF",
-		"XB":"9A",
-		"FriendlyName":"g"
-},{
-		"name":"Caribbean green",
-		"r":255,
-		"g":255,
-		"b":153,
-		"XR":"FF",
-		"XG":"FF",
-		"XB":"99",
-		"FriendlyName":"g"
-},{
-		"name":"Green (Munsell)",
-		"r":254,
-		"g":254,
-		"b":119,
-		"XR":"FE",
-		"XG":"FE",
-		"XB":"77",
-		"FriendlyName":"g"
-},{
-		"name":"Jade",
-		"r":254,
-		"g":254,
-		"b":107,
-		"XR":"FE",
-		"XG":"FE",
-		"XB":"6B",
-		"FriendlyName":"g"
-},{
-		"name":"Rich black",
-		"r":253,
-		"g":238,
-		"b":64,
-		"XR":"FD",
-		"XG":"EE",
-		"XB":"40",
-		"FriendlyName":"g"
-},{
-		"name":"Green (NCS)",
-		"r":253,
-		"g":253,
-		"b":107,
-		"XR":"FD",
-		"XG":"FD",
-		"XB":"6B",
-		"FriendlyName":"g"
-},{
-		"name":"Office green",
-		"r":252,
-		"g":247,
-		"b":0,
-		"XR":"FC",
-		"XG":"F7",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Tropical rain forest",
-		"r":251,
-		"g":236,
-		"b":94,
-		"XR":"FB",
-		"XG":"EC",
-		"XB":"5E",
-		"FriendlyName":"g"
-},{
-		"name":"Dartmouth green",
-		"r":250,
-		"g":240,
-		"b":62,
-		"XR":"FA",
-		"XG":"F0",
-		"XB":"3E",
-		"FriendlyName":"g"
-},{
-		"name":"Islamic green",
-		"r":250,
-		"g":250,
-		"b":0,
-		"XR":"FA",
-		"XG":"FA",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Dark olive green",
-		"r":248,
-		"g":248,
-		"b":47,
-		"XR":"F8",
-		"XG":"F8",
-		"XB":"2F",
-		"FriendlyName":"g"
-},{
-		"name":"Cadmium green",
-		"r":245,
-		"g":245,
-		"b":60,
-		"XR":"F5",
-		"XG":"F5",
-		"XB":"3C",
-		"FriendlyName":"g"
-},{
-		"name":"Cal Poly Pomona green",
-		"r":244,
-		"g":187,
-		"b":43,
-		"XR":"F4",
-		"XG":"BB",
-		"XB":"2B",
-		"FriendlyName":"g"
-},{
-		"name":"Lime (color wheel)",
-		"r":240,
-		"g":128,
-		"b":0,
-		"XR":"F0",
-		"XG":"80",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Paris Green",
-		"r":240,
-		"g":255,
-		"b":120,
-		"XR":"F0",
-		"XG":"FF",
-		"XB":"78",
-		"FriendlyName":"g"
-},{
-		"name":"Mantis",
-		"r":239,
-		"g":222,
-		"b":101,
-		"XR":"EF",
-		"XG":"DE",
-		"XB":"65",
-		"FriendlyName":"g"
-},{
-		"name":"Green (RYB)",
-		"r":238,
-		"g":232,
-		"b":50,
-		"XR":"EE",
-		"XG":"E8",
-		"XB":"32",
-		"FriendlyName":"g"
-},{
-		"name":"Moss green",
-		"r":237,
-		"g":145,
-		"b":173,
-		"XR":"ED",
-		"XG":"91",
-		"XB":"AD",
-		"FriendlyName":"g"
-},{
-		"name":"Dollar bill",
-		"r":233,
-		"g":214,
-		"b":101,
-		"XR":"E9",
-		"XG":"D6",
-		"XB":"65",
-		"FriendlyName":"g"
-},{
-		"name":"Asparagus",
-		"r":233,
-		"g":214,
-		"b":107,
-		"XR":"E9",
-		"XG":"D6",
-		"XB":"6B",
-		"FriendlyName":"g"
-},{
-		"name":"Dark jungle green",
-		"r":230,
-		"g":190,
-		"b":33,
-		"XR":"E6",
-		"XG":"BE",
-		"XB":"21",
-		"FriendlyName":"g"
-},{
-		"name":"Medium aquamarine",
-		"r":230,
-		"g":232,
-		"b":170,
-		"XR":"E6",
-		"XG":"E8",
-		"XB":"AA",
-		"FriendlyName":"g"
-},{
-		"name":"Medium sea green",
-		"r":229,
-		"g":183,
-		"b":113,
-		"XR":"E5",
-		"XG":"B7",
-		"XB":"71",
-		"FriendlyName":"g"
-},{
-		"name":"Aquamarine",
-		"r":225,
-		"g":169,
-		"b":212,
-		"XR":"E1",
-		"XG":"A9",
-		"XB":"D4",
-		"FriendlyName":"g"
-},{
-		"name":"Electric green",
-		"r":223,
-		"g":255,
-		"b":0,
-		"XR":"DF",
-		"XG":"FF",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Lawn green",
-		"r":222,
-		"g":170,
-		"b":0,
-		"XR":"DE",
-		"XG":"AA",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Sea green",
-		"r":222,
-		"g":184,
-		"b":87,
-		"XR":"DE",
-		"XG":"B8",
-		"XB":"57",
-		"FriendlyName":"g"
-},{
-		"name":"Olive Drab (web) (Olive Drab #3)",
-		"r":221,
-		"g":173,
-		"b":35,
-		"XR":"DD",
-		"XG":"AD",
-		"XB":"23",
-		"FriendlyName":"g"
-},{
-		"name":"Mint cream",
-		"r":215,
-		"g":59,
-		"b":250,
-		"XR":"D7",
-		"XG":"3B",
-		"XB":"FA",
-		"FriendlyName":"g"
-},{
-		"name":"Magic mint",
-		"r":205,
-		"g":149,
-		"b":209,
-		"XR":"CD",
-		"XG":"95",
-		"XB":"D1",
-		"FriendlyName":"g"
-},{
-		"name":"Guppie green",
-		"r":204,
-		"g":255,
-		"b":127,
-		"XR":"CC",
-		"XG":"FF",
-		"XB":"7F",
-		"FriendlyName":"g"
-},{
-		"name":"Spring green",
-		"r":204,
-		"g":255,
-		"b":127,
-		"XR":"CC",
-		"XG":"FF",
-		"XB":"7F",
-		"FriendlyName":"g"
-},{
-		"name":"Spring bud",
-		"r":203,
-		"g":153,
-		"b":0,
-		"XR":"CB",
-		"XG":"99",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Heart Gold",
-		"r":201,
-		"g":220,
-		"b":0,
-		"XR":"C9",
-		"XG":"DC",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Dark sea green",
-		"r":200,
-		"g":162,
-		"b":143,
-		"XR":"C8",
-		"XG":"A2",
-		"XB":"8F",
-		"FriendlyName":"g"
-},{
-		"name":"Kelly green",
-		"r":194,
-		"g":178,
-		"b":23,
-		"XR":"C2",
-		"XG":"B2",
-		"XB":"17",
-		"FriendlyName":"g"
-},{
-		"name":"Fern green",
-		"r":194,
-		"g":178,
-		"b":66,
-		"XR":"C2",
-		"XG":"B2",
-		"XB":"42",
-		"FriendlyName":"g"
-},{
-		"name":"UFO Green",
-		"r":189,
-		"g":183,
-		"b":112,
-		"XR":"BD",
-		"XG":"B7",
-		"XB":"70",
-		"FriendlyName":"g"
-},{
-		"name":"Laurel green",
-		"r":188,
-		"g":152,
-		"b":157,
-		"XR":"BC",
-		"XG":"98",
-		"XB":"9D",
-		"FriendlyName":"g"
-},{
-		"name":"Light yellow",
-		"r":179,
-		"g":27,
-		"b":237,
-		"XR":"B3",
-		"XG":"1B",
-		"XB":"ED",
-		"FriendlyName":"g"
-},{
-		"name":"Sap green",
-		"r":178,
-		"g":255,
-		"b":42,
-		"XR":"B2",
-		"XG":"FF",
-		"XB":"2A",
-		"FriendlyName":"g"
-},{
-		"name":"Pale green",
-		"r":174,
-		"g":198,
-		"b":152,
-		"XR":"AE",
-		"XG":"C6",
-		"XB":"98",
-		"FriendlyName":"g"
-},{
-		"name":"Android Green",
-		"r":169,
-		"g":154,
-		"b":57,
-		"XR":"A9",
-		"XG":"9A",
-		"XB":"39",
-		"FriendlyName":"g"
-},{
-		"name":"Pine green",
-		"r":164,
-		"g":198,
-		"b":111,
-		"XR":"A4",
-		"XG":"C6",
-		"XB":"6F",
-		"FriendlyName":"g"
-},{
-		"name":"Camouflage green",
-		"r":164,
-		"g":221,
-		"b":107,
-		"XR":"A4",
-		"XG":"DD",
-		"XB":"6B",
-		"FriendlyName":"g"
-},{
-		"name":"Deep jungle green",
-		"r":152,
-		"g":255,
-		"b":73,
-		"XR":"98",
-		"XG":"FF",
-		"XB":"49",
-		"FriendlyName":"g"
-},{
-		"name":"UP Forest green",
-		"r":150,
-		"g":200,
-		"b":33,
-		"XR":"96",
-		"XG":"C8",
-		"XB":"21",
-		"FriendlyName":"g"
-},{
-		"name":"Pastel green",
-		"r":150,
-		"g":222,
-		"b":119,
-		"XR":"96",
-		"XG":"DE",
-		"XB":"77",
-		"FriendlyName":"g"
-},{
-		"name":"North Texas Green",
-		"r":143,
-		"g":188,
-		"b":51,
-		"XR":"8F",
-		"XG":"BC",
-		"XB":"33",
-		"FriendlyName":"g"
-},{
-		"name":"Celadon",
-		"r":140,
-		"g":146,
-		"b":175,
-		"XR":"8C",
-		"XG":"92",
-		"XB":"AF",
-		"FriendlyName":"g"
-},{
-		"name":"Pistachio",
-		"r":135,
-		"g":206,
-		"b":114,
-		"XR":"87",
-		"XG":"CE",
-		"XB":"72",
-		"FriendlyName":"g"
-},{
-		"name":"La Salle Green",
-		"r":133,
-		"g":187,
-		"b":48,
-		"XR":"85",
-		"XG":"BB",
-		"XB":"30",
-		"FriendlyName":"g"
-},{
-		"name":"Dark pastel green",
-		"r":116,
-		"g":195,
-		"b":60,
-		"XR":"74",
-		"XG":"C3",
-		"XB":"3C",
-		"FriendlyName":"g"
-},{
-		"name":"Chartreuse (web)",
-		"r":115,
-		"g":169,
-		"b":0,
-		"XR":"73",
-		"XG":"A9",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Turquoise green",
-		"r":95,
-		"g":158,
-		"b":180,
-		"XR":"5F",
-		"XG":"9E",
-		"XB":"B4",
-		"FriendlyName":"g"
-},{
-		"name":"Green-yellow",
-		"r":91,
-		"g":146,
-		"b":47,
-		"XR":"5B",
-		"XG":"92",
-		"XB":"2F",
-		"FriendlyName":"g"
-},{
-		"name":"Jungle green",
-		"r":80,
-		"g":125,
-		"b":135,
-		"XR":"50",
-		"XG":"7D",
-		"XB":"87",
-		"FriendlyName":"g"
-},{
-		"name":"Forest green (traditional)",
-		"r":80,
-		"g":200,
-		"b":33,
-		"XR":"50",
-		"XG":"C8",
-		"XB":"21",
-		"FriendlyName":"g"
-},{
-		"name":"Dark green",
-		"r":80,
-		"g":200,
-		"b":32,
-		"XR":"50",
-		"XG":"C8",
-		"XB":"20",
-		"FriendlyName":"g"
-},{
-		"name":"Mountain Meadow",
-		"r":79,
-		"g":121,
-		"b":143,
-		"XR":"4F",
-		"XG":"79",
-		"XB":"8F",
-		"FriendlyName":"g"
-},{
-		"name":"Light green",
-		"r":72,
-		"g":209,
-		"b":144,
-		"XR":"48",
-		"XG":"D1",
-		"XB":"90",
-		"FriendlyName":"g"
-},{
-		"name":"Tea green",
-		"r":68,
-		"g":108,
-		"b":192,
-		"XR":"44",
-		"XG":"6C",
-		"XB":"C0",
-		"FriendlyName":"g"
-},{
-		"name":"June bud",
-		"r":64,
-		"g":130,
-		"b":87,
-		"XR":"40",
-		"XG":"82",
-		"XB":"57",
-		"FriendlyName":"g"
-},{
-		"name":"Harlequin",
-		"r":60,
-		"g":179,
-		"b":0,
-		"XR":"3C",
-		"XG":"B3",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Midnight green (eagle green)",
-		"r":57,
-		"g":255,
-		"b":83,
-		"XR":"39",
-		"XG":"FF",
-		"XB":"53",
-		"FriendlyName":"g"
-},{
-		"name":"Myrtle",
-		"r":46,
-		"g":139,
-		"b":30,
-		"XR":"2E",
-		"XG":"8B",
-		"XB":"1E",
-		"FriendlyName":"g"
-},{
-		"name":"Light sea green",
-		"r":34,
-		"g":139,
-		"b":170,
-		"XR":"22",
-		"XG":"8B",
-		"XB":"AA",
-		"FriendlyName":"g"
-},{
-		"name":"Feldgrau",
-		"r":32,
-		"g":178,
-		"b":83,
-		"XR":"20",
-		"XG":"B2",
-		"XB":"53",
-		"FriendlyName":"g"
-},{
-		"name":"Gray-asparagus",
-		"r":28,
-		"g":53,
-		"b":69,
-		"XR":"1C",
-		"XG":"35",
-		"XB":"45",
-		"FriendlyName":"g"
-},{
-		"name":"Neon green",
-		"r":25,
-		"g":89,
-		"b":20,
-		"XR":"19",
-		"XG":"59",
-		"XB":"14",
-		"FriendlyName":"g"
-},{
-		"name":"Granny Smith Apple",
-		"r":13,
-		"g":152,
-		"b":160,
-		"XR":"0D",
-		"XG":"98",
-		"XB":"A0",
-		"FriendlyName":"g"
-},{
-		"name":"Bright green",
-		"r":8,
-		"g":232,
-		"b":0,
-		"XR":"08",
-		"XG":"E8",
-		"XB":"00",
-		"FriendlyName":"g"
-},{
-		"name":"Lincoln green",
-		"r":5,
-		"g":144,
-		"b":5,
-		"XR":"05",
-		"XG":"90",
-		"XB":"05",
-		"FriendlyName":"g"
-},{
-		"name":"Rifle green",
-		"r":0,
-		"g":66,
-		"b":51,
-		"XR":"00",
-		"XG":"42",
-		"XB":"33",
-		"FriendlyName":"g"
-},{
-		"name":"Hunter green",
-		"r":0,
-		"g":105,
-		"b":59,
-		"XR":"00",
-		"XG":"69",
-		"XB":"3B",
-		"FriendlyName":"g"
-},{
-		"name":"Lime green",
-		"r":0,
-		"g":112,
-		"b":50,
-		"XR":"00",
-		"XG":"70",
-		"XB":"32",
-		"FriendlyName":"g"
-},{
-		"name":"Forest green (web)",
-		"r":0,
-		"g":128,
-		"b":34,
-		"XR":"00",
-		"XG":"80",
-		"XB":"22",
-		"FriendlyName":"g"
-},{
-		"name":"MSU Green",
-		"r":0,
-		"g":144,
-		"b":59,
-		"XR":"00",
-		"XG":"90",
-		"XB":"3B",
-		"FriendlyName":"g"
-},{
-		"name":"Dark spring green",
-		"r":0,
-		"g":158,
-		"b":69,
-		"XR":"00",
-		"XG":"9E",
-		"XB":"45",
-		"FriendlyName":"g"
-},{
-		"name":"India green",
-		"r":0,
-		"g":165,
-		"b":8,
-		"XR":"00",
-		"XG":"A5",
-		"XB":"08",
-		"FriendlyName":"g"
-},{
-		"name":"Phthalo green",
-		"r":0,
-		"g":168,
-		"b":36,
-		"XR":"00",
-		"XG":"A8",
-		"XB":"24",
-		"FriendlyName":"G"
-},{
-		"name":"Malachite",
-		"r":0,
-		"g":191,
-		"b":81,
-		"XR":"00",
-		"XG":"BF",
-		"XB":"51",
-		"FriendlyName":"g"
-},{
-		"name":"Emerald",
-		"r":0,
-		"g":255,
-		"b":120,
-		"XR":"00",
-		"XG":"FF",
-		"XB":"78",
-		"FriendlyName":"g"
-},{
-		"name":"Ghost white",
-		"r":255,
-		"g":53,
-		"b":255,
-		"XR":"FF",
-		"XG":"35",
-		"XB":"FF",
-		"FriendlyName":"b"
-},{
-		"name":"Anti-flash white",
-		"r":255,
-		"g":64,
-		"b":244,
-		"XR":"FF",
-		"XG":"40",
-		"XB":"F4",
-		"FriendlyName":"b"
-},{
-		"name":"Celeste (colour)",
-		"r":255,
-		"g":140,
-		"b":255,
-		"XR":"FF",
-		"XG":"8C",
-		"XB":"FF",
-		"FriendlyName":"b"
-},{
-		"name":"Electric cyan",
-		"r":255,
-		"g":255,
-		"b":255,
-		"XR":"FF",
-		"XG":"FF",
-		"XB":"FF",
-		"FriendlyName":"b"
-},{
-		"name":"Cyan (process)",
-		"r":254,
-		"g":253,
-		"b":235,
-		"XR":"FE",
-		"XG":"FD",
-		"XB":"EB",
-		"FriendlyName":"b"
-},{
-		"name":"Aqua",
-		"r":251,
-		"g":236,
-		"b":255,
-		"XR":"FB",
-		"XG":"EC",
-		"XB":"FF",
-		"FriendlyName":"B"
-},{
-		"name":"Cyan",
-		"r":250,
-		"g":235,
-		"b":255,
-		"XR":"FA",
-		"XG":"EB",
-		"XB":"FF",
-		"FriendlyName":"b"
-},{
-		"name":"Azure mist/web",
-		"r":249,
-		"g":66,
-		"b":255,
-		"XR":"F9",
-		"XG":"42",
-		"XB":"FF",
-		"FriendlyName":"b"
-},{
-		"name":"Carolina blue",
-		"r":244,
-		"g":194,
-		"b":221,
-		"XR":"F4",
-		"XG":"C2",
-		"XB":"DD",
-		"FriendlyName":"b"
-},{
-		"name":"Turquoise blue",
-		"r":231,
-		"g":254,
-		"b":239,
-		"XR":"E7",
-		"XG":"FE",
-		"XB":"EF",
-		"FriendlyName":"b"
-},{
-		"name":"Pale blue",
-		"r":230,
-		"g":143,
-		"b":238,
-		"XR":"E6",
-		"XG":"8F",
-		"XB":"EE",
-		"FriendlyName":"b"
-},{
-		"name":"Light cyan",
-		"r":205,
-		"g":92,
-		"b":255,
-		"XR":"CD",
-		"XG":"5C",
-		"XB":"FF",
-		"FriendlyName":"b"
-},{
-		"name":"Electric blue",
-		"r":169,
-		"g":169,
-		"b":255,
-		"XR":"A9",
-		"XG":"A9",
-		"XB":"FF",
-		"FriendlyName":"b"
-},{
-		"name":"Honeydew",
-		"r":112,
-		"g":66,
-		"b":240,
-		"XR":"70",
-		"XG":"42",
-		"XB":"F0",
-		"FriendlyName":"b"
-},{
-		"name":"Munsell",
-		"r":97,
-		"g":64,
-		"b":244,
-		"XR":"61",
-		"XG":"40",
-		"XB":"F4",
-		"FriendlyName":"b"
-},{
-		"name":"White smoke",
-		"r":39,
-		"g":59,
-		"b":245,
-		"XR":"27",
-		"XG":"3B",
-		"XB":"F5",
-		"FriendlyName":"b"
-},{
-		"name":"Ivory",
-		"r":25,
-		"g":25,
-		"b":240,
-		"XR":"19",
-		"XG":"19",
-		"XB":"F0",
-		"FriendlyName":"b"
-},{
-		"name":"Magnolia",
-		"r":16,
-		"g":52,
-		"b":255,
-		"XR":"10",
-		"XG":"34",
-		"XB":"FF",
-		"FriendlyName":"b"
-	}
-
-]
+[{"r":255,"g":255,"b":240,"name":"Ivory","XR":"FF","XG":"FF","XB":"F0","FriendlyName":"b"},
+{"r":248,"g":248,"b":255,"name":"Ghost white","XR":"F8","XG":"F8","XB":"FF","FriendlyName":"b"},
+{"r":248,"g":244,"b":255,"name":"Magnolia","XR":"F8","XG":"F4","XB":"FF","FriendlyName":"b"},
+{"r":245,"g":245,"b":245,"name":"White smoke","XR":"F5","XG":"F5","XB":"F5","FriendlyName":"b"},
+{"r":242,"g":243,"b":244,"name":"Anti-flash white","XR":"F2","XG":"F3","XB":"F4","FriendlyName":"b"},
+{"r":242,"g":243,"b":244,"name":"Munsell","XR":"F2","XG":"F3","XB":"F4","FriendlyName":"b"},
+{"r":240,"g":255,"b":255,"name":"Azure mist/web","XR":"F0","XG":"FF","XB":"FF","FriendlyName":"b"},
+{"r":240,"g":255,"b":240,"name":"Honeydew","XR":"F0","XG":"FF","XB":"F0","FriendlyName":"b"},
+{"r":224,"g":255,"b":255,"name":"Light cyan","XR":"E0","XG":"FF","XB":"FF","FriendlyName":"b"},
+{"r":178,"g":255,"b":255,"name":"Celeste (colour)","XR":"B2","XG":"FF","XB":"FF","FriendlyName":"b"},
+{"r":175,"g":238,"b":238,"name":"Pale blue","XR":"AF","XG":"EE","XB":"EE","FriendlyName":"b"},
+{"r":153,"g":186,"b":221,"name":"Carolina blue","XR":"99","XG":"BA","XB":"DD","FriendlyName":"b"},
+{"r":125,"g":249,"b":255,"name":"Electric blue","XR":"7D","XG":"F9","XB":"FF","FriendlyName":"b"},
+{"r":0,"g":255,"b":255,"name":"Aqua","XR":"00","XG":"FF","XB":"FF","FriendlyName":"B"},
+{"r":0,"g":255,"b":255,"name":"Cyan","XR":"00","XG":"FF","XB":"FF","FriendlyName":"b"},
+{"r":0,"g":255,"b":255,"name":"Electric cyan","XR":"00","XG":"FF","XB":"FF","FriendlyName":"b"},
+{"r":0,"g":255,"b":239,"name":"Turquoise blue","XR":"00","XG":"FF","XB":"EF","FriendlyName":"b"},
+{"r":0,"g":183,"b":235,"name":"Cyan (process)","XR":"00","XG":"B7","XB":"EB","FriendlyName":"b"},
+{"r":245,"g":255,"b":250,"name":"Mint cream","XR":"F5","XG":"FF","XB":"FA","FriendlyName":"g"},
+{"r":223,"g":255,"b":0,"name":"Chartreuse (traditional)","XR":"DF","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":208,"g":240,"b":192,"name":"Tea green","XR":"D0","XG":"F0","XB":"C0","FriendlyName":"g"},
+{"r":204,"g":255,"b":0,"name":"Electric lime","XR":"CC","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":204,"g":255,"b":0,"name":"Fluorescent yellow","XR":"CC","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":191,"g":255,"b":0,"name":"Lime (color wheel)","XR":"BF","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":189,"g":218,"b":87,"name":"June bud","XR":"BD","XG":"DA","XB":"57","FriendlyName":"g"},
+{"r":178,"g":236,"b":93,"name":"Inchworm","XR":"B2","XG":"EC","XB":"5D","FriendlyName":"g"},
+{"r":173,"g":255,"b":47,"name":"Green-yellow","XR":"AD","XG":"FF","XB":"2F","FriendlyName":"g"},
+{"r":173,"g":223,"b":173,"name":"Moss green","XR":"AD","XG":"DF","XB":"AD","FriendlyName":"g"},
+{"r":172,"g":225,"b":175,"name":"Celadon","XR":"AC","XG":"E1","XB":"AF","FriendlyName":"g"},
+{"r":170,"g":240,"b":209,"name":"Magic mint","XR":"AA","XG":"F0","XB":"D1","FriendlyName":"g"},
+{"r":169,"g":186,"b":157,"name":"Laurel green","XR":"A9","XG":"BA","XB":"9D","FriendlyName":"g"},
+{"r":168,"g":228,"b":160,"name":"Granny Smith Apple","XR":"A8","XG":"E4","XB":"A0","FriendlyName":"g"},
+{"r":167,"g":252,"b":0,"name":"Spring bud","XR":"A7","XG":"FC","XB":"00","FriendlyName":"g"},
+{"r":164,"g":198,"b":57,"name":"Android Green","XR":"A4","XG":"C6","XB":"39","FriendlyName":"g"},
+{"r":160,"g":214,"b":180,"name":"Turquoise green","XR":"A0","XG":"D6","XB":"B4","FriendlyName":"g"},
+{"r":154,"g":205,"b":50,"name":"Yellow-green","XR":"9A","XG":"CD","XB":"32","FriendlyName":"g"},
+{"r":152,"g":255,"b":152,"name":"Mint green","XR":"98","XG":"FF","XB":"98","FriendlyName":"g"},
+{"r":152,"g":251,"b":152,"name":"Pale green","XR":"98","XG":"FB","XB":"98","FriendlyName":"g"},
+{"r":150,"g":200,"b":162,"name":"Eton blue","XR":"96","XG":"C8","XB":"A2","FriendlyName":"g"},
+{"r":147,"g":197,"b":114,"name":"Pistachio","XR":"93","XG":"C5","XB":"72","FriendlyName":"g"},
+{"r":144,"g":238,"b":144,"name":"Light green","XR":"90","XG":"EE","XB":"90","FriendlyName":"g"},
+{"r":143,"g":188,"b":143,"name":"Dark sea green","XR":"8F","XG":"BC","XB":"8F","FriendlyName":"g"},
+{"r":141,"g":182,"b":0,"name":"Apple green","XR":"8D","XG":"B6","XB":"00","FriendlyName":"g"},
+{"r":135,"g":169,"b":107,"name":"Asparagus","XR":"87","XG":"A9","XB":"6B","FriendlyName":"g"},
+{"r":133,"g":187,"b":101,"name":"Dollar bill","XR":"85","XG":"BB","XB":"65","FriendlyName":"g"},
+{"r":128,"g":128,"b":0,"name":"Heart Gold","XR":"80","XG":"80","XB":"00","FriendlyName":"g"},
+{"r":128,"g":128,"b":0,"name":"Olive","XR":"80","XG":"80","XB":"00","FriendlyName":"g"},
+{"r":127,"g":255,"b":212,"name":"Aquamarine","XR":"7F","XG":"FF","XB":"D4","FriendlyName":"g"},
+{"r":127,"g":255,"b":0,"name":"Chartreuse (web)","XR":"7F","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":124,"g":252,"b":0,"name":"Lawn green","XR":"7C","XG":"FC","XB":"00","FriendlyName":"g"},
+{"r":120,"g":134,"b":107,"name":"Camouflage green","XR":"78","XG":"86","XB":"6B","FriendlyName":"g"},
+{"r":119,"g":221,"b":119,"name":"Pastel green","XR":"77","XG":"DD","XB":"77","FriendlyName":"g"},
+{"r":118,"g":255,"b":122,"name":"Screamin' Green","XR":"76","XG":"FF","XB":"7A","FriendlyName":"g"},
+{"r":116,"g":195,"b":101,"name":"Mantis","XR":"74","XG":"C3","XB":"65","FriendlyName":"g"},
+{"r":107,"g":142,"b":35,"name":"Olive Drab (web) (Olive Drab #3)","XR":"6B","XG":"8E","XB":"23","FriendlyName":"g"},
+{"r":102,"g":255,"b":0,"name":"Bright green","XR":"66","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":102,"g":221,"b":170,"name":"Medium aquamarine","XR":"66","XG":"DD","XB":"AA","FriendlyName":"g"},
+{"r":102,"g":176,"b":50,"name":"Green (RYB)","XR":"66","XG":"B0","XB":"32","FriendlyName":"g"},
+{"r":85,"g":107,"b":47,"name":"Dark olive green","XR":"55","XG":"6B","XB":"2F","FriendlyName":"g"},
+{"r":80,"g":200,"b":120,"name":"Emerald","XR":"50","XG":"C8","XB":"78","FriendlyName":"g"},
+{"r":80,"g":200,"b":120,"name":"Paris Green","XR":"50","XG":"C8","XB":"78","FriendlyName":"g"},
+{"r":80,"g":125,"b":42,"name":"Sap green","XR":"50","XG":"7D","XB":"2A","FriendlyName":"g"},
+{"r":79,"g":121,"b":66,"name":"Fern green","XR":"4F","XG":"79","XB":"42","FriendlyName":"g"},
+{"r":77,"g":93,"b":83,"name":"Feldgrau","XR":"4D","XG":"5D","XB":"53","FriendlyName":"g"},
+{"r":76,"g":187,"b":23,"name":"Kelly green","XR":"4C","XG":"BB","XB":"17","FriendlyName":"g"},
+{"r":75,"g":83,"b":32,"name":"Army green","XR":"4B","XG":"53","XB":"20","FriendlyName":"g"},
+{"r":70,"g":89,"b":69,"name":"Gray-asparagus","XR":"46","XG":"59","XB":"45","FriendlyName":"g"},
+{"r":65,"g":72,"b":51,"name":"Rifle green","XR":"41","XG":"48","XB":"33","FriendlyName":"g"},
+{"r":63,"g":255,"b":0,"name":"Harlequin","XR":"3F","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":60,"g":208,"b":112,"name":"UFO Green","XR":"3C","XG":"D0","XB":"70","FriendlyName":"g"},
+{"r":60,"g":179,"b":113,"name":"Medium sea green","XR":"3C","XG":"B3","XB":"71","FriendlyName":"g"},
+{"r":57,"g":255,"b":20,"name":"Neon green","XR":"39","XG":"FF","XB":"14","FriendlyName":"g"},
+{"r":53,"g":94,"b":59,"name":"Hunter green","XR":"35","XG":"5E","XB":"3B","FriendlyName":"g"},
+{"r":50,"g":205,"b":50,"name":"Lime green","XR":"32","XG":"CD","XB":"32","FriendlyName":"g"},
+{"r":48,"g":186,"b":143,"name":"Mountain Meadow","XR":"30","XG":"BA","XB":"8F","FriendlyName":"g"},
+{"r":47,"g":79,"b":79,"name":"Dark slate gray","XR":"2F","XG":"4F","XB":"4F","FriendlyName":"g"},
+{"r":46,"g":139,"b":87,"name":"Sea green","XR":"2E","XG":"8B","XB":"57","FriendlyName":"g"},
+{"r":42,"g":128,"b":0,"name":"Napier green","XR":"2A","XG":"80","XB":"00","FriendlyName":"g"},
+{"r":41,"g":171,"b":135,"name":"Jungle green","XR":"29","XG":"AB","XB":"87","FriendlyName":"g"},
+{"r":34,"g":139,"b":34,"name":"Forest green (web)","XR":"22","XG":"8B","XB":"22","FriendlyName":"g"},
+{"r":33,"g":66,"b":30,"name":"Myrtle","XR":"21","XG":"42","XB":"1E","FriendlyName":"g"},
+{"r":32,"g":178,"b":170,"name":"Light sea green","XR":"20","XG":"B2","XB":"AA","FriendlyName":"g"},
+{"r":30,"g":77,"b":43,"name":"Cal Poly Pomona green","XR":"1E","XG":"4D","XB":"2B","FriendlyName":"g"},
+{"r":28,"g":53,"b":45,"name":"Medium jungle green","XR":"1C","XG":"35","XB":"2D","FriendlyName":"g"},
+{"r":26,"g":36,"b":33,"name":"Dark jungle green","XR":"1A","XG":"24","XB":"21","FriendlyName":"g"},
+{"r":25,"g":89,"b":5,"name":"Lincoln green","XR":"19","XG":"59","XB":"05","FriendlyName":"g"},
+{"r":24,"g":69,"b":59,"name":"MSU Green","XR":"18","XG":"45","XB":"3B","FriendlyName":"g"},
+{"r":23,"g":114,"b":69,"name":"Dark spring green","XR":"17","XG":"72","XB":"45","FriendlyName":"g"},
+{"r":19,"g":136,"b":8,"name":"India green","XR":"13","XG":"88","XB":"08","FriendlyName":"g"},
+{"r":18,"g":53,"b":36,"name":"Phthalo green","XR":"12","XG":"35","XB":"24","FriendlyName":"G"},
+{"r":11,"g":218,"b":81,"name":"Malachite","XR":"0B","XG":"DA","XB":"51","FriendlyName":"g"},
+{"r":8,"g":120,"b":48,"name":"La Salle Green","XR":"08","XG":"78","XB":"30","FriendlyName":"g"},
+{"r":5,"g":144,"b":51,"name":"North Texas Green","XR":"05","XG":"90","XB":"33","FriendlyName":"g"},
+{"r":3,"g":192,"b":60,"name":"Dark pastel green","XR":"03","XG":"C0","XB":"3C","FriendlyName":"g"},
+{"r":1,"g":68,"b":33,"name":"Forest green (traditional)","XR":"01","XG":"44","XB":"21","FriendlyName":"g"},
+{"r":1,"g":68,"b":33,"name":"UP Forest green","XR":"01","XG":"44","XB":"21","FriendlyName":"g"},
+{"r":1,"g":50,"b":32,"name":"Dark green","XR":"01","XG":"32","XB":"20","FriendlyName":"g"},
+{"r":1,"g":121,"b":111,"name":"Pine green","XR":"01","XG":"79","XB":"6F","FriendlyName":"g"},
+{"r":0,"g":255,"b":0,"name":"Electric green","XR":"00","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":0,"g":255,"b":0,"name":"Green (color wheel) (X11 green)","XR":"00","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":0,"g":255,"b":127,"name":"Guppie green","XR":"00","XG":"FF","XB":"7F","FriendlyName":"g"},
+{"r":0,"g":255,"b":0,"name":"Lime (web) (X11 green)","XR":"00","XG":"FF","XB":"00","FriendlyName":"g"},
+{"r":0,"g":255,"b":127,"name":"Spring green","XR":"00","XG":"FF","XB":"7F","FriendlyName":"g"},
+{"r":0,"g":250,"b":154,"name":"Medium spring green","XR":"00","XG":"FA","XB":"9A","FriendlyName":"g"},
+{"r":0,"g":204,"b":153,"name":"Caribbean green","XR":"00","XG":"CC","XB":"99","FriendlyName":"g"},
+{"r":0,"g":168,"b":119,"name":"Green (Munsell)","XR":"00","XG":"A8","XB":"77","FriendlyName":"g"},
+{"r":0,"g":168,"b":107,"name":"Jade","XR":"00","XG":"A8","XB":"6B","FriendlyName":"g"},
+{"r":0,"g":165,"b":80,"name":"Green (pigment)","XR":"00","XG":"A5","XB":"50","FriendlyName":"g"},
+{"r":0,"g":159,"b":107,"name":"Green (NCS)","XR":"00","XG":"9F","XB":"6B","FriendlyName":"g"},
+{"r":0,"g":158,"b":96,"name":"Shamrock green","XR":"00","XG":"9E","XB":"60","FriendlyName":"g"},
+{"r":0,"g":144,"b":0,"name":"Islamic green","XR":"00","XG":"90","XB":"00","FriendlyName":"g"},
+{"r":0,"g":128,"b":0,"name":"Ao (English)","XR":"00","XG":"80","XB":"00","FriendlyName":"g"},
+{"r":0,"g":128,"b":0,"name":"Green (HTML/CSS green)","XR":"00","XG":"80","XB":"00","FriendlyName":"g"},
+{"r":0,"g":128,"b":0,"name":"Office green","XR":"00","XG":"80","XB":"00","FriendlyName":"g"},
+{"r":0,"g":112,"b":0,"name":"Hooker's green","XR":"00","XG":"70","XB":"00","FriendlyName":"g"},
+{"r":0,"g":109,"b":91,"name":"Teal green","XR":"00","XG":"6D","XB":"5B","FriendlyName":"g"},
+{"r":0,"g":107,"b":60,"name":"Cadmium green","XR":"00","XG":"6B","XB":"3C","FriendlyName":"g"},
+{"r":0,"g":105,"b":62,"name":"Dartmouth green","XR":"00","XG":"69","XB":"3E","FriendlyName":"g"},
+{"r":0,"g":102,"b":0,"name":"Pakistan green","XR":"00","XG":"66","XB":"00","FriendlyName":"g"},
+{"r":0,"g":86,"b":63,"name":"Sacramento State green","XR":"00","XG":"56","XB":"3F","FriendlyName":"g"},
+{"r":0,"g":66,"b":37,"name":"British racing green","XR":"00","XG":"42","XB":"25","FriendlyName":"g"},
+{"r":0,"g":64,"b":64,"name":"Rich black","XR":"00","XG":"40","XB":"40","FriendlyName":"g"},
+{"r":0,"g":117,"b":94,"name":"Tropical rain forest","XR":"00","XG":"75","XB":"5E","FriendlyName":"g"},
+{"r":0,"g":166,"b":147,"name":"Persian green","XR":"00","XG":"A6","XB":"93","FriendlyName":"g"},
+{"r":0,"g":75,"b":73,"name":"Deep jungle green","XR":"00","XG":"4B","XB":"49","FriendlyName":"g"},
+{"r":0,"g":73,"b":83,"name":"Midnight green (eagle green)","XR":"00","XG":"49","XB":"53","FriendlyName":"g"},
+{"r":255,"g":235,"b":205,"name":"Blanched Almond","XR":"FF","XG":"EB","XB":"CD","FriendlyName":"n"},
+{"r":255,"g":229,"b":180,"name":"Peach","XR":"FF","XG":"E5","XB":"B4","FriendlyName":"n"},
+{"r":255,"g":228,"b":196,"name":"Bisque","XR":"FF","XG":"E4","XB":"C4","FriendlyName":"n"},
+{"r":255,"g":228,"b":225,"name":"Misty rose","XR":"FF","XG":"E4","XB":"E1","FriendlyName":"n"},
+{"r":255,"g":225,"b":53,"name":"Banana yellow","XR":"FF","XG":"E1","XB":"35","FriendlyName":"n"},
+{"r":255,"g":223,"b":0,"name":"Golden yellow","XR":"FF","XG":"DF","XB":"00","FriendlyName":"n"},
+{"r":255,"g":222,"b":173,"name":"Navajo white","XR":"FF","XG":"DE","XB":"AD","FriendlyName":"n"},
+{"r":255,"g":219,"b":88,"name":"Mustard","XR":"FF","XG":"DB","XB":"58","FriendlyName":"n"},
+{"r":255,"g":218,"b":185,"name":"Peach puff","XR":"FF","XG":"DA","XB":"B9","FriendlyName":"n"},
+{"r":255,"g":216,"b":0,"name":"School bus yellow","XR":"FF","XG":"D8","XB":"00","FriendlyName":"n"},
+{"r":255,"g":215,"b":0,"name":"Gold (web) (Golden)","XR":"FF","XG":"D7","XB":"00","FriendlyName":"n"},
+{"r":255,"g":211,"b":0,"name":"Yellow (NCS)","XR":"FF","XG":"D3","XB":"00","FriendlyName":"n"},
+{"r":255,"g":209,"b":220,"name":"Pastel pink","XR":"FF","XG":"D1","XB":"DC","FriendlyName":"n"},
+{"r":255,"g":204,"b":153,"name":"Peach-orange","XR":"FF","XG":"CC","XB":"99","FriendlyName":"n"},
+{"r":255,"g":204,"b":51,"name":"Sunglow","XR":"FF","XG":"CC","XB":"33","FriendlyName":"n"},
+{"r":255,"g":204,"b":0,"name":"Tangerine yellow","XR":"FF","XG":"CC","XB":"00","FriendlyName":"n"},
+{"r":255,"g":204,"b":0,"name":"USC Gold","XR":"FF","XG":"CC","XB":"00","FriendlyName":"n"},
+{"r":255,"g":203,"b":164,"name":"Deep peach","XR":"FF","XG":"CB","XB":"A4","FriendlyName":"n"},
+{"r":255,"g":200,"b":124,"name":"Topaz","XR":"FF","XG":"C8","XB":"7C","FriendlyName":"n"},
+{"r":255,"g":196,"b":12,"name":"Mikado yellow","XR":"FF","XG":"C4","XB":"0C","FriendlyName":"n"},
+{"r":255,"g":193,"b":204,"name":"Bubble gum","XR":"FF","XG":"C1","XB":"CC","FriendlyName":"n"},
+{"r":255,"g":192,"b":203,"name":"Pink","XR":"FF","XG":"C0","XB":"CB","FriendlyName":"n"},
+{"r":255,"g":191,"b":0,"name":"Amber","XR":"FF","XG":"BF","XB":"00","FriendlyName":"n"},
+{"r":255,"g":191,"b":0,"name":"Fluorescent orange","XR":"FF","XG":"BF","XB":"00","FriendlyName":"n"},
+{"r":255,"g":188,"b":217,"name":"Cotton candy","XR":"FF","XG":"BC","XB":"D9","FriendlyName":"n"},
+{"r":255,"g":186,"b":0,"name":"Selective yellow","XR":"FF","XG":"BA","XB":"00","FriendlyName":"n"},
+{"r":255,"g":183,"b":197,"name":"Cherry blossom pink","XR":"FF","XG":"B7","XB":"C5","FriendlyName":"n"},
+{"r":255,"g":182,"b":193,"name":"Light pink","XR":"FF","XG":"B6","XB":"C1","FriendlyName":"n"},
+{"r":255,"g":179,"b":71,"name":"Pastel orange","XR":"FF","XG":"B3","XB":"47","FriendlyName":"n"},
+{"r":255,"g":179,"b":0,"name":"UCLA Gold","XR":"FF","XG":"B3","XB":"00","FriendlyName":"n"},
+{"r":255,"g":174,"b":66,"name":"Yellow Orange","XR":"FF","XG":"AE","XB":"42","FriendlyName":"n"},
+{"r":255,"g":168,"b":18,"name":"Dark tangerine","XR":"FF","XG":"A8","XB":"12","FriendlyName":"n"},
+{"r":255,"g":167,"b":0,"name":"Chrome yellow","XR":"FF","XG":"A7","XB":"00","FriendlyName":"n"},
+{"r":255,"g":166,"b":201,"name":"Carnation pink","XR":"FF","XG":"A6","XB":"C9","FriendlyName":"n"},
+{"r":255,"g":165,"b":0,"name":"Orange (web color)","XR":"FF","XG":"A5","XB":"00","FriendlyName":"n"},
+{"r":255,"g":163,"b":67,"name":"Neon Carrot","XR":"FF","XG":"A3","XB":"43","FriendlyName":"n"},
+{"r":255,"g":160,"b":122,"name":"Light salmon","XR":"FF","XG":"A0","XB":"7A","FriendlyName":"n"},
+{"r":255,"g":160,"b":137,"name":"Vivid tangerine","XR":"FF","XG":"A0","XB":"89","FriendlyName":"n"},
+{"r":255,"g":159,"b":0,"name":"Orange peel","XR":"FF","XG":"9F","XB":"00","FriendlyName":"n"},
+{"r":255,"g":153,"b":102,"name":"Atomic tangerine","XR":"FF","XG":"99","XB":"66","FriendlyName":"n"},
+{"r":255,"g":153,"b":51,"name":"Deep saffron","XR":"FF","XG":"99","XB":"33","FriendlyName":"n"},
+{"r":255,"g":153,"b":153,"name":"Light salmon pink","XR":"FF","XG":"99","XB":"99","FriendlyName":"n"},
+{"r":255,"g":153,"b":102,"name":"Pink-orange","XR":"FF","XG":"99","XB":"66","FriendlyName":"n"},
+{"r":255,"g":145,"b":164,"name":"Salmon pink","XR":"FF","XG":"91","XB":"A4","FriendlyName":"n"},
+{"r":255,"g":143,"b":0,"name":"Princeton orange","XR":"FF","XG":"8F","XB":"00","FriendlyName":"n"},
+{"r":255,"g":140,"b":0,"name":"Dark orange","XR":"FF","XG":"8C","XB":"00","FriendlyName":"n"},
+{"r":255,"g":140,"b":105,"name":"Salmon","XR":"FF","XG":"8C","XB":"69","FriendlyName":"n"},
+{"r":255,"g":130,"b":67,"name":"Mango Tango","XR":"FF","XG":"82","XB":"43","FriendlyName":"n"},
+{"r":255,"g":127,"b":80,"name":"Coral","XR":"FF","XG":"7F","XB":"50","FriendlyName":"n"},
+{"r":255,"g":127,"b":0,"name":"Orange (color wheel)","XR":"FF","XG":"7F","XB":"00","FriendlyName":"n"},
+{"r":255,"g":126,"b":0,"name":"Amber (SAE/ECE)","XR":"FF","XG":"7E","XB":"00","FriendlyName":"n"},
+{"r":255,"g":119,"b":255,"name":"Fuchsia pink","XR":"FF","XG":"77","XB":"FF","FriendlyName":"n"},
+{"r":255,"g":117,"b":24,"name":"Pumpkin","XR":"FF","XG":"75","XB":"18","FriendlyName":"n"},
+{"r":255,"g":111,"b":255,"name":"Ultra pink","XR":"FF","XG":"6F","XB":"FF","FriendlyName":"n"},
+{"r":255,"g":110,"b":74,"name":"Outrageous Orange","XR":"FF","XG":"6E","XB":"4A","FriendlyName":"n"},
+{"r":255,"g":105,"b":180,"name":"Hot pink","XR":"FF","XG":"69","XB":"B4","FriendlyName":"n"},
+{"r":255,"g":103,"b":0,"name":"Safety orange (blaze orange)","XR":"FF","XG":"67","XB":"00","FriendlyName":"n"},
+{"r":255,"g":102,"b":204,"name":"Rose pink","XR":"FF","XG":"66","XB":"CC","FriendlyName":"n"},
+{"r":255,"g":90,"b":54,"name":"Portland Orange","XR":"FF","XG":"5A","XB":"36","FriendlyName":"n"},
+{"r":255,"g":79,"b":0,"name":"International orange","XR":"FF","XG":"4F","XB":"00","FriendlyName":"n"},
+{"r":255,"g":67,"b":164,"name":"Wild Strawberry","XR":"FF","XG":"43","XB":"A4","FriendlyName":"n"},
+{"r":255,"g":64,"b":64,"name":"Coral red","XR":"FF","XG":"40","XB":"40","FriendlyName":"r"},
+{"r":255,"g":53,"b":94,"name":"Radical Red","XR":"FF","XG":"35","XB":"5E","FriendlyName":"r"},
+{"r":255,"g":51,"b":204,"name":"Razzle dazzle rose","XR":"FF","XG":"33","XB":"CC","FriendlyName":"n"},
+{"r":255,"g":29,"b":206,"name":"Hot magenta","XR":"FF","XG":"1D","XB":"CE","FriendlyName":"n"},
+{"r":255,"g":20,"b":147,"name":"Deep pink","XR":"FF","XG":"14","XB":"93","FriendlyName":"n"},
+{"r":255,"g":20,"b":147,"name":"Fluorescent pink","XR":"FF","XG":"14","XB":"93","FriendlyName":"n"},
+{"r":255,"g":0,"b":127,"name":"Bright pink","XR":"FF","XG":"00","XB":"7F","FriendlyName":"n"},
+{"r":255,"g":0,"b":79,"name":"Folly","XR":"FF","XG":"00","XB":"4F","FriendlyName":"r"},
+{"r":255,"g":0,"b":255,"name":"Fuchsia","XR":"FF","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":255,"g":0,"b":255,"name":"Magenta","XR":"FF","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":255,"g":0,"b":144,"name":"Magenta (process)","XR":"FF","XG":"00","XB":"90","FriendlyName":"n"},
+{"r":255,"g":0,"b":127,"name":"Rose","XR":"FF","XG":"00","XB":"7F","FriendlyName":"n"},
+{"r":254,"g":111,"b":94,"name":"Bittersweet","XR":"FE","XG":"6F","XB":"5E","FriendlyName":"n"},
+{"r":254,"g":89,"b":194,"name":"Neon fuchsia","XR":"FE","XG":"59","XB":"C2","FriendlyName":"n"},
+{"r":254,"g":78,"b":218,"name":"Purple pizzazz","XR":"FE","XG":"4E","XB":"DA","FriendlyName":"n"},
+{"r":254,"g":40,"b":162,"name":"Persian rose","XR":"FE","XG":"28","XB":"A2","FriendlyName":"n"},
+{"r":253,"g":221,"b":230,"name":"Piggy pink","XR":"FD","XG":"DD","XB":"E6","FriendlyName":"n"},
+{"r":253,"g":213,"b":177,"name":"Light apricot","XR":"FD","XG":"D5","XB":"B1","FriendlyName":"n"},
+{"r":253,"g":188,"b":180,"name":"Melon","XR":"FD","XG":"BC","XB":"B4","FriendlyName":"n"},
+{"r":252,"g":194,"b":0,"name":"Golden poppy","XR":"FC","XG":"C2","XB":"00","FriendlyName":"n"},
+{"r":252,"g":142,"b":172,"name":"Flamingo pink","XR":"FC","XG":"8E","XB":"AC","FriendlyName":"n"},
+{"r":252,"g":137,"b":172,"name":"Tickle Me Pink","XR":"FC","XG":"89","XB":"AC","FriendlyName":"n"},
+{"r":252,"g":108,"b":133,"name":"Wild Watermelon","XR":"FC","XG":"6C","XB":"85","FriendlyName":"n"},
+{"r":252,"g":15,"b":192,"name":"Shocking pink","XR":"FC","XG":"0F","XB":"C0","FriendlyName":"n"},
+{"r":251,"g":206,"b":177,"name":"Apricot","XR":"FB","XG":"CE","XB":"B1","FriendlyName":"n"},
+{"r":251,"g":204,"b":231,"name":"Classic rose","XR":"FB","XG":"CC","XB":"E7","FriendlyName":"n"},
+{"r":251,"g":174,"b":210,"name":"Lavender pink","XR":"FB","XG":"AE","XB":"D2","FriendlyName":"n"},
+{"r":251,"g":160,"b":227,"name":"Lavender rose","XR":"FB","XG":"A0","XB":"E3","FriendlyName":"n"},
+{"r":251,"g":153,"b":2,"name":"Orange (RYB)","XR":"FB","XG":"99","XB":"02","FriendlyName":"n"},
+{"r":251,"g":96,"b":127,"name":"Brink pink","XR":"FB","XG":"60","XB":"7F","FriendlyName":"n"},
+{"r":250,"g":235,"b":215,"name":"Moccasin","XR":"FA","XG":"EB","XB":"D7","FriendlyName":"n"},
+{"r":250,"g":231,"b":181,"name":"Banana Mania","XR":"FA","XG":"E7","XB":"B5","FriendlyName":"n"},
+{"r":250,"g":223,"b":173,"name":"Peach-yellow","XR":"FA","XG":"DF","XB":"AD","FriendlyName":"n"},
+{"r":250,"g":218,"b":94,"name":"Jonquil","XR":"FA","XG":"DA","XB":"5E","FriendlyName":"n"},
+{"r":250,"g":218,"b":94,"name":"Naples yellow","XR":"FA","XG":"DA","XB":"5E","FriendlyName":"n"},
+{"r":250,"g":218,"b":221,"name":"Pale pink","XR":"FA","XG":"DA","XB":"DD","FriendlyName":"n"},
+{"r":250,"g":218,"b":94,"name":"Stil de grain yellow","XR":"FA","XG":"DA","XB":"5E","FriendlyName":"n"},
+{"r":250,"g":214,"b":165,"name":"Champagne","XR":"FA","XG":"D6","XB":"A5","FriendlyName":"n"},
+{"r":250,"g":214,"b":165,"name":"Deep champagne","XR":"FA","XG":"D6","XB":"A5","FriendlyName":"n"},
+{"r":250,"g":214,"b":165,"name":"Sunset","XR":"FA","XG":"D6","XB":"A5","FriendlyName":"n"},
+{"r":249,"g":132,"b":239,"name":"Light fuchsia pink","XR":"F9","XG":"84","XB":"EF","FriendlyName":"n"},
+{"r":249,"g":132,"b":229,"name":"Pale magenta","XR":"F9","XG":"84","XB":"E5","FriendlyName":"n"},
+{"r":249,"g":77,"b":0,"name":"Tangelo","XR":"F9","XG":"4D","XB":"00","FriendlyName":"n"},
+{"r":249,"g":66,"b":158,"name":"Rose bonbon","XR":"F9","XG":"42","XB":"9E","FriendlyName":"n"},
+{"r":248,"g":222,"b":126,"name":"Jasmine","XR":"F8","XG":"DE","XB":"7E","FriendlyName":"n"},
+{"r":248,"g":131,"b":121,"name":"Coral pink","XR":"F8","XG":"83","XB":"79","FriendlyName":"n"},
+{"r":248,"g":131,"b":121,"name":"Tea rose (orange)","XR":"F8","XG":"83","XB":"79","FriendlyName":"n"},
+{"r":247,"g":233,"b":142,"name":"Flavescent","XR":"F7","XG":"E9","XB":"8E","FriendlyName":"n"},
+{"r":247,"g":143,"b":167,"name":"Pink Sherbet","XR":"F7","XG":"8F","XB":"A7","FriendlyName":"n"},
+{"r":247,"g":127,"b":190,"name":"Persian pink","XR":"F7","XG":"7F","XB":"BE","FriendlyName":"n"},
+{"r":246,"g":173,"b":198,"name":"Nadeshiko pink","XR":"F6","XG":"AD","XB":"C6","FriendlyName":"n"},
+{"r":246,"g":74,"b":138,"name":"French rose","XR":"F6","XG":"4A","XB":"8A","FriendlyName":"n"},
+{"r":245,"g":222,"b":179,"name":"Wheat","XR":"F5","XG":"DE","XB":"B3","FriendlyName":"n"},
+{"r":245,"g":105,"b":145,"name":"Light Crimson","XR":"F5","XG":"69","XB":"91","FriendlyName":"n"},
+{"r":244,"g":196,"b":48,"name":"Saffron","XR":"F4","XG":"C4","XB":"30","FriendlyName":"n"},
+{"r":244,"g":194,"b":194,"name":"Baby pink","XR":"F4","XG":"C2","XB":"C2","FriendlyName":"n"},
+{"r":244,"g":194,"b":194,"name":"Tea rose (rose)","XR":"F4","XG":"C2","XB":"C2","FriendlyName":"n"},
+{"r":244,"g":187,"b":255,"name":"Brilliant lavender","XR":"F4","XG":"BB","XB":"FF","FriendlyName":"n"},
+{"r":244,"g":187,"b":255,"name":"Electric lavender","XR":"F4","XG":"BB","XB":"FF","FriendlyName":"n"},
+{"r":244,"g":164,"b":96,"name":"Sandy brown","XR":"F4","XG":"A4","XB":"60","FriendlyName":"n"},
+{"r":244,"g":154,"b":194,"name":"Pastel magenta","XR":"F4","XG":"9A","XB":"C2","FriendlyName":"n"},
+{"r":244,"g":0,"b":161,"name":"Fashion fuchsia","XR":"F4","XG":"00","XB":"A1","FriendlyName":"n"},
+{"r":244,"g":0,"b":161,"name":"Hollywood cerise","XR":"F4","XG":"00","XB":"A1","FriendlyName":"n"},
+{"r":243,"g":229,"b":171,"name":"Medium champagne","XR":"F3","XG":"E5","XB":"AB","FriendlyName":"n"},
+{"r":243,"g":229,"b":171,"name":"Vanilla","XR":"F3","XG":"E5","XB":"AB","FriendlyName":"n"},
+{"r":242,"g":133,"b":0,"name":"Tangerine","XR":"F2","XG":"85","XB":"00","FriendlyName":"n"},
+{"r":241,"g":167,"b":254,"name":"Rich brilliant lavender","XR":"F1","XG":"A7","XB":"FE","FriendlyName":"n"},
+{"r":240,"g":234,"b":214,"name":"Eggshell","XR":"F0","XG":"EA","XB":"D6","FriendlyName":"n"},
+{"r":240,"g":230,"b":140,"name":"Khaki (X11) (Light khaki)","XR":"F0","XG":"E6","XB":"8C","FriendlyName":"n"},
+{"r":240,"g":230,"b":140,"name":"Light khaki","XR":"F0","XG":"E6","XB":"8C","FriendlyName":"n"},
+{"r":240,"g":225,"b":48,"name":"Dandelion","XR":"F0","XG":"E1","XB":"30","FriendlyName":"n"},
+{"r":240,"g":220,"b":130,"name":"Buff","XR":"F0","XG":"DC","XB":"82","FriendlyName":"n"},
+{"r":240,"g":128,"b":128,"name":"Light coral","XR":"F0","XG":"80","XB":"80","FriendlyName":"n"},
+{"r":239,"g":222,"b":205,"name":"Almond","XR":"EF","XG":"DE","XB":"CD","FriendlyName":"n"},
+{"r":239,"g":204,"b":0,"name":"Yellow (Munsell)","XR":"EF","XG":"CC","XB":"00","FriendlyName":"n"},
+{"r":239,"g":152,"b":170,"name":"Mauvelous","XR":"EF","XG":"98","XB":"AA","FriendlyName":"n"},
+{"r":238,"g":232,"b":170,"name":"Pale goldenrod","XR":"EE","XG":"E8","XB":"AA","FriendlyName":"n"},
+{"r":238,"g":230,"b":0,"name":"Titanium yellow","XR":"EE","XG":"E6","XB":"00","FriendlyName":"n"},
+{"r":238,"g":220,"b":130,"name":"Flax","XR":"EE","XG":"DC","XB":"82","FriendlyName":"n"},
+{"r":238,"g":130,"b":238,"name":"Lavender magenta","XR":"EE","XG":"82","XB":"EE","FriendlyName":"n"},
+{"r":238,"g":130,"b":238,"name":"Violet (web)","XR":"EE","XG":"82","XB":"EE","FriendlyName":"n"},
+{"r":237,"g":201,"b":175,"name":"Desert sand","XR":"ED","XG":"C9","XB":"AF","FriendlyName":"n"},
+{"r":237,"g":145,"b":33,"name":"Carrot orange","XR":"ED","XG":"91","XB":"21","FriendlyName":"n"},
+{"r":237,"g":135,"b":45,"name":"Cadmium orange","XR":"ED","XG":"87","XB":"2D","FriendlyName":"n"},
+{"r":236,"g":235,"b":189,"name":"Pale spring bud","XR":"EC","XG":"EB","XB":"BD","FriendlyName":"n"},
+{"r":236,"g":213,"b":64,"name":"Sandstorm","XR":"EC","XG":"D5","XB":"40","FriendlyName":"n"},
+{"r":236,"g":59,"b":131,"name":"Cerise pink","XR":"EC","XG":"3B","XB":"83","FriendlyName":"n"},
+{"r":235,"g":76,"b":66,"name":"Carmine pink","XR":"EB","XG":"4C","XB":"42","FriendlyName":"n"},
+{"r":234,"g":224,"b":200,"name":"Pearl","XR":"EA","XG":"E0","XB":"C8","FriendlyName":"n"},
+{"r":233,"g":214,"b":107,"name":"Arylide yellow","XR":"E9","XG":"D6","XB":"6B","FriendlyName":"n"},
+{"r":233,"g":214,"b":107,"name":"Hansa yellow","XR":"E9","XG":"D6","XB":"6B","FriendlyName":"n"},
+{"r":233,"g":150,"b":122,"name":"Dark salmon","XR":"E9","XG":"96","XB":"7A","FriendlyName":"n"},
+{"r":233,"g":116,"b":81,"name":"Burnt sienna","XR":"E9","XG":"74","XB":"51","FriendlyName":"n"},
+{"r":233,"g":105,"b":44,"name":"Deep carrot orange","XR":"E9","XG":"69","XB":"2C","FriendlyName":"n"},
+{"r":231,"g":172,"b":207,"name":"Pink pearl","XR":"E7","XG":"AC","XB":"CF","FriendlyName":"n"},
+{"r":231,"g":84,"b":128,"name":"Dark pink","XR":"E7","XG":"54","XB":"80","FriendlyName":"n"},
+{"r":230,"g":232,"b":250,"name":"Glitter","XR":"E6","XG":"E8","XB":"FA","FriendlyName":"n"},
+{"r":230,"g":230,"b":250,"name":"Lavender (web)","XR":"E6","XG":"E6","XB":"FA","FriendlyName":"n"},
+{"r":230,"g":230,"b":250,"name":"Lavender mist","XR":"E6","XG":"E6","XB":"FA","FriendlyName":"n"},
+{"r":230,"g":226,"b":0,"name":"Peridot","XR":"E6","XG":"E2","XB":"00","FriendlyName":"n"},
+{"r":230,"g":190,"b":138,"name":"Pale gold","XR":"E6","XG":"BE","XB":"8A","FriendlyName":"n"},
+{"r":230,"g":143,"b":172,"name":"Light Thulian pink","XR":"E6","XG":"8F","XB":"AC","FriendlyName":"n"},
+{"r":230,"g":103,"b":113,"name":"Light carmine pink","XR":"E6","XG":"67","XB":"71","FriendlyName":"n"},
+{"r":229,"g":228,"b":226,"name":"Platinum","XR":"E5","XG":"E4","XB":"E2","FriendlyName":"n"},
+{"r":229,"g":183,"b":59,"name":"Meat brown","XR":"E5","XG":"B7","XB":"3B","FriendlyName":"n"},
+{"r":229,"g":170,"b":112,"name":"Fawn","XR":"E5","XG":"AA","XB":"70","FriendlyName":"n"},
+{"r":228,"g":217,"b":111,"name":"Straw","XR":"E4","XG":"D9","XB":"6F","FriendlyName":"n"},
+{"r":228,"g":208,"b":10,"name":"Citrine","XR":"E4","XG":"D0","XB":"0A","FriendlyName":"n"},
+{"r":228,"g":155,"b":15,"name":"Gamboge","XR":"E4","XG":"9B","XB":"0F","FriendlyName":"n"},
+{"r":228,"g":132,"b":0,"name":"Fulvous","XR":"E4","XG":"84","XB":"00","FriendlyName":"n"},
+{"r":228,"g":113,"b":122,"name":"Candy pink","XR":"E4","XG":"71","XB":"7A","FriendlyName":"n"},
+{"r":227,"g":168,"b":87,"name":"Indian yellow","XR":"E3","XG":"A8","XB":"57","FriendlyName":"n"},
+{"r":227,"g":66,"b":52,"name":"Cinnabar","XR":"E3","XG":"42","XB":"34","FriendlyName":"n"},
+{"r":227,"g":66,"b":52,"name":"Vermilion","XR":"E3","XG":"42","XB":"34","FriendlyName":"n"},
+{"r":227,"g":37,"b":107,"name":"Razzmatazz","XR":"E3","XG":"25","XB":"6B","FriendlyName":"n"},
+{"r":227,"g":11,"b":93,"name":"Raspberry","XR":"E3","XG":"0B","XB":"5D","FriendlyName":"n"},
+{"r":226,"g":114,"b":91,"name":"Terra cotta","XR":"E2","XG":"72","XB":"5B","FriendlyName":"n"},
+{"r":226,"g":88,"b":34,"name":"Flame","XR":"E2","XG":"58","XB":"22","FriendlyName":"n"},
+{"r":226,"g":80,"b":152,"name":"Raspberry pink","XR":"E2","XG":"50","XB":"98","FriendlyName":"n"},
+{"r":225,"g":173,"b":33,"name":"Urobilin","XR":"E1","XG":"AD","XB":"21","FriendlyName":"n"},
+{"r":225,"g":169,"b":95,"name":"Earth yellow","XR":"E1","XG":"A9","XB":"5F","FriendlyName":"n"},
+{"r":225,"g":142,"b":150,"name":"Ruddy pink","XR":"E1","XG":"8E","XB":"96","FriendlyName":"n"},
+{"r":224,"g":176,"b":255,"name":"Mauve","XR":"E0","XG":"B0","XB":"FF","FriendlyName":"n"},
+{"r":224,"g":141,"b":60,"name":"Tiger's eye","XR":"E0","XG":"8D","XB":"3C","FriendlyName":"n"},
+{"r":224,"g":60,"b":49,"name":"CG Red","XR":"E0","XG":"3C","XB":"31","FriendlyName":"r"},
+{"r":223,"g":115,"b":255,"name":"Heliotrope","XR":"DF","XG":"73","XB":"FF","FriendlyName":"n"},
+{"r":223,"g":0,"b":255,"name":"Phlox","XR":"DF","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":223,"g":0,"b":255,"name":"Psychedelic purple","XR":"DF","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":222,"g":184,"b":135,"name":"Burlywood","XR":"DE","XG":"B8","XB":"87","FriendlyName":"n"},
+{"r":222,"g":170,"b":136,"name":"Tumbleweed","XR":"DE","XG":"AA","XB":"88","FriendlyName":"n"},
+{"r":222,"g":111,"b":161,"name":"Thulian pink","XR":"DE","XG":"6F","XB":"A1","FriendlyName":"n"},
+{"r":222,"g":93,"b":131,"name":"Blush","XR":"DE","XG":"5D","XB":"83","FriendlyName":"n"},
+{"r":222,"g":49,"b":99,"name":"Cerise","XR":"DE","XG":"31","XB":"63","FriendlyName":"n"},
+{"r":221,"g":173,"b":175,"name":"Pale chestnut","XR":"DD","XG":"AD","XB":"AF","FriendlyName":"n"},
+{"r":221,"g":160,"b":221,"name":"Medium lavender magenta","XR":"DD","XG":"A0","XB":"DD","FriendlyName":"n"},
+{"r":221,"g":160,"b":221,"name":"Pale plum","XR":"DD","XG":"A0","XB":"DD","FriendlyName":"n"},
+{"r":221,"g":160,"b":221,"name":"Plum (web)","XR":"DD","XG":"A0","XB":"DD","FriendlyName":"n"},
+{"r":220,"g":220,"b":220,"name":"Gainsboro","XR":"DC","XG":"DC","XB":"DC","FriendlyName":"n"},
+{"r":220,"g":208,"b":255,"name":"Pale lavender","XR":"DC","XG":"D0","XB":"FF","FriendlyName":"n"},
+{"r":219,"g":215,"b":210,"name":"Timberwolf","XR":"DB","XG":"D7","XB":"D2","FriendlyName":"n"},
+{"r":219,"g":112,"b":147,"name":"Pale red-violet","XR":"DB","XG":"70","XB":"93","FriendlyName":"r"},
+{"r":219,"g":112,"b":147,"name":"Pale violet-red","XR":"DB","XG":"70","XB":"93","FriendlyName":"n"},
+{"r":218,"g":165,"b":32,"name":"Goldenrod","XR":"DA","XG":"A5","XB":"20","FriendlyName":"n"},
+{"r":218,"g":145,"b":0,"name":"Harvest Gold","XR":"DA","XG":"91","XB":"00","FriendlyName":"n"},
+{"r":218,"g":138,"b":103,"name":"Pale copper","XR":"DA","XG":"8A","XB":"67","FriendlyName":"n"},
+{"r":218,"g":112,"b":214,"name":"Orchid","XR":"DA","XG":"70","XB":"D6","FriendlyName":"n"},
+{"r":218,"g":50,"b":135,"name":"Deep cerise","XR":"DA","XG":"32","XB":"87","FriendlyName":"n"},
+{"r":218,"g":29,"b":129,"name":"Vivid cerise","XR":"DA","XG":"1D","XB":"81","FriendlyName":"n"},
+{"r":217,"g":144,"b":88,"name":"Persian orange","XR":"D9","XG":"90","XB":"58","FriendlyName":"n"},
+{"r":217,"g":0,"b":76,"name":"UA red","XR":"D9","XG":"00","XB":"4C","FriendlyName":"r"},
+{"r":216,"g":191,"b":216,"name":"Thistle","XR":"D8","XG":"BF","XB":"D8","FriendlyName":"n"},
+{"r":215,"g":59,"b":62,"name":"Jasper","XR":"D7","XG":"3B","XB":"3E","FriendlyName":"n"},
+{"r":215,"g":24,"b":104,"name":"Dogwood rose","XR":"D7","XG":"18","XB":"68","FriendlyName":"n"},
+{"r":215,"g":10,"b":83,"name":"Debian red","XR":"D7","XG":"0A","XB":"53","FriendlyName":"r"},
+{"r":215,"g":0,"b":64,"name":"Rich carmine","XR":"D7","XG":"00","XB":"40","FriendlyName":"n"},
+{"r":214,"g":202,"b":221,"name":"Languid lavender","XR":"D6","XG":"CA","XB":"DD","FriendlyName":"n"},
+{"r":212,"g":175,"b":55,"name":"Gold (metallic)","XR":"D4","XG":"AF","XB":"37","FriendlyName":"n"},
+{"r":211,"g":211,"b":211,"name":"Light gray","XR":"D3","XG":"D3","XB":"D3","FriendlyName":"n"},
+{"r":210,"g":180,"b":140,"name":"Tan","XR":"D2","XG":"B4","XB":"8C","FriendlyName":"n"},
+{"r":210,"g":105,"b":30,"name":"Chocolate (web)","XR":"D2","XG":"69","XB":"1E","FriendlyName":"n"},
+{"r":210,"g":105,"b":30,"name":"Cinnamon","XR":"D2","XG":"69","XB":"1E","FriendlyName":"n"},
+{"r":210,"g":105,"b":30,"name":"Cocoa brown","XR":"D2","XG":"69","XB":"1E","FriendlyName":"n"},
+{"r":209,"g":226,"b":49,"name":"Pear","XR":"D1","XG":"E2","XB":"31","FriendlyName":"n"},
+{"r":209,"g":159,"b":232,"name":"Bright ube","XR":"D1","XG":"9F","XB":"E8","FriendlyName":"n"},
+{"r":207,"g":207,"b":196,"name":"Pastel gray","XR":"CF","XG":"CF","XB":"C4","FriendlyName":"n"},
+{"r":207,"g":181,"b":59,"name":"Old gold","XR":"CF","XG":"B5","XB":"3B","FriendlyName":"n"},
+{"r":207,"g":113,"b":175,"name":"Sky magenta","XR":"CF","XG":"71","XB":"AF","FriendlyName":"n"},
+{"r":205,"g":149,"b":117,"name":"Antique brass","XR":"CD","XG":"95","XB":"75","FriendlyName":"n"},
+{"r":205,"g":127,"b":50,"name":"Bronze","XR":"CD","XG":"7F","XB":"32","FriendlyName":"n"},
+{"r":205,"g":92,"b":92,"name":"Chestnut","XR":"CD","XG":"5C","XB":"5C","FriendlyName":"n"},
+{"r":205,"g":92,"b":92,"name":"Indian red","XR":"CD","XG":"5C","XB":"5C","FriendlyName":"r"},
+{"r":205,"g":91,"b":69,"name":"Dark coral","XR":"CD","XG":"5B","XB":"45","FriendlyName":"n"},
+{"r":205,"g":87,"b":0,"name":"Tenné (Tawny)","XR":"CD","XG":"57","XB":"00","FriendlyName":"n"},
+{"r":204,"g":204,"b":255,"name":"Lavender blue","XR":"CC","XG":"CC","XB":"FF","FriendlyName":"n"},
+{"r":204,"g":204,"b":255,"name":"Periwinkle","XR":"CC","XG":"CC","XB":"FF","FriendlyName":"n"},
+{"r":204,"g":136,"b":153,"name":"Puce","XR":"CC","XG":"88","XB":"99","FriendlyName":"n"},
+{"r":204,"g":119,"b":34,"name":"Ochre","XR":"CC","XG":"77","XB":"22","FriendlyName":"n"},
+{"r":204,"g":102,"b":102,"name":"Fuzzy Wuzzy","XR":"CC","XG":"66","XB":"66","FriendlyName":"n"},
+{"r":204,"g":85,"b":0,"name":"Burnt orange","XR":"CC","XG":"55","XB":"00","FriendlyName":"n"},
+{"r":204,"g":78,"b":92,"name":"Dark terra cotta","XR":"CC","XG":"4E","XB":"5C","FriendlyName":"n"},
+{"r":204,"g":0,"b":204,"name":"Deep magenta","XR":"CC","XG":"00","XB":"CC","FriendlyName":"n"},
+{"r":203,"g":161,"b":53,"name":"Satin sheen gold","XR":"CB","XG":"A1","XB":"35","FriendlyName":"n"},
+{"r":203,"g":153,"b":201,"name":"Pastel violet","XR":"CB","XG":"99","XB":"C9","FriendlyName":"n"},
+{"r":203,"g":65,"b":84,"name":"Brick red","XR":"CB","XG":"41","XB":"54","FriendlyName":"r"},
+{"r":203,"g":65,"b":11,"name":"Sinopia","XR":"CB","XG":"41","XB":"0B","FriendlyName":"n"},
+{"r":202,"g":44,"b":146,"name":"Royal fuchsia","XR":"CA","XG":"2C","XB":"92","FriendlyName":"n"},
+{"r":202,"g":31,"b":123,"name":"Magenta (dye)","XR":"CA","XG":"1F","XB":"7B","FriendlyName":"n"},
+{"r":201,"g":220,"b":135,"name":"Medium spring bud","XR":"C9","XG":"DC","XB":"87","FriendlyName":"n"},
+{"r":201,"g":192,"b":187,"name":"Pale silver","XR":"C9","XG":"C0","XB":"BB","FriendlyName":"n"},
+{"r":201,"g":160,"b":220,"name":"Wisteria","XR":"C9","XG":"A0","XB":"DC","FriendlyName":"n"},
+{"r":200,"g":162,"b":200,"name":"Lilac","XR":"C8","XG":"A2","XB":"C8","FriendlyName":"n"},
+{"r":199,"g":21,"b":133,"name":"Medium violet-red","XR":"C7","XG":"15","XB":"85","FriendlyName":"n"},
+{"r":199,"g":21,"b":133,"name":"Red-violet","XR":"C7","XG":"15","XB":"85","FriendlyName":"r"},
+{"r":197,"g":179,"b":88,"name":"Vegas gold","XR":"C5","XG":"B3","XB":"58","FriendlyName":"n"},
+{"r":197,"g":75,"b":140,"name":"Mulberry","XR":"C5","XG":"4B","XB":"8C","FriendlyName":"n"},
+{"r":196,"g":195,"b":208,"name":"Lavender gray","XR":"C4","XG":"C3","XB":"D0","FriendlyName":"n"},
+{"r":195,"g":176,"b":145,"name":"Khaki (HTML/CSS) (Khaki)","XR":"C3","XG":"B0","XB":"91","FriendlyName":"n"},
+{"r":195,"g":33,"b":72,"name":"Bright maroon","XR":"C3","XG":"21","XB":"48","FriendlyName":"n"},
+{"r":194,"g":178,"b":128,"name":"Ecru","XR":"C2","XG":"B2","XB":"80","FriendlyName":"n"},
+{"r":194,"g":178,"b":128,"name":"Sand","XR":"C2","XG":"B2","XB":"80","FriendlyName":"n"},
+{"r":194,"g":59,"b":34,"name":"Dark pastel red","XR":"C2","XG":"3B","XB":"22","FriendlyName":"r"},
+{"r":193,"g":154,"b":107,"name":"Camel","XR":"C1","XG":"9A","XB":"6B","FriendlyName":"n"},
+{"r":193,"g":154,"b":107,"name":"Desert","XR":"C1","XG":"9A","XB":"6B","FriendlyName":"n"},
+{"r":193,"g":154,"b":107,"name":"Fallow","XR":"C1","XG":"9A","XB":"6B","FriendlyName":"n"},
+{"r":193,"g":154,"b":107,"name":"Lion","XR":"C1","XG":"9A","XB":"6B","FriendlyName":"n"},
+{"r":193,"g":84,"b":193,"name":"Deep fuchsia","XR":"C1","XG":"54","XB":"C1","FriendlyName":"n"},
+{"r":192,"g":192,"b":192,"name":"Silver","XR":"C0","XG":"C0","XB":"C0","FriendlyName":"n"},
+{"r":192,"g":128,"b":129,"name":"Old rose","XR":"C0","XG":"80","XB":"81","FriendlyName":"n"},
+{"r":192,"g":64,"b":0,"name":"Mahogany","XR":"C0","XG":"40","XB":"00","FriendlyName":"n"},
+{"r":191,"g":148,"b":228,"name":"Bright lavender","XR":"BF","XG":"94","XB":"E4","FriendlyName":"n"},
+{"r":191,"g":0,"b":255,"name":"Electric purple","XR":"BF","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":190,"g":190,"b":190,"name":"Gray (X11 gray)","XR":"BE","XG":"BE","XB":"BE","FriendlyName":"n"},
+{"r":189,"g":183,"b":107,"name":"Dark khaki","XR":"BD","XG":"B7","XB":"6B","FriendlyName":"n"},
+{"r":189,"g":51,"b":164,"name":"Byzantine","XR":"BD","XG":"33","XB":"A4","FriendlyName":"n"},
+{"r":188,"g":212,"b":230,"name":"Beau blue","XR":"BC","XG":"D4","XB":"E6","FriendlyName":"n"},
+{"r":188,"g":212,"b":230,"name":"Pale aqua","XR":"BC","XG":"D4","XB":"E6","FriendlyName":"n"},
+{"r":188,"g":152,"b":126,"name":"Pale taupe","XR":"BC","XG":"98","XB":"7E","FriendlyName":"n"},
+{"r":188,"g":143,"b":143,"name":"Rosy brown","XR":"BC","XG":"8F","XB":"8F","FriendlyName":"n"},
+{"r":187,"g":101,"b":40,"name":"Ruddy brown","XR":"BB","XG":"65","XB":"28","FriendlyName":"n"},
+{"r":187,"g":51,"b":133,"name":"Medium red-violet","XR":"BB","XG":"33","XB":"85","FriendlyName":"r"},
+{"r":186,"g":85,"b":211,"name":"Medium orchid","XR":"BA","XG":"55","XB":"D3","FriendlyName":"n"},
+{"r":185,"g":78,"b":72,"name":"Deep chestnut","XR":"B9","XG":"4E","XB":"48","FriendlyName":"n"},
+{"r":184,"g":134,"b":11,"name":"Dark goldenrod","XR":"B8","XG":"86","XB":"0B","FriendlyName":"n"},
+{"r":184,"g":115,"b":51,"name":"Copper","XR":"B8","XG":"73","XB":"33","FriendlyName":"n"},
+{"r":183,"g":135,"b":39,"name":"University of California Gold","XR":"B7","XG":"87","XB":"27","FriendlyName":"n"},
+{"r":183,"g":132,"b":167,"name":"Opera mauve","XR":"B7","XG":"84","XB":"A7","FriendlyName":"n"},
+{"r":183,"g":110,"b":121,"name":"Rose gold","XR":"B7","XG":"6E","XB":"79","FriendlyName":"n"},
+{"r":183,"g":65,"b":14,"name":"Rust","XR":"B7","XG":"41","XB":"0E","FriendlyName":"n"},
+{"r":182,"g":102,"b":210,"name":"Rich lilac","XR":"B6","XG":"66","XB":"D2","FriendlyName":"n"},
+{"r":181,"g":166,"b":66,"name":"Brass","XR":"B5","XG":"A6","XB":"42","FriendlyName":"n"},
+{"r":181,"g":126,"b":220,"name":"Lavender (floral)","XR":"B5","XG":"7E","XB":"DC","FriendlyName":"n"},
+{"r":181,"g":114,"b":129,"name":"Turkish rose","XR":"B5","XG":"72","XB":"81","FriendlyName":"n"},
+{"r":181,"g":101,"b":29,"name":"Light brown","XR":"B5","XG":"65","XB":"1D","FriendlyName":"n"},
+{"r":181,"g":51,"b":137,"name":"Fandango","XR":"B5","XG":"33","XB":"89","FriendlyName":"n"},
+{"r":179,"g":158,"b":181,"name":"Pastel purple","XR":"B3","XG":"9E","XB":"B5","FriendlyName":"n"},
+{"r":179,"g":139,"b":109,"name":"Light taupe","XR":"B3","XG":"8B","XB":"6D","FriendlyName":"n"},
+{"r":179,"g":68,"b":108,"name":"Raspberry rose","XR":"B3","XG":"44","XB":"6C","FriendlyName":"n"},
+{"r":178,"g":190,"b":181,"name":"Ash grey","XR":"B2","XG":"BE","XB":"B5","FriendlyName":"n"},
+{"r":177,"g":156,"b":217,"name":"Light pastel purple","XR":"B1","XG":"9C","XB":"D9","FriendlyName":"n"},
+{"r":176,"g":224,"b":230,"name":"Powder blue (web)","XR":"B0","XG":"E0","XB":"E6","FriendlyName":"n"},
+{"r":176,"g":101,"b":0,"name":"Ginger","XR":"B0","XG":"65","XB":"00","FriendlyName":"n"},
+{"r":176,"g":48,"b":96,"name":"Maroon (X11)","XR":"B0","XG":"30","XB":"60","FriendlyName":"n"},
+{"r":176,"g":48,"b":96,"name":"Rich maroon","XR":"B0","XG":"30","XB":"60","FriendlyName":"n"},
+{"r":175,"g":64,"b":53,"name":"Medium carmine","XR":"AF","XG":"40","XB":"35","FriendlyName":"n"},
+{"r":175,"g":64,"b":53,"name":"Pale carmine","XR":"AF","XG":"40","XB":"35","FriendlyName":"n"},
+{"r":174,"g":198,"b":207,"name":"Pastel blue","XR":"AE","XG":"C6","XB":"CF","FriendlyName":"n"},
+{"r":173,"g":216,"b":230,"name":"Light blue","XR":"AD","XG":"D8","XB":"E6","FriendlyName":"n"},
+{"r":172,"g":229,"b":238,"name":"Blizzard Blue","XR":"AC","XG":"E5","XB":"EE","FriendlyName":"n"},
+{"r":171,"g":205,"b":239,"name":"Pale cornflower blue","XR":"AB","XG":"CD","XB":"EF","FriendlyName":"n"},
+{"r":171,"g":78,"b":82,"name":"Redwood","XR":"AB","XG":"4E","XB":"52","FriendlyName":"r"},
+{"r":171,"g":78,"b":82,"name":"Rose vale","XR":"AB","XG":"4E","XB":"52","FriendlyName":"n"},
+{"r":170,"g":152,"b":169,"name":"Rose quartz","XR":"AA","XG":"98","XB":"A9","FriendlyName":"n"},
+{"r":169,"g":169,"b":169,"name":"Dark gray","XR":"A9","XG":"A9","XB":"A9","FriendlyName":"n"},
+{"r":169,"g":154,"b":134,"name":"Grullo","XR":"A9","XG":"9A","XB":"86","FriendlyName":"n"},
+{"r":169,"g":32,"b":62,"name":"Deep carmine","XR":"A9","XG":"20","XB":"3E","FriendlyName":"n"},
+{"r":167,"g":107,"b":207,"name":"Rich lavender","XR":"A7","XG":"6B","XB":"CF","FriendlyName":"n"},
+{"r":166,"g":123,"b":91,"name":"Café au lait","XR":"A6","XG":"7B","XB":"5B","FriendlyName":"n"},
+{"r":166,"g":123,"b":91,"name":"French beige","XR":"A6","XG":"7B","XB":"5B","FriendlyName":"n"},
+{"r":165,"g":42,"b":42,"name":"Auburn","XR":"A5","XG":"2A","XB":"2A","FriendlyName":"n"},
+{"r":165,"g":42,"b":42,"name":"Brown (web)","XR":"A5","XG":"2A","XB":"2A","FriendlyName":"n"},
+{"r":165,"g":11,"b":94,"name":"Jazzberry jam","XR":"A5","XG":"0B","XB":"5E","FriendlyName":"n"},
+{"r":164,"g":221,"b":237,"name":"Non-photo blue","XR":"A4","XG":"DD","XB":"ED","FriendlyName":"n"},
+{"r":163,"g":193,"b":173,"name":"Cambridge Blue","XR":"A3","XG":"C1","XB":"AD","FriendlyName":"n"},
+{"r":162,"g":173,"b":208,"name":"Wild blue yonder","XR":"A2","XG":"AD","XB":"D0","FriendlyName":"n"},
+{"r":162,"g":162,"b":208,"name":"Blue Bell","XR":"A2","XG":"A2","XB":"D0","FriendlyName":"n"},
+{"r":161,"g":202,"b":241,"name":"Baby blue eyes","XR":"A1","XG":"CA","XB":"F1","FriendlyName":"n"},
+{"r":160,"g":120,"b":90,"name":"Chamoisee","XR":"A0","XG":"78","XB":"5A","FriendlyName":"n"},
+{"r":160,"g":32,"b":240,"name":"Purple (X11)","XR":"A0","XG":"20","XB":"F0","FriendlyName":"n"},
+{"r":160,"g":32,"b":240,"name":"Veronica","XR":"A0","XG":"20","XB":"F0","FriendlyName":"n"},
+{"r":159,"g":129,"b":112,"name":"Beaver","XR":"9F","XG":"81","XB":"70","FriendlyName":"n"},
+{"r":159,"g":29,"b":53,"name":"Vivid burgundy","XR":"9F","XG":"1D","XB":"35","FriendlyName":"n"},
+{"r":159,"g":0,"b":197,"name":"Purple (Munsell)","XR":"9F","XG":"00","XB":"C5","FriendlyName":"n"},
+{"r":159,"g":0,"b":255,"name":"Vivid violet","XR":"9F","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":155,"g":221,"b":255,"name":"Columbia blue","XR":"9B","XG":"DD","XB":"FF","FriendlyName":"n"},
+{"r":155,"g":196,"b":226,"name":"Pale cerulean","XR":"9B","XG":"C4","XB":"E2","FriendlyName":"n"},
+{"r":154,"g":185,"b":115,"name":"Olivine","XR":"9A","XG":"B9","XB":"73","FriendlyName":"n"},
+{"r":153,"g":122,"b":141,"name":"Mountbatten pink","XR":"99","XG":"7A","XB":"8D","FriendlyName":"n"},
+{"r":153,"g":102,"b":204,"name":"Amethyst","XR":"99","XG":"66","XB":"CC","FriendlyName":"n"},
+{"r":153,"g":102,"b":102,"name":"Copper rose","XR":"99","XG":"66","XB":"66","FriendlyName":"n"},
+{"r":153,"g":101,"b":21,"name":"Golden brown","XR":"99","XG":"65","XB":"15","FriendlyName":"n"},
+{"r":153,"g":85,"b":187,"name":"Deep lilac","XR":"99","XG":"55","XB":"BB","FriendlyName":"n"},
+{"r":153,"g":50,"b":204,"name":"Dark orchid","XR":"99","XG":"32","XB":"CC","FriendlyName":"n"},
+{"r":152,"g":129,"b":123,"name":"Cinereous","XR":"98","XG":"81","XB":"7B","FriendlyName":"n"},
+{"r":152,"g":119,"b":123,"name":"Bazaar","XR":"98","XG":"77","XB":"7B","FriendlyName":"n"},
+{"r":152,"g":118,"b":84,"name":"Pale brown","XR":"98","XG":"76","XB":"54","FriendlyName":"n"},
+{"r":152,"g":105,"b":96,"name":"Dark chestnut","XR":"98","XG":"69","XB":"60","FriendlyName":"n"},
+{"r":151,"g":154,"b":170,"name":"Manatee","XR":"97","XG":"9A","XB":"AA","FriendlyName":"n"},
+{"r":150,"g":222,"b":209,"name":"Pale robin egg blue","XR":"96","XG":"DE","XB":"D1","FriendlyName":"n"},
+{"r":150,"g":123,"b":182,"name":"Lavender purple","XR":"96","XG":"7B","XB":"B6","FriendlyName":"n"},
+{"r":150,"g":120,"b":182,"name":"Purple mountain majesty","XR":"96","XG":"78","XB":"B6","FriendlyName":"n"},
+{"r":150,"g":113,"b":23,"name":"Drab","XR":"96","XG":"71","XB":"17","FriendlyName":"n"},
+{"r":150,"g":113,"b":23,"name":"Mode beige","XR":"96","XG":"71","XB":"17","FriendlyName":"n"},
+{"r":150,"g":113,"b":23,"name":"Sand dune","XR":"96","XG":"71","XB":"17","FriendlyName":"n"},
+{"r":150,"g":113,"b":23,"name":"Sandy taupe","XR":"96","XG":"71","XB":"17","FriendlyName":"n"},
+{"r":150,"g":111,"b":214,"name":"Dark pastel purple","XR":"96","XG":"6F","XB":"D6","FriendlyName":"n"},
+{"r":150,"g":75,"b":0,"name":"Brown (traditional)","XR":"96","XG":"4B","XB":"00","FriendlyName":"n"},
+{"r":148,"g":87,"b":235,"name":"Lavender indigo","XR":"94","XG":"57","XB":"EB","FriendlyName":"n"},
+{"r":148,"g":0,"b":211,"name":"Dark violet","XR":"94","XG":"00","XB":"D3","FriendlyName":"n"},
+{"r":147,"g":204,"b":234,"name":"Light cornflower blue","XR":"93","XG":"CC","XB":"EA","FriendlyName":"n"},
+{"r":147,"g":112,"b":219,"name":"Medium purple","XR":"93","XG":"70","XB":"DB","FriendlyName":"n"},
+{"r":147,"g":61,"b":65,"name":"Smokey topaz","XR":"93","XG":"3D","XB":"41","FriendlyName":"n"},
+{"r":145,"g":163,"b":176,"name":"Cadet grey","XR":"91","XG":"A3","XB":"B0","FriendlyName":"n"},
+{"r":145,"g":129,"b":81,"name":"Dark tan","XR":"91","XG":"81","XB":"51","FriendlyName":"n"},
+{"r":145,"g":95,"b":109,"name":"Mauve taupe","XR":"91","XG":"5F","XB":"6D","FriendlyName":"n"},
+{"r":145,"g":95,"b":109,"name":"Raspberry glace","XR":"91","XG":"5F","XB":"6D","FriendlyName":"n"},
+{"r":145,"g":92,"b":131,"name":"Antique fuchsia","XR":"91","XG":"5C","XB":"83","FriendlyName":"n"},
+{"r":144,"g":93,"b":93,"name":"Rose taupe","XR":"90","XG":"5D","XB":"5D","FriendlyName":"n"},
+{"r":143,"g":0,"b":255,"name":"Electric violet","XR":"8F","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":143,"g":0,"b":255,"name":"Violet","XR":"8F","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":142,"g":69,"b":133,"name":"Plum (traditional)","XR":"8E","XG":"45","XB":"85","FriendlyName":"n"},
+{"r":140,"g":146,"b":172,"name":"Cool grey","XR":"8C","XG":"92","XB":"AC","FriendlyName":"n"},
+{"r":139,"g":133,"b":137,"name":"Taupe gray","XR":"8B","XG":"85","XB":"89","FriendlyName":"n"},
+{"r":139,"g":69,"b":19,"name":"Saddle brown","XR":"8B","XG":"45","XB":"13","FriendlyName":"n"},
+{"r":139,"g":0,"b":139,"name":"Dark magenta","XR":"8B","XG":"00","XB":"8B","FriendlyName":"n"},
+{"r":138,"g":121,"b":93,"name":"Shadow","XR":"8A","XG":"79","XB":"5D","FriendlyName":"n"},
+{"r":138,"g":73,"b":107,"name":"Twilight lavender","XR":"8A","XG":"49","XB":"6B","FriendlyName":"n"},
+{"r":138,"g":51,"b":36,"name":"Burnt umber","XR":"8A","XG":"33","XB":"24","FriendlyName":"n"},
+{"r":138,"g":43,"b":226,"name":"Blue-violet","XR":"8A","XG":"2B","XB":"E2","FriendlyName":"n"},
+{"r":137,"g":207,"b":240,"name":"Baby blue","XR":"89","XG":"CF","XB":"F0","FriendlyName":"n"},
+{"r":137,"g":63,"b":69,"name":"Cordovan","XR":"89","XG":"3F","XB":"45","FriendlyName":"n"},
+{"r":136,"g":216,"b":192,"name":"Pearl Aqua","XR":"88","XG":"D8","XB":"C0","FriendlyName":"n"},
+{"r":136,"g":120,"b":195,"name":"Ube","XR":"88","XG":"78","XB":"C3","FriendlyName":"n"},
+{"r":136,"g":45,"b":23,"name":"Sienna","XR":"88","XG":"2D","XB":"17","FriendlyName":"n"},
+{"r":135,"g":206,"b":250,"name":"Light sky blue","XR":"87","XG":"CE","XB":"FA","FriendlyName":"n"},
+{"r":135,"g":206,"b":235,"name":"Sky blue","XR":"87","XG":"CE","XB":"EB","FriendlyName":"n"},
+{"r":135,"g":50,"b":96,"name":"Boysenberry","XR":"87","XG":"32","XB":"60","FriendlyName":"n"},
+{"r":135,"g":38,"b":87,"name":"Dark raspberry","XR":"87","XG":"26","XB":"57","FriendlyName":"n"},
+{"r":134,"g":96,"b":142,"name":"French lilac","XR":"86","XG":"60","XB":"8E","FriendlyName":"n"},
+{"r":134,"g":1,"b":175,"name":"Violet (RYB)","XR":"86","XG":"01","XB":"AF","FriendlyName":"n"},
+{"r":132,"g":132,"b":130,"name":"Battleship grey","XR":"84","XG":"84","XB":"82","FriendlyName":"n"},
+{"r":131,"g":105,"b":83,"name":"Pastel brown","XR":"83","XG":"69","XB":"53","FriendlyName":"n"},
+{"r":130,"g":102,"b":68,"name":"Raw umber","XR":"82","XG":"66","XB":"44","FriendlyName":"n"},
+{"r":128,"g":128,"b":128,"name":"Gray","XR":"80","XG":"80","XB":"80","FriendlyName":"n"},
+{"r":128,"g":128,"b":128,"name":"Trolley Grey","XR":"80","XG":"80","XB":"80","FriendlyName":"n"},
+{"r":128,"g":70,"b":27,"name":"Russet","XR":"80","XG":"46","XB":"1B","FriendlyName":"n"},
+{"r":128,"g":0,"b":128,"name":"Patriarch","XR":"80","XG":"00","XB":"80","FriendlyName":"n"},
+{"r":128,"g":0,"b":128,"name":"Purple (HTML/CSS)","XR":"80","XG":"00","XB":"80","FriendlyName":"n"},
+{"r":127,"g":127,"b":127,"name":"Gray (HTML/CSS gray)","XR":"7F","XG":"7F","XB":"7F","FriendlyName":"n"},
+{"r":127,"g":0,"b":255,"name":"Violet (color wheel)","XR":"7F","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":123,"g":104,"b":238,"name":"Medium slate blue","XR":"7B","XG":"68","XB":"EE","FriendlyName":"n"},
+{"r":123,"g":63,"b":0,"name":"Chocolate (traditional)","XR":"7B","XG":"3F","XB":"00","FriendlyName":"n"},
+{"r":123,"g":17,"b":19,"name":"UP Maroon","XR":"7B","XG":"11","XB":"13","FriendlyName":"n"},
+{"r":121,"g":104,"b":120,"name":"Old lavender","XR":"79","XG":"68","XB":"78","FriendlyName":"n"},
+{"r":121,"g":68,"b":59,"name":"Bole","XR":"79","XG":"44","XB":"3B","FriendlyName":"n"},
+{"r":120,"g":81,"b":169,"name":"Royal purple","XR":"78","XG":"51","XB":"A9","FriendlyName":"n"},
+{"r":120,"g":24,"b":74,"name":"Pansy purple","XR":"78","XG":"18","XB":"4A","FriendlyName":"n"},
+{"r":119,"g":158,"b":203,"name":"Dark pastel blue","XR":"77","XG":"9E","XB":"CB","FriendlyName":"n"},
+{"r":119,"g":136,"b":153,"name":"Light slate gray","XR":"77","XG":"88","XB":"99","FriendlyName":"n"},
+{"r":116,"g":108,"b":192,"name":"Toolbox","XR":"74","XG":"6C","XB":"C0","FriendlyName":"n"},
+{"r":115,"g":194,"b":251,"name":"Maya blue","XR":"73","XG":"C2","XB":"FB","FriendlyName":"n"},
+{"r":115,"g":169,"b":194,"name":"Moonstone blue","XR":"73","XG":"A9","XB":"C2","FriendlyName":"n"},
+{"r":115,"g":134,"b":120,"name":"Xanadu","XR":"73","XG":"86","XB":"78","FriendlyName":"n"},
+{"r":115,"g":79,"b":150,"name":"Dark lavender","XR":"73","XG":"4F","XB":"96","FriendlyName":"n"},
+{"r":112,"g":128,"b":144,"name":"Slate gray","XR":"70","XG":"80","XB":"90","FriendlyName":"n"},
+{"r":112,"g":66,"b":65,"name":"Deep coffee","XR":"70","XG":"42","XB":"41","FriendlyName":"n"},
+{"r":112,"g":66,"b":20,"name":"Sepia","XR":"70","XG":"42","XB":"14","FriendlyName":"n"},
+{"r":112,"g":41,"b":99,"name":"Byzantium","XR":"70","XG":"29","XB":"63","FriendlyName":"n"},
+{"r":112,"g":28,"b":28,"name":"Persian plum","XR":"70","XG":"1C","XB":"1C","FriendlyName":"n"},
+{"r":112,"g":28,"b":28,"name":"Prune","XR":"70","XG":"1C","XB":"1C","FriendlyName":"n"},
+{"r":111,"g":78,"b":55,"name":"Coffee","XR":"6F","XG":"4E","XB":"37","FriendlyName":"n"},
+{"r":111,"g":0,"b":255,"name":"Electric indigo","XR":"6F","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":110,"g":127,"b":128,"name":"AuroMetalSaurus","XR":"6E","XG":"7F","XB":"80","FriendlyName":"n"},
+{"r":108,"g":84,"b":30,"name":"Field drab","XR":"6C","XG":"54","XB":"1E","FriendlyName":"n"},
+{"r":106,"g":90,"b":205,"name":"Slate blue","XR":"6A","XG":"5A","XB":"CD","FriendlyName":"n"},
+{"r":105,"g":105,"b":105,"name":"Dim gray","XR":"69","XG":"69","XB":"69","FriendlyName":"n"},
+{"r":105,"g":53,"b":156,"name":"Purple Heart","XR":"69","XG":"35","XB":"9C","FriendlyName":"n"},
+{"r":104,"g":40,"b":96,"name":"Palatinate purple","XR":"68","XG":"28","XB":"60","FriendlyName":"n"},
+{"r":103,"g":76,"b":71,"name":"Medium taupe","XR":"67","XG":"4C","XB":"47","FriendlyName":"n"},
+{"r":103,"g":72,"b":70,"name":"Rose ebony","XR":"67","XG":"48","XB":"46","FriendlyName":"n"},
+{"r":103,"g":49,"b":71,"name":"Old mauve","XR":"67","XG":"31","XB":"47","FriendlyName":"n"},
+{"r":102,"g":153,"b":204,"name":"Blue Gray","XR":"66","XG":"99","XB":"CC","FriendlyName":"n"},
+{"r":102,"g":66,"b":77,"name":"Tuscan red","XR":"66","XG":"42","XB":"4D","FriendlyName":"n"},
+{"r":102,"g":56,"b":84,"name":"Halaya ube","XR":"66","XG":"38","XB":"54","FriendlyName":"n"},
+{"r":102,"g":2,"b":60,"name":"Tyrian purple","XR":"66","XG":"02","XB":"3C","FriendlyName":"n"},
+{"r":101,"g":67,"b":33,"name":"Dark brown","XR":"65","XG":"43","XB":"21","FriendlyName":"n"},
+{"r":101,"g":67,"b":33,"name":"Otter brown","XR":"65","XG":"43","XB":"21","FriendlyName":"n"},
+{"r":100,"g":149,"b":237,"name":"Cornflower blue","XR":"64","XG":"95","XB":"ED","FriendlyName":"n"},
+{"r":100,"g":84,"b":82,"name":"Wenge","XR":"64","XG":"54","XB":"52","FriendlyName":"n"},
+{"r":99,"g":81,"b":71,"name":"Umber","XR":"63","XG":"51","XB":"47","FriendlyName":"n"},
+{"r":97,"g":64,"b":81,"name":"Eggplant","XR":"61","XG":"40","XB":"51","FriendlyName":"n"},
+{"r":96,"g":130,"b":182,"name":"Glaucous","XR":"60","XG":"82","XB":"B6","FriendlyName":"n"},
+{"r":96,"g":80,"b":220,"name":"Majorelle Blue","XR":"60","XG":"50","XB":"DC","FriendlyName":"n"},
+{"r":95,"g":158,"b":160,"name":"Cadet blue","XR":"5F","XG":"9E","XB":"A0","FriendlyName":"n"},
+{"r":93,"g":138,"b":168,"name":"Air Force blue","XR":"5D","XG":"8A","XB":"A8","FriendlyName":"n"},
+{"r":93,"g":57,"b":84,"name":"Dark byzantium","XR":"5D","XG":"39","XB":"54","FriendlyName":"n"},
+{"r":91,"g":146,"b":229,"name":"United Nations blue","XR":"5B","XG":"92","XB":"E5","FriendlyName":"n"},
+{"r":90,"g":79,"b":207,"name":"Iris","XR":"5A","XG":"4F","XB":"CF","FriendlyName":"n"},
+{"r":89,"g":39,"b":32,"name":"Caput mortuum","XR":"59","XG":"27","XB":"20","FriendlyName":"n"},
+{"r":85,"g":85,"b":85,"name":"Davy's grey","XR":"55","XG":"55","XB":"55","FriendlyName":"n"},
+{"r":83,"g":104,"b":114,"name":"Cadet","XR":"53","XG":"68","XB":"72","FriendlyName":"n"},
+{"r":83,"g":104,"b":120,"name":"Dark electric blue","XR":"53","XG":"68","XB":"78","FriendlyName":"n"},
+{"r":83,"g":104,"b":149,"name":"UCLA Blue","XR":"53","XG":"68","XB":"95","FriendlyName":"n"},
+{"r":83,"g":75,"b":79,"name":"Liver","XR":"53","XG":"4B","XB":"4F","FriendlyName":"n"},
+{"r":82,"g":24,"b":250,"name":"Han purple","XR":"52","XG":"18","XB":"FA","FriendlyName":"n"},
+{"r":81,"g":72,"b":79,"name":"Quartz","XR":"51","XG":"48","XB":"4F","FriendlyName":"n"},
+{"r":80,"g":64,"b":77,"name":"Purple taupe","XR":"50","XG":"40","XB":"4D","FriendlyName":"n"},
+{"r":75,"g":54,"b":33,"name":"Café noir","XR":"4B","XG":"36","XB":"21","FriendlyName":"n"},
+{"r":75,"g":0,"b":130,"name":"Indigo (web)","XR":"4B","XG":"00","XB":"82","FriendlyName":"n"},
+{"r":73,"g":151,"b":208,"name":"Celestial blue","XR":"49","XG":"97","XB":"D0","FriendlyName":"n"},
+{"r":72,"g":209,"b":204,"name":"Medium turquoise","XR":"48","XG":"D1","XB":"CC","FriendlyName":"n"},
+{"r":72,"g":61,"b":139,"name":"Dark slate blue","XR":"48","XG":"3D","XB":"8B","FriendlyName":"n"},
+{"r":72,"g":60,"b":50,"name":"Dark lava","XR":"48","XG":"3C","XB":"32","FriendlyName":"n"},
+{"r":72,"g":60,"b":50,"name":"Dark taupe","XR":"48","XG":"3C","XB":"32","FriendlyName":"n"},
+{"r":72,"g":60,"b":50,"name":"Taupe","XR":"48","XG":"3C","XB":"32","FriendlyName":"n"},
+{"r":70,"g":130,"b":180,"name":"Steel blue","XR":"46","XG":"82","XB":"B4","FriendlyName":"n"},
+{"r":68,"g":108,"b":207,"name":"Han blue","XR":"44","XG":"6C","XB":"CF","FriendlyName":"n"},
+{"r":67,"g":179,"b":174,"name":"Verdigris","XR":"43","XG":"B3","XB":"AE","FriendlyName":"n"},
+{"r":65,"g":125,"b":193,"name":"Tufts Blue","XR":"41","XG":"7D","XB":"C1","FriendlyName":"n"},
+{"r":65,"g":105,"b":225,"name":"Royal blue (web)","XR":"41","XG":"69","XB":"E1","FriendlyName":"n"},
+{"r":65,"g":102,"b":245,"name":"Ultramarine blue","XR":"41","XG":"66","XB":"F5","FriendlyName":"n"},
+{"r":65,"g":74,"b":76,"name":"Outer Space","XR":"41","XG":"4A","XB":"4C","FriendlyName":"n"},
+{"r":64,"g":130,"b":109,"name":"Viridian","XR":"40","XG":"82","XB":"6D","FriendlyName":"n"},
+{"r":64,"g":64,"b":79,"name":"Payne's grey","XR":"40","XG":"40","XB":"4F","FriendlyName":"n"},
+{"r":63,"g":0,"b":255,"name":"Electric ultramarine","XR":"3F","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":62,"g":180,"b":137,"name":"Mint","XR":"3E","XG":"B4","XB":"89","FriendlyName":"n"},
+{"r":61,"g":43,"b":31,"name":"Bistre","XR":"3D","XG":"2B","XB":"1F","FriendlyName":"n"},
+{"r":60,"g":52,"b":31,"name":"Olive Drab #7","XR":"3C","XG":"34","XB":"1F","FriendlyName":"n"},
+{"r":60,"g":20,"b":20,"name":"Dark sienna","XR":"3C","XG":"14","XB":"14","FriendlyName":"n"},
+{"r":54,"g":117,"b":136,"name":"Teal blue","XR":"36","XG":"75","XB":"88","FriendlyName":"n"},
+{"r":54,"g":69,"b":79,"name":"Charcoal","XR":"36","XG":"45","XB":"4F","FriendlyName":"n"},
+{"r":51,"g":51,"b":153,"name":"Blue (pigment)","XR":"33","XG":"33","XB":"99","FriendlyName":"n"},
+{"r":50,"g":20,"b":20,"name":"Seal brown","XR":"32","XG":"14","XB":"14","FriendlyName":"n"},
+{"r":50,"g":18,"b":122,"name":"Persian indigo","XR":"32","XG":"12","XB":"7A","FriendlyName":"n"},
+{"r":49,"g":140,"b":231,"name":"Bleu de France","XR":"31","XG":"8C","XB":"E7","FriendlyName":"n"},
+{"r":48,"g":213,"b":200,"name":"Turquoise","XR":"30","XG":"D5","XB":"C8","FriendlyName":"n"},
+{"r":44,"g":22,"b":8,"name":"Zinnwaldite brown","XR":"2C","XG":"16","XB":"08","FriendlyName":"n"},
+{"r":42,"g":82,"b":190,"name":"Cerulean blue","XR":"2A","XG":"52","XB":"BE","FriendlyName":"n"},
+{"r":39,"g":59,"b":226,"name":"Palatinate blue","XR":"27","XG":"3B","XB":"E2","FriendlyName":"n"},
+{"r":38,"g":97,"b":156,"name":"Lapis lazuli","XR":"26","XG":"61","XB":"9C","FriendlyName":"n"},
+{"r":35,"g":41,"b":122,"name":"St. Patrick's blue","XR":"23","XG":"29","XB":"7A","FriendlyName":"n"},
+{"r":33,"g":171,"b":205,"name":"Ball Blue","XR":"21","XG":"AB","XB":"CD","FriendlyName":"n"},
+{"r":30,"g":144,"b":255,"name":"Dodger blue","XR":"1E","XG":"90","XB":"FF","FriendlyName":"n"},
+{"r":29,"g":172,"b":214,"name":"Bright cerulean","XR":"1D","XG":"AC","XB":"D6","FriendlyName":"n"},
+{"r":28,"g":57,"b":187,"name":"Persian blue","XR":"1C","XG":"39","XB":"BB","FriendlyName":"n"},
+{"r":25,"g":25,"b":112,"name":"Midnight blue","XR":"19","XG":"19","XB":"70","FriendlyName":"n"},
+{"r":21,"g":96,"b":189,"name":"Denim","XR":"15","XG":"60","XB":"BD","FriendlyName":"n"},
+{"r":18,"g":10,"b":143,"name":"Ultramarine","XR":"12","XG":"0A","XB":"8F","FriendlyName":"n"},
+{"r":16,"g":52,"b":166,"name":"Egyptian blue","XR":"10","XG":"34","XB":"A6","FriendlyName":"n"},
+{"r":16,"g":12,"b":8,"name":"Smoky black","XR":"10","XG":"0C","XB":"08","FriendlyName":"n"},
+{"r":15,"g":192,"b":252,"name":"Spiro Disco Ball","XR":"0F","XG":"C0","XB":"FC","FriendlyName":"n"},
+{"r":15,"g":82,"b":186,"name":"Sapphire","XR":"0F","XG":"52","XB":"BA","FriendlyName":"n"},
+{"r":15,"g":77,"b":146,"name":"Yale Blue","XR":"0F","XG":"4D","XB":"92","FriendlyName":"n"},
+{"r":15,"g":15,"b":15,"name":"Onyx","XR":"0F","XG":"0F","XB":"0F","FriendlyName":"n"},
+{"r":13,"g":152,"b":186,"name":"Blue-green","XR":"0D","XG":"98","XB":"BA","FriendlyName":"n"},
+{"r":10,"g":186,"b":181,"name":"Tiffany Blue","XR":"0A","XG":"BA","XB":"B5","FriendlyName":"n"},
+{"r":8,"g":232,"b":222,"name":"Bright turquoise","XR":"08","XG":"E8","XB":"DE","FriendlyName":"n"},
+{"r":8,"g":146,"b":208,"name":"Rich electric blue","XR":"08","XG":"92","XB":"D0","FriendlyName":"n"},
+{"r":8,"g":69,"b":126,"name":"Dark cerulean","XR":"08","XG":"45","XB":"7E","FriendlyName":"n"},
+{"r":3,"g":80,"b":150,"name":"Medium electric blue","XR":"03","XG":"50","XB":"96","FriendlyName":"n"},
+{"r":2,"g":71,"b":254,"name":"Blue (RYB)","XR":"02","XG":"47","XB":"FE","FriendlyName":"n"},
+{"r":0,"g":206,"b":209,"name":"Dark turquoise","XR":"00","XG":"CE","XB":"D1","FriendlyName":"n"},
+{"r":0,"g":204,"b":204,"name":"Robin egg blue","XR":"00","XG":"CC","XB":"CC","FriendlyName":"n"},
+{"r":0,"g":191,"b":255,"name":"Capri","XR":"00","XG":"BF","XB":"FF","FriendlyName":"n"},
+{"r":0,"g":191,"b":255,"name":"Deep sky blue","XR":"00","XG":"BF","XB":"FF","FriendlyName":"n"},
+{"r":0,"g":149,"b":182,"name":"Bondi blue","XR":"00","XG":"95","XB":"B6","FriendlyName":"n"},
+{"r":0,"g":147,"b":175,"name":"Blue (Munsell)","XR":"00","XG":"93","XB":"AF","FriendlyName":"n"},
+{"r":0,"g":139,"b":139,"name":"Dark cyan","XR":"00","XG":"8B","XB":"8B","FriendlyName":"n"},
+{"r":0,"g":135,"b":189,"name":"Blue (NCS)","XR":"00","XG":"87","XB":"BD","FriendlyName":"n"},
+{"r":0,"g":128,"b":128,"name":"Teal","XR":"00","XG":"80","XB":"80","FriendlyName":"n"},
+{"r":0,"g":127,"b":255,"name":"Azure","XR":"00","XG":"7F","XB":"FF","FriendlyName":"n"},
+{"r":0,"g":123,"b":167,"name":"Cerulean","XR":"00","XG":"7B","XB":"A7","FriendlyName":"n"},
+{"r":0,"g":122,"b":165,"name":"CG Blue","XR":"00","XG":"7A","XB":"A5","FriendlyName":"n"},
+{"r":0,"g":119,"b":190,"name":"Ocean Boat Blue","XR":"00","XG":"77","XB":"BE","FriendlyName":"n"},
+{"r":0,"g":116,"b":116,"name":"Skobeloff","XR":"00","XG":"74","XB":"74","FriendlyName":"n"},
+{"r":0,"g":115,"b":207,"name":"True Blue","XR":"00","XG":"73","XB":"CF","FriendlyName":"n"},
+{"r":0,"g":114,"b":187,"name":"French blue","XR":"00","XG":"72","XB":"BB","FriendlyName":"n"},
+{"r":0,"g":112,"b":255,"name":"Brandeis blue","XR":"00","XG":"70","XB":"FF","FriendlyName":"n"},
+{"r":0,"g":103,"b":165,"name":"Medium Persian blue","XR":"00","XG":"67","XB":"A5","FriendlyName":"n"},
+{"r":0,"g":84,"b":180,"name":"Medium teal blue","XR":"00","XG":"54","XB":"B4","FriendlyName":"n"},
+{"r":0,"g":71,"b":171,"name":"Cobalt","XR":"00","XG":"47","XB":"AB","FriendlyName":"n"},
+{"r":0,"g":66,"b":66,"name":"Warm black","XR":"00","XG":"42","XB":"42","FriendlyName":"n"},
+{"r":0,"g":65,"b":106,"name":"Indigo (dye)","XR":"00","XG":"41","XB":"6A","FriendlyName":"n"},
+{"r":0,"g":56,"b":168,"name":"Royal azure","XR":"00","XG":"38","XB":"A8","FriendlyName":"n"},
+{"r":0,"g":51,"b":102,"name":"Dark midnight blue","XR":"00","XG":"33","XB":"66","FriendlyName":"n"},
+{"r":0,"g":51,"b":153,"name":"Dark powder blue","XR":"00","XG":"33","XB":"99","FriendlyName":"n"},
+{"r":0,"g":51,"b":153,"name":"Smalt (Dark powder blue)","XR":"00","XG":"33","XB":"99","FriendlyName":"n"},
+{"r":0,"g":51,"b":170,"name":"UA blue","XR":"00","XG":"33","XB":"AA","FriendlyName":"n"},
+{"r":0,"g":49,"b":83,"name":"Prussian blue","XR":"00","XG":"31","XB":"53","FriendlyName":"n"},
+{"r":0,"g":47,"b":167,"name":"International Klein Blue","XR":"00","XG":"2F","XB":"A7","FriendlyName":"n"},
+{"r":0,"g":46,"b":99,"name":"Cool black","XR":"00","XG":"2E","XB":"63","FriendlyName":"n"},
+{"r":0,"g":35,"b":102,"name":"Royal blue (traditional)","XR":"00","XG":"23","XB":"66","FriendlyName":"n"},
+{"r":0,"g":33,"b":71,"name":"Oxford Blue","XR":"00","XG":"21","XB":"47","FriendlyName":"n"},
+{"r":0,"g":20,"b":168,"name":"Zaffre","XR":"00","XG":"14","XB":"A8","FriendlyName":"n"},
+{"r":0,"g":15,"b":137,"name":"Phthalo blue","XR":"00","XG":"0F","XB":"89","FriendlyName":"n"},
+{"r":0,"g":0,"b":0,"name":"Black","XR":"00","XG":"00","XB":"00","FriendlyName":"n"},
+{"r":0,"g":0,"b":255,"name":"Blue","XR":"00","XG":"00","XB":"FF","FriendlyName":"n"},
+{"r":0,"g":0,"b":139,"name":"Dark blue","XR":"00","XG":"00","XB":"8B","FriendlyName":"n"},
+{"r":0,"g":0,"b":156,"name":"Duke blue","XR":"00","XG":"00","XB":"9C","FriendlyName":"n"},
+{"r":0,"g":0,"b":205,"name":"Medium blue","XR":"00","XG":"00","XB":"CD","FriendlyName":"n"},
+{"r":0,"g":0,"b":128,"name":"Navy blue","XR":"00","XG":"00","XB":"80","FriendlyName":"n"},
+{"r":255,"g":85,"b":163,"name":"Brilliant rose","XR":"FF","XG":"55","XB":"A3","FriendlyName":"p"},
+{"r":239,"g":48,"b":56,"name":"Deep carmine pink","XR":"EF","XG":"30","XB":"38","FriendlyName":"p"},
+{"r":255,"g":245,"b":238,"name":"Seashell","XR":"FF","XG":"F5","XB":"EE","FriendlyName":"r"},
+{"r":255,"g":240,"b":245,"name":"Lavender blush","XR":"FF","XG":"F0","XB":"F5","FriendlyName":"r"},
+{"r":255,"g":105,"b":97,"name":"Pastel red","XR":"FF","XG":"69","XB":"61","FriendlyName":"r"},
+{"r":255,"g":99,"b":71,"name":"Tomato","XR":"FF","XG":"63","XB":"47","FriendlyName":"r"},
+{"r":255,"g":69,"b":0,"name":"Orange-red","XR":"FF","XG":"45","XB":"00","FriendlyName":"r"},
+{"r":255,"g":56,"b":0,"name":"Coquelicot","XR":"FF","XG":"38","XB":"00","FriendlyName":"r"},
+{"r":255,"g":40,"b":0,"name":"Ferrari Red","XR":"FF","XG":"28","XB":"00","FriendlyName":"r"},
+{"r":255,"g":36,"b":0,"name":"Scarlet","XR":"FF","XG":"24","XB":"00","FriendlyName":"r"},
+{"r":255,"g":36,"b":0,"name":"Scarlet (Crayola)","XR":"FF","XG":"24","XB":"00","FriendlyName":"r"},
+{"r":255,"g":32,"b":82,"name":"Awesome","XR":"FF","XG":"20","XB":"52","FriendlyName":"r"},
+{"r":255,"g":8,"b":0,"name":"Candy apple red","XR":"FF","XG":"08","XB":"00","FriendlyName":"r"},
+{"r":255,"g":3,"b":62,"name":"American rose","XR":"FF","XG":"03","XB":"3E","FriendlyName":"r"},
+{"r":255,"g":0,"b":64,"name":"Carmine","XR":"FF","XG":"00","XB":"40","FriendlyName":"r"},
+{"r":255,"g":0,"b":56,"name":"Carmine red","XR":"FF","XG":"00","XB":"38","FriendlyName":"r"},
+{"r":255,"g":0,"b":63,"name":"Electric crimson","XR":"FF","XG":"00","XB":"3F","FriendlyName":"r"},
+{"r":255,"g":0,"b":0,"name":"Red","XR":"FF","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":255,"g":0,"b":40,"name":"Ruddy","XR":"FF","XG":"00","XB":"28","FriendlyName":"r"},
+{"r":254,"g":39,"b":18,"name":"Red (RYB)","XR":"FE","XG":"27","XB":"12","FriendlyName":"r"},
+{"r":253,"g":245,"b":230,"name":"Old lace","XR":"FD","XG":"F5","XB":"E6","FriendlyName":"r"},
+{"r":253,"g":14,"b":53,"name":"Tractor red","XR":"FD","XG":"0E","XB":"35","FriendlyName":"r"},
+{"r":250,"g":240,"b":230,"name":"Linen","XR":"FA","XG":"F0","XB":"E6","FriendlyName":"r"},
+{"r":244,"g":240,"b":236,"name":"Isabelline","XR":"F4","XG":"F0","XB":"EC","FriendlyName":"r"},
+{"r":242,"g":0,"b":60,"name":"Red (Munsell)","XR":"F2","XG":"00","XB":"3C","FriendlyName":"r"},
+{"r":237,"g":28,"b":36,"name":"Red (pigment)","XR":"ED","XG":"1C","XB":"24","FriendlyName":"r"},
+{"r":232,"g":0,"b":13,"name":"KU Crimson","XR":"E8","XG":"00","XB":"0D","FriendlyName":"r"},
+{"r":230,"g":32,"b":32,"name":"Lust","XR":"E6","XG":"20","XB":"20","FriendlyName":"r"},
+{"r":229,"g":43,"b":80,"name":"Amaranth","XR":"E5","XG":"2B","XB":"50","FriendlyName":"r"},
+{"r":227,"g":38,"b":54,"name":"Alizarin crimson","XR":"E3","XG":"26","XB":"36","FriendlyName":"r"},
+{"r":227,"g":38,"b":54,"name":"Rose madder","XR":"E3","XG":"26","XB":"36","FriendlyName":"r"},
+{"r":227,"g":0,"b":34,"name":"Cadmium red","XR":"E3","XG":"00","XB":"22","FriendlyName":"r"},
+{"r":226,"g":6,"b":44,"name":"Medium candy apple red","XR":"E2","XG":"06","XB":"2C","FriendlyName":"r"},
+{"r":224,"g":17,"b":95,"name":"Ruby","XR":"E0","XG":"11","XB":"5F","FriendlyName":"r"},
+{"r":220,"g":20,"b":60,"name":"Crimson","XR":"DC","XG":"14","XB":"3C","FriendlyName":"r"},
+{"r":212,"g":0,"b":0,"name":"Rosso corsa","XR":"D4","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":211,"g":0,"b":63,"name":"Utah Crimson","XR":"D3","XG":"00","XB":"3F","FriendlyName":"r"},
+{"r":207,"g":16,"b":32,"name":"Lava","XR":"CF","XG":"10","XB":"20","FriendlyName":"r"},
+{"r":206,"g":32,"b":41,"name":"Fire engine red","XR":"CE","XG":"20","XB":"29","FriendlyName":"r"},
+{"r":204,"g":51,"b":51,"name":"Persian red","XR":"CC","XG":"33","XB":"33","FriendlyName":"r"},
+{"r":204,"g":0,"b":0,"name":"Boston University Red","XR":"CC","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":201,"g":0,"b":22,"name":"Harvard crimson","XR":"C9","XG":"00","XB":"16","FriendlyName":"r"},
+{"r":200,"g":8,"b":21,"name":"Venetian red","XR":"C8","XG":"08","XB":"15","FriendlyName":"r"},
+{"r":196,"g":30,"b":58,"name":"Cardinal","XR":"C4","XG":"1E","XB":"3A","FriendlyName":"r"},
+{"r":196,"g":2,"b":51,"name":"Red (NCS)","XR":"C4","XG":"02","XB":"33","FriendlyName":"r"},
+{"r":190,"g":0,"b":50,"name":"Crimson glory","XR":"BE","XG":"00","XB":"32","FriendlyName":"r"},
+{"r":179,"g":27,"b":27,"name":"Carnelian","XR":"B3","XG":"1B","XB":"1B","FriendlyName":"r"},
+{"r":179,"g":27,"b":27,"name":"Cornell Red","XR":"B3","XG":"1B","XB":"1B","FriendlyName":"r"},
+{"r":178,"g":34,"b":34,"name":"Firebrick","XR":"B2","XG":"22","XB":"22","FriendlyName":"r"},
+{"r":174,"g":32,"b":41,"name":"Upsdell red","XR":"AE","XG":"20","XB":"29","FriendlyName":"r"},
+{"r":174,"g":12,"b":0,"name":"Mordant red 19","XR":"AE","XG":"0C","XB":"00","FriendlyName":"r"},
+{"r":168,"g":28,"b":7,"name":"Rufous","XR":"A8","XG":"1C","XB":"07","FriendlyName":"r"},
+{"r":165,"g":42,"b":42,"name":"Red-brown","XR":"A5","XG":"2A","XB":"2A","FriendlyName":"r"},
+{"r":164,"g":0,"b":0,"name":"Dark candy apple red","XR":"A4","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":153,"g":0,"b":0,"name":"OU Crimson Red","XR":"99","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":153,"g":0,"b":0,"name":"Stizza","XR":"99","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":153,"g":0,"b":0,"name":"USC Cardinal","XR":"99","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":146,"g":39,"b":36,"name":"Vivid auburn","XR":"92","XG":"27","XB":"24","FriendlyName":"r"},
+{"r":139,"g":0,"b":0,"name":"Dark red","XR":"8B","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":128,"g":24,"b":24,"name":"Falu red","XR":"80","XG":"18","XB":"18","FriendlyName":"r"},
+{"r":128,"g":0,"b":32,"name":"Burgundy","XR":"80","XG":"00","XB":"20","FriendlyName":"r"},
+{"r":128,"g":0,"b":0,"name":"Maroon (HTML/CSS)","XR":"80","XG":"00","XB":"00","FriendlyName":"r"},
+{"r":114,"g":47,"b":55,"name":"Wine","XR":"72","XG":"2F","XB":"37","FriendlyName":"r"},
+{"r":101,"g":0,"b":11,"name":"Rosewood","XR":"65","XG":"00","XB":"0B","FriendlyName":"r"},
+{"r":86,"g":3,"b":25,"name":"Dark scarlet","XR":"56","XG":"03","XB":"19","FriendlyName":"r"},
+{"r":72,"g":6,"b":7,"name":"Bulgarian rose","XR":"48","XG":"06","XB":"07","FriendlyName":"r"},
+{"r":255,"g":255,"b":255,"name":"White","XR":"FF","XG":"FF","XB":"FF","FriendlyName":"w"},
+{"r":255,"g":250,"b":240,"name":"Floral white","XR":"FF","XG":"FA","XB":"F0","FriendlyName":"w"},
+{"r":255,"g":250,"b":250,"name":"Snow","XR":"FF","XG":"FA","XB":"FA","FriendlyName":"w"},
+{"r":254,"g":253,"b":255,"name":"Splashed white","XR":"FE","XG":"FD","XB":"FF","FriendlyName":"w"},
+{"r":240,"g":248,"b":255,"name":"Alice blue","XR":"F0","XG":"F8","XB":"FF","FriendlyName":"w"},
+{"r":231,"g":254,"b":255,"name":"Bubbles","XR":"E7","XG":"FE","XB":"FF","FriendlyName":"w"},
+{"r":255,"g":255,"b":49,"name":"Daffodil","XR":"FF","XG":"FF","XB":"31","FriendlyName":"y"},
+{"r":255,"g":255,"b":0,"name":"Electric yellow","XR":"FF","XG":"FF","XB":"00","FriendlyName":"y"},
+{"r":255,"g":255,"b":102,"name":"Unmellow Yellow","XR":"FF","XG":"FF","XB":"66","FriendlyName":"y"},
+{"r":255,"g":255,"b":0,"name":"Yellow","XR":"FF","XG":"FF","XB":"00","FriendlyName":"y"},
+{"r":255,"g":253,"b":208,"name":"Cream","XR":"FF","XG":"FD","XB":"D0","FriendlyName":"y"},
+{"r":255,"g":250,"b":205,"name":"Lemon chiffon","XR":"FF","XG":"FA","XB":"CD","FriendlyName":"y"},
+{"r":255,"g":248,"b":220,"name":"Cornsilk","XR":"FF","XG":"F8","XB":"DC","FriendlyName":"y"},
+{"r":255,"g":248,"b":231,"name":"Cosmic latte","XR":"FF","XG":"F8","XB":"E7","FriendlyName":"y"},
+{"r":255,"g":247,"b":0,"name":"Lemon","XR":"FF","XG":"F7","XB":"00","FriendlyName":"y"},
+{"r":255,"g":246,"b":0,"name":"Cadmium yellow","XR":"FF","XG":"F6","XB":"00","FriendlyName":"y"},
+{"r":255,"g":239,"b":0,"name":"Canary yellow","XR":"FF","XG":"EF","XB":"00","FriendlyName":"y"},
+{"r":255,"g":239,"b":213,"name":"Papaya whip","XR":"FF","XG":"EF","XB":"D5","FriendlyName":"y"},
+{"r":255,"g":239,"b":0,"name":"Yellow (process)","XR":"FF","XG":"EF","XB":"00","FriendlyName":"y"},
+{"r":255,"g":255,"b":237,"name":"Light yellow","XR":"FF","XG":"FF","XB":"ED","FriendlyName":"y"},
+{"r":254,"g":254,"b":34,"name":"Laser Lemon","XR":"FE","XG":"FE","XB":"22","FriendlyName":"y"},
+{"r":254,"g":254,"b":51,"name":"Yellow (RYB)","XR":"FE","XG":"FE","XB":"33","FriendlyName":"y"},
+{"r":253,"g":253,"b":150,"name":"Pastel yellow","XR":"FD","XG":"FD","XB":"96","FriendlyName":"y"},
+{"r":253,"g":238,"b":0,"name":"Aureolin","XR":"FD","XG":"EE","XB":"00","FriendlyName":"y"},
+{"r":252,"g":247,"b":94,"name":"Icterine","XR":"FC","XG":"F7","XB":"5E","FriendlyName":"y"},
+{"r":251,"g":236,"b":93,"name":"Corn","XR":"FB","XG":"EC","XB":"5D","FriendlyName":"y"},
+{"r":251,"g":236,"b":93,"name":"Maize","XR":"FB","XG":"EC","XB":"5D","FriendlyName":"y"},
+{"r":250,"g":250,"b":210,"name":"Light goldenrod yellow","XR":"FA","XG":"FA","XB":"D2","FriendlyName":"y"},
+{"r":250,"g":240,"b":190,"name":"Blond","XR":"FA","XG":"F0","XB":"BE","FriendlyName":"y"},
+{"r":250,"g":235,"b":215,"name":"Antique white","XR":"FA","XG":"EB","XB":"D7","FriendlyName":"y"},
+{"r":245,"g":245,"b":220,"name":"Beige","XR":"F5","XG":"F5","XB":"DC","FriendlyName":"y"}]

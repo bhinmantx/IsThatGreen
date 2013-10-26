@@ -155,9 +155,9 @@
     NSInteger b = [[sample objectAtIndex:2] intValue];
   
     for(int i = 0; i<_colors.count; i++){
-        NSInteger R = [[[_colors objectAtIndex:i] objectForKey:@"red"] intValue];
-        NSInteger G = [[[_colors objectAtIndex:i] objectForKey:@"green"] intValue];
-        NSInteger B = [[[_colors objectAtIndex:i] objectForKey:@"blue"] intValue];
+        NSInteger R = [[[_colors objectAtIndex:i] objectForKey:@"r"] intValue];
+        NSInteger G = [[[_colors objectAtIndex:i] objectForKey:@"g"] intValue];
+        NSInteger B = [[[_colors objectAtIndex:i] objectForKey:@"b"] intValue];
         
       ////Find Euclidean
         double dx = abs(R-r);
@@ -172,9 +172,11 @@
         
     }
    
-    NSLog(@"%@, r %@, g %@ b %@",[[_colors objectAtIndex:indexOfClosest] objectForKey:@"friendlyname"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"red"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"green"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"blue"]);
+        NSLog(@"%@, r %ld, g %ld b %ld",@"Sample", (long)r, (long)g, (long)b);
     
-    return [[_colors objectAtIndex:indexOfClosest] objectForKey:@"friendlyname"];
+    NSLog(@"%@ %@, r %@, g %@ b %@",[[_colors objectAtIndex:indexOfClosest] objectForKey:@"name"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"FriendlyName"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"r"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"g"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"b"]);
+    
+    return [[_colors objectAtIndex:indexOfClosest] objectForKey:@"FriendlyName"];
 }
 
 
