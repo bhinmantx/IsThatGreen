@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C60CA5FC1811CD3D000146AE /* YesGreenYes.png in Resources */ = {isa = PBXBuildFile; fileRef = C60CA5FB1811CD3D000146AE /* YesGreenYes.png */; };
+		C6153BE3181C9338004FCF66 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6153BE2181C9338004FCF66 /* opencv2.framework */; };
 		C626F1501815A330003D3F00 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C626F14F1815A330003D3F00 /* opencv2.framework */; };
 		C626F1541815CF2F003D3F00 /* isitgreenicon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C626F1511815CF2F003D3F00 /* isitgreenicon57x57.png */; };
 		C626F1551815CF2F003D3F00 /* isitgreenicon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = C626F1521815CF2F003D3F00 /* isitgreenicon114x114.png */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		C60CA5FB1811CD3D000146AE /* YesGreenYes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YesGreenYes.png; sourceTree = "<group>"; };
+		C6153BE2181C9338004FCF66 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		C626F14F1815A330003D3F00 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		C626F1511815CF2F003D3F00 /* isitgreenicon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isitgreenicon57x57.png; sourceTree = "<group>"; };
 		C626F1521815CF2F003D3F00 /* isitgreenicon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isitgreenicon114x114.png; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				C69EB34718088AD7007D4BF7 /* libc++.1.dylib in Frameworks */,
 				C69EB34518088A13007D4BF7 /* libz.dylib in Frameworks */,
 				C69EB34318088A08007D4BF7 /* ImageIO.framework in Frameworks */,
+				C6153BE3181C9338004FCF66 /* opencv2.framework in Frameworks */,
 				C69EB341180888FE007D4BF7 /* QuartzCore.framework in Frameworks */,
 				C69EB33F180888F7007D4BF7 /* CoreVideo.framework in Frameworks */,
 				C69EB33D180888EF007D4BF7 /* CoreMedia.framework in Frameworks */,
@@ -134,6 +137,7 @@
 		C6A6742D18078CC900115A18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6153BE2181C9338004FCF66 /* opencv2.framework */,
 				C626F14F1815A330003D3F00 /* opencv2.framework */,
 				C6A6742E18078CC900115A18 /* UIKit.framework */,
 				C6A6743018078CC900115A18 /* Foundation.framework */,
@@ -351,8 +355,6 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
-					/Users/Brendan/Documents/OpenCVHello/OpenCVHello/IsItGreen2,
 					/Users/Brendan/Documents/OpenCVHello,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -368,8 +370,6 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
-					/Users/Brendan/Documents/OpenCVHello/OpenCVHello/IsItGreen2,
 					/Users/Brendan/Documents/OpenCVHello,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
