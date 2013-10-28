@@ -163,6 +163,7 @@
          CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
          cv::Mat tempMat(image, sampleRect);
         _buttonIsPressed = false;
+       
         [self isThisGreen:tempMat:@"g"];
          _shouldDisplayFeedback = true;
          _deleteMe = 0;
@@ -282,10 +283,18 @@
     
     
     
+    NSString * badwaytodothis = [_matcher flannFinder:img :color];
     
-    
-    [_matcher flannFinder:img :color];
-    
+    if([badwaytodothis isEqual: @"g"])
+    {
+       _wasItGreen = true;
+    }
+    else if ([badwaytodothis isEqual: @"r"])
+    {
+        _wasItRed = true;
+    }
+    else
+        _wasItGreen = false;
     _timerCount = 0;
     
     /////////The following is the new, slow as anything matching code
@@ -302,7 +311,7 @@
     }
      
      */
-    
+    /////////////THE CODE BELOW IS BROKEN
     //////////////The following was the old match code. Trying new match code
 /*
     

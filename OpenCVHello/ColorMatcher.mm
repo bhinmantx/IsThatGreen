@@ -97,7 +97,7 @@
     cv::Mat img = sampleMat.clone();
     int votesForWinningColor =0;
     int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
-    NSLog(@"Rows %i Cols %i Thresh: %i", sampleMat.rows, sampleMat.cols, threshold);
+  //  NSLog(@"Rows %i Cols %i Thresh: %i", sampleMat.rows, sampleMat.cols, threshold);
     
     ///we have two options for the voting, make it so that the votes need to add
     ///up to more than half of the tested pixels
@@ -124,7 +124,7 @@
         }
         
     }
-    NSLog(@"Vote count %i", votesForWinningColor);
+//    NSLog(@"Vote count %i", votesForWinningColor);
     
     if (votesForWinningColor>threshold) {
         return true;
@@ -183,10 +183,10 @@
     int votesAgainst = 0;
     
     
-    NSLog(@"%@ %i rows %i", @"Color Coord columns", _colorCoords.cols, _colorCoords.rows);
-    NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
+ //   NSLog(@"%@ %i rows %i", @"Color Coord columns", _colorCoords.cols, _colorCoords.rows);
+ //   NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
     
-    NSLog(@"Pixels %i", (sampleMat.cols * sampleMat.rows));
+  //  NSLog(@"Pixels %i", (sampleMat.cols * sampleMat.rows));
     ///Creating kdtree with 5 random trees
    cv::flann::KMeansIndexParams indexParams(5);
     //cv::flann::AutotunedIndexParams indexParams(2);
@@ -234,7 +234,7 @@ int count = 0;
     
 
      
-    kdtree.knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(64));
+    kdtree.knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
     
   //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
     int i = index[0];
@@ -250,7 +250,7 @@ int count = 0;
     }
     
     
-    NSLog(@"Votes: %i votes against: %i ", votes, votesAgainst);
+  //  NSLog(@"Votes: %i votes against: %i ", votes, votesAgainst);
     
   /*
     NSLog(@"Floats %f %f %f",  _colorCoords.at<Float32>(i,0),_colorCoords.at<Float32>(i,1),_colorCoords.at<Float32>(i,3));
@@ -262,8 +262,10 @@ int count = 0;
         [[_colors objectAtIndex:i] objectForKey:@"g"],
         [[_colors objectAtIndex:i] objectForKey:@"b"]);
     */
-    
-    return @"String";
+   if(votes>votesAgainst)
+    return color;
+    else
+        return @"string";
 }
 
 
