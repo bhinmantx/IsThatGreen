@@ -280,17 +280,24 @@
 */
 //    cv::Mat img(source);
     
-    _wasItGreen = false;
-    _wasItRed = false;
     
-    if ([_matcher matchColorFromMat:img :color])
+    /////////The following is the new, slow as anything matching code
+    /*
+
+     _wasItGreen = false;
+     _wasItRed = false;
+     
+     
+     if ([_matcher matchColorFromMat:img :color])
     {
         _wasItGreen = true;
         _timerCount = 0;
     }
+     
+     */
     
     //////////////The following was the old match code. Trying new match code
-    /*
+  
     
     int count =0;
     long b = 0;
@@ -316,8 +323,10 @@
 
     _timerCount = 0;
 // NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
+  
+
     [self greenTestHelper:b :g :r :count :color];
-    */
+    
 }
 
 
@@ -340,7 +349,19 @@
     
  //NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
     
+    
+    
+    R = [NSNumber numberWithFloat:(r/count)];
+    G = [NSNumber numberWithFloat:(g/count)];
+    B = [NSNumber numberWithFloat:(b/count)];
+    
     NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
+    
+    
+    [_matcher flannFinder:testArray];
+    
+    ////Below is old fast match code
+    /*
     
     if ([[_matcher findDistance:testArray]  isEqual: @"g"]){
 
@@ -354,7 +375,7 @@
        
         _wasItRed = true;
     }
-    
+    */
 
 }
 

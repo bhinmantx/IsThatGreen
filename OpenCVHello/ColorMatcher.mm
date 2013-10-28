@@ -21,8 +21,9 @@
         
         _colors =  [[NSArray alloc] initWithContentsOfFile:path];
         
-        
-         cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
+  
+          cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32F);
+//         cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
        // cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_8UC3);
         
      //  cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_32F);
@@ -56,22 +57,23 @@
         _colors = colorJson;
         
         
-        cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
+        //cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
         // cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_8UC3);
         
-        //  cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_32F);
+          cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32F);
         
         for(int i=0; i<_colors.count; i++){
             
             //We have to bring the vals in from the dictionary as ints that NSinteger will accept
-            NSInteger r = [[[_colors objectAtIndex:i] objectForKey:@"r"] intValue];
-            NSInteger g = [[[_colors objectAtIndex:i] objectForKey:@"g"] intValue];
-            NSInteger b = [[[_colors objectAtIndex:i] objectForKey:@"b"] intValue];
+            //NSInteger r = [[[_colors objectAtIndex:i] objectForKey:@"r"] intValue];
+            Float32 r = [[[_colors objectAtIndex:i] objectForKey:@"r"] floatValue];
+            Float32 g = [[[_colors objectAtIndex:i] objectForKey:@"g"] floatValue];
+            Float32 b = [[[_colors objectAtIndex:i] objectForKey:@"b"] floatValue];
             
             
-            colorCoords.at<int>(i,0) = r;
-            colorCoords.at<int>(i,1) = g;
-            colorCoords.at<int>(i,2) = b;
+            colorCoords.at<Float32>(i,0) = r;
+            colorCoords.at<Float32>(i,1) = g;
+            colorCoords.at<Float32>(i,2) = b;
         }
         _colorCoords = colorCoords.clone();
     }
@@ -168,6 +170,78 @@
     
     return [[_colors objectAtIndex:indexOfClosest] objectForKey:@"FriendlyName"];
 }
+
+
+
+
+//-(NSString*)flannFinder:(cv::Mat)sampleMat{
+
+-(NSString*)flannFinder:(NSArray*)sampleArray{
+    
+    
+ 
+    
+    
+    NSLog(@"%@ %i rows %i", @"Color Coord columns", _colorCoords.cols, _colorCoords.rows);
+ //   NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
+    
+    ///Creating kdtree with 5 random trees
+   cv::flann::KMeansIndexParams indexParams(5);
+    //cv::flann::AutotunedIndexParams indexParams(2);
+    //cv::flann::LinearIndexParams indexParams;
+    
+ //   cv::flann::IndexParams indexParams;
+    
+    
+    ///Create the index to search
+    ///According to this: http://code.opencv.org/issues/1947
+    ///I should directly use the flann index
+    // cvflann::Index kdtree(_colorCoords,indexParams);
+    
+    cv::flann::Index kdtree(_colorCoords,indexParams);
+    
+    
+    ///Creation of a single query. I guess it's a vector?
+    
+    cv::vector<Float32> singleQuery;
+    cv::vector<int> index(1);
+    cv::vector<Float32> dist(1);
+    ///populate the query, in reverse order I guess
+    Float32 r,g,b;
+    r = [[sampleArray objectAtIndex:0] floatValue];
+    g = [[sampleArray objectAtIndex:1] floatValue];
+    b = [[sampleArray objectAtIndex:2] floatValue];
+    
+
+    singleQuery.push_back(r);
+    singleQuery.push_back(g);
+    singleQuery.push_back(b);
+   // singleQuery.push_back(sampleMat.at<Float32>(0,1));
+  //  singleQuery.push_back(sampleMat.at<Float32>(0,0));
+    
+    /*
+    singleQuery.push_back(sampleMat.at<Float32>(0,2));
+    singleQuery.push_back(sampleMat.at<Float32>(0,1));
+    singleQuery.push_back(sampleMat.at<Float32>(0,0));
+    */
+     
+    kdtree.knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(64));
+    
+    NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
+    
+    int i = index[0];
+    NSLog(@"Floats %f %f %f",  _colorCoords.at<Float32>(i,0),_colorCoords.at<Float32>(i,1),_colorCoords.at<Float32>(i,3));
+
+    NSLog(@"Possible Color name: %@ r %@ g %@ b %@",
+    
+        [[_colors objectAtIndex:i] objectForKey:@"name"],
+        [[_colors objectAtIndex:i] objectForKey:@"r"],
+        [[_colors objectAtIndex:i] objectForKey:@"g"],
+        [[_colors objectAtIndex:i] objectForKey:@"b"]);
+    
+    return @"String";
+}
+
 
 
 
