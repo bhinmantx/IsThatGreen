@@ -99,6 +99,20 @@
     
 }
 
+- (IBAction)detectorButtonToggle:(id)sender {
+    if(_isDetectorOn){
+        //do anything else you want to do.
+    }
+    else {
+        //do anything you want to do.
+    }
+    _isDetectorOn = !_isDetectorOn;
+    [self.DetectorButton setImage:[UIImage imageNamed:_isDetectorOn ? @"detectoriconactive.png" :@"detectoricon.png"] forState:UIControlStateNormal];}
+
+
+
+
+
 -(void)processImage:(cv::Mat &)image{
 
 
@@ -386,7 +400,7 @@
     }
     
     
-    [self testLabel].text = [NSString stringWithFormat:@"%d",_timerCount];
+   
     [[self view] setNeedsDisplay];
     
 }
@@ -417,5 +431,13 @@
 //    }
     
 }
+
+
+
+
+
+
+
+
 
 @end

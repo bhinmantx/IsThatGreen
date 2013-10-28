@@ -21,7 +21,7 @@ NSArray *_colors;
 
 
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName;
--(NSString*)matchFromMat:(cv::Mat)sampleMat;
+-(NSString*)matchFromMat:(cv::Mat)sampleMat :(NSString*)targColor;
 -(NSString*)findDistance:(NSArray*)sample;
 -(id)initWithJSON:(NSArray*)colorJson;
 

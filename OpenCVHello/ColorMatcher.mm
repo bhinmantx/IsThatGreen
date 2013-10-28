@@ -83,67 +83,41 @@
 
 
 
--(NSString*)matchFromMat:(cv::Mat)sampleMat{
-    
-   NSLog(@"%@ %i rows %i", @"Color Coord columns", _colorCoords.cols, _colorCoords.rows);
-   NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
-    
-   ////Wait a second why not just find the Euclian distance between all of the points and just go with the smallest one?
-   
-    ////Appparently FLANN only accepts CV_32f
-    ////Going to try converting them here
-/*
-
-    if(_colorCoords.type()!=CV_32F) {
-      _colorCoords.convertTo(_colorCoords, CV_32F);
-  }
-    
-
-    if(sampleMat.type()!=CV_32F) {
-        sampleMat.convertTo(sampleMat, CV_32F);
-    }
-
-    NSLog(@" as Floats r %i g %i b %f", _colorCoords.at<int>(1,0),_colorCoords.at<int>(1,1),_colorCoords.at<Float32>(1,2));
-
-  */
+-(NSString*)matchFromMat:(cv::Mat)sampleMat :(NSString*)targColor{
     
     
-    ///Creating kdtree with 5 random trees
- // cv::flann::KMeansIndexParams indexParams(5);
-//cv::flann::AutotunedIndexParams indexParams(2);
-//cv::flann::LinearIndexParams indexParams;
+    ////Accept the mat
+    ////Work through each pixel comparing it to our colors
     
-    cv::flann::IndexParams indexParams;
+    ////Use "Find Distance" to get the nearest color
+    //Count up the "Votes"
+    ///return
     
     
-    ///Create the index to search
-    ///According to this: http://code.opencv.org/issues/1947
-    ///I should directly use the flann index
-   // cvflann::Index kdtree(_colorCoords,indexParams);
-  
-  cv::flann::Index kdtree(_colorCoords,indexParams);
     
-    ///Creation of a single query. I guess it's a vector?
     
-    cv::vector<int> singleQuery;
-    cv::vector<int> index(1);
-    cv::vector<Float32> dist(1);
-    ///populate the query, in reverse order I guess
+    cv::Mat sample = sampleMat.clone();
+    int votesForWinningColor;
+    ///we have two options for the voting, make it so that the votes need to add
+    ///up to more than half of the tested pixels
+    ///or we need to make sure the votes are more than any other color
+    ///Do we want to count all the "wrong" colors as the same votes against?
+    ////Or do we vote for each returned color?
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     
-    singleQuery.push_back(sampleMat.at<int>(0,2));
-    singleQuery.push_back(sampleMat.at<int>(0,1));
-    singleQuery.push_back(sampleMat.at<int>(0,0));
-  
-    kdtree.knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(64));
-    
-    NSLog(@"Index, dist %x , %f", index[0], dist[0]);
-    
-  
-    return @"test";
+    return @"Winning Color";
 }
 
-
+///TODO: Rename this function because it's more "find nearest"
 
 -(NSString*)findDistance:(NSArray*)sample{
    

@@ -33,6 +33,8 @@
     BOOL _wasItGreen;
     BOOL _wasItRed;
  
+    BOOL _isDetectorOn;
+    
     ColorMatcher *_matcher;
     int _timerCount;
     NSTimer *_timer;
@@ -60,6 +62,8 @@
 @property (strong, nonatomic) CvVideoCamera *videoCamera;
 @property (strong, nonatomic) IBOutlet UIImageView *CameraView;
 @property (strong, nonatomic) IBOutlet UIButton *GreenButton;
+
+@property (strong, nonatomic) IBOutlet UIButton *DetectorButton;
 
 @property (strong, nonatomic) IBOutlet UIButton *IsThisRedButton;
 @property (strong, nonatomic) NSArray *json;
