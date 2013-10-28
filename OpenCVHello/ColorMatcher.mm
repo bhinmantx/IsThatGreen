@@ -83,38 +83,54 @@
 
 
 
--(NSString*)matchFromMat:(cv::Mat)sampleMat :(NSString*)targColor{
-    
-    
+-(BOOL)matchColorFromMat:(cv::Mat)sampleMat :(NSString*)targColor{
+  
     ////Accept the mat
     ////Work through each pixel comparing it to our colors
     
     ////Use "Find Distance" to get the nearest color
     //Count up the "Votes"
     ///return
+  
+    cv::Mat img = sampleMat.clone();
+    int votesForWinningColor =0;
+    int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
+    NSLog(@"Rows %i Cols %i Thresh: %i", sampleMat.rows, sampleMat.cols, threshold);
     
-    
-    
-    
-    cv::Mat sample = sampleMat.clone();
-    int votesForWinningColor;
     ///we have two options for the voting, make it so that the votes need to add
     ///up to more than half of the tested pixels
     ///or we need to make sure the votes are more than any other color
     ///Do we want to count all the "wrong" colors as the same votes against?
     ////Or do we vote for each returned color?
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   NSNumber *B,*G,*R;
 
+
+    for(int row = 0; row < img.rows; ++row){
+        uchar* p = img.ptr(row);
+       
+        for(int col = 0; col < img.cols*3; ++col) {
+   
+            B = [NSNumber numberWithUnsignedChar:p[0]] ;
+            G = [NSNumber numberWithUnsignedChar:p[1]] ;
+            R = [NSNumber numberWithUnsignedChar:p[2]] ;
+            NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
+            
+            if ([[self findDistance:testArray] isEqual:targColor]) {
+                votesForWinningColor++;
+            }
+
+        }
+        
+    }
+    NSLog(@"Vote count %i", votesForWinningColor);
     
-    return @"Winning Color";
+    if (votesForWinningColor>threshold) {
+        return true;
+    }
+    
+    //NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
+    else
+    return false;
 }
 
 ///TODO: Rename this function because it's more "find nearest"

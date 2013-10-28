@@ -163,8 +163,8 @@
          CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
          cv::Mat tempMat(image, sampleRect);
         _buttonIsPressed = false;
-        _shouldDisplayFeedback = true;
         [self isThisGreen:tempMat:@"g"];
+         _shouldDisplayFeedback = true;
          _deleteMe = 0;
     }
     
@@ -280,6 +280,18 @@
 */
 //    cv::Mat img(source);
     
+    _wasItGreen = false;
+    _wasItRed = false;
+    
+    if ([_matcher matchColorFromMat:img :color])
+    {
+        _wasItGreen = true;
+        _timerCount = 0;
+    }
+    
+    //////////////The following was the old match code. Trying new match code
+    /*
+    
     int count =0;
     long b = 0;
     long g = 0;
@@ -288,7 +300,7 @@
       uchar* p = img.ptr(row);
         
         for(int col = 0; col < img.cols*3; ++col) {
-            //*p++;  //points to each pixel B,G,R value in turn assuming a CV_8UC3 color image
+            // *p++;  //points to each pixel B,G,R value in turn assuming a CV_8UC3 color image
             int B = [[NSNumber numberWithUnsignedChar:p[0]] integerValue] ;
             int G = [[NSNumber numberWithUnsignedChar:p[1]] integerValue] ;
             int R = [[NSNumber numberWithUnsignedChar:p[2]] integerValue] ;
@@ -305,7 +317,7 @@
     _timerCount = 0;
 // NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
     [self greenTestHelper:b :g :r :count :color];
-    
+    */
 }
 
 
@@ -346,10 +358,13 @@
 
 }
 
+
+
+
+
 /**
  For conversion of foundation images to OpenCV mats
  */
-
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image
 {
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
