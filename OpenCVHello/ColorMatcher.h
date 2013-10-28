@@ -13,10 +13,14 @@
 
 NSArray *_colors;
     cv::Mat _colorCoords;
+    
+    
+  cv::flann::Index *_kdtree;
 }
 
 @property (strong,nonatomic) NSArray * colors;
 @property (nonatomic) cv::Mat  colorCoords;
+@property (nonatomic) cv::flann::Index *kdtree;
 
 
 

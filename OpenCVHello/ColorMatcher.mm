@@ -12,6 +12,7 @@
 
 @synthesize colors = _colors;
 @synthesize colorCoords = _colorCoords;
+@synthesize kdtree = _kdtree;
 
 
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName{
@@ -77,6 +78,14 @@
         }
         _colorCoords = colorCoords.clone();
     }
+    
+    
+    cv::flann::KMeansIndexParams indexParams(5);
+    
+   // cv::flann::Index kdtreeCon(_colorCoords,indexParams);
+    _kdtree = new cv::flann::Index(_colorCoords, indexParams);
+//    _kdtree = kdtreeCon;
+    
     
     NSLog(@"Colors Count %i", _colors.count);
     return self;
@@ -173,9 +182,6 @@
 
 
 
-
-//-(NSString*)flannFinder:(cv::Mat)sampleMat{
-
 -(NSString*)flannFinder:(cv::Mat)sampleMat :(NSString*)color{
     
     
@@ -187,12 +193,11 @@
  //   NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
     
   //  NSLog(@"Pixels %i", (sampleMat.cols * sampleMat.rows));
-    ///Creating kdtree with 5 random trees
-   cv::flann::KMeansIndexParams indexParams(5);
-    //cv::flann::AutotunedIndexParams indexParams(2);
-    //cv::flann::LinearIndexParams indexParams;
+  
     
- //   cv::flann::IndexParams indexParams;
+///Creating kdtree with 5 random trees
+  // cv::flann::KMeansIndexParams indexParams(5);
+
     
     
     ///Create the index to search
@@ -200,9 +205,13 @@
     ///I should directly use the flann index
     // cvflann::Index kdtree(_colorCoords,indexParams);
     
-    cv::flann::Index kdtree(_colorCoords,indexParams);
+    ///Switching to original
+   ///cv::flann::Index kdtree(_colorCoords,indexParams);
+    
   //Float32 r,g,b;
-int count = 0;
+
+int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
+
     ////First take the vals from the mat and make them floats
     for(int row = 0; row < sampleMat.rows; row++)
     {
@@ -216,9 +225,9 @@ int count = 0;
             b = [[NSNumber numberWithUnsignedChar:p[col]] floatValue] ;
             g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
             r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
-            
+         
           
-            count++;
+
         //  NSLog(@"Floats %f %f %f, %i, row %i, col %i", b, g, r, count, row, col);
     ///Creation of a single query. I guess it's a vector?
     
@@ -234,7 +243,7 @@ int count = 0;
     
 
      
-    kdtree.knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
+    [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
     
   //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
     int i = index[0];
@@ -262,7 +271,9 @@ int count = 0;
         [[_colors objectAtIndex:i] objectForKey:@"g"],
         [[_colors objectAtIndex:i] objectForKey:@"b"]);
     */
-   if(votes>votesAgainst)
+    
+    
+   if(votes>threshold)
     return color;
     else
         return @"string";
