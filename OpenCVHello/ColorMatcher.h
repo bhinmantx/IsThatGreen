@@ -24,6 +24,6 @@ NSArray *_colors;
 -(BOOL)matchColorFromMat:(cv::Mat)sampleMat :(NSString*)targColor;
 -(NSString*)findDistance:(NSArray*)sample;
 -(id)initWithJSON:(NSArray*)colorJson;
--(NSString*)flannFinder:(NSArray*)sampleArray;
+-(NSString*)flannFinder:(cv::Mat)sampleMat :(NSString*)color;
 
 @end

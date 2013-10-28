@@ -176,15 +176,17 @@
 
 //-(NSString*)flannFinder:(cv::Mat)sampleMat{
 
--(NSString*)flannFinder:(NSArray*)sampleArray{
+-(NSString*)flannFinder:(cv::Mat)sampleMat :(NSString*)color{
     
     
- 
+    int votes = 0;
+    int votesAgainst = 0;
     
     
     NSLog(@"%@ %i rows %i", @"Color Coord columns", _colorCoords.cols, _colorCoords.rows);
- //   NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
+    NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
     
+    NSLog(@"Pixels %i", (sampleMat.cols * sampleMat.rows));
     ///Creating kdtree with 5 random trees
    cv::flann::KMeansIndexParams indexParams(5);
     //cv::flann::AutotunedIndexParams indexParams(2);
@@ -199,37 +201,58 @@
     // cvflann::Index kdtree(_colorCoords,indexParams);
     
     cv::flann::Index kdtree(_colorCoords,indexParams);
-    
-    
+  //Float32 r,g,b;
+int count = 0;
+    ////First take the vals from the mat and make them floats
+    for(int row = 0; row < sampleMat.rows; row++)
+    {
+        
+        uchar* p = sampleMat.ptr(row);
+        
+        for(int col = 0; col < sampleMat.cols*4; col+=4 ) {
+        Float32 r,g,b;
+
+           
+            b = [[NSNumber numberWithUnsignedChar:p[col]] floatValue] ;
+            g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
+            r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
+            
+          
+            count++;
+        //  NSLog(@"Floats %f %f %f, %i, row %i, col %i", b, g, r, count, row, col);
     ///Creation of a single query. I guess it's a vector?
     
     cv::vector<Float32> singleQuery;
     cv::vector<int> index(1);
     cv::vector<Float32> dist(1);
-    ///populate the query, in reverse order I guess
-    Float32 r,g,b;
-    r = [[sampleArray objectAtIndex:0] floatValue];
-    g = [[sampleArray objectAtIndex:1] floatValue];
-    b = [[sampleArray objectAtIndex:2] floatValue];
-    
+
 
     singleQuery.push_back(r);
     singleQuery.push_back(g);
     singleQuery.push_back(b);
-   // singleQuery.push_back(sampleMat.at<Float32>(0,1));
-  //  singleQuery.push_back(sampleMat.at<Float32>(0,0));
+
     
-    /*
-    singleQuery.push_back(sampleMat.at<Float32>(0,2));
-    singleQuery.push_back(sampleMat.at<Float32>(0,1));
-    singleQuery.push_back(sampleMat.at<Float32>(0,0));
-    */
+
      
     kdtree.knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(64));
     
-    NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
-    
+  //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
     int i = index[0];
+            
+            if (   [[[_colors objectAtIndex:i] objectForKey:@"FriendlyName"] isEqual:color]) {
+                votes++;
+            }
+            else
+                votesAgainst++;
+   
+            
+        }
+    }
+    
+    
+    NSLog(@"Votes: %i votes against: %i ", votes, votesAgainst);
+    
+  /*
     NSLog(@"Floats %f %f %f",  _colorCoords.at<Float32>(i,0),_colorCoords.at<Float32>(i,1),_colorCoords.at<Float32>(i,3));
 
     NSLog(@"Possible Color name: %@ r %@ g %@ b %@",
@@ -238,6 +261,7 @@
         [[_colors objectAtIndex:i] objectForKey:@"r"],
         [[_colors objectAtIndex:i] objectForKey:@"g"],
         [[_colors objectAtIndex:i] objectForKey:@"b"]);
+    */
     
     return @"String";
 }

@@ -281,6 +281,13 @@
 //    cv::Mat img(source);
     
     
+    
+    
+    
+    [_matcher flannFinder:img :color];
+    
+    _timerCount = 0;
+    
     /////////The following is the new, slow as anything matching code
     /*
 
@@ -297,7 +304,7 @@
      */
     
     //////////////The following was the old match code. Trying new match code
-  
+/*
     
     int count =0;
     long b = 0;
@@ -326,7 +333,7 @@
   
 
     [self greenTestHelper:b :g :r :count :color];
-    
+  */
 }
 
 
@@ -356,12 +363,7 @@
     B = [NSNumber numberWithFloat:(b/count)];
     
     NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
-    
-    
-    [_matcher flannFinder:testArray];
-    
-    ////Below is old fast match code
-    /*
+
     
     if ([[_matcher findDistance:testArray]  isEqual: @"g"]){
 
@@ -375,7 +377,7 @@
        
         _wasItRed = true;
     }
-    */
+  
 
 }
 
