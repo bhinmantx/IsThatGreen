@@ -23,7 +23,7 @@
     UIButton *_GreenButton;
     UIButton *_IsThisRedButton;
     
-
+    int _deleteMe; 
   
     BOOL _shouldDisplayFeedback;
     
@@ -53,7 +53,7 @@
 
 -(void)processJSON;
 
-@property (strong, nonatomic) IBOutlet UILabel *testLabel;
+
 @property (strong, nonatomic) IBOutlet UILabel *AcrossLabel;
 
 @property (strong, nonatomic) IBOutlet UISlider *TargetSizeSlider;

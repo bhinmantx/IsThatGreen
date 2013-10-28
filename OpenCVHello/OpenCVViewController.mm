@@ -65,7 +65,8 @@
 
    // _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
    
-    
+    _deleteMe = 0;
+    _isDetectorOn = false;
     ///Load up our color data
     [self processJSON];
     
@@ -100,11 +101,38 @@
 }
 
 - (IBAction)detectorButtonToggle:(id)sender {
+    
+    ////Hold on to the value of the old text
+    static UIColor *oldButtonTitleColor;
+    static UIColor *oldSliderColor;
+    
     if(_isDetectorOn){
-        //do anything else you want to do.
+     
+        ////Here we reset everything we did before
+        ///Enabling all the buttons etc
+        [self TargetSizeSlider].enabled = true;
+        [self GreenButton].enabled = true;
+        [self IsThisRedButton].enabled = true;
+         _shouldDisplayFeedback = false;
+        [[self IsThisRedButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
+        [[self GreenButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
+        [self TargetSizeSlider].backgroundColor = oldSliderColor;
     }
     else {
-        //do anything you want to do.
+        ////We're activating the detector mode here
+        ////we need to deactivate the other controls
+        ///But save their text color
+        oldButtonTitleColor = [self IsThisRedButton].currentTitleColor;
+        oldSliderColor = [self TargetSizeSlider].backgroundColor;
+        [[self TargetSizeSlider] setValue:5.0];
+        [self TargetSizeSlider].enabled = false;
+        [self GreenButton].enabled = false;
+        [self IsThisRedButton].enabled = false;
+       ////We also need to change their colors
+        [self TargetSizeSlider].backgroundColor = [UIColor lightGrayColor];
+        [[self IsThisRedButton] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [[self GreenButton] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        
     }
     _isDetectorOn = !_isDetectorOn;
     [self.DetectorButton setImage:[UIImage imageNamed:_isDetectorOn ? @"detectoriconactive.png" :@"detectoricon.png"] forState:UIControlStateNormal];}
@@ -116,16 +144,48 @@
 -(void)processImage:(cv::Mat &)image{
 
 
-    if(_buttonIsPressed){
-        cv::Mat tempMat(image);
+    ////If they've hit the green button or if it's in detector mode.
+   if(_buttonIsPressed || _isDetectorOn){
+    
+         
+         ///Originally just following line
+//        cv::Mat tempMat(image);
+         //Now we're resizing it here
+         NSInteger iRows = image.rows;
+         NSInteger iCols = image.cols;
+         
+         CvPoint center = cvPoint(iCols/2,iRows/2);
+         
+         NSInteger  targ = (int)[self TargetSizeSlider].value;
+         ///We take the center 20X20 of the image.
+         
+         ///We're expanding the target area, or making it smaller based on the slider.
+         CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+         cv::Mat tempMat(image, sampleRect);
         _buttonIsPressed = false;
         _shouldDisplayFeedback = true;
         [self isThisGreen:tempMat:@"g"];
-        
+         _deleteMe = 0;
     }
     
+    
+    
     if(_redButtonIsPressed){
-        cv::Mat tempMat(image);
+        
+        ///Originally just following line
+        //        cv::Mat tempMat(image);
+        //Now we're resizing it here
+        NSInteger iRows = image.rows;
+        NSInteger iCols = image.cols;
+        
+        CvPoint center = cvPoint(iCols/2,iRows/2);
+        
+        NSInteger  targ = (int)[self TargetSizeSlider].value;
+        ///We take the center 20X20 of the image.
+        
+        ///We're expanding the target area, or making it smaller based on the slider.
+        CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+        cv::Mat tempMat(image, sampleRect);
         _redButtonIsPressed = false;
         _shouldDisplayFeedback = true;
         [self isThisGreen:tempMat:@"r"];
@@ -136,34 +196,7 @@
     
     
     image = [self drawBoxAroundTarget:image];
-   
-
-    /* We're using the timer based feedback now.
-    if(_shouldDisplayFeedback){
-    
-        if (_wasItGreen) {
-            
-            ///Previously we were writing stuff, now we're displaying images.
-            cv::Rect roi(cv::Point(0,0), cv::Size(200,40));
-            cv::Mat temp = [self cvMatFromUIImage:_wasGreenFlagImage];
-            temp.copyTo(image(roi));
-        }
-        else if (_wasItRed){
-       
-            cv::putText(image, "It Was Red", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
-            
-        }
-    
-    
-    
-    else if(_shouldDisplayFeedback) {
-        cv::putText(image, "Not that color", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
-      
-        }
-        
-    }
-    */
-    
+  
 }
 
 
@@ -223,8 +256,13 @@
 /**
  Is this green
  */
--(void)isThisGreen:(cv::Mat)source :(NSString*)color{
-    
+
+/////Going to try removing one of these mat copies by
+/////removing the rectangle code and putting it into the process image loop
+
+//-(void)isThisGreen:(cv::Mat)source :(NSString*)color{
+-(void)isThisGreen:(cv::Mat)img :(NSString*)color{
+    /*
     NSInteger iRows = source.rows;
     NSInteger iCols = source.cols;
     
@@ -237,8 +275,11 @@
     CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
     //old way
     //CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
-    
+
     cv::Mat img(source, sampleRect);
+*/
+//    cv::Mat img(source);
+    
     int count =0;
     long b = 0;
     long g = 0;
@@ -262,7 +303,7 @@
 /////We're going to try using a timer so that when 3 seconds have passed, the image vanishes.
 
     _timerCount = 0;
- NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
+// NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
     [self greenTestHelper:b :g :r :count :color];
     
 }
@@ -275,7 +316,7 @@
 /////Still doesn't use the NSString color for anything
     
 -(void)greenTestHelper:(long)b :(long)g :(long)r :(int)count :(NSString*)color{
-    NSLog(@"Firing Test Helper");
+ //   NSLog(@"Firing Test Helper");
 ////Get the average RGB values of each
     _wasItGreen = false;
     _wasItRed = false;
@@ -285,19 +326,19 @@
     G = [NSNumber numberWithInt:(g/count)];
     B = [NSNumber numberWithInt:(b/count)];
     
- NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
+ //NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
     
     NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
     
     if ([[_matcher findDistance:testArray]  isEqual: @"g"]){
 
-         NSLog(@"tested Green");
+        // NSLog(@"tested Green");
         _wasItGreen = true;
        
     }
     else if ([[_matcher findDistance:testArray]  isEqual: @"r"]){
 
-        NSLog(@"tested Red");
+       // NSLog(@"tested Red");
        
         _wasItRed = true;
     }
@@ -379,28 +420,36 @@
 
     _timerCount += 1;
     
-    if(_timerCount > 30){
-        _timerCount = 0;
-    _shouldDisplayFeedback = false;
-    [self AcrossLabel].text = @"";
-    [self AcrossLabel].hidden = true;
-    }
+    if(!_isDetectorOn){
+        if(_timerCount > 30){
+            _timerCount = 0;
+            _shouldDisplayFeedback = false;
+            [self AcrossLabel].text = @"";
+            [self AcrossLabel].hidden = true;
+        }
     
-    if (_shouldDisplayFeedback) {
+        if (_shouldDisplayFeedback) {
        
-        if(_wasItRed)
-        [self AcrossLabel].text = @"RED!";
-        else if(_wasItGreen)
-        [self AcrossLabel].text = @"GREEN!";
-        else
-        [self AcrossLabel].text = @"It wasn't that color!";
+            if(_wasItRed)
+                [self AcrossLabel].text = @"RED!";
+            else if(_wasItGreen)
+                [self AcrossLabel].text = @"GREEN!";
+            else
+                [self AcrossLabel].text = @"It wasn't that color!";
         
         [self AcrossLabel].hidden = false;
         
+        }
+    
     }
-    
-    
-   
+    else {
+        ///so the detector is on
+        [self AcrossLabel].hidden = false;
+        if(_wasItGreen)
+            [self AcrossLabel].text = @"GREEN!";
+        else
+            [self AcrossLabel].text = @"";
+    }
     [[self view] setNeedsDisplay];
     
 }
