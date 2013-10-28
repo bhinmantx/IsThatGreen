@@ -41,7 +41,7 @@
     NSArray *_json;
 }
 
--(IBAction)actionStart:(id)sender;
+
 -(cv::Mat)drawBoxAroundTarget:(cv::Mat)source;
 -(UIImage *)imageWithCVMat:(const cv::Mat&)cvMat;
 -(UIImage*)createThumbnail:(cv::Mat)source :(UIImage *)image;
@@ -64,6 +64,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *GreenButton;
 
 @property (strong, nonatomic) IBOutlet UIButton *DetectorButton;
+@property (strong, nonatomic) IBOutlet UISwitch *ScanMode;
 
 @property (strong, nonatomic) IBOutlet UIButton *IsThisRedButton;
 @property (strong, nonatomic) NSArray *json;

@@ -80,7 +80,7 @@
     }
     
     
-    cv::flann::KMeansIndexParams indexParams(5);
+    cv::flann::KMeansIndexParams indexParams(8);
     
    // cv::flann::Index kdtreeCon(_colorCoords,indexParams);
     _kdtree = new cv::flann::Index(_colorCoords, indexParams);

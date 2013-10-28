@@ -40,7 +40,7 @@
 ///more than once.
 
 
-////TODO Break image processing into its own class for code readability
+
 
 - (void)viewDidLoad
 {
@@ -53,9 +53,6 @@
     self.videoCamera.defaultFPS = 30;
     _shouldDisplayFeedback = false;
     
-    ///Load the flag image
-
-   // _wasGreenFlagImage = [UIImage imageNamed:@"YesGreenYes.png"];
     
     ///We need to change the camera being used
     
@@ -104,7 +101,8 @@
     
     ////Hold on to the value of the old text
     static UIColor *oldButtonTitleColor;
-    static UIColor *oldSliderColor;
+    static UIColor *oldSliderMaxColor;
+        static UIColor *oldSliderMinColor;
     
     if(_isDetectorOn){
      
@@ -116,26 +114,36 @@
          _shouldDisplayFeedback = false;
         [[self IsThisRedButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
         [[self GreenButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
-        [self TargetSizeSlider].backgroundColor = oldSliderColor;
+        [self TargetSizeSlider].minimumTrackTintColor = oldSliderMinColor;
+        [self TargetSizeSlider].maximumTrackTintColor = oldSliderMaxColor;
     }
     else {
         ////We're activating the detector mode here
         ////we need to deactivate the other controls
         ///But save their text color
         oldButtonTitleColor = [self IsThisRedButton].currentTitleColor;
-        oldSliderColor = [self TargetSizeSlider].backgroundColor;
+        oldSliderMinColor = [self TargetSizeSlider].minimumTrackTintColor;
+        oldSliderMaxColor =[self TargetSizeSlider].maximumTrackTintColor;
+        
         [[self TargetSizeSlider] setValue:5.0];
+        [self TargetSizeSlider].minimumTrackTintColor = [UIColor lightGrayColor];
+        [self TargetSizeSlider].maximumTrackTintColor = [UIColor lightGrayColor];
         [self TargetSizeSlider].enabled = false;
         [self GreenButton].enabled = false;
         [self IsThisRedButton].enabled = false;
        ////We also need to change their colors
-        [self TargetSizeSlider].backgroundColor = [UIColor lightGrayColor];
+        //[self TargetSizeSlider].backgroundColor = [UIColor lightGrayColor];
+        
         [[self IsThisRedButton] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [[self GreenButton] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         
     }
+    _shouldDisplayFeedback = false;
     _isDetectorOn = !_isDetectorOn;
-    [self.DetectorButton setImage:[UIImage imageNamed:_isDetectorOn ? @"detectoriconactive.png" :@"detectoricon.png"] forState:UIControlStateNormal];}
+    _AcrossLabel.hidden = true;
+    [[self view] setNeedsDisplay];
+   // [self.DetectorButton setImage:[UIImage imageNamed:_isDetectorOn ? @"detectoriconactive.png" :@"detectoricon.png"] forState:UIControlStateNormal];
+}
 
 
 
@@ -194,8 +202,7 @@
     }
 
 /////TODO: Change this into a switch statement.
-    
-    
+   
     image = [self drawBoxAroundTarget:image];
   
 }
@@ -242,9 +249,7 @@
   
     CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
 
-  
-    
-    
+    ///Copying only the target area
     cv::Mat  crop(source, sampleRect);
 
     tImage = [self imageWithCVMat:(cv::Mat(source,sampleRect))];
@@ -263,25 +268,6 @@
 
 //-(void)isThisGreen:(cv::Mat)source :(NSString*)color{
 -(void)isThisGreen:(cv::Mat)img :(NSString*)color{
-    /*
-    NSInteger iRows = source.rows;
-    NSInteger iCols = source.cols;
-    
-    CvPoint center = cvPoint(iCols/2,iRows/2); 
-    
-    NSInteger  targ = (int)[self TargetSizeSlider].value;
-    ///We take the center 20X20 of the image.
-
-    ///We're expanding the target area, or making it smaller based on the slider.
-    CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
-    //old way
-    //CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
-
-    cv::Mat img(source, sampleRect);
-*/
-//    cv::Mat img(source);
-    
-    
     
     NSString * badwaytodothis = [_matcher flannFinder:img :color];
     
@@ -293,8 +279,10 @@
     {
         _wasItRed = true;
     }
-    else
-        _wasItGreen = false;
+    else{
+       _wasItGreen = false;
+       _wasItRed = false;
+    }
     _timerCount = 0;
     
     /////////The following is the new, slow as anything matching code
@@ -468,7 +456,7 @@
     _timerCount += 1;
     
     if(!_isDetectorOn){
-        if(_timerCount > 30){
+        if(_timerCount > 60){
             _timerCount = 0;
             _shouldDisplayFeedback = false;
             [self AcrossLabel].text = @"";
@@ -502,7 +490,7 @@
 }
 
 -(void)timerFire{
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
 
     if([self respondsToSelector:@selector(timerCallback)]){
 

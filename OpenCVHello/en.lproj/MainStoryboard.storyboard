@@ -17,12 +17,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-8D-HfY">
                                 <rect key="frame" x="21" y="7" width="278" height="339"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="Ik0-OO-xBY"/>
                                     <constraint firstAttribute="height" constant="339" id="a3n-XX-PTa"/>
-                                    <constraint firstAttribute="width" constant="278" id="y39-yn-xAb"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAp-Se-Ueh">
-                                <rect key="frame" x="195" y="397" width="105" height="44"/>
+                                <rect key="frame" x="195" y="404" width="105" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Is It Green?">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56d-iu-ofn">
-                                <rect key="frame" x="20" y="397" width="91" height="44"/>
+                                <rect key="frame" x="20" y="404" width="91" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Is It Red?">
@@ -51,10 +51,10 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="5" maxValue="40" minimumValueImage="frameTargetIconsmall.png" maximumValueImage="frameTargetIconLarge.png" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-sD-YY4">
-                                <rect key="frame" x="23" y="360" width="164" height="23"/>
+                                <rect key="frame" x="18" y="372" width="142" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="ngE-MY-OHf"/>
+                                    <constraint firstAttribute="width" constant="138" id="eKE-EU-Fy2"/>
                                 </constraints>
                             </slider>
                             <label hidden="YES" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTF-zf-qCd">
@@ -68,37 +68,40 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRU-TU-0Aa">
-                                <rect key="frame" x="238" y="354" width="39" height="39"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ySe-E0-Rca">
+                                <rect key="frame" x="209" y="369" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="AVz-j0-w0P"/>
-                                    <constraint firstAttribute="width" constant="39" id="f0o-qd-NwJ"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="0.0" height="2"/>
-                                <state key="normal" image="detectoricon.png"/>
                                 <connections>
-                                    <action selector="detectorButtonToggle:" destination="2" eventType="touchUpInside" id="AaD-6B-flQ"/>
+                                    <action selector="detectorButtonToggle:" destination="2" eventType="touchUpInside" id="b9E-w1-E4K"/>
                                 </connections>
-                            </button>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-fu-Zee">
+                                <rect key="frame" x="195" y="346" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.24313727021217346" green="0.96078437566757202" blue="0.027450982481241226" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="m5d-sD-YY4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="25" id="7NQ-BA-VeJ"/>
-                            <constraint firstAttribute="trailing" secondItem="FTF-zf-qCd" secondAttribute="trailing" type="default" id="F2e-3U-t03"/>
+                            <constraint firstItem="Wma-fu-Zee" firstAttribute="leading" secondItem="aAp-Se-Ueh" secondAttribute="leading" type="default" id="ECe-CA-65n"/>
+                            <constraint firstItem="ySe-E0-Rca" firstAttribute="centerX" secondItem="Wma-fu-Zee" secondAttribute="centerX" type="default" id="FvC-Rb-DnZ"/>
                             <constraint firstAttribute="trailing" secondItem="aAp-Se-Ueh" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="ILn-08-T2l"/>
-                            <constraint firstAttribute="bottom" secondItem="aAp-Se-Ueh" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="P9j-sa-gjZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Wma-fu-Zee" secondAttribute="bottom" constant="93" id="J8W-St-tay"/>
+                            <constraint firstItem="Wma-fu-Zee" firstAttribute="trailing" secondItem="aAp-Se-Ueh" secondAttribute="trailing" type="default" id="N2P-JY-W9p"/>
                             <constraint firstItem="aAp-Se-Ueh" firstAttribute="leading" secondItem="56d-iu-ofn" secondAttribute="trailing" constant="84" type="user" id="SEi-rA-cRx"/>
                             <constraint firstItem="56d-iu-ofn" firstAttribute="baseline" secondItem="aAp-Se-Ueh" secondAttribute="baseline" type="user" id="T0d-ai-rqS"/>
                             <constraint firstItem="FTF-zf-qCd" firstAttribute="centerX" secondItem="8FY-8D-HfY" secondAttribute="centerX" type="default" id="VUz-bK-Xj3"/>
-                            <constraint firstItem="8FY-8D-HfY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="7" id="a75-ai-e2G"/>
+                            <constraint firstItem="8FY-8D-HfY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="7" id="ctm-m5-320"/>
+                            <constraint firstItem="aAp-Se-Ueh" firstAttribute="top" secondItem="ySe-E0-Rca" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dz7-nx-BpH"/>
+                            <constraint firstItem="m5d-sD-YY4" firstAttribute="leading" secondItem="56d-iu-ofn" secondAttribute="leading" type="default" id="ejs-dQ-D4v"/>
                             <constraint firstItem="8FY-8D-HfY" firstAttribute="top" secondItem="FTF-zf-qCd" secondAttribute="top" type="default" id="hL0-eO-sGF"/>
                             <constraint firstItem="56d-iu-ofn" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="hhQ-6Y-C9q"/>
-                            <constraint firstAttribute="bottom" secondItem="m5d-sD-YY4" secondAttribute="bottom" constant="78" id="huD-dE-2gU"/>
-                            <constraint firstAttribute="trailing" secondItem="CRU-TU-0Aa" secondAttribute="trailing" constant="43" id="t8q-8R-ygj"/>
+                            <constraint firstAttribute="bottom" secondItem="56d-iu-ofn" secondAttribute="bottom" constant="13" id="l2a-JH-s9Q"/>
+                            <constraint firstAttribute="bottom" secondItem="m5d-sD-YY4" secondAttribute="bottom" constant="66" id="omg-an-Fdm"/>
+                            <constraint firstAttribute="trailing" secondItem="FTF-zf-qCd" secondAttribute="trailing" type="default" id="rXd-Uf-1HZ"/>
                             <constraint firstItem="FTF-zf-qCd" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="tkH-4X-HaF"/>
-                            <constraint firstItem="CRU-TU-0Aa" firstAttribute="top" secondItem="8FY-8D-HfY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="x4w-oJ-I9j"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="125-iw-Dh1"/>
@@ -106,9 +109,9 @@
                     <connections>
                         <outlet property="AcrossLabel" destination="FTF-zf-qCd" id="rZb-FY-Vxq"/>
                         <outlet property="CameraView" destination="8FY-8D-HfY" id="Hvf-id-Nf2"/>
-                        <outlet property="DetectorButton" destination="CRU-TU-0Aa" id="6qc-G7-ajy"/>
                         <outlet property="GreenButton" destination="aAp-Se-Ueh" id="YX7-8P-bTy"/>
                         <outlet property="IsThisRedButton" destination="56d-iu-ofn" id="6Db-Xw-fHq"/>
+                        <outlet property="ScanMode" destination="ySe-E0-Rca" id="Wwn-T4-FN9"/>
                         <outlet property="TargetSizeSlider" destination="m5d-sD-YY4" id="Yb2-Vl-ROo"/>
                     </connections>
                 </viewController>
@@ -118,7 +121,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="detectoricon.png" width="288" height="284"/>
         <image name="frameTargetIconLarge.png" width="10" height="10"/>
         <image name="frameTargetIconsmall.png" width="10" height="10"/>
     </resources>
