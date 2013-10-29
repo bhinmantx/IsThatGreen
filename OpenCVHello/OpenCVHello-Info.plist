@@ -14,6 +14,12 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
+				<string>IsItGreenIcon29</string>
+				<string>IsItGreenIcon80</string>
+				<string>IsItGreenIcon58</string>
+				<string>IsItGreenIcon120</string>
+				<string>IsItGreenIcon114</string>
+				<string>IsItGreenIcon57</string>
 				<string>isitgreenicon120x120</string>
 				<string>isitgreenicon114x114</string>
 				<string>isitgreenicon57x57</string>

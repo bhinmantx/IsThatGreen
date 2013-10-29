@@ -127,8 +127,8 @@
          _shouldDisplayFeedback = false;
         [[self IsThisRedButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
         [[self GreenButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
-        [self TargetSizeSlider].minimumTrackTintColor = oldSliderMinColor;
-        [self TargetSizeSlider].maximumTrackTintColor = oldSliderMaxColor;
+    //    [self TargetSizeSlider].minimumTrackTintColor = oldSliderMinColor;
+      //  [self TargetSizeSlider].maximumTrackTintColor = oldSliderMaxColor;
     }
     else {
         ////We're activating the detector mode here
@@ -139,8 +139,8 @@
         oldSliderMaxColor =[self TargetSizeSlider].maximumTrackTintColor;
         
         [[self TargetSizeSlider] setValue:5.0];
-        [self TargetSizeSlider].minimumTrackTintColor = [UIColor lightGrayColor];
-        [self TargetSizeSlider].maximumTrackTintColor = [UIColor lightGrayColor];
+      //  [self TargetSizeSlider].minimumTrackTintColor = [UIColor lightGrayColor];
+      //  [self TargetSizeSlider].maximumTrackTintColor = [UIColor lightGrayColor];
        // [self TargetSizeSlider].enabled = false;
         [self GreenButton].enabled = false;
         [self IsThisRedButton].enabled = false;
