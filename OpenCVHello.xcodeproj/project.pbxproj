@@ -22,6 +22,8 @@
 		C69EB34318088A08007D4BF7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB34218088A07007D4BF7 /* ImageIO.framework */; };
 		C69EB34518088A13007D4BF7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB34418088A13007D4BF7 /* libz.dylib */; };
 		C69EB34718088AD7007D4BF7 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB34618088AD7007D4BF7 /* libc++.1.dylib */; };
+		C69FB540181F663600586A21 /* non-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = C69FB53F181F663600586A21 /* non-retina.png */; };
+		C69FB542181F663D00586A21 /* retina.png in Resources */ = {isa = PBXBuildFile; fileRef = C69FB541181F663D00586A21 /* retina.png */; };
 		C6A6742F18078CC900115A18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A6742E18078CC900115A18 /* UIKit.framework */; };
 		C6A6743118078CC900115A18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A6743018078CC900115A18 /* Foundation.framework */; };
 		C6A6743318078CC900115A18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A6743218078CC900115A18 /* CoreGraphics.framework */; };
@@ -70,6 +72,8 @@
 		C69EB34218088A07007D4BF7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		C69EB34418088A13007D4BF7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C69EB34618088AD7007D4BF7 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "usr/lib/libc++.1.dylib"; sourceTree = SDKROOT; };
+		C69FB53F181F663600586A21 /* non-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "non-retina.png"; sourceTree = "<group>"; };
+		C69FB541181F663D00586A21 /* retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina.png; sourceTree = "<group>"; };
 		C6A6742B18078CC900115A18 /* OpenCVHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A6742E18078CC900115A18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6A6743018078CC900115A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -217,6 +221,8 @@
 		C6A6C29D181F52D000BFC99F /* Icon Files */ = {
 			isa = PBXGroup;
 			children = (
+				C69FB541181F663D00586A21 /* retina.png */,
+				C69FB53F181F663600586A21 /* non-retina.png */,
 				C6A6C2BA181F538700BFC99F /* IsItGreenIcon114.png */,
 				C6A6C2B8181F533700BFC99F /* IsItGreenIcon57.png */,
 				C6A6C29F181F52E000BFC99F /* IsItGreenIcon22.png */,
@@ -307,6 +313,7 @@
 				C6153BE5181DD9FD004FCF66 /* detectoriconactive.png in Resources */,
 				C6A6C2BB181F538700BFC99F /* IsItGreenIcon114.png in Resources */,
 				C6A6744818078CC900115A18 /* MainStoryboard.storyboard in Resources */,
+				C69FB540181F663600586A21 /* non-retina.png in Resources */,
 				C6A6C2B9181F533700BFC99F /* IsItGreenIcon57.png in Resources */,
 				C6A6C2B3181F52E000BFC99F /* IsItGreenIcon76.png in Resources */,
 				C6A6C2AF181F52E000BFC99F /* IsItGreenIcon40.png in Resources */,
@@ -315,6 +322,7 @@
 				C6A6C2B7181F52E000BFC99F /* IsItGreenIcon1024.png in Resources */,
 				C6A6C2B1181F52E000BFC99F /* IsItGreenIcon50.png in Resources */,
 				C6A6C2B6181F52E000BFC99F /* IsItGreenIcon152.png in Resources */,
+				C69FB542181F663D00586A21 /* retina.png in Resources */,
 				C6A6C2B5181F52E000BFC99F /* IsItGreenIcon120.png in Resources */,
 				C60CA5FC1811CD3D000146AE /* YesGreenYes.png in Resources */,
 				C6A6C2B2181F52E000BFC99F /* IsItGreenIcon58.png in Resources */,
@@ -427,6 +435,7 @@
 				INFOPLIST_FILE = "OpenCVHello/OpenCVHello-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -445,6 +454,7 @@
 				INFOPLIST_FILE = "OpenCVHello/OpenCVHello-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
