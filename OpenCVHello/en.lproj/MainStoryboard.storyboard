@@ -68,22 +68,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRU-TU-0Aa">
-                                <rect key="frame" x="199" y="354" width="97" height="39"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ySe-E0-Rca">
+                                <rect key="frame" x="209" y="369" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="Oog-40-QYH"/>
-                                    <constraint firstAttribute="width" constant="97" id="ePH-F7-FcT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <size key="titleShadowOffset" width="0.0" height="2"/>
-                                <state key="normal" title="Continous Scan">
-                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
                                     <action selector="detectorButtonToggle:" destination="2" eventType="touchUpInside" id="b9E-w1-E4K"/>
                                 </connections>
@@ -102,18 +89,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="8FY-8D-HfY" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="1Bq-gV-Dac"/>
-                            <constraint firstItem="m5d-sD-YY4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="25" id="7NQ-BA-VeJ"/>
                             <constraint firstAttribute="trailing" secondItem="aAp-Se-Ueh" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="ILn-08-T2l"/>
-                            <constraint firstItem="CRU-TU-0Aa" firstAttribute="centerX" secondItem="aAp-Se-Ueh" secondAttribute="centerX" type="default" id="LHA-m2-R6u"/>
-                            <constraint firstAttribute="bottom" secondItem="aAp-Se-Ueh" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="P9j-sa-gjZ"/>
+                            <constraint firstItem="cdW-ik-B7Y" firstAttribute="centerX" secondItem="ySe-E0-Rca" secondAttribute="centerX" type="default" id="NfC-ot-vyc"/>
                             <constraint firstItem="aAp-Se-Ueh" firstAttribute="leading" secondItem="56d-iu-ofn" secondAttribute="trailing" constant="84" type="user" id="SEi-rA-cRx"/>
                             <constraint firstItem="56d-iu-ofn" firstAttribute="baseline" secondItem="aAp-Se-Ueh" secondAttribute="baseline" type="user" id="T0d-ai-rqS"/>
                             <constraint firstItem="FTF-zf-qCd" firstAttribute="centerX" secondItem="8FY-8D-HfY" secondAttribute="centerX" type="default" id="VUz-bK-Xj3"/>
+                            <constraint firstItem="ySe-E0-Rca" firstAttribute="centerX" secondItem="aAp-Se-Ueh" secondAttribute="centerX" type="default" id="aH4-a1-B7X"/>
+                            <constraint firstItem="8FY-8D-HfY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="7" id="ctm-m5-320"/>
+                            <constraint firstItem="aAp-Se-Ueh" firstAttribute="top" secondItem="ySe-E0-Rca" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dz7-nx-BpH"/>
+                            <constraint firstItem="m5d-sD-YY4" firstAttribute="leading" secondItem="56d-iu-ofn" secondAttribute="leading" type="default" id="ejs-dQ-D4v"/>
+                            <constraint firstAttribute="bottom" secondItem="cdW-ik-B7Y" secondAttribute="bottom" constant="91" id="hJn-di-pB0"/>
                             <constraint firstItem="8FY-8D-HfY" firstAttribute="top" secondItem="FTF-zf-qCd" secondAttribute="top" type="default" id="hL0-eO-sGF"/>
                             <constraint firstItem="56d-iu-ofn" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="hhQ-6Y-C9q"/>
-                            <constraint firstAttribute="bottom" secondItem="m5d-sD-YY4" secondAttribute="bottom" constant="78" id="huD-dE-2gU"/>
-                            <constraint firstItem="8FY-8D-HfY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="7" id="mDx-SU-PLa"/>
+                            <constraint firstAttribute="bottom" secondItem="56d-iu-ofn" secondAttribute="bottom" constant="13" id="l2a-JH-s9Q"/>
+                            <constraint firstAttribute="bottom" secondItem="m5d-sD-YY4" secondAttribute="bottom" constant="66" id="omg-an-Fdm"/>
+                            <constraint firstAttribute="trailing" secondItem="FTF-zf-qCd" secondAttribute="trailing" type="default" id="rXd-Uf-1HZ"/>
                             <constraint firstItem="FTF-zf-qCd" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="tkH-4X-HaF"/>
                         </constraints>
                     </view>
