@@ -12,6 +12,7 @@
 
 @synthesize colors = _colors;
 @synthesize colorCoords = _colorCoords;
+@synthesize kdtree = _kdtree;
 
 
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName{
@@ -21,8 +22,9 @@
         
         _colors =  [[NSArray alloc] initWithContentsOfFile:path];
         
-        
-         cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
+  
+          cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32F);
+//         cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
        // cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_8UC3);
         
      //  cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_32F);
@@ -56,25 +58,35 @@
         _colors = colorJson;
         
         
-        cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
+        //cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
         // cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_8UC3);
         
-        //  cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_32F);
+          cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32F);
         
         for(int i=0; i<_colors.count; i++){
             
             //We have to bring the vals in from the dictionary as ints that NSinteger will accept
-            NSInteger r = [[[_colors objectAtIndex:i] objectForKey:@"r"] intValue];
-            NSInteger g = [[[_colors objectAtIndex:i] objectForKey:@"g"] intValue];
-            NSInteger b = [[[_colors objectAtIndex:i] objectForKey:@"b"] intValue];
+            //NSInteger r = [[[_colors objectAtIndex:i] objectForKey:@"r"] intValue];
+            Float32 r = [[[_colors objectAtIndex:i] objectForKey:@"r"] floatValue];
+            Float32 g = [[[_colors objectAtIndex:i] objectForKey:@"g"] floatValue];
+            Float32 b = [[[_colors objectAtIndex:i] objectForKey:@"b"] floatValue];
             
             
-            colorCoords.at<int>(i,0) = r;
-            colorCoords.at<int>(i,1) = g;
-            colorCoords.at<int>(i,2) = b;
+            colorCoords.at<Float32>(i,0) = r;
+            colorCoords.at<Float32>(i,1) = g;
+            colorCoords.at<Float32>(i,2) = b;
         }
         _colorCoords = colorCoords.clone();
     }
+    
+    ///Create the index with x number of trees ////The following line was original functional
+    cv::flann::KMeansIndexParams indexParams(8);
+
+    //cv::flann::LinearIndexParams indexParams;
+
+    _kdtree = new cv::flann::Index(_colorCoords, indexParams);
+
+    
     
     NSLog(@"Colors Count %i", _colors.count);
     return self;
@@ -83,38 +95,54 @@
 
 
 
--(NSString*)matchFromMat:(cv::Mat)sampleMat :(NSString*)targColor{
-    
-    
+-(BOOL)matchColorFromMat:(cv::Mat)sampleMat :(NSString*)targColor{
+  
     ////Accept the mat
     ////Work through each pixel comparing it to our colors
     
     ////Use "Find Distance" to get the nearest color
     //Count up the "Votes"
     ///return
+  
+    cv::Mat img = sampleMat.clone();
+    int votesForWinningColor =0;
+    int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
+  //  NSLog(@"Rows %i Cols %i Thresh: %i", sampleMat.rows, sampleMat.cols, threshold);
     
-    
-    
-    
-    cv::Mat sample = sampleMat.clone();
-    int votesForWinningColor;
     ///we have two options for the voting, make it so that the votes need to add
     ///up to more than half of the tested pixels
     ///or we need to make sure the votes are more than any other color
     ///Do we want to count all the "wrong" colors as the same votes against?
     ////Or do we vote for each returned color?
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   NSNumber *B,*G,*R;
 
+
+    for(int row = 0; row < img.rows; ++row){
+        uchar* p = img.ptr(row);
+       
+        for(int col = 0; col < img.cols*3; ++col) {
+   
+            B = [NSNumber numberWithUnsignedChar:p[0]] ;
+            G = [NSNumber numberWithUnsignedChar:p[1]] ;
+            R = [NSNumber numberWithUnsignedChar:p[2]] ;
+            NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
+            
+            if ([[self findDistance:testArray] isEqual:targColor]) {
+                votesForWinningColor++;
+            }
+
+        }
+        
+    }
+//    NSLog(@"Vote count %i", votesForWinningColor);
     
-    return @"Winning Color";
+    if (votesForWinningColor>threshold) {
+        return true;
+    }
+    
+    //NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
+    else
+    return false;
 }
 
 ///TODO: Rename this function because it's more "find nearest"
@@ -146,12 +174,112 @@
         
     }
    
-        NSLog(@"%@, r %ld, g %ld b %ld",@"Sample", (long)r, (long)g, (long)b);
+  //      NSLog(@"%@, r %ld, g %ld b %ld",@"Sample", (long)r, (long)g, (long)b);
     
-    NSLog(@"%@ %@, r %@, g %@ b %@",[[_colors objectAtIndex:indexOfClosest] objectForKey:@"name"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"FriendlyName"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"r"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"g"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"b"]);
+//    NSLog(@"%@ %@, r %@, g %@ b %@",[[_colors objectAtIndex:indexOfClosest] objectForKey:@"name"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"FriendlyName"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"r"], [[_colors objectAtIndex:indexOfClosest] objectForKey:@"g"],[[_colors objectAtIndex:indexOfClosest] objectForKey:@"b"]);
     
     return [[_colors objectAtIndex:indexOfClosest] objectForKey:@"FriendlyName"];
 }
+
+
+
+-(NSString*)flannFinder:(cv::Mat)sampleMat :(NSString*)color{
+    
+    
+    int votes = 0;
+    int votesAgainst = 0;
+    
+    
+ //   NSLog(@"%@ %i rows %i", @"Color Coord columns", _colorCoords.cols, _colorCoords.rows);
+ //   NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
+    
+  //  NSLog(@"Pixels %i", (sampleMat.cols * sampleMat.rows));
+  
+    
+///Creating kdtree with 5 random trees
+  // cv::flann::KMeansIndexParams indexParams(5);
+
+    
+    
+    ///Create the index to search
+    ///According to this: http://code.opencv.org/issues/1947
+    ///I should directly use the flann index
+    // cvflann::Index kdtree(_colorCoords,indexParams);
+    
+    ///Switching to original
+   ///cv::flann::Index kdtree(_colorCoords,indexParams);
+    
+  //Float32 r,g,b;
+
+int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
+
+    ////First take the vals from the mat and make them floats
+    for(int row = 0; row < sampleMat.rows; row++)
+    {
+        
+        uchar* p = sampleMat.ptr(row);
+        
+        for(int col = 0; col < sampleMat.cols*4; col+=4 ) {
+        Float32 r,g,b;
+
+           
+            b = [[NSNumber numberWithUnsignedChar:p[col]] floatValue] ;
+            g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
+            r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
+         
+          
+
+        //  NSLog(@"Floats %f %f %f, %i, row %i, col %i", b, g, r, count, row, col);
+    ///Creation of a single query. I guess it's a vector?
+    
+    cv::vector<Float32> singleQuery;
+    cv::vector<int> index(1);
+    cv::vector<Float32> dist(1);
+
+
+    singleQuery.push_back(r);
+    singleQuery.push_back(g);
+    singleQuery.push_back(b);
+
+    
+
+     
+    [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
+    
+  //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
+    int i = index[0];
+            
+            if (   [[[_colors objectAtIndex:i] objectForKey:@"FriendlyName"] isEqual:color]) {
+                votes++;
+            }
+            else
+                votesAgainst++;
+   
+            
+        }
+    }
+    
+    
+  //  NSLog(@"Votes: %i votes against: %i ", votes, votesAgainst);
+    
+  /*
+    NSLog(@"Floats %f %f %f",  _colorCoords.at<Float32>(i,0),_colorCoords.at<Float32>(i,1),_colorCoords.at<Float32>(i,3));
+
+    NSLog(@"Possible Color name: %@ r %@ g %@ b %@",
+    
+        [[_colors objectAtIndex:i] objectForKey:@"name"],
+        [[_colors objectAtIndex:i] objectForKey:@"r"],
+        [[_colors objectAtIndex:i] objectForKey:@"g"],
+        [[_colors objectAtIndex:i] objectForKey:@"b"]);
+    */
+    
+    
+   if(votes>threshold)
+    return color;
+    else
+        return @"string";
+}
+
 
 
 

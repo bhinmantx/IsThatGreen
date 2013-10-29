@@ -13,16 +13,21 @@
 
 NSArray *_colors;
     cv::Mat _colorCoords;
+    
+    
+  cv::flann::Index *_kdtree;
 }
 
 @property (strong,nonatomic) NSArray * colors;
 @property (nonatomic) cv::Mat  colorCoords;
+@property (nonatomic) cv::flann::Index *kdtree;
 
 
 
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName;
--(NSString*)matchFromMat:(cv::Mat)sampleMat :(NSString*)targColor;
+-(BOOL)matchColorFromMat:(cv::Mat)sampleMat :(NSString*)targColor;
 -(NSString*)findDistance:(NSArray*)sample;
 -(id)initWithJSON:(NSArray*)colorJson;
+-(NSString*)flannFinder:(cv::Mat)sampleMat :(NSString*)color;
 
 @end

@@ -35,12 +35,13 @@
 
 @synthesize matcher = _matcher;
 @synthesize TargetSizeSlider;
+@synthesize targetColor = _targetColor;
 
 ///TODO make a "setup" method so we're not loading the flag and doing the matrix conversion
 ///more than once.
 
 
-////TODO Break image processing into its own class for code readability
+
 
 - (void)viewDidLoad
 {
@@ -53,9 +54,7 @@
     self.videoCamera.defaultFPS = 30;
     _shouldDisplayFeedback = false;
     
-    ///Load the flag image
-
-   // _wasGreenFlagImage = [UIImage imageNamed:@"YesGreenYes.png"];
+    _targetColor = (NSMutableString*)@"";
     
     ///We need to change the camera being used
     
@@ -65,7 +64,8 @@
 
    // _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
    
-    
+    _deleteMe = 0;
+    _isDetectorOn = false;
     ///Load up our color data
     [self processJSON];
     
@@ -79,6 +79,16 @@
     [self.videoCamera start];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self timerFire];
+    
+    [self.videoCamera start];
+
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -89,6 +99,7 @@
 {
     
     _buttonIsPressed = true;
+    _targetColor = (NSMutableString*)@"g";
 
 }
 
@@ -96,18 +107,56 @@
 {
     
     _redButtonIsPressed = true;
-    
+    _targetColor = (NSMutableString*)@"r";
 }
 
 - (IBAction)detectorButtonToggle:(id)sender {
+    
+    ////Hold on to the value of the old text
+    static UIColor *oldButtonTitleColor;
+    static UIColor *oldSliderMaxColor;
+        static UIColor *oldSliderMinColor;
+    
     if(_isDetectorOn){
-        //do anything else you want to do.
+     
+        ////Here we reset everything we did before
+        ///Enabling all the buttons etc
+        [self TargetSizeSlider].enabled = true;
+        [self GreenButton].enabled = true;
+        [self IsThisRedButton].enabled = true;
+         _shouldDisplayFeedback = false;
+        [[self IsThisRedButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
+        [[self GreenButton] setTitleColor:oldButtonTitleColor forState:UIControlStateNormal];
+    //    [self TargetSizeSlider].minimumTrackTintColor = oldSliderMinColor;
+      //  [self TargetSizeSlider].maximumTrackTintColor = oldSliderMaxColor;
     }
     else {
-        //do anything you want to do.
+        ////We're activating the detector mode here
+        ////we need to deactivate the other controls
+        ///But save their text color
+        oldButtonTitleColor = [self IsThisRedButton].currentTitleColor;
+        oldSliderMinColor = [self TargetSizeSlider].minimumTrackTintColor;
+        oldSliderMaxColor =[self TargetSizeSlider].maximumTrackTintColor;
+        
+        [[self TargetSizeSlider] setValue:5.0];
+      //  [self TargetSizeSlider].minimumTrackTintColor = [UIColor lightGrayColor];
+      //  [self TargetSizeSlider].maximumTrackTintColor = [UIColor lightGrayColor];
+       // [self TargetSizeSlider].enabled = false;
+        [self GreenButton].enabled = false;
+        [self IsThisRedButton].enabled = false;
+       ////We also need to change their colors
+        //[self TargetSizeSlider].backgroundColor = [UIColor lightGrayColor];
+        
+        [[self IsThisRedButton] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [[self GreenButton] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        
     }
+    _shouldDisplayFeedback = false;
     _isDetectorOn = !_isDetectorOn;
-    [self.DetectorButton setImage:[UIImage imageNamed:_isDetectorOn ? @"detectoriconactive.png" :@"detectoricon.png"] forState:UIControlStateNormal];}
+    _AcrossLabel.hidden = true;
+    [[self view] setNeedsDisplay];
+   // [self.DetectorButton setImage:[UIImage imageNamed:_isDetectorOn ? @"detectoriconactive.png" :@"detectoricon.png"] forState:UIControlStateNormal];
+}
 
 
 
@@ -116,16 +165,49 @@
 -(void)processImage:(cv::Mat &)image{
 
 
-    if(_buttonIsPressed){
-        cv::Mat tempMat(image);
+    ////If they've hit the green button or if it's in detector mode.
+   if(_buttonIsPressed || _isDetectorOn){
+    
+         
+         ///Originally just following line
+//        cv::Mat tempMat(image);
+         //Now we're resizing it here
+         NSInteger iRows = image.rows;
+         NSInteger iCols = image.cols;
+         
+         CvPoint center = cvPoint(iCols/2,iRows/2);
+         
+         NSInteger  targ = (int)[self TargetSizeSlider].value;
+         ///We take the center 20X20 of the image.
+         
+         ///We're expanding the target area, or making it smaller based on the slider.
+         CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+         cv::Mat tempMat(image, sampleRect);
         _buttonIsPressed = false;
-        _shouldDisplayFeedback = true;
+        _targetColor = (NSMutableString*)@"g";
         [self isThisGreen:tempMat:@"g"];
-        
+         _shouldDisplayFeedback = true;
+         _deleteMe = 0;
     }
     
+    
+    
     if(_redButtonIsPressed){
-        cv::Mat tempMat(image);
+        
+        ///Originally just following line
+        //        cv::Mat tempMat(image);
+        //Now we're resizing it here
+        NSInteger iRows = image.rows;
+        NSInteger iCols = image.cols;
+        
+        CvPoint center = cvPoint(iCols/2,iRows/2);
+        
+        NSInteger  targ = (int)[self TargetSizeSlider].value;
+        ///We take the center 20X20 of the image.
+        
+        ///We're expanding the target area, or making it smaller based on the slider.
+        CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+        cv::Mat tempMat(image, sampleRect);
         _redButtonIsPressed = false;
         _shouldDisplayFeedback = true;
         [self isThisGreen:tempMat:@"r"];
@@ -133,37 +215,9 @@
     }
 
 /////TODO: Change this into a switch statement.
-    
-    
-    image = [self drawBoxAroundTarget:image];
    
-
-    /* We're using the timer based feedback now.
-    if(_shouldDisplayFeedback){
-    
-        if (_wasItGreen) {
-            
-            ///Previously we were writing stuff, now we're displaying images.
-            cv::Rect roi(cv::Point(0,0), cv::Size(200,40));
-            cv::Mat temp = [self cvMatFromUIImage:_wasGreenFlagImage];
-            temp.copyTo(image(roi));
-        }
-        else if (_wasItRed){
-       
-            cv::putText(image, "It Was Red", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
-            
-        }
-    
-    
-    
-    else if(_shouldDisplayFeedback) {
-        cv::putText(image, "Not that color", cvPoint(50, 50), CV_FONT_HERSHEY_SIMPLEX, .5, cv::Scalar(0,0,0));
-      
-        }
-        
-    }
-    */
-    
+    image = [self drawBoxAroundTarget:image];
+  
 }
 
 
@@ -208,9 +262,7 @@
   
     CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
 
-  
-    
-    
+    ///Copying only the target area
     cv::Mat  crop(source, sampleRect);
 
     tImage = [self imageWithCVMat:(cv::Mat(source,sampleRect))];
@@ -223,22 +275,47 @@
 /**
  Is this green
  */
--(void)isThisGreen:(cv::Mat)source :(NSString*)color{
-    
-    NSInteger iRows = source.rows;
-    NSInteger iCols = source.cols;
-    
-    CvPoint center = cvPoint(iCols/2,iRows/2); 
-    
-    NSInteger  targ = (int)[self TargetSizeSlider].value;
-    ///We take the center 20X20 of the image.
 
-    ///We're expanding the target area, or making it smaller based on the slider.
-    CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
-    //old way
-    //CvRect sampleRect = cvRect(center.x - 10, center.y - 10, 20, 20);
+/////Going to try removing one of these mat copies by
+/////removing the rectangle code and putting it into the process image loop
+
+//-(void)isThisGreen:(cv::Mat)source :(NSString*)color{
+-(void)isThisGreen:(cv::Mat)img :(NSString*)color{
     
-    cv::Mat img(source, sampleRect);
+    NSString * badwaytodothis = [_matcher flannFinder:img :color];
+    
+    if([badwaytodothis isEqual: @"g"])
+    {
+       _wasItGreen = true;
+    }
+    else if ([badwaytodothis isEqual: @"r"])
+    {
+        _wasItRed = true;
+    }
+    else{
+       _wasItGreen = false;
+       _wasItRed = false;
+    }
+    _timerCount = 0;
+    
+    /////////The following is the new, slow as anything matching code
+    /*
+
+     _wasItGreen = false;
+     _wasItRed = false;
+     
+     
+     if ([_matcher matchColorFromMat:img :color])
+    {
+        _wasItGreen = true;
+        _timerCount = 0;
+    }
+     
+     */
+    /////////////THE CODE BELOW IS BROKEN
+    //////////////The following was the old match code. Trying new match code
+/*
+    
     int count =0;
     long b = 0;
     long g = 0;
@@ -247,7 +324,7 @@
       uchar* p = img.ptr(row);
         
         for(int col = 0; col < img.cols*3; ++col) {
-            //*p++;  //points to each pixel B,G,R value in turn assuming a CV_8UC3 color image
+            // *p++;  //points to each pixel B,G,R value in turn assuming a CV_8UC3 color image
             int B = [[NSNumber numberWithUnsignedChar:p[0]] integerValue] ;
             int G = [[NSNumber numberWithUnsignedChar:p[1]] integerValue] ;
             int R = [[NSNumber numberWithUnsignedChar:p[2]] integerValue] ;
@@ -262,9 +339,11 @@
 /////We're going to try using a timer so that when 3 seconds have passed, the image vanishes.
 
     _timerCount = 0;
- NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
+// NSLog(@"B:%li G:%li R:%li Number: %i", b,g,r,count);
+  
+
     [self greenTestHelper:b :g :r :count :color];
-    
+  */
 }
 
 
@@ -275,7 +354,7 @@
 /////Still doesn't use the NSString color for anything
     
 -(void)greenTestHelper:(long)b :(long)g :(long)r :(int)count :(NSString*)color{
-    NSLog(@"Firing Test Helper");
+ //   NSLog(@"Firing Test Helper");
 ////Get the average RGB values of each
     _wasItGreen = false;
     _wasItRed = false;
@@ -285,30 +364,40 @@
     G = [NSNumber numberWithInt:(g/count)];
     B = [NSNumber numberWithInt:(b/count)];
     
- NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
+ //NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
+    
+    
+    
+    R = [NSNumber numberWithFloat:(r/count)];
+    G = [NSNumber numberWithFloat:(g/count)];
+    B = [NSNumber numberWithFloat:(b/count)];
     
     NSArray * testArray = [NSArray arrayWithObjects:R,G,B, nil];
+
     
     if ([[_matcher findDistance:testArray]  isEqual: @"g"]){
 
-         NSLog(@"tested Green");
+        // NSLog(@"tested Green");
         _wasItGreen = true;
        
     }
     else if ([[_matcher findDistance:testArray]  isEqual: @"r"]){
 
-        NSLog(@"tested Red");
+       // NSLog(@"tested Red");
        
         _wasItRed = true;
     }
-    
+  
 
 }
+
+
+
+
 
 /**
  For conversion of foundation images to OpenCV mats
  */
-
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image
 {
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
@@ -379,34 +468,44 @@
 
     _timerCount += 1;
     
-    if(_timerCount > 30){
-        _timerCount = 0;
-    _shouldDisplayFeedback = false;
-    [self AcrossLabel].text = @"";
-    [self AcrossLabel].hidden = true;
-    }
+    if(!_isDetectorOn){
+        if(_timerCount > 60){
+            _timerCount = 0;
+            _shouldDisplayFeedback = false;
+            [self AcrossLabel].text = @"";
+            [self AcrossLabel].hidden = true;
+        }
     
-    if (_shouldDisplayFeedback) {
+        if (_shouldDisplayFeedback) {
        
-        if(_wasItRed)
-        [self AcrossLabel].text = @"RED!";
-        else if(_wasItGreen)
-        [self AcrossLabel].text = @"GREEN!";
-        else
-        [self AcrossLabel].text = @"It wasn't that color!";
+            if(_wasItRed)
+                [self AcrossLabel].text = @"RED!";
+            else if(_wasItGreen)
+                [self AcrossLabel].text = @"GREEN!";
+            else if (!_wasItGreen && [_targetColor isEqual:(NSMutableString*)@"g"])
+                [self AcrossLabel].text = @"It wasn't green!";
+            else if (!_wasItRed && [_targetColor isEqual:(NSMutableString*)@"r"])
+                [self AcrossLabel].text = @"It wasn't red!";
         
         [self AcrossLabel].hidden = false;
         
+        }
+    
     }
-    
-    
-   
+    else {
+        ///so the detector is on
+        [self AcrossLabel].hidden = false;
+        if(_wasItGreen)
+            [self AcrossLabel].text = @"GREEN!";
+        else
+            [self AcrossLabel].text = @"";
+    }
     [[self view] setNeedsDisplay];
     
 }
 
 -(void)timerFire{
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timerCallback) userInfo:nil repeats:YES];
 
     if([self respondsToSelector:@selector(timerCallback)]){
 

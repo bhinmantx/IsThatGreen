@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OpenCVAppDelegate : UIResponder <UIApplicationDelegate>
 
+@interface OpenCVAppDelegate : UIResponder <UIApplicationDelegate>{
+    //OpenCVViewController* _mainController;
+}
+
+//@property (strong, nonatomic) OpenCVViewController* mainController;
 @property (strong, nonatomic) UIWindow *window;
 
 @end
