@@ -79,12 +79,13 @@
         _colorCoords = colorCoords.clone();
     }
     
-    
+    ///Create the index with x number of trees ////The following line was original functional
     cv::flann::KMeansIndexParams indexParams(8);
-    
-   // cv::flann::Index kdtreeCon(_colorCoords,indexParams);
+
+    //cv::flann::LinearIndexParams indexParams;
+
     _kdtree = new cv::flann::Index(_colorCoords, indexParams);
-//    _kdtree = kdtreeCon;
+
     
     
     NSLog(@"Colors Count %i", _colors.count);

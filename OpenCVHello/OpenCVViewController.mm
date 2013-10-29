@@ -77,6 +77,16 @@
     [self.videoCamera start];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self timerFire];
+    
+    [self.videoCamera start];
+
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -128,7 +138,7 @@
         [[self TargetSizeSlider] setValue:5.0];
         [self TargetSizeSlider].minimumTrackTintColor = [UIColor lightGrayColor];
         [self TargetSizeSlider].maximumTrackTintColor = [UIColor lightGrayColor];
-        [self TargetSizeSlider].enabled = false;
+       // [self TargetSizeSlider].enabled = false;
         [self GreenButton].enabled = false;
         [self IsThisRedButton].enabled = false;
        ////We also need to change their colors
