@@ -9,23 +9,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>IsItGreenIcon29</string>
-				<string>IsItGreenIcon80</string>
-				<string>IsItGreenIcon58</string>
-				<string>IsItGreenIcon120</string>
-				<string>IsItGreenIcon114</string>
-				<string>IsItGreenIcon57</string>
-				<string>isitgreenicon120x120</string>
-				<string>isitgreenicon114x114</string>
-				<string>isitgreenicon57x57</string>
-			</array>
-		</dict>
-	</dict>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>com.gravitywellinteractive.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -42,29 +28,6 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchImages</key>
-	<array>
-		<dict>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-			<key>UILaunchImageName</key>
-			<string>retina</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Portrait</string>
-			<key>UILaunchImageSize</key>
-			<string>{320, 568}</string>
-		</dict>
-		<dict>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-			<key>UILaunchImageName</key>
-			<string>retina</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Portrait</string>
-			<key>UILaunchImageSize</key>
-			<string>{320, 480}</string>
-		</dict>
-	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -74,8 +37,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>
