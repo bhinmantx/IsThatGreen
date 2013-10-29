@@ -210,7 +210,14 @@
         cv::Mat tempMat(image, sampleRect);
         _redButtonIsPressed = false;
         _shouldDisplayFeedback = true;
-        [self isThisGreen:tempMat:@"r"];
+        
+       
+        ///Previously this did this:
+ //       [self isThisGreen:tempMat:@"r"];
+        ///now we're trying the experimental image swap
+        UIImageView *thumb = (UIImageView*)[self.view  viewWithTag:101];
+        
+        [_matcher ColorReplacer:tempMat :@"r" :thumb];
         
     }
 

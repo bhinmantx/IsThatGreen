@@ -139,8 +139,6 @@
     if (votesForWinningColor>threshold) {
         return true;
     }
-    
-    //NSLog(@"Inside Green Test Helper: B:%@ G:%@ R:%@ Number: %i", B,G,R,count);
     else
     return false;
 }
@@ -227,9 +225,7 @@ int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
             g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
             r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
          
-          
-
-        //  NSLog(@"Floats %f %f %f, %i, row %i, col %i", b, g, r, count, row, col);
+//         NSLog(@"Floats %f %f %f, row %i, col %i", b, g, r, row, col);
     ///Creation of a single query. I guess it's a vector?
     
     cv::vector<Float32> singleQuery;
@@ -240,10 +236,7 @@ int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
     singleQuery.push_back(r);
     singleQuery.push_back(g);
     singleQuery.push_back(b);
-
     
-
-     
     [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
     
   //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
@@ -258,28 +251,78 @@ int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
             
         }
     }
-    
-    
-  //  NSLog(@"Votes: %i votes against: %i ", votes, votesAgainst);
-    
-  /*
-    NSLog(@"Floats %f %f %f",  _colorCoords.at<Float32>(i,0),_colorCoords.at<Float32>(i,1),_colorCoords.at<Float32>(i,3));
 
-    NSLog(@"Possible Color name: %@ r %@ g %@ b %@",
-    
-        [[_colors objectAtIndex:i] objectForKey:@"name"],
-        [[_colors objectAtIndex:i] objectForKey:@"r"],
-        [[_colors objectAtIndex:i] objectForKey:@"g"],
-        [[_colors objectAtIndex:i] objectForKey:@"b"]);
-    */
-    
-    
-   if(votes>threshold)
+if(votes>threshold)
     return color;
     else
         return @"string";
 }
 
+
+/**
+ Take mat and color, find any instance of the color and then change it to some other color
+*/
+-(void)ColorReplacer:(cv::Mat*)sampleMat :(NSString*)color :(UIImageView*)targetImage{
+
+    
+////First copy the mat
+    /////create pointers to the various arguments
+    ////Show "in progress" dialog
+    ///
+    ///Run a check on every pixel, find what's green, change it on the mat. Copy it to a UIImage.
+    ////send it to target image.
+    ////stop the in process feedback
+    
+   // cv::Mat finalMat = sampleMat.clone();
+     cv::Mat* finalMat = sampleMat;
+    
+    for(int row = 0; row < sampleMat->rows; row++)
+    {
+        
+        uchar* p = sampleMat->ptr(row);
+        uchar* fp = finalMat->ptr(row);
+        for(int col = 0; col < sampleMat->cols*4; col+=4 ) {
+            Float32 r,g,b;
+            
+            
+            b = [[NSNumber numberWithUnsignedChar:p[col]] floatValue] ;
+            g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
+            r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
+            
+            //         NSLog(@"Floats %f %f %f, row %i, col %i", b, g, r, row, col);
+            ///Creation of a single query. I guess it's a vector?
+            
+            cv::vector<Float32> singleQuery;
+            cv::vector<int> index(1);
+            cv::vector<Float32> dist(1);
+            
+            
+            singleQuery.push_back(r);
+            singleQuery.push_back(g);
+            singleQuery.push_back(b);
+            
+            [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
+            
+            //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
+            int i = index[0];
+            
+            if (   [[[_colors objectAtIndex:i] objectForKey:@"FriendlyName"] isEqual:color]) {
+                //////Change the color at this location
+                //NSLog(@"Change color");
+                fp[col] = 0;
+                fp[col+1] = 0;
+                fp[col+2] = 255;
+            }
+            else{
+                ////change the color here to grayscale
+                //NSLog(@"Change to grayscale");
+                fp[col] = 0;
+                fp[col+1] = 0;
+                fp[col+2] = 0;
+            }
+        }
+    }
+}
 
 
 

@@ -29,5 +29,6 @@ NSArray *_colors;
 -(NSString*)findDistance:(NSArray*)sample;
 -(id)initWithJSON:(NSArray*)colorJson;
 -(NSString*)flannFinder:(cv::Mat)sampleMat :(NSString*)color;
+-(void)ColorReplacer:(cv::Mat*)sampleMat :(NSString*)color :(UIImageView*)targetImage;
 
 @end

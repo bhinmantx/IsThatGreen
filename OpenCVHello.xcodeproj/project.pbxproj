@@ -17,6 +17,7 @@
 		C60073F4181FAABC00F46AD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60073F3181FAABC00F46AD0 /* Images.xcassets */; };
 		C6153BE3181C9338004FCF66 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6153BE2181C9338004FCF66 /* opencv2.framework */; };
 		C6648A7B1815A25200CEDF57 /* ColorMatcher.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6648A781815A25200CEDF57 /* ColorMatcher.mm */; };
+		C67882D81820628300B5601C /* testimage152.png in Resources */ = {isa = PBXBuildFile; fileRef = C67882D71820628300B5601C /* testimage152.png */; };
 		C69EB335180888C1007D4BF7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB334180888C1007D4BF7 /* Accelerate.framework */; };
 		C69EB337180888CB007D4BF7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */; };
 		C69EB339180888D3007D4BF7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EB338180888D3007D4BF7 /* AVFoundation.framework */; };
@@ -69,6 +70,7 @@
 		C626F14F1815A330003D3F00 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		C6648A781815A25200CEDF57 /* ColorMatcher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorMatcher.mm; sourceTree = "<group>"; };
 		C6648A791815A25200CEDF57 /* ColorMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatcher.h; sourceTree = "<group>"; };
+		C67882D71820628300B5601C /* testimage152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testimage152.png; sourceTree = "<group>"; };
 		C69EB334180888C1007D4BF7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		C69EB336180888CB007D4BF7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C69EB338180888D3007D4BF7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -210,6 +212,7 @@
 		C6A6743518078CC900115A18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C67882D71820628300B5601C /* testimage152.png */,
 				C642444D181F9C290020174E /* Load Screens */,
 				C6A6C29D181F52D000BFC99F /* Icon Files */,
 				C6A6C29A181F523F00BFC99F /* colordata.js */,
@@ -332,6 +335,7 @@
 				C60073EC181FA91B00F46AD0 /* Default~iphone.png in Resources */,
 				C60073F4181FAABC00F46AD0 /* Images.xcassets in Resources */,
 				C60073F2181FAA1C00F46AD0 /* iphone3.5retinascreenshot.png in Resources */,
+				C67882D81820628300B5601C /* testimage152.png in Resources */,
 				C60073EB181FA91B00F46AD0 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
