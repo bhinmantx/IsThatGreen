@@ -39,6 +39,8 @@
     int _timerCount;
     NSTimer *_timer;
     NSArray *_json;
+    
+    NSMutableString *_targetColor;
 }
 
 
@@ -63,13 +65,15 @@
 @property (strong, nonatomic) IBOutlet UIImageView *CameraView;
 @property (strong, nonatomic) IBOutlet UIButton *GreenButton;
 
-@property (strong, nonatomic) IBOutlet UIButton *DetectorButton;
+
 @property (strong, nonatomic) IBOutlet UISwitch *ScanMode;
 
 @property (strong, nonatomic) IBOutlet UIButton *IsThisRedButton;
 @property (strong, nonatomic) NSArray *json;
 
 @property (strong,nonatomic) NSTimer * timer;
+
+@property (strong, atomic) NSMutableString *targetColor;
 
 
 @property BOOL redButtonIsPressed;

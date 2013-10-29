@@ -35,6 +35,7 @@
 
 @synthesize matcher = _matcher;
 @synthesize TargetSizeSlider;
+@synthesize targetColor = _targetColor;
 
 ///TODO make a "setup" method so we're not loading the flag and doing the matrix conversion
 ///more than once.
@@ -53,6 +54,7 @@
     self.videoCamera.defaultFPS = 30;
     _shouldDisplayFeedback = false;
     
+    _targetColor = (NSMutableString*)@"";
     
     ///We need to change the camera being used
     
@@ -97,6 +99,7 @@
 {
     
     _buttonIsPressed = true;
+    _targetColor = (NSMutableString*)@"g";
 
 }
 
@@ -104,7 +107,7 @@
 {
     
     _redButtonIsPressed = true;
-    
+    _targetColor = (NSMutableString*)@"r";
 }
 
 - (IBAction)detectorButtonToggle:(id)sender {
@@ -181,7 +184,7 @@
          CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
          cv::Mat tempMat(image, sampleRect);
         _buttonIsPressed = false;
-       
+        _targetColor = (NSMutableString*)@"g";
         [self isThisGreen:tempMat:@"g"];
          _shouldDisplayFeedback = true;
          _deleteMe = 0;
@@ -479,8 +482,10 @@
                 [self AcrossLabel].text = @"RED!";
             else if(_wasItGreen)
                 [self AcrossLabel].text = @"GREEN!";
-            else
-                [self AcrossLabel].text = @"It wasn't that color!";
+            else if (!_wasItGreen && [_targetColor isEqual:(NSMutableString*)@"g"])
+                [self AcrossLabel].text = @"It wasn't green!";
+            else if (!_wasItRed && [_targetColor isEqual:(NSMutableString*)@"r"])
+                [self AcrossLabel].text = @"It wasn't red!";
         
         [self AcrossLabel].hidden = false;
         
