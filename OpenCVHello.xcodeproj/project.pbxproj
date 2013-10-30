@@ -55,6 +55,7 @@
 		C6A6C2BB181F538700BFC99F /* IsItGreenIcon114.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A6C2BA181F538700BFC99F /* IsItGreenIcon114.png */; };
 		C6F85B3218197A88005422F2 /* frameTargetIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = C6F85B3018197A88005422F2 /* frameTargetIconLarge.png */; };
 		C6F85B3418197C0E005422F2 /* frameTargetIconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = C6F85B3318197C0E005422F2 /* frameTargetIconsmall.png */; };
+		C6F9831F18209BF00068CC6C /* colordata2.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F9831D18209BDD0068CC6C /* colordata2.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		C6A6C2BA181F538700BFC99F /* IsItGreenIcon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IsItGreenIcon114.png; sourceTree = "<group>"; };
 		C6F85B3018197A88005422F2 /* frameTargetIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frameTargetIconLarge.png; sourceTree = "<group>"; };
 		C6F85B3318197C0E005422F2 /* frameTargetIconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frameTargetIconsmall.png; sourceTree = "<group>"; };
+		C6F9831D18209BDD0068CC6C /* colordata2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = colordata2.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		C6A6743518078CC900115A18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6F9831D18209BDD0068CC6C /* colordata2.js */,
 				C67882D71820628300B5601C /* testimage152.png */,
 				C642444D181F9C290020174E /* Load Screens */,
 				C6A6C29D181F52D000BFC99F /* Icon Files */,
@@ -307,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F9831F18209BF00068CC6C /* colordata2.js in Resources */,
 				C6A6C29C181F529500BFC99F /* colordata.js in Resources */,
 				C6A6C2AE181F52E000BFC99F /* IsItGreenIcon29.png in Resources */,
 				C6A6743918078CC900115A18 /* InfoPlist.strings in Resources */,

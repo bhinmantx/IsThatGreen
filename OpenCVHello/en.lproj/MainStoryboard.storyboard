@@ -56,7 +56,7 @@
                                     <action selector="redButtonPressed:" destination="2" eventType="touchUpInside" id="fRX-9w-KAt"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="5" maxValue="152" minimumValueImage="frameTargetIconsmall.png" maximumValueImage="frameTargetIconLarge.png" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-sD-YY4">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="5" maxValue="125" minimumValueImage="frameTargetIconsmall.png" maximumValueImage="frameTargetIconLarge.png" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-sD-YY4">
                                 <rect key="frame" x="18" y="372" width="142" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
