@@ -30,12 +30,13 @@
 @synthesize redButtonIsPressed = _redButtonIsPressed;
 @synthesize wasItGreen = _wasItGreen;
 @synthesize wasItRed = _wasItRed;
-
+@synthesize ColorReplaced = _ColorReplaced;
 
 
 @synthesize matcher = _matcher;
 @synthesize TargetSizeSlider;
 @synthesize targetColor = _targetColor;
+@synthesize thumb = _thumb;
 
 ///TODO make a "setup" method so we're not loading the flag and doing the matrix conversion
 ///more than once.
@@ -66,6 +67,8 @@
    
     _deleteMe = 0;
     _isDetectorOn = false;
+    _thumb = (UIImageView*)[self.view  viewWithTag:101];
+    _thumb.hidden = true;
     ///Load up our color data
     [self processJSON];
     
@@ -186,6 +189,7 @@
         _buttonIsPressed = false;
         _targetColor = (NSMutableString*)@"g";
         [self isThisGreen:tempMat:@"g"];
+       
          _shouldDisplayFeedback = true;
          _deleteMe = 0;
     }
@@ -193,7 +197,7 @@
     
     
     if(_redButtonIsPressed){
-        
+        _shouldDisplayFeedback = false;
         ///Originally just following line
         //        cv::Mat tempMat(image);
         //Now we're resizing it here
@@ -204,20 +208,35 @@
         
         NSInteger  targ = (int)[self TargetSizeSlider].value;
         ///We take the center 20X20 of the image.
-        
         ///We're expanding the target area, or making it smaller based on the slider.
         CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+        float x = center.x - targ;
+        float y = center.y - targ;
+        float width = (targ*2);
+        float height = (targ*4);
+        
+        _thumb.frame = CGRectMake(x, y, width, height);
         cv::Mat tempMat(image, sampleRect);
         _redButtonIsPressed = false;
-        _shouldDisplayFeedback = true;
-        
+        [self IsThisRedButton].enabled = false;
+        [[self view] setNeedsDisplay];
        
         ///Previously this did this:
  //       [self isThisGreen:tempMat:@"r"];
         ///now we're trying the experimental image swap
-        UIImageView *thumb = (UIImageView*)[self.view  viewWithTag:101];
+       // _thumb.hidden = true;
+        tempMat = [_matcher ColorReplacer:tempMat :@"r" :_thumb];
         
-        [_matcher ColorReplacer:tempMat :@"r" :thumb];
+        _thumb.image = [self imageWithCVMat:tempMat];
+        _thumb.hidden = false;
+        [self AcrossLabel].text = @"Processed!";
+        [self IsThisRedButton].enabled = true;
+        [[self.view  viewWithTag:101] setNeedsDisplay];
+        _timerCount = 0;
+        _ColorReplaced = true;
+        _shouldDisplayFeedback = true;
+        
+
         
     }
 
@@ -476,15 +495,17 @@
     _timerCount += 1;
     
     if(!_isDetectorOn){
-        if(_timerCount > 60){
+        if(_timerCount > 120){
             _timerCount = 0;
             _shouldDisplayFeedback = false;
             [self AcrossLabel].text = @"";
             [self AcrossLabel].hidden = true;
+            _thumb.hidden = true;
+            _ColorReplaced = false;
         }
     
         if (_shouldDisplayFeedback) {
-       
+            
             if(_wasItRed)
                 [self AcrossLabel].text = @"RED!";
             else if(_wasItGreen)
@@ -493,6 +514,13 @@
                 [self AcrossLabel].text = @"It wasn't green!";
             else if (!_wasItRed && [_targetColor isEqual:(NSMutableString*)@"r"])
                 [self AcrossLabel].text = @"It wasn't red!";
+            else if (_ColorReplaced){
+                _timerCount = 0;
+                [self AcrossLabel].text = @"Processed";
+                _IsThisRedButton.enabled = false;
+                _thumb.hidden = false;
+                [[self.view  viewWithTag:101] setNeedsDisplay];
+            }
         
         [self AcrossLabel].hidden = false;
         
@@ -506,6 +534,16 @@
             [self AcrossLabel].text = @"GREEN!";
         else
             [self AcrossLabel].text = @"";
+    }
+   // [[self.view  viewWithTag:101] setNeedsDisplay];
+    if(_ColorReplaced){
+        _thumb.hidden = false;
+    [self AcrossLabel].text = @"Processed!";
+        _IsThisRedButton.enabled = true;
+    }
+    else{
+        _thumb.hidden = true;
+        _IsThisRedButton.enabled = true;
     }
     [[self view] setNeedsDisplay];
     

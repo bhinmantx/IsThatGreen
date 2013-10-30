@@ -13,6 +13,7 @@
 @synthesize colors = _colors;
 @synthesize colorCoords = _colorCoords;
 @synthesize kdtree = _kdtree;
+@synthesize replacementColors = _replacementColors;
 
 
 -(id)initWithColorFileName:(NSString*)colorCoordsFileName{
@@ -262,7 +263,7 @@ if(votes>threshold)
 /**
  Take mat and color, find any instance of the color and then change it to some other color
 */
--(void)ColorReplacer:(cv::Mat*)sampleMat :(NSString*)color :(UIImageView*)targetImage{
+-(cv::Mat)ColorReplacer:(cv::Mat)sampleMat :(NSString*)color :(UIImageView*)targetImage{
 
     
 ////First copy the mat
@@ -274,14 +275,15 @@ if(votes>threshold)
     ////stop the in process feedback
     
    // cv::Mat finalMat = sampleMat.clone();
-     cv::Mat* finalMat = sampleMat;
+    _replacementColors = sampleMat.clone();
+//    cv::Mat finalMat = sampleMat.clone();
     
-    for(int row = 0; row < sampleMat->rows; row++)
+    for(int row = 0; row < sampleMat.rows; row++)
     {
         
-        uchar* p = sampleMat->ptr(row);
-        uchar* fp = finalMat->ptr(row);
-        for(int col = 0; col < sampleMat->cols*4; col+=4 ) {
+        uchar* p = sampleMat.ptr(row);
+        uchar* fp = _replacementColors.ptr(row);
+        for(int col = 0; col < sampleMat.cols*4; col+=4 ) {
             Float32 r,g,b;
             
             
@@ -322,6 +324,8 @@ if(votes>threshold)
             }
         }
     }
+    NSLog(@"Complete");
+    return _replacementColors;
 }
 
 

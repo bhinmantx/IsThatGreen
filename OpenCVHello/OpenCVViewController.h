@@ -53,11 +53,14 @@
     BOOL _wasItRed;
  
     BOOL _isDetectorOn;
+    BOOL _ColorReplaced;
     
     ColorMatcher *_matcher;
     int _timerCount;
     NSTimer *_timer;
     NSArray *_json;
+    
+    UIImageView *_thumb;
     
     NSMutableString *_targetColor;
 }
@@ -91,6 +94,7 @@
 @property (strong, nonatomic) NSArray *json;
 
 @property (strong,nonatomic) NSTimer * timer;
+@property (atomic) UIImageView * thumb; 
 
 @property (strong, atomic) NSMutableString *targetColor;
 
@@ -99,7 +103,7 @@
 @property BOOL buttonIsPressed;
 @property BOOL wasItGreen;
 @property BOOL wasItRed;
-
+@property BOOL ColorReplaced; 
 
 
 
