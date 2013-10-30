@@ -311,13 +311,14 @@ if(votes>threshold)
             if (   [[[_colors objectAtIndex:i] objectForKey:@"FriendlyName"] isEqual:color]) {
                 //////Change the color at this location
                 //NSLog(@"Change color");
-                fp[col] = 0;
+                fp[col] = 255;
                 fp[col+1] = 0;
-                fp[col+2] = 255;
+                fp[col+2] = 0;
             }
             else{
                 ////change the color here to grayscale
                 //NSLog(@"Change to grayscale");
+                
                 fp[col] = 0;
                 fp[col+1] = 0;
                 fp[col+2] = 0;
