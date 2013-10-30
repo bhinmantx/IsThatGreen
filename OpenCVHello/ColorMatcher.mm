@@ -36,6 +36,7 @@
             NSInteger r = [[[_colors objectAtIndex:i] objectForKey:@"red"] intValue];
             NSInteger g = [[[_colors objectAtIndex:i] objectForKey:@"green"] intValue];
             NSInteger b = [[[_colors objectAtIndex:i] objectForKey:@"blue"] intValue];
+
        
       
             colorCoords.at<int>(i,0) = r;
@@ -62,7 +63,7 @@
         //cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32S);
         // cv::Mat sampleMat = cv::Mat(_colors.count,3,CV_8UC3);
         
-          cv::Mat colorCoords = cv::Mat(_colors.count,3,CV_32F);
+          cv::Mat colorCoords = cv::Mat(_colors.count,4,CV_32F);
         
         for(int i=0; i<_colors.count; i++){
             
@@ -71,17 +72,19 @@
             Float32 r = [[[_colors objectAtIndex:i] objectForKey:@"r"] floatValue];
             Float32 g = [[[_colors objectAtIndex:i] objectForKey:@"g"] floatValue];
             Float32 b = [[[_colors objectAtIndex:i] objectForKey:@"b"] floatValue];
+            Float32 alpha = 255.0;
             
             
             colorCoords.at<Float32>(i,0) = r;
             colorCoords.at<Float32>(i,1) = g;
             colorCoords.at<Float32>(i,2) = b;
+            colorCoords.at<Float32>(i,3) = alpha;
         }
         _colorCoords = colorCoords.clone();
     }
     
     ///Create the index with x number of trees ////The following line was original functional
-    cv::flann::KMeansIndexParams indexParams(8);
+    cv::flann::KMeansIndexParams indexParams(4);
 
     //cv::flann::LinearIndexParams indexParams;
 
@@ -187,28 +190,6 @@
     
     int votes = 0;
     int votesAgainst = 0;
-    
-    
- //   NSLog(@"%@ %i rows %i", @"Color Coord columns", _colorCoords.cols, _colorCoords.rows);
- //   NSLog(@"%@ %i rows %i", @"Sample Mat columns", sampleMat.cols, sampleMat.rows);
-    
-  //  NSLog(@"Pixels %i", (sampleMat.cols * sampleMat.rows));
-  
-    
-///Creating kdtree with 5 random trees
-  // cv::flann::KMeansIndexParams indexParams(5);
-
-    
-    
-    ///Create the index to search
-    ///According to this: http://code.opencv.org/issues/1947
-    ///I should directly use the flann index
-    // cvflann::Index kdtree(_colorCoords,indexParams);
-    
-    ///Switching to original
-   ///cv::flann::Index kdtree(_colorCoords,indexParams);
-    
-  //Float32 r,g,b;
 
 int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
 
@@ -225,7 +206,8 @@ int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
             b = [[NSNumber numberWithUnsignedChar:p[col]] floatValue] ;
             g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
             r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
-         
+            
+            
 //         NSLog(@"Floats %f %f %f, row %i, col %i", b, g, r, row, col);
     ///Creation of a single query. I guess it's a vector?
     
@@ -238,7 +220,7 @@ int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
     singleQuery.push_back(g);
     singleQuery.push_back(b);
     
-    [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
+    [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(8));
     
   //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
     int i = index[0];
@@ -284,15 +266,17 @@ if(votes>threshold)
         uchar* p = sampleMat.ptr(row);
         uchar* fp = _replacementColors.ptr(row);
         for(int col = 0; col < sampleMat.cols*4; col+=4 ) {
-            Float32 r,g,b;
-            
+            Float32 r,g,b, alpha;
+
             
             b = [[NSNumber numberWithUnsignedChar:p[col]] floatValue] ;
             g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
             r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
+            alpha =[[NSNumber numberWithUnsignedChar:p[col+3]] floatValue] ;
             
             //         NSLog(@"Floats %f %f %f, row %i, col %i", b, g, r, row, col);
             ///Creation of a single query. I guess it's a vector?
+            float average = (r+g+b)/3.0;
             
             cv::vector<Float32> singleQuery;
             cv::vector<int> index(1);
@@ -303,7 +287,7 @@ if(votes>threshold)
             singleQuery.push_back(g);
             singleQuery.push_back(b);
             
-            [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(24));
+            [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(8));
             
             //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
             int i = index[0];
@@ -311,17 +295,24 @@ if(votes>threshold)
             if (   [[[_colors objectAtIndex:i] objectForKey:@"FriendlyName"] isEqual:color]) {
                 //////Change the color at this location
                 //NSLog(@"Change color");
+                if ([color isEqual:(@"g")] ){
+                    fp[col] =0;
+                    fp[col+1] =255;
+                    fp[col+2]=0;
+                }
+                else{
                 fp[col] = 255;
                 fp[col+1] = 0;
                 fp[col+2] = 0;
+                }
             }
             else{
                 ////change the color here to grayscale
                 //NSLog(@"Change to grayscale");
                 
-                fp[col] = 0;
-                fp[col+1] = 0;
-                fp[col+2] = 0;
+                fp[col] = average;
+                fp[col+1] = average;
+                fp[col+2] = average;
             }
         }
     }

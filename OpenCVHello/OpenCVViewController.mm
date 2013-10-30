@@ -167,10 +167,32 @@
 
 -(void)processImage:(cv::Mat &)image{
 
-
+    if(_isDetectorOn){
+        
+        ///Originally just following line
+        //        cv::Mat tempMat(image);
+        //Now we're resizing it here
+        NSInteger iRows = image.rows;
+        NSInteger iCols = image.cols;
+        
+        CvPoint center = cvPoint(iCols/2,iRows/2);
+        
+        NSInteger  targ = (int)[self TargetSizeSlider].value;
+        ///We take the center 20X20 of the image.
+        
+        ///We're expanding the target area, or making it smaller based on the slider.
+        CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+                 cv::Mat tempMat(image, sampleRect);
+         _buttonIsPressed = false;
+         _targetColor = (NSMutableString*)@"g";
+         [self isThisGreen:tempMat:@"g"];
+         
+         _shouldDisplayFeedback = true;
+         _deleteMe = 0;
+      }
     ////If they've hit the green button or if it's in detector mode.
-   if(_buttonIsPressed || _isDetectorOn){
-    
+  // if(_buttonIsPressed || _isDetectorOn){
+     if(_buttonIsPressed){
          
          ///Originally just following line
 //        cv::Mat tempMat(image);
@@ -185,6 +207,38 @@
          
          ///We're expanding the target area, or making it smaller based on the slider.
          CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
+       
+       
+       float x = center.x - targ;
+       float y = center.y - targ;
+       float width = (targ*2);
+       float height = (targ*4);
+       
+       _thumb.frame = CGRectMake(x, y, width, height);
+       cv::Mat tempMat(image, sampleRect);
+         
+       _buttonIsPressed = false;
+      // [self GreenButton].enabled = false;
+       [[self view] setNeedsDisplay];
+       
+       ///Previously this did this:
+       //       [self isThisGreen:tempMat:@"r"];
+       ///now we're trying the experimental image swap
+       // _thumb.hidden = true;
+       tempMat = [_matcher ColorReplacer:tempMat :@"g" :_thumb];
+       
+       _thumb.image = [self imageWithCVMat:tempMat];
+       _thumb.hidden = false;
+       [self AcrossLabel].text = @"Processed!";
+       [self IsThisRedButton].enabled = true;
+       [[self.view  viewWithTag:101] setNeedsDisplay];
+       _timerCount = 0;
+       _ColorReplaced = true;
+       _shouldDisplayFeedback = true;
+       
+       
+       ///Previous is it green code
+        /*
          cv::Mat tempMat(image, sampleRect);
         _buttonIsPressed = false;
         _targetColor = (NSMutableString*)@"g";
@@ -192,6 +246,7 @@
        
          _shouldDisplayFeedback = true;
          _deleteMe = 0;
+         */
     }
     
     
