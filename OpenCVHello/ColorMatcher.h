@@ -30,5 +30,6 @@ NSArray *_colors;
 -(id)initWithJSON:(NSArray*)colorJson;
 -(NSString*)flannFinder:(cv::Mat)sampleMat :(NSString*)color;
 -(cv::Mat)ColorReplacer:(cv::Mat)sampleMat :(NSString*)color :(UIImageView*)targetImage;
+-(cv::Mat)ColorReplacer2:(cv::Mat)sampleMat :(NSString*)color :(UIImageView*)targetImage;
 
 @end

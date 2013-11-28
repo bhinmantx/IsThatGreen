@@ -286,6 +286,7 @@ if(votes>threshold)
             singleQuery.push_back(r);
             singleQuery.push_back(g);
             singleQuery.push_back(b);
+            //singleQuery.push_back(alpha);
             
             [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(8));
             
@@ -320,7 +321,97 @@ if(votes>threshold)
     return _replacementColors;
 }
 
-
+-(cv::Mat)ColorReplacer2:(cv::Mat)sampleMat :(NSString*)color :(UIImageView*)targetImage{
+    
+    
+    ////First copy the mat
+    /////create pointers to the various arguments
+    ////Show "in progress" dialog
+    ///
+    ///Run a check on every pixel, find what's green, change it on the mat. Copy it to a UIImage.
+    ////send it to target image.
+    ////stop the in process feedback
+    
+    // cv::Mat finalMat = sampleMat.clone();
+    _replacementColors = sampleMat.clone();
+    //    cv::Mat finalMat = sampleMat.clone();
+    long capacity = (_replacementColors.rows * _replacementColors.cols);
+    cv::vector<Float32> fullQuery;
+    cv::vector<int> index(capacity);
+    cv::vector<Float32> dist(capacity);
+    
+    for(int row = 0; row < sampleMat.rows; row++)
+    {
+        
+        uchar* p = sampleMat.ptr(row);
+       // uchar* fp = _replacementColors.ptr(row);
+        for(int col = 0; col < sampleMat.cols*4; col+=4 ) {
+            Float32 r,g,b, alpha;
+        
+            b = [[NSNumber numberWithUnsignedChar:p[col]] floatValue] ;
+            g = [[NSNumber numberWithUnsignedChar:p[col+1]] floatValue] ;
+            r = [[NSNumber numberWithUnsignedChar:p[col+2]] floatValue] ;
+            alpha =[[NSNumber numberWithUnsignedChar:p[col+3]] floatValue] ;
+            
+            //         NSLog(@"Floats %f %f %f, row %i, col %i", b, g, r, row, col);
+            ///Creation of a single query. I guess it's a vector?
+          //  float average = (r+g+b)/3.0;
+            
+            fullQuery.push_back(r);
+            fullQuery.push_back(g);
+            fullQuery.push_back(b);
+            fullQuery.push_back(alpha);
+        }
+    }
+    
+        ///Let's search the whole thing at once.
+        NSLog(@"Starting Search");
+    
+ 
+    
+    [self kdtree]->knnSearch(sampleMat, index, dist, 1, cv::flann::SearchParams(8));
+       NSLog(@"Index Size %lu %lu", index.capacity(), index.size());
+    
+        int j = 0;
+        for(int row = 0; row < sampleMat.rows; row++)
+        {
+            
+           // uchar* p = sampleMat.ptr(row);
+            uchar* fp = _replacementColors.ptr(row);
+            for(int col = 0; col < sampleMat.cols*4; col+=4 ) {
+            //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
+            int i = index[(capacity-1) - j];
+              //  NSLog(@"j %i and index val is %i",j, i);
+                j++;
+            if (   [[[_colors objectAtIndex:i] objectForKey:@"FriendlyName"] isEqual:color]) {
+               
+                //////Change the color at this location
+                //NSLog(@"Change color");
+                if ([color isEqual:(@"g")] ){
+                    fp[col] =0;
+                    fp[col+1] =255;
+                    fp[col+2]=0;
+                }
+                else{
+                    fp[col] = 255;
+                    fp[col+1] = 0;
+                    fp[col+2] = 0;
+                }
+            }
+            else{
+                ////change the color here to grayscale
+                //NSLog(@"Change to grayscale");
+                
+                fp[col] = 0;
+                fp[col+1] = 0;
+                fp[col+2] = 0;
+                }
+            }
+        
+    }
+    NSLog(@"Complete");
+    return _replacementColors;
+}
 
 
 @end
