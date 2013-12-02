@@ -83,8 +83,8 @@
         _colorCoords = colorCoords.clone();
     }
     
-    ///Create the index with x number of trees ////The following line was original functional
-    cv::flann::KMeansIndexParams indexParams(4);
+    ///Create the index with x number of trees ////The following line was original functional with 4
+    cv::flann::KMeansIndexParams indexParams(16);
 
     //cv::flann::LinearIndexParams indexParams;
 
@@ -219,8 +219,8 @@ int threshold = (0.6 * sampleMat.rows * sampleMat.cols);
     singleQuery.push_back(r);
     singleQuery.push_back(g);
     singleQuery.push_back(b);
-    
-    [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(8));
+        ///changing to 16 from 8
+    [self kdtree]->knnSearch(singleQuery, index, dist, 1, cv::flann::SearchParams(16));
     
   //  NSLog(@"Index, %x ,  dist %f", index[0], dist[0]);
     int i = index[0];
@@ -240,6 +240,48 @@ if(votes>threshold)
     else
         return @"string";
 }
+
+
+//There HAS to be a better way to do this
+-(int)exaggerateVal:(int)value{
+
+  //  NSLog(@"Exaggerating %i", value);
+    
+    if((value >= 0) && (value <=25)){
+        return 105;
+    }
+    if((value >= 26) && (value <=50)){
+        return 125;
+    }
+    if((value >= 51) && (value <=75)){
+             return 135;
+    }
+    if((value >= 76) && (value <=100)){
+             return 155;
+    }
+    if((value >= 101) && (value <=125)){
+             return 175;
+    }
+    if((value >= 126) && (value <=150)){
+             return 185;
+    }
+    if((value >= 151) && (value <=175)){
+             return 195;
+    }
+    if((value >= 176) && (value <=200)){
+             return 220;
+    }
+    if((value >= 201) && (value <=225)){
+             return 235;
+    }
+    if((value >= 226) && (value <=255)){
+             return 255;
+    }
+else
+    return 25;
+    
+}
+
 
 
 /**
@@ -298,11 +340,11 @@ if(votes>threshold)
                 //NSLog(@"Change color");
                 if ([color isEqual:(@"g")] ){
                     fp[col] =0;
-                    fp[col+1] =255;
+                    fp[col+1] = [self exaggerateVal:fp[col+1]];
                     fp[col+2]=0;
                 }
                 else{
-                fp[col] = 255;
+                fp[col] = [self exaggerateVal:fp[col]];
                 fp[col+1] = 0;
                 fp[col+2] = 0;
                 }
@@ -389,7 +431,8 @@ if(votes>threshold)
                 //NSLog(@"Change color");
                 if ([color isEqual:(@"g")] ){
                     fp[col] =0;
-                    fp[col+1] =255;
+                    ///exaggerate function goes here.
+                    fp[col+1] = [self exaggerateVal:fp[col+1]];
                     fp[col+2]=0;
                 }
                 else{

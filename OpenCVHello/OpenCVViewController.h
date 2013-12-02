@@ -42,7 +42,7 @@
     UIButton *_GreenButton;
     UIButton *_IsThisRedButton;
     
-    int _deleteMe; 
+    //int _deleteMe;
   
     BOOL _shouldDisplayFeedback;
     

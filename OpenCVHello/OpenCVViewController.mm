@@ -65,7 +65,7 @@
 
    // _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
    
-    _deleteMe = 0;
+   // _deleteMe = 0;
     _isDetectorOn = false;
     _thumb = (UIImageView*)[self.view  viewWithTag:101];
     _thumb.hidden = true;
@@ -188,7 +188,7 @@
          [self isThisGreen:tempMat:@"g"];
          
          _shouldDisplayFeedback = true;
-         _deleteMe = 0;
+         //_deleteMe = 0;
       }
     ////If they've hit the green button or if it's in detector mode.
   // if(_buttonIsPressed || _isDetectorOn){
