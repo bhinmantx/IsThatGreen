@@ -61,11 +61,7 @@
     
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
     
-    //self.videoCamera.grayscale = NO;
 
-   // _matcher = [[ColorMatcher alloc]initWithColorFileName:@"colordataF-R"];
-   
-   // _deleteMe = 0;
     _isDetectorOn = false;
     _thumb = (UIImageView*)[self.view  viewWithTag:101];
     _thumb.hidden = true;
