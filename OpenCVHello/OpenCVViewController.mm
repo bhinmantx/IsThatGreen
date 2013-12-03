@@ -207,7 +207,7 @@
          
          //Now we're resizing it here
          ////again because of the UIimage/Mat copy performance hits
-         //// TODO: Make sure that's actually an issue.
+         //// TODO: Make sure that's actually an issue. ///why did changing this break the image display?
          NSInteger iRows = image.rows;
          NSInteger iCols = image.cols;
          
