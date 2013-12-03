@@ -109,6 +109,14 @@
     _targetColor = (NSMutableString*)@"r";
 }
 
+-(IBAction)UniversalButton:(id)sender{
+    _buttonIsPressed = true;
+    ////Here's where the target color is either set
+    ////OR we don't care because the modal view took care of that
+    ////which would be the smarter answer.
+}
+
+
 - (IBAction)detectorButtonToggle:(id)sender {
     
     ////Hold on to the value of the old text
@@ -167,7 +175,7 @@
         
         ///Originally just following line
         //        cv::Mat tempMat(image);
-        //Now we're resizing it here
+        //Now we're resizing it here to avoid Mat/UIimage copying performance hits
         NSInteger iRows = image.rows;
         NSInteger iCols = image.cols;
         
@@ -178,7 +186,10 @@
         
         ///We're expanding the target area, or making it smaller based on the slider.
         CvRect sampleRect = cvRect(center.x - targ, center.y - targ, (targ*2), (targ*2));
-                 cv::Mat tempMat(image, sampleRect);
+        cv::Mat tempMat(image, sampleRect);
+        ////this button is pressed nonsense is because of the process image loop
+        ////target color being set is because this is the continous detection system
+        ////but should be eliminated.
          _buttonIsPressed = false;
          _targetColor = (NSMutableString*)@"g";
          [self isThisGreen:tempMat:@"g"];
@@ -186,13 +197,13 @@
          _shouldDisplayFeedback = true;
          //_deleteMe = 0;
       }
-    ////If they've hit the green button or if it's in detector mode.
-  // if(_buttonIsPressed || _isDetectorOn){
+
+
      if(_buttonIsPressed){
          
-         ///Originally just following line
-//        cv::Mat tempMat(image);
          //Now we're resizing it here
+         ////again because of the UIimage/Mat copy performance hits
+         //// TODO: Make sure that's actually an issue.
          NSInteger iRows = image.rows;
          NSInteger iCols = image.cols;
          
@@ -217,10 +228,7 @@
       // [self GreenButton].enabled = false;
        [[self view] setNeedsDisplay];
        
-       ///Previously this did this:
-       //       [self isThisGreen:tempMat:@"r"];
-       ///now we're trying the experimental image swap
-       // _thumb.hidden = true;
+
        tempMat = [_matcher ColorReplacer:tempMat :@"g" :_thumb];
        
        _thumb.image = [self imageWithCVMat:tempMat];
@@ -233,16 +241,7 @@
        _shouldDisplayFeedback = true;
        
        
-       ///Previous is it green code
-        /*
-         cv::Mat tempMat(image, sampleRect);
-        _buttonIsPressed = false;
-        _targetColor = (NSMutableString*)@"g";
-        [self isThisGreen:tempMat:@"g"];
-       
-         _shouldDisplayFeedback = true;
-         _deleteMe = 0;
-         */
+
     }
     
     
@@ -286,9 +285,7 @@
         _timerCount = 0;
         _ColorReplaced = true;
         _shouldDisplayFeedback = true;
-        
-
-        
+    
     }
 
 /////TODO: Change this into a switch statement.
